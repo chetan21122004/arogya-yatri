@@ -102,18 +102,19 @@ white-space: normal;
 .doctor-slider-container {
   position: relative;
   overflow: hidden;
-  padding: 0 3rem;
+  padding: 0 2.5rem; /* room for nav buttons */
+  max-width: 100%;
 }
 
 @media (min-width: 640px) {
   .doctor-slider-container {
-    padding: 0 4rem;
+    padding: 0 3.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .doctor-slider-container {
-    padding: 0 5rem;
+    padding: 0 4rem;
   }
 }
 
@@ -127,25 +128,28 @@ white-space: normal;
   flex: 0 0 100%;
   min-width: 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
+/* Mobile: 1 card. Tablet: 2 cards. Desktop: 5 cards */
 .doctor-slide .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: 1fr;
   gap: 1rem;
+  align-items: stretch;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .doctor-slide .grid {
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 }
 
 @media (min-width: 1024px) {
   .doctor-slide .grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.5rem;
   }
 }
@@ -241,6 +245,8 @@ white-space: normal;
           class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
           <a href="about.html"
             class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
+          <a href="faq.html"
+            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
           <a href="testimonial.html"
             class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
           <a href="news.html"
@@ -249,17 +255,18 @@ white-space: normal;
       </li>
     </ul>
 
-    <!-- CTA -->
-    <div class="ml-auto hidden md:flex items-center">
-      <a
-        class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
-        <span
-          class="h-8 w-8 rounded-full bg-black text-white flex items-center justify-center circleicon">
-          <i class='bx bx-right-arrow-alt'></i>
-        </span>
-        <span class="text-sm font-medium">Book Consultation</span>
-      </a>
-    </div>
+   
+  <!-- CTA -->
+  <div class="ml-auto hidden md:flex items-center">
+    <a
+      class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+      <span
+        class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
+        <i class='bx bx-right-arrow-alt'></i>
+      </span>
+      <span class="text-sm font-medium">Book Consultation</span>
+    </a>
+  </div>
 
     <!-- Mobile Button -->
     <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
@@ -302,6 +309,7 @@ white-space: normal;
 
       <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
         <a href="about.html" class="block">About Us</a>
+        <a href="faq.html" class="block">FAQ</a>
         <a href="testimonial.html" class="block">Testimonials</a>
         <a href="news.html" class="block">News/Blogs</a>
       </div>
@@ -397,7 +405,22 @@ white-space: normal;
   </div>
 </section>
 
-
+<!-- Results -->
+<section class="mb-8 md:mb-12 px-4 sm:px-6 py-6 sm:py-8 z-20">
+  <div class="max-w-7xl mx-auto">
+    <div class="doctor-slider-container relative">
+      <div id="doctorSlider" class="doctor-slider flex transition-transform duration-500 ease-in-out">
+        <!-- Slides inserted by JS -->
+      </div>
+      <button id="doctorPrevBtn" class="doctor-nav-btn absolute left-2 sm:left-4 lg:left-0 top-1/2 -translate-y-1/2 lg:-translate-x-4 z-20 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 active:bg-teal-100 transition-all shadow-lg hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed" aria-label="Previous doctors">
+        <i class='bx bx-chevron-left text-lg sm:text-xl lg:text-2xl'></i>
+      </button>
+      <button id="doctorNextBtn" class="doctor-nav-btn absolute right-2 sm:right-4 lg:right-0 top-1/2 -translate-y-1/2 lg:translate-x-4 z-20 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 active:bg-teal-100 transition-all shadow-lg hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed" aria-label="Next doctors">
+        <i class='bx bx-chevron-right text-lg sm:text-xl lg:text-2xl'></i>
+      </button>
+    </div>
+  </div>
+</section>
 
 
 
@@ -446,24 +469,7 @@ white-space: normal;
 </a>
 
 </main>
-<!-- Results -->
-<section class="mb-6 md:mb-10 p-5 z-20">
-  <!-- Slider Container -->
-  <div class="doctor-slider-container relative">
-    <!-- Slider Track -->
-    <div id="doctorSlider" class="doctor-slider flex transition-transform duration-500 ease-in-out">
-      <!-- Slides will be dynamically inserted here -->
-    </div>
-    
-    <!-- Navigation Buttons -->
-    <button id="doctorPrevBtn" class="doctor-nav-btn doctor-nav-prev absolute left-5 sm:left-8 lg:left-0 top-1/2 -translate-y-1/2 lg:-translate-x-6 z-20 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 active:bg-teal-100 transition-all shadow-lg hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed">
-      <i class='bx bx-chevron-left text-lg sm:text-xl lg:text-2xl'></i>
-    </button>
-    <button id="doctorNextBtn" class="doctor-nav-btn doctor-nav-next absolute right-2 sm:right-4 lg:right-0 top-1/2 -translate-y-1/2 lg:translate-x-6 z-20 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 active:bg-teal-100 transition-all shadow-lg hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed">
-      <i class='bx bx-chevron-right text-lg sm:text-xl lg:text-2xl'></i>
-    </button>
-  </div>
-</section>
+
 <!-- FOOTER -->
 <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
   <div class="max-w-7xl mx-auto px-6">
@@ -588,24 +594,28 @@ white-space: normal;
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('consultantModal');
-    const closeBtn = document.getElementById('closeConsultantModal');
     const doctorSlider = document.getElementById('doctorSlider');
 
-    // Event delegation for dynamically rendered 'Book Consultation' buttons
-    doctorSlider.addEventListener('click', (e) => {
-      if (e.target.closest('.openConsultantModal')) {
+    // Attach click handlers for all existing "Book Consultation" buttons (navbar, mobile menu, etc.)
+    const openButtons = document.querySelectorAll('.openConsultantModal');
+    openButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
         e.preventDefault();
         modal.classList.remove('hidden');
         modal.classList.add('flex');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
-      }
+      });
     });
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-        document.body.style.overflow = ''; // Restore scrolling
+    // Event delegation for dynamically rendered "Book Consultation" buttons inside the doctor slider
+    if (doctorSlider) {
+      doctorSlider.addEventListener('click', (e) => {
+        if (e.target.closest('.openConsultantModal')) {
+          e.preventDefault();
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+          document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
       });
     }
 
@@ -664,7 +674,7 @@ const doctors = [
 
 // Slider state
 let currentSlide = 0;
-let cardsPerSlide = 8; // Desktop: 4 columns x 2 rows = 8 cards
+let cardsPerSlide = 1; // Mobile 1, tablet 2, desktop 5
 let totalSlides = 0;
 let autoSlideInterval = null;
 const AUTO_SLIDE_INTERVAL = 4000; // 4 seconds
@@ -675,12 +685,10 @@ const prevBtn = document.getElementById("doctorPrevBtn");
 const nextBtn = document.getElementById("doctorNextBtn");
 
 function getCardsPerSlide() {
-  // Check if desktop (lg breakpoint)
-  if (window.innerWidth >= 1024) {
-    return 8; // 4 columns x 2 rows
-  } else {
-    return 2; // Mobile: 2 rows, 1 column
-  }
+  // Mobile: 1 card. Tablet: 2 cards. Desktop: 5 cards
+  if (window.innerWidth >= 1024) return 5;
+  if (window.innerWidth >= 768) return 2;
+  return 1;
 }
 
 function createDoctorCard(d) {
@@ -761,7 +769,7 @@ function renderDoctors() {
     
     // Create grid container
     const grid = document.createElement('div');
-    grid.className = 'grid grid-cols-1 grid-rows-2 lg:grid-cols-4 lg:grid-rows-2 gap-4 sm:gap-6';
+    grid.className = 'doctor-slide-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 grid-rows-1 gap-4 md:gap-5 lg:gap-6';
     
     // Add cards to grid
     slideDoctors.forEach(d => {

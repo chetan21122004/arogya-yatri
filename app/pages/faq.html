@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arogya Yatri - FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/basic-nav.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { logo: ['Anton', 'sans-serif'], body: ['Lexend', 'sans-serif'], brand: ['Anton'] },
+          colors: { primaryDark: '#0F172A' }
+        }
+      }
+    }
+  </script>
+<style>
+html, body { scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar { display: none; }
+html { scroll-behavior: smooth; }
+#siteHeader { height: 72px; background: white; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+.nav-link { position: relative; color: black; padding: 4px 0; }
+.nav-link::after { content: ''; position: absolute; left: 50%; bottom: -6px; width: 0; height: 2px; background: black; transform: translateX(-50%); transition: width .25s ease; }
+.nav-link:hover::after { width: 100%; }
+.nav-cta { border-color: black; }
+.page-wrapper { padding-top: 96px; }
+#mobileMenu nav a { display: block; width: 100%; line-height: 1.4; padding: 6px 0; white-space: normal; }
+.hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); position: relative; overflow: hidden; }
+.faq-item { border-radius: 16px; border: 1px solid #e2e8f0; background: #fff; transition: all 0.2s ease; }
+.faq-item:hover { border-color: rgba(20, 184, 166, 0.4); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+.faq-question { cursor: pointer; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.faq-answer.open { max-height: 500px; }
+.faq-icon i { transition: transform 0.3s ease; }
+.faq-item.open .faq-icon i { transform: rotate(45deg); }
+</style>
+</head>
+<body class="font-body bg-white text-black">
+
+<header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+  <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
+    <a href="../../index.html" class="flex items-center">
+      <div class="leading-tight">
+        <div class="text-2xl tracking-tight">Arogya Yatri</div>
+        <div class="text-xs opacity-70">A service by Ewan Business Solutions</div>
+      </div>
+    </a>
+    <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
+      <li><a href="treatments.html" class="nav-link inline-flex items-center leading-none">Treatment</a></li>
+      <li><a href="doctor.html" class="nav-link inline-flex items-center leading-none">Doctor</a></li>
+      <li><a href="destinations.html" class="nav-link inline-flex items-center leading-none">Destinations</a></li>
+      <li class="relative group flex items-center">
+        <button class="nav-link inline-flex items-center gap-1 leading-none">Explore <i class='bx bx-chevron-down text-sm relative top-[1px]'></i></button>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+          <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
+          <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 bg-teal-50 font-semibold text-teal-700">FAQ</a>
+          <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+          <a href="news.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+        </div>
+      </li>
+    </ul>
+    <div class="ml-auto hidden md:flex items-center">
+      <a class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+        <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center"><i class='bx bx-right-arrow-alt'></i></span>
+        <span class="text-sm font-medium">Book Consultation</span>
+      </a>
+    </div>
+    <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center"><i class='bx bx-menu'></i></button>
+  </nav>
+</header>
+
+<div id="mobileMenu" class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+  <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+    <a href="../../index.html"><div><div class="font-body text-2xl text-primaryDark">Arogya Yatri</div><div class="text-sm text-gray-500">A service by Ewan Business Solutions</div></div></a>
+    <button id="closeBtn" class="text-2xl text-black"><i class='bx bx-x'></i></button>
+  </div>
+  <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+    <a href="treatments.html" class="block">Treatment</a>
+    <a href="doctor.html" class="block">Doctor</a>
+    <a href="destinations.html" class="block">Destinations</a>
+    <div>
+      <button id="mobileExploreBtn" class="w-full flex items-center justify-between"><span>Explore</span><i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i></button>
+      <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+        <a href="about.html" class="block">About Us</a>
+        <a href="faq.html" class="block font-semibold text-teal-600">FAQ</a>
+        <a href="testimonial.html" class="block">Testimonials</a>
+        <a href="news.html" class="block">News/Blogs</a>
+      </div>
+    </div>
+    <div class="pt-6 border-t border-gray-200"></div>
+    <a class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition" style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
+      <span>Book Consultation</span>
+      <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white"><i class='bx bx-right-arrow-alt text-xl'></i></span>
+    </a>
+  </nav>
+</div>
+
+<script>
+  document.getElementById('mobileExploreBtn').addEventListener('click', () => {
+    document.getElementById('mobileExploreMenu').classList.toggle('hidden');
+    document.getElementById('mobileExploreIcon').classList.toggle('bx-chevron-down');
+    document.getElementById('mobileExploreIcon').classList.toggle('bx-chevron-up');
+  });
+</script>
+
+<main class="page-wrapper">
+
+<section class="hero-bg relative min-h-[40vh] flex items-center text-white">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-12 text-center">
+    <div class="inline-flex items-center gap-3 px-5 py-2.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-teal-300 text-sm font-medium mb-4">
+      <i class='bx bx-help-circle text-base'></i>
+      <span>Help & Support</span>
+    </div>
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-4">Frequently Asked <span class="text-teal-400">Questions</span></h1>
+    <p class="text-white/90 text-sm sm:text-base max-w-2xl mx-auto">Find answers about medical tourism, treatment options, visa, costs, language support, and more.</p>
+  </div>
+</section>
+
+<section class="bg-white py-10 border-t border-slate-100">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <div id="general" class="mb-12">
+      <h2 class="text-xl font-semibold text-slate-900 mb-6">General Questions</h2>
+      <div class="space-y-4">
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What is Arogya Yatri?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Arogya Yatri is a comprehensive medical tourism facilitation service that connects international patients with world-class hospitals and specialist doctors in India. We provide end-to-end support for your medical journey, from initial consultation to post-treatment follow-up care, while also helping you explore India's rich culture and wellness traditions.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Who is behind Arogya Yatri?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Arogya Yatri is a service by Ewan Business Solutions, a company specializing in multilingual support and global healthcare coordination. We combine medical expertise with cultural sensitivity to ensure seamless healthcare experiences for international patients.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Which countries do you serve?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              We serve patients from all countries worldwide. Our multilingual support covers 120+ languages, and we have extensive experience working with patients from the United States, United Kingdom, Canada, Australia, Middle East, Europe, Africa, and Southeast Asian countries.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Is Arogya Yatri affiliated with hospitals in India?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              We work with a network of NABH and JCI-accredited hospitals across India. We are an independent medical tourism facilitator, which means we provide unbiased recommendations based on your specific medical needs and can connect you with the best-suited hospitals and specialists.
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div id="treatment" class="mb-12">
+      <h2 class="text-xl font-semibold text-slate-900 mb-6">Treatment & Medical Care</h2>
+      <div class="space-y-4">
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What types of medical treatments are available?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              India offers a comprehensive range of treatments including cardiac surgery, orthopedic procedures, cancer treatment, organ transplants, fertility treatments, cosmetic surgery, dental procedures, eye care, neurosurgery, and more. Visit our Treatments page for detailed information on specific procedures and their costs.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">How do I know if I'm eligible for treatment in India?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              After you share your medical reports with us, our expert panel reviews them within 24-48 hours and provides an honest assessment of your eligibility for treatment in India. We'll recommend the best course of action based on your medical condition and needs.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Are the hospitals in India accredited internationally?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Yes, all hospitals in our network are either NABH (National Accreditation Board for Hospitals & Healthcare Providers) or JCI (Joint Commission International) accredited. These accreditations ensure that hospitals meet international standards for patient safety, quality of care, and medical excellence.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Can I get a second medical opinion before committing to treatment?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Absolutely! We offer free expert second opinions from renowned medical specialists. Simply share your medical reports, and we'll arrange for a comprehensive review by our panel of experienced doctors who will provide their professional assessment.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">How long will I need to stay in India for my treatment?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              The duration varies depending on your specific treatment. Simple procedures may require 5-7 days, while complex surgeries might need 2-4 weeks. During your consultation, we'll provide a detailed timeline including pre-treatment evaluation, procedure time, hospital stay, and recommended recovery period.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What if I need emergency care during my stay?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              We provide 24/7 support throughout your stay in India. In case of any emergency, our care coordinators will immediately coordinate with the hospital and ensure you receive urgent medical attention. All our partner hospitals have fully equipped emergency departments available round-the-clock.
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div id="cost" class="mb-12">
+      <h2 class="text-xl font-semibold text-slate-900 mb-6">Cost & Pricing</h2>
+      <div class="space-y-4">
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">How much can I really save by choosing India for treatment?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              You can save up to 80% compared to treatment costs in the United States, United Kingdom, Canada, and many European countries. For example, a cardiac bypass surgery that costs $100,000+ in the US may cost around $7,000-$10,000 in India, including hospital stay and basic accommodation.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Are there any hidden costs?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              No. We believe in complete transparency. Our cost estimates include treatment fees, hospital charges, doctor fees, diagnostic tests, and medications during your hospital stay. We'll clearly outline any additional costs such as travel, accommodation, and post-treatment medications upfront.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What is included in the treatment cost estimate?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Our cost estimate typically includes: pre-treatment consultations and diagnostic tests, the medical procedure itself, surgeon and anesthetist fees, hospital room charges, nursing care, medications during hospital stay, follow-up consultations during your India stay, and basic medical supplies. Accommodation and travel costs are quoted separately.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What payment methods do you accept?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              We accept international wire transfers, credit/debit cards, and online payment platforms. Payment is made directly to the hospital for medical services. Our facilitation fees and other service charges can be paid through multiple convenient methods. Detailed payment instructions will be provided during your booking process.
+            </div>
+          </div>
+        </article>
+
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Do you offer payment plans or financing options?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Payment terms vary by hospital and treatment type. Many hospitals accept payment in phases (advance deposit, pre-surgery payment, and final settlement). For specific financing options, please discuss with our care coordinators during your consultation, and we'll help explore available options.
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div id="visa" class="mb-12">
+      <h2 class="text-xl font-semibold text-slate-900 mb-6">Medical Visa & Travel</h2>
+      <div class="space-y-4">
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What is an e-Medical visa and how do I apply?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              An e-Medical visa is a special visa category introduced by the Indian government under the "Heal in India" program for international patients seeking medical treatment. We provide complete assistance with the application process, helping you prepare necessary documents including your medical reports, hospital invitation letter, and passport copies.
+            </div>
+          </div>
+        </article>
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">How long does the visa approval process take?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              E-Medical visas are typically processed within 3-5 business days. However, we recommend applying at least 2-3 weeks before your planned travel to account for any potential delays. Our team will guide you through the entire process and track your application status.
+            </div>
+          </div>
+        </article>
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Can my companion travel with me?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Yes! We encourage patients to travel with a companion. Under the e-Medical visa program, up to two companions can accompany you on e-Medical Attendant visas. We provide free travel arrangement assistance for one companion, including visa support and accommodation coordination.
+            </div>
+          </div>
+        </article>
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What happens when I arrive at the Indian airport?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Our representative will be waiting for you at the airport arrival area with a name placard. We provide fast-track airport assistance, help with immigration if needed, and escort you to your pre-arranged transportation. If you require wheelchair assistance or have special needs, we arrange that in advance as well.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div id="process" class="mb-12">
+      <h2 class="text-xl font-semibold text-slate-900 mb-6">Process & Timeline</h2>
+      <div class="space-y-4">
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">How do I get started with Arogya Yatri?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Getting started is simple: Fill out our online inquiry form or WhatsApp us at +91 85300 54299 with your medical reports and brief description of your medical need. You can also email us at apoorva@ewan.co.in. Our care team will respond within 24 hours to begin your journey.
+            </div>
+          </div>
+        </article>
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">How quickly will I receive a response after submitting my medical reports?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Our care team responds to initial inquiries within 24 hours. After you submit your medical reports, our expert panel reviews them within 24-48 hours and provides you with treatment recommendations, hospital options, specialist information, and transparent cost estimates.
+            </div>
+          </div>
+        </article>
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Is there a waiting period for treatment in India?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              No, one of the major advantages of choosing India is zero waiting period. Unlike many Western countries where you might wait months for surgery, treatment in India can often be scheduled within days or weeks of your arrival, depending on the specialist's availability and your medical readiness.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div id="post-treatment" class="mb-12">
+      <h2 class="text-xl font-semibold text-slate-900 mb-6">Post-Treatment Care</h2>
+      <div class="space-y-4">
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What happens after I return home?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Our care doesn't end when you leave India. We maintain continuous follow-up through remote consultations, monitor your recovery progress, coordinate with your local doctors if needed, arrange medicine delivery, and remain available for any questions or concerns during your recovery period.
+            </div>
+          </div>
+        </article>
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Can you courier medicines to my home country?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Yes, we provide international medicine courier service. If you need to continue certain medications prescribed during your treatment in India, we can arrange safe and legal delivery to your home country, subject to customs regulations. We ensure proper packaging, documentation, and tracking for all medicine shipments.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div id="cancellation" class="mb-12">
+      <h2 class="text-xl font-semibold text-slate-900 mb-6">Cancellation & Changes</h2>
+      <div class="space-y-4">
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">What is your cancellation policy?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Cancellation policies vary depending on services booked. Our service fees are partially refundable if cancelled 15+ days before travel, with deductions for work completed. Hospital policies vary by institution. We provide detailed cancellation terms during booking and help you understand implications before you commit.
+            </div>
+          </div>
+        </article>
+        <article class="faq-item p-4 sm:p-5">
+          <button type="button" class="faq-question w-full flex items-start justify-between gap-3 text-left" aria-expanded="false" data-faq-toggle>
+            <span class="text-sm sm:text-base font-semibold text-slate-900">Can I reschedule my treatment dates?</span>
+            <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-500"><i class='bx bx-plus text-lg'></i></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pt-3 text-sm text-slate-600 border-t border-slate-100 mt-3">
+              Yes, you can reschedule subject to doctor and hospital availability. Contact us as soon as possible if you need to change dates. We'll coordinate with the hospital and adjust your visa, travel, and accommodation arrangements accordingly. Some rescheduling fees may apply depending on how close to your original dates you request changes.
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Still have questions CTA -->
+    <div class="mt-16 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-teal-50 to-slate-50 border border-teal-100 text-center">
+      <h3 class="text-xl font-semibold text-slate-900 mb-2">Still have questions?</h3>
+      <p class="text-sm text-slate-600 mb-6 max-w-lg mx-auto">Our care team is here to answer all your questions and guide you every step of the way.</p>
+      <div class="flex flex-wrap justify-center gap-4 text-sm">
+        <a href="tel:+918530054299" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-slate-200 text-slate-800 font-medium hover:bg-slate-50 transition">
+          <i class='bx bx-phone text-lg text-teal-500'></i> +91 85300 54299
+        </a>
+        <a href="mailto:apoorva@ewan.co.in" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-slate-200 text-slate-800 font-medium hover:bg-slate-50 transition">
+          <i class='bx bx-envelope text-lg text-teal-500'></i> apoorva@ewan.co.in
+        </a>
+        <a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-green-500 text-white font-medium hover:bg-green-600 transition">
+          <i class='bx bxl-whatsapp text-lg'></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<div id="consultantModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+  <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
+    <button onclick="closeConsultantModal()" class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <div class="px-4 py-4">
+      <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300"><i class='bx bxl-whatsapp text-white text-3xl'></i></a>
+
+<footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
+      <div class="lg:col-span-2">
+        <a href="../../index.html"><h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3><p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">Arogya Yatri is a global medical tourism platform connecting patients with world-class hospitals, trusted doctors, and seamless healthcare journeys across borders.</p></a>
+        <div class="flex items-center gap-4">
+          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-facebook text-lg"></i></a>
+          <a href="https://www.instagram.com/arogya.yatri/" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-instagram text-lg"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-youtube text-lg"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+          <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
+          <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          <li><a href="faq.html" class="hover:text-white transition">FAQ</a></li>
+          <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-5">Contact</h4>
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start gap-3"><i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i><a href="tel:8530054299" class="hover:text-white transition">+91 85300 54299</a></li>
+          <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">apoorva@ewan.co.in</a></li>
+          <li class="pt-2"><a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition"><i class="bx bxl-whatsapp text-lg"></i>WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mb-8"></div>
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <p>© 2025 Arogya Yatri. A service by Ewan Business Solutions. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-2"><i class="bx bx-shield-quarter text-teal-400"></i>Secure & Confidential</span>
+        <span class="flex items-center gap-2"><i class="bx bx-world text-teal-400"></i>Global Healthcare Network</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('[data-faq-toggle]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = answer.classList.contains('open');
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) { answer.classList.add('open'); item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+      else { btn.setAttribute('aria-expanded', 'false'); }
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.openConsultantModal').forEach(btn => {
+      btn.addEventListener('click', () => { document.getElementById('consultantModal').classList.remove('hidden'); document.getElementById('consultantModal').classList.add('flex'); });
+    });
+  });
+  function closeConsultantModal() { document.getElementById('consultantModal').classList.add('hidden'); }
+</script>
+<script>
+  document.getElementById('menuBtn').onclick = () => document.getElementById('mobileMenu').classList.remove('-translate-x-full');
+  document.getElementById('closeBtn').onclick = () => document.getElementById('mobileMenu').classList.add('-translate-x-full');
+</script>
+
+</body>
+</html>

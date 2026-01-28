@@ -96,6 +96,11 @@ padding: 6px 0;
 white-space: normal;
 }
 
+/* ===== WHAT WE DO: mobile slider ===== */
+.what-we-do-slider {
+    -webkit-overflow-scrolling: touch;
+}
+
 /* ===== HERO SECTION ===== */
 .hero-bg {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
@@ -290,9 +295,11 @@ white-space: normal;
           class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
           <a href="about.html"
             class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
+          <a href="faq.html"
+            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
           <a href="testimonial.html"
             class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
-          <a href="testimonial.html"
+          <a href="news.html"
             class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
         </div>
       </li>
@@ -351,6 +358,7 @@ white-space: normal;
 
       <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
         <a href="about.html" class="block">About Us</a>
+        <a href="faq.html" class="block">FAQ</a>
         <a href="testimonial.html" class="block">Testimonials</a>
         <a href="news.html" class="block">News/Blogs</a>
       </div>
@@ -459,7 +467,7 @@ white-space: normal;
     <div class="max-w-4xl mx-auto">
       <div class="prose prose-lg max-w-none">
         <p class="text-slate-700 leading-relaxed mb-4 text-base">
-          Arogya Yatri is a dedicated medical tourism service by Ewan Business Solutions, created to help international patients access world-class healthcare in India with ease and confidence.
+          Arogya Yatri is a dedicated medical tourism service by <a href="https://www.ewan.co.in/" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline hover:text-teal-800">Ewan Business Solutions</a>, created to help international patients access world-class healthcare in India with ease and confidence.
         </p>
         
         <p class="text-slate-700 leading-relaxed mb-4 text-base">
@@ -546,11 +554,12 @@ white-space: normal;
       </p>
     </div>
 
-    <!-- Services Grid - Desktop (5x2 Layout) -->
-    <div class="hidden md:grid max-w-7xl mx-auto grid-cols-5 gap-6">
-        
+    <!-- Services: mobile = slider with 2 rows × 2 cols per slide; md = 5-col grid -->
+    <div class="what-we-do-slider flex overflow-x-auto snap-x snap-mandatory gap-4 -mx-6 pl-6 pr-6 pb-2 md:mx-0 md:pl-0 md:pr-0 md:pb-0 md:grid md:grid-cols-5 md:gap-6 md:overflow-visible md:max-w-7xl md:mx-auto">
+      <!-- Slide 1: 2 rows, 2 cols -->
+      <div class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center grid grid-cols-2 grid-rows-2 gap-3 md:contents">
       <!-- Service 1: Medical Coordination -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-clinic text-xl text-white'></i>
@@ -567,7 +576,7 @@ white-space: normal;
       </div>
 
       <!-- Service 2: Visa & Travel -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-sky-500 to-sky-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bxs-plane-alt text-xl text-white'></i>
@@ -584,7 +593,7 @@ white-space: normal;
       </div>
 
       <!-- Service 3: Accommodation -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-home text-xl text-white'></i>
@@ -601,7 +610,7 @@ white-space: normal;
       </div>
 
       <!-- Service 4: Language Support -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-world text-xl text-white'></i>
@@ -616,9 +625,11 @@ white-space: normal;
           </p>
         </div>
       </div>
-
+      </div>
+      <!-- Slide 2: 2 rows, 2 cols -->
+      <div class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center grid grid-cols-2 grid-rows-2 gap-3 md:contents">
       <!-- Service 5: Companion Planning -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-user-plus text-xl text-white'></i>
@@ -635,7 +646,7 @@ white-space: normal;
       </div>
 
       <!-- Service 6: Tourism Planning -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-map text-xl text-white'></i>
@@ -652,7 +663,7 @@ white-space: normal;
       </div>
 
       <!-- Service 7: Post-Recovery Care -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-support text-xl text-white'></i>
@@ -669,7 +680,7 @@ white-space: normal;
       </div>
 
       <!-- Service 8: Second Opinion -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-file-find text-xl text-white'></i>
@@ -684,9 +695,11 @@ white-space: normal;
           </p>
         </div>
       </div>
-
+      </div>
+      <!-- Slide 3: 2 rows, 1 col (stacked) -->
+      <div class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center flex flex-col gap-3 md:contents">
       <!-- Service 9: Medicine Courier -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-package text-xl text-white'></i>
@@ -703,7 +716,7 @@ white-space: normal;
       </div>
 
       <!-- Service 10: Clinical Nutrition -->
-      <div class="service-card bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
         <div class="flex flex-col items-center text-center flex-grow justify-center">
           <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-md mb-3">
             <i class='bx bx-dish text-xl text-white'></i>
@@ -717,6 +730,7 @@ white-space: normal;
             Personalized nutrition plans from certified clinical dieticians.
           </p>
         </div>
+      </div>
       </div>
 
     </div>
