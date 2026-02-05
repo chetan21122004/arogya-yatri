@@ -1686,12 +1686,19 @@
 
           </div>
         </div>
-        <button type="button" id="benefitsDesktopPrevBtn" class="benefits-desktop-nav-btn absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 transition-all shadow-lg" aria-label="Previous benefits">
+        <!-- Navigation: Prev/Next buttons -->
+        <button type="button" id="benefitsDesktopPrevBtn" class="benefits-desktop-nav-btn absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 transition-all shadow-lg" aria-label="Previous benefits">
           <i class='bx bx-chevron-left text-2xl'></i>
         </button>
-        <button type="button" id="benefitsDesktopNextBtn" class="benefits-desktop-nav-btn absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 transition-all shadow-lg" aria-label="Next benefits">
+        <button type="button" id="benefitsDesktopNextBtn" class="benefits-desktop-nav-btn absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 transition-all shadow-lg" aria-label="Next benefits">
           <i class='bx bx-chevron-right text-2xl'></i>
         </button>
+        <!-- Navigation: Dot indicators -->
+        <div class="flex justify-center gap-2 mt-6" id="benefitsDesktopDots">
+          <button type="button" class="benefits-desktop-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-teal-400 transition-colors cursor-pointer" data-slide="0" aria-label="Go to slide 1"></button>
+          <button type="button" class="benefits-desktop-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-teal-400 transition-colors cursor-pointer" data-slide="1" aria-label="Go to slide 2"></button>
+          <button type="button" class="benefits-desktop-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-teal-400 transition-colors cursor-pointer" data-slide="2" aria-label="Go to slide 3"></button>
+        </div>
       </div>
 
     </div>
@@ -2474,6 +2481,7 @@
       const benefitsDesktopSlider = document.querySelector('.benefits-desktop-slider');
       const benefitsDesktopPrevBtn = document.getElementById('benefitsDesktopPrevBtn');
       const benefitsDesktopNextBtn = document.getElementById('benefitsDesktopNextBtn');
+      const benefitsDesktopDots = document.getElementById('benefitsDesktopDots');
       if (benefitsDesktopSlider) {
         let benefitsDesktopSlide = 0;
         const benefitsDesktopTotalSlides = 3;
@@ -2482,6 +2490,13 @@
 
         function updateBenefitsDesktopSlider() {
           benefitsDesktopSlider.style.transform = `translateX(-${benefitsDesktopSlide * 100}%)`;
+          if (benefitsDesktopDots) {
+            const dots = benefitsDesktopDots.querySelectorAll('.benefits-desktop-dot');
+            dots.forEach((dot, i) => {
+              dot.classList.toggle('bg-teal-500', i === benefitsDesktopSlide);
+              dot.classList.toggle('bg-slate-300', i !== benefitsDesktopSlide);
+            });
+          }
         }
         function goToNextDesktopSlide() {
           benefitsDesktopSlide = (benefitsDesktopSlide + 1) % benefitsDesktopTotalSlides;
@@ -2512,6 +2527,15 @@
           benefitsDesktopNextBtn.addEventListener('click', function() {
             goToNextDesktopSlide();
             resetBenefitsDesktopAutoSlide();
+          });
+        }
+        if (benefitsDesktopDots) {
+          benefitsDesktopDots.querySelectorAll('.benefits-desktop-dot').forEach(function(dot) {
+            dot.addEventListener('click', function() {
+              benefitsDesktopSlide = parseInt(dot.getAttribute('data-slide'), 10);
+              updateBenefitsDesktopSlider();
+              resetBenefitsDesktopAutoSlide();
+            });
           });
         }
       }
