@@ -222,7 +222,7 @@ white-space: normal;
     <div class="pt-6 border-t border-gray-200"></div>
 
     <a
-      class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" target="_blank" class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition" style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
       <span>Book Consultation</span>
       <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
         <i class='bx bx-right-arrow-alt text-xl'></i>
@@ -723,7 +723,8 @@ white-space: normal;
     const form = document.getElementById('consultantForm');
 
     openButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
         modal.classList.remove('hidden');
         modal.classList.add('flex');
       });
@@ -743,30 +744,32 @@ white-space: normal;
       }
     });
 
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-      const name = form.querySelector('input[name="name"]').value;
-      const country = form.querySelector('select[name="country"]').value;
-      const whatsapp = form.querySelector('input[name="whatsapp"]').value;
-      const treatment = form.querySelector('textarea[name="treatment"]').value;
-      const contactMethod = form.querySelector('select[name="contactMethod"]').value;
-      const contactTime = form.querySelector('select[name="contactTime"]').value;
+        const name = form.querySelector('input[name="name"]').value;
+        const country = form.querySelector('select[name="country"]').value;
+        const whatsapp = form.querySelector('input[name="whatsapp"]').value;
+        const treatment = form.querySelector('textarea[name="treatment"]').value;
+        const contactMethod = form.querySelector('select[name="contactMethod"]').value;
+        const contactTime = form.querySelector('select[name="contactTime"]').value;
 
-      const message =
-        `Consultation Request\n\n` +
-        `Name: ${name}\n` +
-        `Country: ${country}\n` +
-        `WhatsApp Number: ${whatsapp}\n` +
-        `Treatment/Concern: ${treatment}\n` +
-        `Preferred Way to Contact: ${contactMethod}\n` +
-        `Preferred Time to Contact: ${contactTime}`;
+        const message =
+          `Consultation Request\n\n` +
+          `Name: ${name}\n` +
+          `Country: ${country}\n` +
+          `WhatsApp Number: ${whatsapp}\n` +
+          `Treatment/Concern: ${treatment}\n` +
+          `Preferred Way to Contact: ${contactMethod}\n` +
+          `Preferred Time to Contact: ${contactTime}`;
 
-      const whatsappURL =
-        `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+        const whatsappURL =
+          `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
 
-      window.open(whatsappURL, '_blank');
-    });
+        window.open(whatsappURL, '_blank');
+      });
+    }
   });
 </script>
 <script>

@@ -303,32 +303,12 @@
       transform: translateY(-2px);
     }
     
-    /* Sticky Card Stacking Animation */
-    .stack-row {
-      display: block;
-      min-height: 60vh;
-    }
-
-    .stack-row .sticky-card-section {
-      min-height: 30vh;
-      height: auto;
-      position: sticky;
-      top: 0;
-      display: flex;
-      align-items: end;
-      justify-content: center;
-      z-index: 10;
-    }
-
-    .stack-row .sticky-card-section:nth-child(1) {
-      z-index: 10;
-    }
-
-    .stack-row .sticky-card-section:nth-child(2) {
-      z-index: 20;
-    }
-
+    /* Why Choose - Benefits & Services (no stack animation) */
     .stack-animation-wrapper {
+      position: relative;
+    }
+
+    .sticky-card-section {
       position: relative;
     }
 
@@ -339,32 +319,11 @@
       margin: 0 auto;
       padding: 0;
     }
-    
-    /* Service cards in sticky sections */
-    .sticky-service-section {
-      min-height: 30vh;
 
-      height: auto;
-      position: sticky;
-      top: 0;
-      display: flex;
-      align-items: end;
-      justify-content: center;
-      z-index: 10;
+    .sticky-service-section {
+      position: relative;
     }
-    
-    .sticky-service-section:nth-child(1) {
-      z-index: 80;
-    }
-    
-    .sticky-service-section:nth-child(2) {
-      z-index: 90;
-    }
-    
-    .sticky-service-section:nth-child(3) {
-      z-index: 100;
-    }
-    
+
     .service-expandable-card {
       position: relative;
       width: 100%;
@@ -372,35 +331,15 @@
       margin: 0 auto;
       padding: 0;
     }
-    
-    /* Desktop: Benefits = rows of 2 with sticky stack; Services = single row of 3, no stacking */
+
     @media (min-width: 1024px) {
-      .sticky-service-section {
-        position: relative;
-        height: auto;
-        z-index: auto;
-      }
-
       .stack-animation-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-      }
-
-      .stack-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        min-height: 75vh;
-        align-items: start;
       }
 
-      .stack-row .sticky-card-section {
-        position: sticky;
-        top: 0;
-      }
-
-      .stack-row .stack-feature-card {
+      .stack-feature-card {
         max-width: none;
         margin: 0;
       }
@@ -567,7 +506,7 @@
 
       <div class="pt-6 border-t border-gray-200"></div>
 
-      <a class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" target="_blank" class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
         style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
         <span>Book Consultation</span>
         <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
@@ -759,10 +698,9 @@
 
       
 
-      <!-- Benefits Grid - Sticky Card Stacking -->
+      <!-- Benefits Grid -->
       <div class="stack-animation-wrapper animate-on-scroll">
-        <div class="stack-row">
-        <!-- Feature 1 - Sticky Section -->
+        <!-- Feature 1 -->
         <section class="sticky-card-section">
           <div class="group relative mobile-feature-card stack-feature-card w-full" data-feature="multilingual">
           <div
@@ -939,10 +877,8 @@
           </div>
         </div>
         </section>
-        </div>
 
-        <div class="stack-row">
-        <!-- Feature 3 - Sticky Section -->
+        <!-- Feature 3 -->
         <section class="sticky-card-section">
           <div class="group relative mobile-feature-card stack-feature-card w-full" data-feature="postcare">
           <div
@@ -1107,7 +1043,7 @@
       </div>
 
       <!-- Additional Services Row - Sticky Card Stacking -->
-      <div class="stack-services-wrapper animate-on-scroll">
+      <div class="stack-services-wrapper animate-on-scroll mt-3">
 
         <!-- Service 1 - Sticky Section -->
         <section class="sticky-service-section">
@@ -1380,6 +1316,9 @@
             </div>
           </div>
         </div>
+        <p class="mt-4 text-center text-slate-400 text-xs sm:text-sm">
+          Note: Cost and data are derived from Google and are approximate, subject to variation.
+        </p>
       </div>
     </div>
   </section>
@@ -2981,7 +2920,8 @@
       const form = document.getElementById('consultantForm');
 
       openButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
           modal.classList.remove('hidden');
           modal.classList.add('flex');
         });
@@ -3001,30 +2941,32 @@
         }
       });
 
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
 
-        const name = form.querySelector('input[name="name"]').value;
-        const country = form.querySelector('select[name="country"]').value;
-        const whatsapp = form.querySelector('input[name="whatsapp"]').value;
-        const treatment = form.querySelector('textarea[name="treatment"]').value;
-        const contactMethod = form.querySelector('select[name="contactMethod"]').value;
-        const contactTime = form.querySelector('select[name="contactTime"]').value;
+          const name = form.querySelector('input[name="name"]').value;
+          const country = form.querySelector('select[name="country"]').value;
+          const whatsapp = form.querySelector('input[name="whatsapp"]').value;
+          const treatment = form.querySelector('textarea[name="treatment"]').value;
+          const contactMethod = form.querySelector('select[name="contactMethod"]').value;
+          const contactTime = form.querySelector('select[name="contactTime"]').value;
 
-        const message =
-          `Consultation Request\n\n` +
-          `Name: ${name}\n` +
-          `Country: ${country}\n` +
-          `WhatsApp Number: ${whatsapp}\n` +
-          `Treatment/Concern: ${treatment}\n` +
-          `Preferred Way to Contact: ${contactMethod}\n` +
-          `Preferred Time to Contact: ${contactTime}`;
+          const message =
+            `Consultation Request\n\n` +
+            `Name: ${name}\n` +
+            `Country: ${country}\n` +
+            `WhatsApp Number: ${whatsapp}\n` +
+            `Treatment/Concern: ${treatment}\n` +
+            `Preferred Way to Contact: ${contactMethod}\n` +
+            `Preferred Time to Contact: ${contactTime}`;
 
-        const whatsappURL =
-          `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+          const whatsappURL =
+            `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
 
-        window.open(whatsappURL, '_blank');
-      });
+          window.open(whatsappURL, '_blank');
+        });
+      }
     });
   </script>
   <script>
