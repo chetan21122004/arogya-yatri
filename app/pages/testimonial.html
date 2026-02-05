@@ -802,6 +802,22 @@ white-space: normal;
   menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
   closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
 </script>
+
+<!-- MOBILE EXPLORE DROPDOWN SCRIPT -->
+<script>
+  const exploreBtn = document.getElementById('mobileExploreBtn');
+  const exploreMenu = document.getElementById('mobileExploreMenu');
+  const exploreIcon = document.getElementById('mobileExploreIcon');
+
+  if (exploreBtn && exploreMenu && exploreIcon) {
+    exploreBtn.addEventListener('click', () => {
+      exploreMenu.classList.toggle('hidden');
+      exploreIcon.classList.toggle('bx-chevron-down');
+      exploreIcon.classList.toggle('bx-chevron-up');
+    });
+  }
+</script>
+
 <script>
   function closeConsultantModal() {
     document.getElementById("consultantModal").classList.add("hidden")
