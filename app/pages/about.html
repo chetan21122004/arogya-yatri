@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arogya Yatri - About</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -34,1009 +36,1142 @@
     }
   </script>
 
-<style>
+  <style>
     /* Hide scrollbar globally */
-html, body {
-    scrollbar-width: none;      /* Firefox */
-    -ms-overflow-style: none;   /* IE & Edge */
-}
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-    display: none;              /* Chrome, Safari */
-}
-*::-webkit-scrollbar {
-    display: none;
-}
+    html,
+    body {
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE & Edge */
+    }
 
-html { scroll-behavior: smooth; }
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari */
+    }
 
-/* ===== NAVBAR ===== */
-#siteHeader {
-    height: 72px;
-    background: white;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-}
+    *::-webkit-scrollbar {
+      display: none;
+    }
 
-.nav-link {
-    position: relative;
-    color: black;
-    padding: 4px 0;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: black;
-    transform: translateX(-50%);
-    transition: width .25s ease;
-}
+    /* ===== NAVBAR ===== */
+    #siteHeader {
+      height: 72px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
 
-.nav-link:hover::after {
-    width: 100%;
-}
+    .nav-link {
+      position: relative;
+      color: black;
+      padding: 4px 0;
+    }
 
-.nav-cta {
-    border-color: black;
-}
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width .25s ease;
+    }
 
-/* ===== PAGE OFFSET FOR FIXED NAV ===== */
-.page-wrapper {
-    padding-top: 96px;
-}
+    .nav-link:hover::after {
+      width: 100%;
+    }
 
-/* ===== Mobile Sidebar Fix ===== */
-#mobileMenu nav a {
-display: block;
-width: 100%;
-line-height: 1.4;
-padding: 6px 0;
-white-space: normal;
-}
+    .nav-cta {
+      border-color: black;
+    }
 
-/* ===== WHAT WE DO: mobile slider ===== */
-.what-we-do-slider {
-    -webkit-overflow-scrolling: touch;
-}
+    /* ===== PAGE OFFSET FOR FIXED NAV ===== */
+    .page-wrapper {
+      padding-top: 96px;
+    }
 
-/* ===== HERO SECTION ===== */
-.hero-bg {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-    position: relative;
-    overflow: hidden;
-    animation: heroGradientShift 8s ease-in-out infinite;
-}
+    /* ===== Mobile Sidebar Fix ===== */
+    #mobileMenu nav a {
+      display: block;
+      width: 100%;
+      line-height: 1.4;
+      padding: 6px 0;
+      white-space: normal;
+    }
 
-@keyframes heroGradientShift {
-    0%, 100% {
+    /* ===== WHAT WE DO: mobile slider ===== */
+    .what-we-do-slider {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero-bg {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+      position: relative;
+      overflow: hidden;
+      animation: heroGradientShift 8s ease-in-out infinite;
+    }
+
+    @keyframes heroGradientShift {
+
+      0%,
+      100% {
         background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-    }
-    50% {
+      }
+
+      50% {
         background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #0f172a 100%);
+      }
     }
-}
 
-.hero-bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E') repeat;
-    opacity: 0.4;
-    animation: patternFloat 20s ease-in-out infinite;
-    z-index: 1;
-}
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E') repeat;
+      opacity: 0.4;
+      animation: patternFloat 20s ease-in-out infinite;
+      z-index: 1;
+    }
 
-@keyframes patternFloat {
-    0%, 100% {
+    @keyframes patternFloat {
+
+      0%,
+      100% {
         transform: translateY(0) translateX(0);
         opacity: 0.4;
-    }
-    25% {
+      }
+
+      25% {
         transform: translateY(-10px) translateX(5px);
         opacity: 0.5;
-    }
-    50% {
+      }
+
+      50% {
         transform: translateY(-5px) translateX(-5px);
         opacity: 0.45;
-    }
-    75% {
+      }
+
+      75% {
         transform: translateY(5px) translateX(10px);
         opacity: 0.5;
+      }
     }
-}
 
-.hero-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.1), transparent);
-    animation: shimmer 3s ease-in-out infinite;
-    z-index: 2;
-}
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.1), transparent);
+      animation: shimmer 3s ease-in-out infinite;
+      z-index: 2;
+    }
 
-/* Background Images Styling */
-.hero-bg img {
-    transition: transform 0.6s ease;
-}
+    /* Background Images Styling */
+    .hero-bg img {
+      transition: transform 0.6s ease;
+    }
 
-.hero-bg:hover img {
-    transform: scale(1.05);
-}
+    .hero-bg:hover img {
+      transform: scale(1.05);
+    }
 
-@keyframes shimmer {
-    0% {
+    @keyframes shimmer {
+      0% {
         left: -100%;
-    }
-    100% {
+      }
+
+      100% {
         left: 100%;
+      }
     }
-}
 
-/* ===== FEATURE CARDS ===== */
-.feature-card {
-    position: relative;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
+    /* ===== FEATURE CARDS ===== */
+    .feature-card {
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
 
-.feature-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 1.5rem;
-    background: linear-gradient(135deg, rgba(20, 184, 166, 0.05), rgba(59, 130, 246, 0.05));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 1.5rem;
+      background: linear-gradient(135deg, rgba(20, 184, 166, 0.05), rgba(59, 130, 246, 0.05));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
 
-.feature-card:hover::before {
-    opacity: 1;
-}
+    .feature-card:hover::before {
+      opacity: 1;
+    }
 
-/* ===== MISSION VISION CARDS ===== */
-.mission-card {
-    position: relative;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    border: 1px solid rgba(20, 184, 166, 0.2);
-    transition: all 0.4s ease;
-}
+    /* ===== MISSION VISION CARDS ===== */
+    .mission-card {
+      position: relative;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      border: 1px solid rgba(20, 184, 166, 0.2);
+      transition: all 0.4s ease;
+    }
 
-.mission-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(20, 184, 166, 0.25);
-    border-color: rgba(20, 184, 166, 0.4);
-}
+    .mission-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(20, 184, 166, 0.25);
+      border-color: rgba(20, 184, 166, 0.4);
+    }
 
-.vision-card {
-    position: relative;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    transition: all 0.4s ease;
-}
+    .vision-card {
+      position: relative;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      transition: all 0.4s ease;
+    }
 
-.vision-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.25);
-    border-color: rgba(59, 130, 246, 0.4);
-}
+    .vision-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(59, 130, 246, 0.25);
+      border-color: rgba(59, 130, 246, 0.4);
+    }
 
-.team-card {
-    transition: all 0.3s ease;
-}
-.team-card:hover {
-    transform: translateY(-4px);
-}
+    .team-card {
+      transition: all 0.3s ease;
+    }
 
-@media (max-width: 768px) {
-    .hero-bg {
+    .team-card:hover {
+      transform: translateY(-4px);
+    }
+
+    @media (max-width: 768px) {
+      .hero-bg {
         min-height: 60vh;
+      }
     }
-}
-
-</style>
+  </style>
 
 </head>
 
 <body class="font-body bg-white text-black">
 
-<!-- ================= NAVBAR ================= -->
-<header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
-  <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
+  <!-- ================= NAVBAR ================= -->
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+    <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
 
-    <!-- Logo -->
-    <a href="../../index.html" class="flex items-center">
-      <div class="leading-tight">
-        <div class="text-2xl tracking-tight">Arogya Yatri</div>
-        <div class="text-xs opacity-70">A service by Ewan Business Solutions</div>
-      </div>
-    </a>
-
-    <!-- Center Links -->
-    <ul
-      class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
-
-      <li>
-        <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
-          Treatment
-        </a>
-      </li>
-
-       
-
-      <li>
-        <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
-          Doctor
-        </a>
-      </li>
-
-      <li>
-        <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
-          Destinations
-        </a>
-      </li>
-
-      <!-- Explore Dropdown -->
-      <li class="relative group flex items-center">
-        <button
-          class="nav-link inline-flex items-center gap-1 leading-none">
-          Explore
-          <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
-        </button>
-
-        <div
-          class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-          <a href="about.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
-          <a href="faq.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
-          <a href="testimonial.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
-          <a href="news.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+      <!-- Logo -->
+      <a href="../../index.html" class="flex items-center">
+        <div class="leading-tight">
+          <div class="text-2xl tracking-tight">Arogya Yatri</div>
+          <div class="text-xs opacity-70">A service by Ewan Business Solutions</div>
         </div>
-      </li>
-    </ul>
-
-    <!-- CTA -->
-    <div class="ml-auto hidden md:flex items-center">
-      <a
-        class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
-        <span
-          class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
-          <i class='bx bx-right-arrow-alt'></i>
-        </span>
-        <span class="text-sm font-medium">Book Consultation</span>
       </a>
-    </div>
 
-    <!-- Mobile Button -->
-    <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
-      <i class='bx bx-menu'></i>
-    </button>
+      <!-- Center Links -->
+      <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
 
-  </nav>
-</header>
+        <li>
+          <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
+            Treatment
+          </a>
+        </li>
 
-<!-- ================= MOBILE SIDEBAR ================= -->
-<div id="mobileMenu"
-  class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
 
-  <!-- Header -->
-  <div class="p-6 border-b border-gray-200 flex justify-between items-start">
-    <a href="../../index.html">
-      <div>
-        <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
-        <div class="text-sm text-gray-500">A service by Ewan Business Solutions</div>
+
+        <li>
+          <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
+            Doctor
+          </a>
+        </li>
+
+        <li>
+          <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
+            Destinations
+          </a>
+        </li>
+
+        <!-- Explore Dropdown -->
+        <li class="relative group flex items-center">
+          <button class="nav-link inline-flex items-center gap-1 leading-none">
+            Explore
+            <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
+          </button>
+
+          <div
+            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About
+              Us</a>
+            <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
+            <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+            <a href="news.html"
+              class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="ml-auto hidden md:flex items-center">
+        <a
+          class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
+            <i class='bx bx-right-arrow-alt'></i>
+          </span>
+          <span class="text-sm font-medium">Book Consultation</span>
+        </a>
       </div>
-    </a>
-    <button id="closeBtn" class="text-2xl text-black">
-      <i class='bx bx-x'></i>
-    </button>
-  </div>
 
-  <!-- Nav -->
-  <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
-    <a href="treatments.html" class="block">Treatment</a>
-      
-    <a href="doctor.html" class="block">Doctor</a>
-    <a href="news.html" class="block">Destinations</a>
-
-    <!-- Mobile Explore Dropdown -->
-    <div>
-      <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
-        <span>Explore</span>
-        <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
+        <i class='bx bx-menu'></i>
       </button>
 
-      <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
-        <a href="about.html" class="block">About Us</a>
-        <a href="faq.html" class="block">FAQ</a>
-        <a href="testimonial.html" class="block">Testimonials</a>
-        <a href="news.html" class="block">News/Blogs</a>
-      </div>
-    </div>
+    </nav>
+  </header>
 
-    <div class="pt-6 border-t border-gray-200"></div>
+  <!-- ================= MOBILE SIDEBAR ================= -->
+  <div id="mobileMenu"
+    class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" target="_blank"
-      class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition" style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
-      <span>Book Consultation</span>
-      <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
-        <i class='bx bx-right-arrow-alt text-xl'></i>
-      </span>
-    </a>
-  </nav>
-</div>
-
-<!-- ================= MOBILE DROPDOWN SCRIPT ================= -->
-<script>
-  const mobileExploreBtn = document.getElementById('mobileExploreBtn')
-  const mobileExploreMenu = document.getElementById('mobileExploreMenu')
-  const mobileExploreIcon = document.getElementById('mobileExploreIcon')
-
-  mobileExploreBtn.addEventListener('click', () => {
-    mobileExploreMenu.classList.toggle('hidden')
-    mobileExploreIcon.classList.toggle('bx-chevron-down')
-    mobileExploreIcon.classList.toggle('bx-chevron-up')
-  })
-</script>
-
-
-<!-- ================= MAIN CONTENT ================= -->
-<main class="page-wrapper">
-
-<!-- ================= TOP INTRO SECTION ================= -->
-<section class="bg-white py-10 sm:py-12 border-b border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
-    <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
-      About Us
-    </p>
-    <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-6">
-      About <span class="text-teal-500">Arogya Yatri</span>
-    </h1>
-    <p class="text-xl sm:text-2xl text-slate-700 leading-relaxed max-w-4xl">
-      At Arogya Yatri, we manage your entire medical trip to India from start to finish.
-    </p>
-  </div>
-</section>
-
-<!-- ================= ABOUT US OVERVIEW ================= -->
-<section class="bg-white py-8 border-t border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
-    
     <!-- Header -->
-    <div class="text-center mb-8">
-   
-     
+    <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+      <a href="../../index.html">
+        <div>
+          <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
+          <div class="text-sm text-gray-500">A service by Ewan Business Solutions</div>
+        </div>
+      </a>
+      <button id="closeBtn" class="text-2xl text-black">
+        <i class='bx bx-x'></i>
+      </button>
     </div>
 
-    <!-- Main Content -->
-    <div class="max-w-4xl mx-auto">
-      <div class="prose prose-lg max-w-none">
-        <p class="text-slate-700 leading-relaxed mb-4 text-base">
-          Arogya Yatri is a dedicated medical tourism service by <a href="https://www.ewan.co.in/" target="_blank" rel="noopener noreferrer" class="text-teal-600 underline hover:text-teal-800">Ewan Business Solutions</a>, created to help international patients access world-class healthcare in India with ease and confidence.
-        </p>
-        
-        <p class="text-slate-700 leading-relaxed mb-4 text-base">
-          We bridge the gap between patients and India's top hospitals, experienced doctors, and affordable treatment options. Our goal is to ensure that every patient receives quality care while also experiencing India's warmth, culture, and hospitality.
-        </p>
-        
-        <p class="text-slate-700 leading-relaxed text-base">
-          With a strong focus on transparency, comfort, and personalized guidance, Arogya Yatri manages the entire journey from your first inquiry to your return home after treatment.
-        </p>
+    <!-- Nav -->
+    <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+      <a href="treatments.html" class="block">Treatment</a>
+
+      <a href="doctor.html" class="block">Doctor</a>
+      <a href="news.html" class="block">Destinations</a>
+
+      <!-- Mobile Explore Dropdown -->
+      <div>
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
+          <span>Explore</span>
+          <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+        </button>
+
+        <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+          <a href="about.html" class="block">About Us</a>
+          <a href="faq.html" class="block">FAQ</a>
+          <a href="testimonial.html" class="block">Testimonials</a>
+          <a href="news.html" class="block">News/Blogs</a>
+        </div>
       </div>
-    </div>
+
+      <div class="pt-6 border-t border-gray-200"></div>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+        target="_blank"
+        class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
+        style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
+        <span>Book Consultation</span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
+          <i class='bx bx-right-arrow-alt text-xl'></i>
+        </span>
+      </a>
+    </nav>
   </div>
-</section>
 
-<!-- ================= MISSION & VISION ================= -->
-<section class="bg-slate-50 py-8 border-t border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
-    
-    <!-- Header -->
-    <div class="text-center mb-6">
-      <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-2">
-        Our Purpose
-      </p>
-      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
-        Mission & <span class="text-teal-500">Vision</span>
-      </h2>
-    </div>
+  <!-- ================= MOBILE DROPDOWN SCRIPT ================= -->
+  <script>
+    const mobileExploreBtn = document.getElementById('mobileExploreBtn')
+    const mobileExploreMenu = document.getElementById('mobileExploreMenu')
+    const mobileExploreIcon = document.getElementById('mobileExploreIcon')
 
-    <!-- Mission & Vision Cards -->
-    <div class="grid lg:grid-cols-2 gap-6">
-      
-      <!-- Mission Card -->
-      <div class="mission-card rounded-2xl p-6">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg">
-            <i class='bx bx-target-lock text-xl text-white'></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-white">Mission</h3>
-            <p class="text-sm text-teal-400 font-medium">Our Core Purpose</p>
-          </div>
-        </div>
-        <p class="text-slate-200 leading-relaxed text-base">
-          To provide exceptional healthcare coordination, transparent guidance, and a comfortable healing journey 
-          in India at a fraction of the cost abroad.
+    mobileExploreBtn.addEventListener('click', () => {
+      mobileExploreMenu.classList.toggle('hidden')
+      mobileExploreIcon.classList.toggle('bx-chevron-down')
+      mobileExploreIcon.classList.toggle('bx-chevron-up')
+    })
+  </script>
+
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="page-wrapper">
+
+    <!-- ================= TOP INTRO SECTION ================= -->
+    <section class="bg-white py-10 sm:py-12 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+        <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
+          About Us
+        </p>
+        <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-6">
+          About <span class="text-teal-500">Arogya Yatri</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-slate-700 leading-relaxed max-w-4xl">
+          At Arogya Yatri, we manage your entire medical trip to India from start to finish.
         </p>
       </div>
+    </section>
 
-      <!-- Vision Card -->
-      <div class="vision-card rounded-2xl p-6">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
-            <i class='bx bx-bulb text-xl text-white'></i>
+    <!-- ================= ABOUT US OVERVIEW ================= -->
+    <section class="bg-white py-8 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+
+        <!-- Header -->
+        <div class="text-center mb-8">
+
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg max-w-none">
+            <p class="text-slate-700 leading-relaxed mb-4 text-base">
+              Arogya Yatri is a dedicated medical tourism service by <a href="https://www.ewan.co.in/" target="_blank"
+                rel="noopener noreferrer" class="text-teal-600 underline hover:text-teal-800">Ewan Business
+                Solutions</a>, created to help international patients access world-class healthcare in India with ease
+              and confidence.
+            </p>
+
+            <p class="text-slate-700 leading-relaxed mb-4 text-base">
+              We bridge the gap between patients and India's top hospitals, experienced doctors, and affordable
+              treatment options. Our goal is to ensure that every patient receives quality care while also experiencing
+              India's warmth, culture, and hospitality.
+            </p>
+
+            <p class="text-slate-700 leading-relaxed text-base">
+              With a strong focus on transparency, comfort, and personalized guidance, Arogya Yatri manages the entire
+              journey from your first inquiry to your return home after treatment.
+            </p>
           </div>
-          <div>
-            <h3 class="text-xl font-bold text-white">Vision</h3>
-            <p class="text-sm text-blue-400 font-medium">Our Future Goal</p>
-          </div>
         </div>
-        <p class="text-slate-200 leading-relaxed text-base">
-          Our vision is to provide patients worldwide with access to quality treatment in India at an affordable cost, 
-          delivered with complete transparency and supported by our strong network of trusted doctors and hospitals.
-        </p>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
 
-<!-- ================= MEET OUR TEAM ================= -->
-<section class="bg-white py-10 border-t border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
-    <div class="text-center mb-10">
-      <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-2">
-        Our People
-      </p>
-      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
-        We've got your <span class="text-teal-500">back.</span>
-      </h2>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <!-- 1. Apoorva Ma'am -->
-      <div class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
-        <div class="aspect-[3/4] overflow-hidden bg-slate-100">
-          <img src="../../src/images/teamArogya/Apoorva Vaidya.jpg.jpeg" alt="Apoorva Ma'am" class="w-full h-full object-cover">
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold text-slate-900">Apoorva Ma'am</h3>
-          <p class="text-sm text-slate-600 mt-1">Project Coordinator (Arogya Yatri), COO (Ewan Business Solutions)</p>
-        </div>
-      </div>
-      <!-- 2. Dr. Sheetal Chopde -->
-      <div class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
-        <div class="aspect-[3/4] overflow-hidden bg-slate-100">
-          <img src="../../src/images/teamArogya/Dr. Sheetal Chopde.png" alt="Dr. Sheetal Chopde" class="w-full h-full object-cover">
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold text-slate-900">Dr. Sheetal Chopde</h3>
-          <p class="text-sm text-slate-600 mt-1">Head of Medical Department</p>
-        </div>
-      </div>
-      <!-- 3. Soham Kakade -->
-      <div class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
-        <div class="aspect-[3/4] overflow-hidden bg-slate-100">
-          <img src="../../src/images/teamArogya/Soham Kakade.jpg.jpeg" alt="Soham Kakade" class="w-full h-full object-cover">
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold text-slate-900">Soham Kakade</h3>
-          <p class="text-sm text-slate-600 mt-1">Director at Ewan Business Solutions</p>
-        </div>
-      </div>
-      <!-- 4. CMA Sukhada Bhalerao -->
-      <div class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
-        <div class="aspect-[3/4] overflow-hidden bg-slate-100">
-          <img src="../../src/images/teamArogya/Sukhade Kakade Bhalerao.jpg.jpeg" alt="CMA Sukhada Bhalerao" class="w-full h-full object-cover">
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold text-slate-900">CMA Sukhada Bhalerao</h3>
-          <p class="text-sm text-slate-600 mt-1">Director at Ewan Business Solutions</p>
-        </div>
-      </div>
-      <!-- 5. Pushkaraj Thakurdas -->
-      <div class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
-        <div class="aspect-[3/4] overflow-hidden bg-slate-100">
-          <img src="../../src/images/teamArogya/pushkaraj.jpeg" alt="Pushkaraj Thakurdas" class="w-full h-full object-cover">
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold text-slate-900">Pushkaraj Thakurdas</h3>
-          <p class="text-sm text-slate-600 mt-1">Operations Manager</p>
-        </div>
-      </div>
-      <!-- 6. Nandini Jadhav -->
-      <div class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
-        <div class="aspect-[3/4] overflow-hidden bg-slate-100">
-          <img src="../../src/images/teamArogya/nandini jadhav.jpeg" alt="Nandini Jadhav" class="w-full h-full object-cover">
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold text-slate-900">Nandini Jadhav</h3>
-          <p class="text-sm text-slate-600 mt-1">Digital Marketing Specialist</p>
-        </div>
-      </div>
-      <!-- 7. Vinaya Lokhande -->
-      <div class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
-        <div class="aspect-[3/4] overflow-hidden bg-slate-100">
-          <img src="../../src/images/teamArogya/vinaya.jpeg" alt="Vinaya Lokhande" class="w-full h-full object-cover">
-        </div>
-        <div class="p-4">
-          <h3 class="font-semibold text-slate-900">Vinaya Lokhande</h3>
-          <p class="text-sm text-slate-600 mt-1">HR Admin</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ================= WHAT WE DO ================= -->
-<section class="bg-white py-8 border-t border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
-    
-    <!-- Header -->
-    <div class="text-center mb-8">
-      <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-2">
-        Our Services
-      </p>
-      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
-        What <span class="text-teal-500">We Do</span>
-      </h2>
-      
-    </div>
-
-    <!-- Services: mobile = slider with 2 rows × 2 cols per slide; md = 5-col grid -->
-    <div class="what-we-do-slider flex overflow-x-auto snap-x snap-mandatory gap-4 -mx-6 pl-6 pr-6 pb-2 md:mx-0 md:pl-0 md:pr-0 md:pb-0 md:grid md:grid-cols-5 md:gap-6 md:overflow-visible md:max-w-7xl md:mx-auto">
-      <!-- Slide 1: 2 rows, 2 cols -->
-      <div class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center grid grid-cols-2 grid-rows-2 gap-3 md:contents">
-      <!-- Service 1: Medical Coordination -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-clinic text-xl text-white'></i>
-          </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Medical Coordination</h3>
-          <span class="text-xs bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Core</span>
-        </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Medical Coordination</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            We manage your entire healthcare journey with top hospitals and expert doctors.
+    <!-- ================= MEET OUR TEAM ================= -->
+    <section class="bg-white py-10 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+        <div class="text-center mb-10">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-2">
+            Our People
           </p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
+            We've got your <span class="text-teal-500">back.</span>
+          </h2>
         </div>
-      </div>
+        <!-- Leadership Spotlight - Detailed Cards -->
+        <div class="flex flex-col  mb-20 md:mb-24">
 
-      <!-- Service 2: Visa & Travel -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-sky-500 to-sky-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bxs-plane-alt text-xl text-white'></i>
+          <!-- 1. Apoorva Vaidya -->
+          <div class="flex flex-col md:flex-row gap-8 lg:gap-12 items-center">
+            <div class="w-full md:w-5/12 lg:w-1/3 flex-shrink-0">
+              <div
+                class="aspect-[3/4] overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="../../src/images/teamArogya/Apoorva Vaidya.jpg.jpeg" alt="Apoorva Vaidya"
+                  class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+              </div>
+            </div>
+            <div class="w-full md:w-7/12 lg:w-2/3">
+              <div class="inline-block px-3 py-1 bg-teal-50 text-teal-600 rounded-full text-sm font-medium mb-3">Project
+                Coordinator & COO</div>
+              <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Apoorva Vaidya</h3>
+              <h4 class="text-lg text-teal-500 font-medium mb-4">Your Dedicated Guide to Wellness</h4>
+              <div class="prose prose-slate text-slate-600 leading-relaxed">
+                <p>
+                  Our Project Coordinator and COO is the heartbeat of your experience with us. She ensures that every
+                  moving part of your medical journey functions seamlessly. More than just an administrator, she is your
+                  primary point of contact, dedicated to navigating the complexities of healthcare logistics so you can
+                  focus entirely on your recovery.
+                </p>
+                <p class="mt-4">
+                  From your initial inquiry to your final discharge, she is the "go-to" person ensuring your journey is
+                  smooth, transparent, and stress-free.
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Visa & Travel</h3>
-          <span class="text-xs bg-sky-100 text-sky-700 px-3 py-1 rounded-full">Essential</span>
-        </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-sky-500 to-sky-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Visa & Travel</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Hassle-free visa processing and travel arrangements for your medical trip.
-          </p>
-        </div>
-      </div>
 
-      <!-- Service 3: Accommodation -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-home text-xl text-white'></i>
+          <!-- 2. Soham Kakade -->
+          <div class="flex flex-col md:flex-row-reverse gap-8 lg:gap-12 items-center">
+            <div class="w-full md:w-5/12 lg:w-1/3 flex-shrink-0">
+              <div
+                class="aspect-[3/4] overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="../../src/images/teamArogya/Soham Kakade.jpg.jpeg" alt="Soham Kakade"
+                  class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+              </div>
+            </div>
+            <div class="w-full md:w-7/12 lg:w-2/3 md:text-right">
+              <div class="inline-block px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm font-medium mb-3">
+                Director, Ewan Business Solutions</div>
+              <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Soham Kakade</h3>
+              <h4 class="text-lg text-blue-500 font-medium mb-4">Bridging Cultures and Breaking Barriers</h4>
+              <div class="prose prose-slate text-slate-600 leading-relaxed md:ml-auto">
+                <p>
+                  With over 15 years of international expertise, our Director is the visionary behind our promise of "No
+                  Language Barriers." A true polyglot, he is fluent in Chinese, Cantonese, Japanese, and Taiwanese,
+                  allowing us to offer unparalleled support to our global clientele.
+                </p>
+                <p class="mt-4">
+                  His deep understanding of diverse cultures and business landscapes ensures that communication is never
+                  an obstacle to quality care. When we say we speak your language, it’s not just a claim—it is a
+                  standard backed by a decade-and-a-half of boots-on-the-ground experience.
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Accommodation</h3>
-          <span class="text-xs bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">Comfort</span>
-        </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Accommodation</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Handpicked accommodations near hospitals for your comfort and convenience.
-          </p>
-        </div>
-      </div>
 
-      <!-- Service 4: Language Support -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-world text-xl text-white'></i>
+          <!-- 3. Dr. Sheetal Chopde -->
+          <div class="flex flex-col md:flex-row gap-8 lg:gap-12 items-center">
+            <div class="w-full md:w-5/12 lg:w-1/3 flex-shrink-0">
+              <div
+                class="aspect-[3/4] overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="../../src/images/teamArogya/Dr. Sheetal Chopde.png" alt="Dr. Sheetal Chopde"
+                  class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+              </div>
+            </div>
+            <div class="w-full md:w-7/12 lg:w-2/3">
+              <div class="inline-block px-3 py-1 bg-rose-50 text-rose-600 rounded-full text-sm font-medium mb-3">Head of
+                Medical Department</div>
+              <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Dr. Sheetal Chopde</h3>
+              <h4 class="text-lg text-rose-500 font-medium mb-4">Expert Ayurvedic Physician & Clinical Consultant</h4>
+              <div class="prose prose-slate text-slate-600 leading-relaxed">
+                <p>
+                  With a distinguished career spanning over 20 years, our Head of Medical Department leads with a blend
+                  of traditional wisdom and clinical precision. As an expert Ayurvedic doctor on our panel, she doesn’t
+                  just provide a consultation; she provides a partnership.
+                </p>
+                <p class="mt-4">
+                  She will be by your side from start to finish, guiding your treatment plan and ensuring that your path
+                  to health is holistic, personalized, and medically sound. Her vast experience offers our patients the
+                  peace of mind that they are in the hands of a seasoned healer.
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Language Support</h3>
-          <span class="text-xs bg-violet-100 text-violet-700 px-3 py-1 rounded-full">120+ Languages</span>
+
         </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-violet-500 to-violet-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Language Support</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Multilingual team ensuring clear communication throughout your journey.
-          </p>
+
+        <!-- Team Grid - Remaining Members -->
+        <div class="text-center mb-10">
+          <h3 class="text-xl sm:text-2xl font-semibold text-slate-900">Dedicated Professionals</h3>
+          <p class="text-slate-500 text-sm mt-2">The experts working behind the scenes</p>
         </div>
-      </div>
-      </div>
-      <!-- Slide 2: 2 rows, 2 cols -->
-      <div class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center grid grid-cols-2 grid-rows-2 gap-3 md:contents">
-      <!-- Service 5: Companion Planning -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-user-plus text-xl text-white'></i>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- 4. CMA Sukhada Bhalerao -->
+          <div
+            class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+            <div class="aspect-[3/4] overflow-hidden bg-slate-100">
+              <img src="../../src/images/teamArogya/Sukhade Kakade Bhalerao.jpg.jpeg" alt="CMA Sukhada Bhalerao"
+                class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-slate-900">CMA Sukhada Bhalerao</h3>
+              <p class="text-sm text-slate-600 mt-1">Director at Ewan Business Solutions</p>
+            </div>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Companion Planning</h3>
-          <span class="text-xs bg-rose-100 text-rose-700 px-3 py-1 rounded-full">Free*</span>
-        </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-rose-500 to-rose-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Companion Planning</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Travel and stay arrangements for your loved ones to be with you.
-          </p>
-        </div>
-      </div>
-
-      <!-- Service 6: Tourism Planning -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-map text-xl text-white'></i>
+          <!-- 5. Pushkaraj Thakurdas -->
+          <div
+            class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+            <div class="aspect-[3/4] overflow-hidden bg-slate-100">
+              <img src="../../src/images/teamArogya/pushkaraj.jpeg" alt="Pushkaraj Thakurdas"
+                class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-slate-900">Pushkaraj Thakurdas</h3>
+              <p class="text-sm text-slate-600 mt-1">Operations Manager</p>
+            </div>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Tourism Planning</h3>
-          <span class="text-xs bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Cultural</span>
-        </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Tourism Planning</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Explore India's culture and beauty with customized tourism plans.
-          </p>
-        </div>
-      </div>
-
-      <!-- Service 7: Post-Recovery Care -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-support text-xl text-white'></i>
+          <!-- 6. Nandini Jadhav -->
+          <div
+            class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+            <div class="aspect-[3/4] overflow-hidden bg-slate-100">
+              <img src="../../src/images/teamArogya/nandini jadhav.jpeg" alt="Nandini Jadhav"
+                class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-slate-900">Nandini Jadhav</h3>
+              <p class="text-sm text-slate-600 mt-1">Digital Marketing Specialist</p>
+            </div>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Post-Recovery Care</h3>
-          <span class="text-xs bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">Follow-up</span>
-        </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Post-Recovery Care</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Continuous care and follow-up consultations after your treatment.
-          </p>
-        </div>
-      </div>
-
-      <!-- Service 8: Second Opinion -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-file-find text-xl text-white'></i>
+          <!-- 7. Vinaya Lokhande -->
+          <div
+            class="team-card rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm hover:shadow-lg transition-all duration-300">
+            <div class="aspect-[3/4] overflow-hidden bg-slate-100">
+              <img src="../../src/images/teamArogya/vinaya.jpeg" alt="Vinaya Lokhande"
+                class="w-full h-full object-cover">
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-slate-900">Vinaya Lokhande</h3>
+              <p class="text-sm text-slate-600 mt-1">HR Admin</p>
+            </div>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Second Opinion</h3>
-          <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Free*</span>
         </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Second Opinion</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Expert second opinions from renowned medical specialists.
+      </div>
+    </section>
+
+    <!-- ================= MISSION & VISION ================= -->
+    <section class="bg-slate-50 py-8 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+
+        <!-- Header -->
+        <div class="text-center mb-6">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-2">
+            Our Purpose
           </p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
+            Mission & <span class="text-teal-500">Vision</span>
+          </h2>
         </div>
-      </div>
-      </div>
-      <!-- Slide 3: 2 rows, 1 col (stacked) -->
-      <div class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center flex flex-col gap-3 md:contents">
-      <!-- Service 9: Medicine Courier -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-package text-xl text-white'></i>
+
+        <!-- Mission & Vision Cards -->
+        <div class="grid lg:grid-cols-2 gap-6">
+
+          <!-- Mission Card -->
+          <div class="mission-card rounded-2xl p-6">
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg">
+                <i class='bx bx-target-lock text-xl text-white'></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white">Mission</h3>
+                <p class="text-sm text-teal-400 font-medium">Our Core Purpose</p>
+              </div>
+            </div>
+            <p class="text-slate-200 leading-relaxed text-base">
+              To provide exceptional healthcare coordination, transparent guidance, and a comfortable healing journey
+              in India at a fraction of the cost abroad.
+            </p>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Medicine Courier</h3>
-          <span class="text-xs bg-orange-100 text-orange-700 px-3 py-1 rounded-full">Global</span>
-        </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Medicine Courier</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Safe medicine delivery to your home for uninterrupted treatment.
-          </p>
-        </div>
-      </div>
 
-      <!-- Service 10: Clinical Nutrition -->
-      <div class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
-        <div class="flex flex-col items-center text-center flex-grow justify-center">
-          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-md mb-3">
-            <i class='bx bx-dish text-xl text-white'></i>
+          <!-- Vision Card -->
+          <div class="vision-card rounded-2xl p-6">
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                <i class='bx bx-bulb text-xl text-white'></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white">Vision</h3>
+                <p class="text-sm text-blue-400 font-medium">Our Future Goal</p>
+              </div>
+            </div>
+            <p class="text-slate-200 leading-relaxed text-base">
+              Our vision is to provide patients worldwide with access to quality treatment in India at an affordable
+              cost,
+              delivered with complete transparency and supported by our strong network of trusted doctors and hospitals.
+            </p>
           </div>
-          <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Clinical Nutrition</h3>
-          <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full">Expert</span>
+
         </div>
-        <div class="service-overlay absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
-          <h3 class="text-lg font-semibold mb-2 text-center">Clinical Nutrition</h3>
-          <p class="text-white/95 text-sm leading-relaxed text-center">
-            Personalized nutrition plans from certified clinical dieticians.
+      </div>
+    </section>
+
+
+
+    <!-- ================= WHAT WE DO ================= -->
+    <section class="bg-white py-8 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+
+        <!-- Header -->
+        <div class="text-center mb-8">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-2">
+            Our Services
           </p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
+            What <span class="text-teal-500">We Do</span>
+          </h2>
+
+        </div>
+
+        <!-- Services: mobile = slider with 2 rows × 2 cols per slide; md = 5-col grid -->
+        <div
+          class="what-we-do-slider flex overflow-x-auto snap-x snap-mandatory gap-4 -mx-6 pl-6 pr-6 pb-2 md:mx-0 md:pl-0 md:pr-0 md:pb-0 md:grid md:grid-cols-5 md:gap-6 md:overflow-visible md:max-w-7xl md:mx-auto">
+          <!-- Slide 1: 2 rows, 2 cols -->
+          <div
+            class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center grid grid-cols-2 grid-rows-2 gap-3 md:contents">
+            <!-- Service 1: Medical Coordination -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-clinic text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Medical Coordination</h3>
+                <span class="text-xs bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Core</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Medical Coordination</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  We manage your entire healthcare journey with top hospitals and expert doctors.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 2: Visa & Travel -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-sky-500 to-sky-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bxs-plane-alt text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Visa & Travel</h3>
+                <span class="text-xs bg-sky-100 text-sky-700 px-3 py-1 rounded-full">Essential</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-sky-500 to-sky-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Visa & Travel</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Hassle-free visa processing and travel arrangements for your medical trip.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 3: Accommodation -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-home text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight p-1">Accommodation</h3>
+                <span class="text-xs bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">Comfort</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Accommodation</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Handpicked accommodations near hospitals for your comfort and convenience.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 4: Language Support -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-world text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Language Support</h3>
+                <span class="text-xs bg-violet-100 text-violet-700 px-3 py-1 rounded-full">120+ Languages</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-violet-500 to-violet-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Language Support</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Multilingual team ensuring clear communication throughout your journey.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2: 2 rows, 2 cols -->
+          <div
+            class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center grid grid-cols-2 grid-rows-2 gap-3 md:contents">
+            <!-- Service 5: Companion Planning -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-user-plus text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Companion Planning</h3>
+                <span class="text-xs bg-rose-100 text-rose-700 px-3 py-1 rounded-full">Free*</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-rose-500 to-rose-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Companion Planning</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Travel and stay arrangements for your loved ones to be with you.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 6: Tourism Planning -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-map text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Tourism Planning</h3>
+                <span class="text-xs bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Cultural</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Tourism Planning</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Explore India's culture and beauty with customized tourism plans.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 7: Post-Recovery Care -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-support text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Post-Recovery Care</h3>
+                <span class="text-xs bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">Follow-up</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Post-Recovery Care</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Continuous care and follow-up consultations after your treatment.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 8: Second Opinion -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-file-find text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Second Opinion</h3>
+                <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Free*</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Second Opinion</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Expert second opinions from renowned medical specialists.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3: 2 rows, 1 col (stacked) -->
+          <div
+            class="what-we-do-slide flex-shrink-0 w-[85vw] max-w-[360px] snap-center flex flex-col gap-3 md:contents">
+            <!-- Service 9: Medicine Courier -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-package text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Medicine Courier</h3>
+                <span class="text-xs bg-orange-100 text-orange-700 px-3 py-1 rounded-full">Global</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Medicine Courier</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Safe medicine delivery to your home for uninterrupted treatment.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 10: Clinical Nutrition -->
+            <div
+              class="service-card md:flex-shrink md:w-auto md:max-w-none bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full relative overflow-hidden cursor-pointer">
+              <div class="flex flex-col items-center text-center flex-grow justify-center">
+                <div
+                  class="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-md mb-3">
+                  <i class='bx bx-dish text-xl text-white'></i>
+                </div>
+                <h3 class="text-base font-semibold text-slate-900 mb-2 leading-tight">Clinical Nutrition</h3>
+                <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full">Expert</span>
+              </div>
+              <div
+                class="service-overlay absolute inset-0 bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-6 flex flex-col justify-center text-white opacity-0 pointer-events-none transition-all duration-300 transform scale-95">
+                <h3 class="text-lg font-semibold mb-2 text-center">Clinical Nutrition</h3>
+                <p class="text-white/95 text-sm leading-relaxed text-center">
+                  Personalized nutrition plans from certified clinical dieticians.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Closing Statement -->
+        <div class="mt-8 text-center">
+          <div
+            class="inline-block max-w-3xl mx-auto p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-teal-50 via-blue-50 to-teal-50 border-2 border-teal-200/50 shadow-lg relative overflow-hidden">
+            <!-- Animated background effect -->
+            <div class="absolute inset-0 bg-gradient-to-r from-teal-500/5 via-blue-500/5 to-teal-500/5 animate-pulse">
+            </div>
+            <p class="text-lg sm:text-xl font-semibold text-slate-900 leading-relaxed relative z-10">
+              In short, we make medical travel <span class="text-teal-600">simple</span>, <span
+                class="text-blue-600">safe</span>, and <span class="text-teal-600">affordable</span> — so you can focus
+              on <span class="text-teal-600 font-bold">healing</span>, while we handle <span
+                class="text-blue-600 font-bold">everything else</span>.
+            </p>
+          </div>
         </div>
       </div>
-      </div>
+    </section>
 
-    </div>
-
-    <!-- Closing Statement -->
-    <div class="mt-8 text-center">
-      <div class="inline-block max-w-3xl mx-auto p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-teal-50 via-blue-50 to-teal-50 border-2 border-teal-200/50 shadow-lg relative overflow-hidden">
-        <!-- Animated background effect -->
-        <div class="absolute inset-0 bg-gradient-to-r from-teal-500/5 via-blue-500/5 to-teal-500/5 animate-pulse"></div>
-        <p class="text-lg sm:text-xl font-semibold text-slate-900 leading-relaxed relative z-10">
-          In short, we make medical travel <span class="text-teal-600">simple</span>, <span class="text-blue-600">safe</span>, and <span class="text-teal-600">affordable</span> — so you can focus on <span class="text-teal-600 font-bold">healing</span>, while we handle <span class="text-blue-600 font-bold">everything else</span>.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
+  </main>
 
 
 
-<!-- CONSULTANT MODAL -->
+  <!-- CONSULTANT MODAL -->
   <div id="consultantModal"
-  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
 
-  <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
+    <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
 
-    <!-- CLOSE BUTTON -->
-    <button
-      onclick="closeConsultantModal()"
-      class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none"
-        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
+      <!-- CLOSE BUTTON -->
+      <button onclick="closeConsultantModal()"
+        class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
 
-    <!-- BODY -->
-    <div class="px-4 py-4">
-      <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
-          class="w-full h-full"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0">
-          Loading…
-        </iframe>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- BODY -->
+      <div class="px-4 py-4">
+        <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+            class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
       </div>
-    </div>
 
-  </div>
+    </div>
   </div>
 
   <!-- Whatsapp Icon -->
- <a
-  href="https://wa.me/918530054299"
-  target="_blank"
-  aria-label="Chat on WhatsApp"
-  class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
-  <i class='bx bxl-whatsapp text-white text-3xl'></i>
-</a>
+  <a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp"
+    class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
+    <i class='bx bxl-whatsapp text-white text-3xl'></i>
+  </a>
 
-<!-- FOOTER -->
-<footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+  <!-- FOOTER -->
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
 
-    <!-- TOP GRID -->
-    <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
+      <!-- TOP GRID -->
+      <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
 
-      <!-- Brand -->
-      <div class="lg:col-span-2">
-        <a href="../../index.html">
-          <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
-          <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
-            Arogya Yatri is a global medical tourism platform connecting patients
-            with world-class hospitals, trusted doctors, and seamless healthcare
-            journeys across borders.
-          </p>
-        </a>
-
-        <!-- Social -->
-        <div class="flex items-center gap-4">
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-facebook text-lg"></i>
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <a href="../../index.html">
+            <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
+            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
+              Arogya Yatri is a global medical tourism platform connecting patients
+              with world-class hospitals, trusted doctors, and seamless healthcare
+              journeys across borders.
+            </p>
           </a>
-          <a href="https://www.instagram.com/arogya.yatri/"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-instagram text-lg"></i>
-          </a>
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-youtube text-lg"></i>
-          </a>
+
+          <!-- Social -->
+          <div class="flex items-center gap-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-facebook text-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/arogya.yatri/"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-instagram text-lg"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-youtube text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
+          </ul>
+        </div>
+
+
+
+        <!-- CONTACT (NEW) -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Contact</h4>
+
+          <ul class="space-y-4 text-sm">
+
+            <!-- Phone -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
+              <a href="tel:8530054299" class="hover:text-white transition">
+                +91 85300 54299
+              </a>
+            </li>
+
+            <!-- Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
+                apoorva@ewan.co.in
+              </a>
+            </li>
+
+            <!-- Alternate Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
+                pushkaraj.thakurdas@ewan.co.in
+              </a>
+            </li>
+
+            <!-- WhatsApp CTA -->
+            <li class="pt-2">
+              <a href="https://wa.me/918530054299" target="_blank"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
+                <i class="bx bxl-whatsapp text-lg"></i>
+                WhatsApp Us
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="border-t border-white/10 mb-8"></div>
+
+      <!-- BOTTOM BAR -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>
+          © 2025 Arogya Yatri. A service by Ewan Business Solutions. All rights reserved.
+        </p>
+
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2">
+            <i class="bx bx-shield-quarter text-teal-400"></i>
+            Secure & Confidential
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="bx bx-world text-teal-400"></i>
+            Global Healthcare Network
+          </span>
         </div>
       </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Quick Links</h4>
-        <ul class="space-y-3 text-sm">
-          <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
-          <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
-            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
-          <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-          <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
-        </ul>
-      </div>
-
-      
-
-      <!-- CONTACT (NEW) -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Contact</h4>
-
-        <ul class="space-y-4 text-sm">
-
-          <!-- Phone -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
-            <a href="tel:8530054299" class="hover:text-white transition">
-              +91 85300 54299
-            </a>
-          </li>
-
-          <!-- Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
-              apoorva@ewan.co.in
-            </a>
-          </li>
-
-          <!-- Alternate Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
-              pushkaraj.thakurdas@ewan.co.in
-            </a>
-          </li>
-
-          <!-- WhatsApp CTA -->
-          <li class="pt-2">
-            <a
-              href="https://wa.me/918530054299"
-              target="_blank"
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
-              <i class="bx bxl-whatsapp text-lg"></i>
-              WhatsApp Us
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
     </div>
+  </footer>
 
-    <!-- DIVIDER -->
-    <div class="border-t border-white/10 mb-8"></div>
+  <!-- MODAL SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const openButtons = document.querySelectorAll('.openConsultantModal');
+      const modal = document.getElementById('consultantModal');
+      const closeBtn = document.getElementById('closeConsultantModal');
+      const form = document.getElementById('consultantForm');
 
-    <!-- BOTTOM BAR -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-      <p>
-        © 2025 Arogya Yatri. A service by Ewan Business Solutions. All rights reserved.
-      </p>
-
-      <div class="flex items-center gap-6">
-        <span class="flex items-center gap-2">
-          <i class="bx bx-shield-quarter text-teal-400"></i>
-          Secure & Confidential
-        </span>
-        <span class="flex items-center gap-2">
-          <i class="bx bx-world text-teal-400"></i>
-          Global Healthcare Network
-        </span>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-<!-- MODAL SCRIPT -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openButtons = document.querySelectorAll('.openConsultantModal');
-    const modal = document.getElementById('consultantModal');
-    const closeBtn = document.getElementById('closeConsultantModal');
-    const form = document.getElementById('consultantForm');
-
-    openButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
+      openButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
       });
-    });
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        });
+      }
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
       });
-    }
 
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = form.querySelector('input[name="name"]').value;
+          const country = form.querySelector('select[name="country"]').value;
+          const whatsapp = form.querySelector('input[name="whatsapp"]').value;
+          const treatment = form.querySelector('textarea[name="treatment"]').value;
+          const contactMethod = form.querySelector('select[name="contactMethod"]').value;
+          const contactTime = form.querySelector('select[name="contactTime"]').value;
+
+          const message =
+            `Consultation Request\n\n` +
+            `Name: ${name}\n` +
+            `Country: ${country}\n` +
+            `WhatsApp Number: ${whatsapp}\n` +
+            `Treatment/Concern: ${treatment}\n` +
+            `Preferred Way to Contact: ${contactMethod}\n` +
+            `Preferred Time to Contact: ${contactTime}`;
+
+          const whatsappURL =
+            `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+
+          window.open(whatsappURL, '_blank');
+        });
       }
     });
-
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const name = form.querySelector('input[name="name"]').value;
-        const country = form.querySelector('select[name="country"]').value;
-        const whatsapp = form.querySelector('input[name="whatsapp"]').value;
-        const treatment = form.querySelector('textarea[name="treatment"]').value;
-        const contactMethod = form.querySelector('select[name="contactMethod"]').value;
-        const contactTime = form.querySelector('select[name="contactTime"]').value;
-
-        const message =
-          `Consultation Request\n\n` +
-          `Name: ${name}\n` +
-          `Country: ${country}\n` +
-          `WhatsApp Number: ${whatsapp}\n` +
-          `Treatment/Concern: ${treatment}\n` +
-          `Preferred Way to Contact: ${contactMethod}\n` +
-          `Preferred Time to Contact: ${contactTime}`;
-
-        const whatsappURL =
-          `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
-
-        window.open(whatsappURL, '_blank');
-      });
+  </script>
+  <script>
+    function closeConsultantModal() {
+      document.getElementById("consultantModal").classList.add("hidden")
     }
-  });
-</script>
-<script>
-  function closeConsultantModal() {
-    document.getElementById("consultantModal").classList.add("hidden")
-  }
-</script>
+  </script>
 
-<!-- MENU TOGGLE SCRIPT -->
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeBtn = document.getElementById('closeBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
+  <!-- MENU TOGGLE SCRIPT -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-  menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
-  closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
-</script>
+    menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
+    closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
+  </script>
 
-<script src="../script/scroll-animations.js"></script>
+  <script src="../script/scroll-animations.js"></script>
 </body>
+
 </html>
