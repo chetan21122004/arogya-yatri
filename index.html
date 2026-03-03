@@ -2916,7 +2916,21 @@
       </div>
 
       <!-- Reels Slider -->
-      <div class="mt-16 relative">
+      <div class="mt-16">
+
+        <!-- Arrow Row (above the slider, never over iframes) -->
+        <div class="flex items-center justify-end gap-3 mb-4">
+          <button id="reelsPrevBtn" type="button" aria-label="Previous reels"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-white border-2 border-slate-200 text-slate-600 shadow-md hover:border-teal-400 hover:text-teal-600 hover:shadow-xl active:scale-95 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed touch-manipulation"
+            disabled>
+            <i class='bx bx-chevron-left text-xl'></i>
+          </button>
+          <button id="reelsNextBtn" type="button" aria-label="Next reels"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-white border-2 border-slate-200 text-slate-600 shadow-md hover:border-teal-400 hover:text-teal-600 hover:shadow-xl active:scale-95 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed touch-manipulation">
+            <i class='bx bx-chevron-right text-xl'></i>
+          </button>
+        </div>
+
         <div id="reelsSlider" class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar pb-4">
 
           <!-- Reel Card -->
@@ -2984,6 +2998,49 @@
 
         </div>
       </div>
+
+      <script>
+        (function () {
+          const slider = document.getElementById('reelsSlider');
+          const prevBtn = document.getElementById('reelsPrevBtn');
+          const nextBtn = document.getElementById('reelsNextBtn');
+
+          function getScrollAmount() {
+            const card = slider.querySelector('.insta-reel-card');
+            return card ? card.offsetWidth + 24 : 340;
+          }
+
+          function updateArrows() {
+            prevBtn.disabled = slider.scrollLeft <= 0;
+            nextBtn.disabled = slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 2;
+          }
+
+          function scrollPrev(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            slider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+          }
+
+          function scrollNext(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            slider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+          }
+
+          // Both click (desktop) and touchend (mobile) – touchend with preventDefault
+          // stops the iframe from receiving the tap
+          prevBtn.addEventListener('click', scrollPrev);
+          prevBtn.addEventListener('touchend', scrollPrev, { passive: false });
+
+          nextBtn.addEventListener('click', scrollNext);
+          nextBtn.addEventListener('touchend', scrollNext, { passive: false });
+
+          slider.addEventListener('scroll', updateArrows);
+          window.addEventListener('resize', updateArrows);
+
+          updateArrows();
+        })();
+      </script>
 
     </div>
   </section>
