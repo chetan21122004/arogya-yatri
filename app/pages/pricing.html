@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arogya Yatri - Pricing</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -32,2080 +34,2261 @@
 
   <style>
     /* Hide scrollbar globally */
-html, body {
-    scrollbar-width: none;      /* Firefox */
-    -ms-overflow-style: none;   /* IE & Edge */
-}
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-    display: none;              /* Chrome, Safari */
-}
-*::-webkit-scrollbar {
-    display: none;
-}
+    html,
+    body {
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE & Edge */
+    }
 
-html { scroll-behavior: smooth; }
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari */
+    }
 
-/* ===== NAVBAR ===== */
-#siteHeader {
-    height: 72px;
-    background: white;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-}
+    *::-webkit-scrollbar {
+      display: none;
+    }
 
-.nav-link {
-    position: relative;
-    color: black;
-    padding: 4px 0;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: black;
-    transform: translateX(-50%);
-    transition: width .25s ease;
-}
+    /* ===== NAVBAR ===== */
+    #siteHeader {
+      height: 72px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
 
-.nav-link:hover::after {
-    width: 100%;
-}
+    .nav-link {
+      position: relative;
+      color: black;
+      padding: 4px 0;
+    }
 
-.nav-cta {
-    border-color: black;
-}
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width .25s ease;
+    }
 
-/* ===== PAGE OFFSET FOR FIXED NAV ===== */
-.page-wrapper {
-    padding-top: 96px;
-}
+    .nav-link:hover::after {
+      width: 100%;
+    }
 
-/* ===== Mobile Sidebar Fix ===== */
-#mobileMenu nav a {
-display: block;
-width: 100%;
-line-height: 1.4;
-padding: 6px 0;
-white-space: normal;
-}
+    .nav-cta {
+      border-color: black;
+    }
 
-</style>
+    /* ===== PAGE OFFSET FOR FIXED NAV ===== */
+    .page-wrapper {
+      padding-top: 96px;
+    }
+
+    /* ===== Mobile Sidebar Fix ===== */
+    #mobileMenu nav a {
+      display: block;
+      width: 100%;
+      line-height: 1.4;
+      padding: 6px 0;
+      white-space: normal;
+    }
+  </style>
 
 </head>
 
 <body class="font-body bg-white text-black">
 
-<!-- ================= NAVBAR ================= -->
-<header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
-  <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
+  <!-- ================= NAVBAR ================= -->
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+    <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
 
-    <!-- Logo -->
-    <a href="../../index.html" class="flex items-center">
-      <div class="leading-tight">
-        <div class="text-2xl tracking-tight">Arogya Yatri</div>
-        <div class="text-xs opacity-70">A service by Ewan Business Solutions</div>
-      </div>
-    </a>
-
-    <!-- Center Links -->
-    <ul
-      class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
-
-      <li>
-        <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
-          Treatment
-        </a>
-      </li>
-
-       
-
-      <li>
-        <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
-          Doctor
-        </a>
-      </li>
-
-      <li>
-        <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
-          Destinations
-        </a>
-      </li>
-
-      <!-- Explore Dropdown -->
-      <li class="relative group flex items-center">
-        <button
-          class="nav-link inline-flex items-center gap-1 leading-none">
-          Explore
-          <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
-        </button>
-
-        <div
-          class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-          <a href="about.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
-          <a href="faq.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
-          <a href="testimonial.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
-          <a href="pricing.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Pricing</a>
-          <a href="news.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+      <!-- Logo -->
+      <a href="../../index.html" class="flex items-center">
+        <div class="leading-tight">
+          <div class="text-2xl tracking-tight">Arogya Yatri</div>
+          <div class="text-xs opacity-70">A Medical Tourism Facilitator</div>
         </div>
-      </li>
-    </ul>
-
-    <!-- CTA -->
-    <div class="ml-auto hidden md:flex items-center">
-      <a
-        class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
-        <span
-          class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
-          <i class='bx bx-right-arrow-alt'></i>
-        </span>
-        <span class="text-sm font-medium">Book Consultation</span>
       </a>
-    </div>
 
-    <!-- Mobile Button -->
-    <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
-      <i class='bx bx-menu'></i>
-    </button>
+      <!-- Center Links -->
+      <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
 
-  </nav>
-</header>
+        <li>
+          <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
+            Treatment
+          </a>
+        </li>
 
-<!-- ================= MOBILE SIDEBAR ================= -->
-<div id="mobileMenu"
-  class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
 
-  <!-- Header -->
-  <div class="p-6 border-b border-gray-200 flex justify-between items-start">
-    <a href="../../index.html">
-      <div>
-        <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
-        <div class="text-sm text-gray-500">A service by Ewan Business Solutions</div>
+
+        <li>
+          <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
+            Doctor
+          </a>
+        </li>
+
+        <li>
+          <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
+            Destinations
+          </a>
+        </li>
+
+        <!-- Explore Dropdown -->
+        <li class="relative group flex items-center">
+          <button class="nav-link inline-flex items-center gap-1 leading-none">
+            Explore
+            <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
+          </button>
+
+          <div
+            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About
+              Us</a>
+            <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
+            <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+            <a href="pricing.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Pricing</a>
+            <a href="news.html"
+              class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="ml-auto hidden md:flex items-center">
+        <a
+          class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
+            <i class='bx bx-right-arrow-alt'></i>
+          </span>
+          <span class="text-sm font-medium">Book Consultation</span>
+        </a>
       </div>
-    </a>
-    <button id="closeBtn" class="text-2xl text-black">
-      <i class='bx bx-x'></i>
-    </button>
-  </div>
 
-  <!-- Nav -->
-  <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
-    <a href="treatments.html" class="block">Treatment</a>
-      
-    <a href="doctor.html" class="block">Doctor</a>
-    <a href="destinations.html" class="block">Destinations</a>
-
-    <!-- Mobile Explore Dropdown -->
-    <div>
-      <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
-        <span>Explore</span>
-        <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
+        <i class='bx bx-menu'></i>
       </button>
 
-      <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
-        <a href="about.html" class="block">About Us</a>
-        <a href="faq.html" class="block">FAQ</a>
-        <a href="testimonial.html" class="block">Testimonials</a>
-        <a href="pricing.html" class="block">Pricing</a>
-        <a href="news.html" class="block">News/Blogs</a>
+    </nav>
+  </header>
+
+  <!-- ================= MOBILE SIDEBAR ================= -->
+  <div id="mobileMenu"
+    class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+
+    <!-- Header -->
+    <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+      <a href="../../index.html">
+        <div>
+          <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
+          <div class="text-sm text-gray-500">A Medical Tourism Facilitator</div>
+        </div>
+      </a>
+      <button id="closeBtn" class="text-2xl text-black">
+        <i class='bx bx-x'></i>
+      </button>
+    </div>
+
+    <!-- Nav -->
+    <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+      <a href="treatments.html" class="block">Treatment</a>
+
+      <a href="doctor.html" class="block">Doctor</a>
+      <a href="destinations.html" class="block">Destinations</a>
+
+      <!-- Mobile Explore Dropdown -->
+      <div>
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
+          <span>Explore</span>
+          <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+        </button>
+
+        <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+          <a href="about.html" class="block">About Us</a>
+          <a href="faq.html" class="block">FAQ</a>
+          <a href="testimonial.html" class="block">Testimonials</a>
+          <a href="pricing.html" class="block">Pricing</a>
+          <a href="news.html" class="block">News/Blogs</a>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-gray-200"></div>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+        target="_blank"
+        class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
+        style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
+        <span>Book Consultation</span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
+          <i class='bx bx-right-arrow-alt text-xl'></i>
+        </span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="page-wrapper max-w-7xl mx-auto ">
+
+
+
+
+    <!-- Scripts -->
+    <!-- Cost calculator functionality is now inline -->
+
+
+    <!-- PRICING & PACKAGES -->
+    <section class="relative bg-white py-10 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+
+        <!-- HEADER -->
+        <div class="text-center mb-18">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
+            Plans & Packages
+          </p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900">
+            Transparent <span class="text-teal-500">Healthcare Pricing</span>
+          </h2>
+          <p class="mt-4 text-sm sm:text-base text-slate-500 max-w-2xl mx-auto">
+            Clearly structured packages designed to support patients at every stage
+            of their medical journey, with no hidden costs.
+          </p>
+        </div>
+
+        <!-- PRICING GRID -->
+        <div class="grid gap-10 lg:grid-cols-3 items-stretch mt-10">
+
+          <!-- ESSENTIAL -->
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 flex flex-col">
+            <div class="mb-6">
+              <span class="inline-block text-xs uppercase tracking-widest text-blue-600 font-medium mb-2">
+                Essential
+              </span>
+              <h3 class="text-3xl font-semibold text-slate-900">$199</h3>
+              <p class="text-sm text-slate-500 mt-1">
+                For initial medical clarity
+              </p>
+            </div>
+
+            <ul class="space-y-4 text-sm text-slate-600 mb-10">
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Online medical consultation</li>
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Hospital & doctor shortlisting
+              </li>
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Preliminary treatment estimates
+              </li>
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Email-based assistance</li>
+            </ul>
+
+            <button
+              class="mt-auto w-full py-3 rounded-full border border-slate-300 text-slate-900 font-medium hover:bg-slate-50 transition">
+              Get Started
+            </button>
+          </article>
+
+          <!-- COMPLETE CARE (FEATURED) -->
+          <article class="relative rounded-3xl border-2 border-teal-500 bg-blue-50 p-9 flex flex-col">
+            <span
+              class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-teal-500 text-white text-xs font-medium">
+              Most Chosen
+            </span>
+
+            <div class="mb-6 mt-2">
+              <span class="inline-block text-xs uppercase tracking-widest text-blue-600 font-medium mb-2">
+                Complete Care
+              </span>
+              <h3 class="text-3xl font-semibold text-slate-900">$699</h3>
+              <p class="text-sm text-slate-600 mt-1">
+                End-to-end medical coordination
+              </p>
+            </div>
+
+            <ul class="space-y-4 text-sm text-slate-700 mb-10">
+              <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Dedicated medical coordinator</li>
+              <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Doctor & hospital matching</li>
+              <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Travel & visa guidance</li>
+              <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Appointment scheduling</li>
+              <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Priority patient support</li>
+            </ul>
+
+            <button
+              class="mt-auto w-full py-3 rounded-full bg-teal-500 text-white font-medium hover:bg-blue-600 transition">
+              Choose Complete Care
+            </button>
+          </article>
+
+          <!-- ELITE -->
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 flex flex-col">
+            <div class="mb-6">
+              <span class="inline-block text-xs uppercase tracking-widest text-blue-600 font-medium mb-2">
+                Elite
+              </span>
+              <h3 class="text-3xl font-semibold text-slate-900">$1,499</h3>
+              <p class="text-sm text-slate-500 mt-1">
+                White-glove medical experience
+              </p>
+            </div>
+
+            <ul class="space-y-4 text-sm text-slate-600 mb-10">
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Personal case manager</li>
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Airport pickup & accommodation
+              </li>
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> On-ground hospital assistance</li>
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Post-treatment follow-ups</li>
+              <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> 24/7 priority access</li>
+            </ul>
+
+            <button
+              class="mt-auto w-full py-3 rounded-full border border-slate-300 text-slate-900 font-medium hover:bg-slate-50 transition">
+              Choose Elite
+            </button>
+          </article>
+
+        </div>
+
+        <!-- CTA BUTTONS -->
+        <div class="mt-16 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#"
+            class="group inline-flex items-center gap-4 px-6 py-3 rounded-full bg-white border border-slate-300 text-slate-900 font-medium hover:bg-teal-500 hover:text-white transition">
+            <span
+              class="h-9 w-9 rounded-full bg-slate-900 text-white flex items-center justify-center transition group-hover:bg-white group-hover:text-teal-500">
+              <i class="bx bx-right-arrow-alt text-xl"></i>
+            </span>
+            View All Pricing Plans
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= MEDICAL COSTS – INDIA (WHITE THEME) ================= -->
+    <section class="bg-white py-10">
+      <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="max-w-3xl mb-12">
+          <p class="text-xs uppercase tracking-widest text-blue-600 mb-3">
+            India
+          </p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-teal-500 leading-tight">
+            Medical Treatment Cost Overview
+          </h2>
+          <p class="mt-4 text-slate-600 text-sm sm:text-base">
+            Estimated treatment costs across leading hospitals in India.
+            Pricing varies by hospital, city, and patient condition.
+            All figures are indicative and shared with transparency.
+          </p>
+        </div>
+
+        <!-- Table Wrapper -->
+        <div class="overflow-x-auto rounded-2xl border border-slate-200">
+          <table class="min-w-[900px] w-full border-collapse text-sm">
+
+            <!-- Table Head -->
+            <thead class="bg-slate-50">
+              <tr class="text-left text-slate-700">
+                <th class="px-5 py-4 font-medium border-b border-slate-200">
+                  Medical Specialty
+                </th>
+                <th class="px-5 py-4 font-medium border-b border-slate-200">
+                  Treatment
+                </th>
+                <th class="px-5 py-4 font-medium border-b border-slate-200">
+                  Cost Range (USD)
+                </th>
+                <th class="px-5 py-4 font-medium border-b border-slate-200">
+                  Cost Range (INR approx.)
+                </th>
+              </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody class="text-slate-700">
+
+              <!-- Cardiology -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Cardiology & Cardiac Surgery
+                </td>
+                <td class="px-5 py-4">Angioplasty (PTCA)</td>
+                <td class="px-5 py-4">$3,000 – $5,000</td>
+                <td class="px-5 py-4">₹2,49,000 – ₹4,15,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Bypass Surgery (CABG)</td>
+                <td class="px-5 py-4">$5,500 – $7,000</td>
+                <td class="px-5 py-4">₹4,57,000 – ₹5,81,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Heart Valve Replacement</td>
+                <td class="px-5 py-4">$3,900 – $6,000</td>
+                <td class="px-5 py-4">₹3,23,700 – ₹4,98,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Pacemaker Implantation</td>
+                <td class="px-5 py-4">$11,000 – $22,000</td>
+                <td class="px-5 py-4">₹9,13,000 – ₹18,26,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Cardiac Consultation / Check-up</td>
+                <td class="px-5 py-4">$400 – $600</td>
+                <td class="px-5 py-4">₹33,200 – ₹49,800</td>
+              </tr>
+
+              <!-- Orthopedics -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Orthopedics & Joint Replacement
+                </td>
+                <td class="px-5 py-4">Total Knee Replacement</td>
+                <td class="px-5 py-4">$5,500 – $6,500</td>
+                <td class="px-5 py-4">₹4,57,000 – ₹5,39,500</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Hip Replacement</td>
+                <td class="px-5 py-4">$2,500 – $5,000</td>
+                <td class="px-5 py-4">₹2,07,500 – ₹4,15,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Shoulder / Elbow Replacement</td>
+                <td class="px-5 py-4">$3,000 – $7,000</td>
+                <td class="px-5 py-4">₹2,49,000 – ₹5,81,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Arthroscopy</td>
+                <td class="px-5 py-4">$3,000 – $6,000</td>
+                <td class="px-5 py-4">₹2,49,000 – ₹4,98,000</td>
+              </tr>
+
+              <!-- Neurology -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Neurology & Neurosurgery
+                </td>
+                <td class="px-5 py-4">Brain Tumor Surgery</td>
+                <td class="px-5 py-4">$5,000 – $7,000</td>
+                <td class="px-5 py-4">₹4,15,000 – ₹5,81,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Spine Surgery (Cervical / Lumbar)</td>
+                <td class="px-5 py-4">$5,000 – $9,000</td>
+                <td class="px-5 py-4">₹4,15,000 – ₹7,47,000</td>
+              </tr>
+
+              <!-- Oncology -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Oncology (Cancer Treatment)
+                </td>
+                <td class="px-5 py-4">Chemotherapy</td>
+                <td class="px-5 py-4">$650 – $2,000 per cycle</td>
+                <td class="px-5 py-4">₹53,950 – ₹1,66,000 per cycle</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Radiation Therapy</td>
+                <td class="px-5 py-4">$1,800 – $12,000</td>
+                <td class="px-5 py-4">₹1,49,400 – ₹9,96,000</td>
+              </tr>
+
+              <!-- Gastro -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Gastroenterology & Hepatology
+                </td>
+                <td class="px-5 py-4">Liver Transplant</td>
+                <td class="px-5 py-4">$28,000 – $35,000</td>
+                <td class="px-5 py-4">₹23,24,000 – ₹29,05,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Gallbladder / Biliary Surgery</td>
+                <td class="px-5 py-4">$2,000 – $4,000</td>
+                <td class="px-5 py-4">₹1,66,000 – ₹3,32,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Bariatric Surgery</td>
+                <td class="px-5 py-4">$4,000 – $8,000</td>
+                <td class="px-5 py-4">₹3,32,000 – ₹6,64,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Endoscopy / Colonoscopy</td>
+                <td class="px-5 py-4">$200 – $800</td>
+                <td class="px-5 py-4">₹16,600 – ₹66,400</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">GI Cancer Treatment</td>
+                <td class="px-5 py-4">$8,000 – $20,000</td>
+                <td class="px-5 py-4">₹6,64,000 – ₹16,60,000</td>
+              </tr>
+
+              <!-- Urology -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Urology & Nephrology
+                </td>
+                <td class="px-5 py-4">Kidney Transplant</td>
+                <td class="px-5 py-4">$25,000 – $35,000</td>
+                <td class="px-5 py-4">₹20,75,000 – ₹29,05,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Prostate Surgery (TURP / Laser)</td>
+                <td class="px-5 py-4">$2,200 – $5,000</td>
+                <td class="px-5 py-4">₹1,82,600 – ₹4,15,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Kidney Stone Removal</td>
+                <td class="px-5 py-4">$1,400 – $3,000</td>
+                <td class="px-5 py-4">₹1,16,200 – ₹2,49,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Dialysis (per session)</td>
+                <td class="px-5 py-4">$150 – $500</td>
+                <td class="px-5 py-4">₹12,450 – ₹41,500</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Urethral Reconstruction</td>
+                <td class="px-5 py-4">$2,000 – $5,000</td>
+                <td class="px-5 py-4">₹1,66,000 – ₹4,15,000</td>
+              </tr>
+
+              <!-- Gynecology -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Gynecology & Fertility
+                </td>
+                <td class="px-5 py-4">IVF / ICSI / Fertility Treatments</td>
+                <td class="px-5 py-4">$2,300 – $5,000</td>
+                <td class="px-5 py-4">₹1,90,900 – ₹4,15,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Hysterectomy</td>
+                <td class="px-5 py-4">$2,000 – $5,000</td>
+                <td class="px-5 py-4">₹1,66,000 – ₹4,15,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Laparoscopic Gynec Surgery</td>
+                <td class="px-5 py-4">$1,500 – $4,000</td>
+                <td class="px-5 py-4">₹1,24,500 – ₹3,32,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Surrogacy Assistance</td>
+                <td class="px-5 py-4">$20,000 – $30,000</td>
+                <td class="px-5 py-4">₹16,60,000 – ₹24,90,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Maternity / Delivery Packages</td>
+                <td class="px-5 py-4">$2,000 – $5,000</td>
+                <td class="px-5 py-4">₹1,66,000 – ₹4,15,000</td>
+              </tr>
+
+              <!-- Cosmetic -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Cosmetic & Plastic Surgery
+                </td>
+                <td class="px-5 py-4">Hair Transplant</td>
+                <td class="px-5 py-4">$1,000 – $5,000</td>
+                <td class="px-5 py-4">₹83,000 – ₹4,15,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Rhinoplasty (Nose Job)</td>
+                <td class="px-5 py-4">$1,500 – $4,000</td>
+                <td class="px-5 py-4">₹1,24,500 – ₹3,32,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Liposuction</td>
+                <td class="px-5 py-4">$1,500 – $5,000</td>
+                <td class="px-5 py-4">₹1,24,500 – ₹4,15,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Tummy Tuck / Abdominoplasty</td>
+                <td class="px-5 py-4">$2,000 – $6,000</td>
+                <td class="px-5 py-4">₹1,66,000 – ₹4,98,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Breast Augmentation / Reduction</td>
+                <td class="px-5 py-4">$3,000 – $6,000</td>
+                <td class="px-5 py-4">₹2,49,000 – ₹4,98,000</td>
+              </tr>
+
+              <!-- Ophthalmology -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Ophthalmology (Eye Care)
+                </td>
+                <td class="px-5 py-4">Cataract Surgery</td>
+                <td class="px-5 py-4">$700 – $2,000</td>
+                <td class="px-5 py-4">₹58,100 – ₹1,66,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">LASIK / Refractive Surgery</td>
+                <td class="px-5 py-4">$1,000 – $2,500</td>
+                <td class="px-5 py-4">₹83,000 – ₹2,07,500</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Retinal Surgery</td>
+                <td class="px-5 py-4">$1,000 – $3,500</td>
+                <td class="px-5 py-4">₹83,000 – ₹2,90,500</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Glaucoma Treatment</td>
+                <td class="px-5 py-4">$500 – $1,500</td>
+                <td class="px-5 py-4">₹41,500 – ₹1,24,500</td>
+              </tr>
+
+              <!-- ENT -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  ENT (Ear, Nose & Throat)
+                </td>
+                <td class="px-5 py-4">Cochlear Implant</td>
+                <td class="px-5 py-4">$20,000 – $25,000</td>
+                <td class="px-5 py-4">₹16,60,000 – ₹20,75,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Sinus Surgery</td>
+                <td class="px-5 py-4">$1,500 – $4,000</td>
+                <td class="px-5 py-4">₹1,24,500 – ₹3,32,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Tonsil / Adenoid Removal</td>
+                <td class="px-5 py-4">$300 – $1,000</td>
+                <td class="px-5 py-4">₹24,900 – ₹83,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Ear Reconstruction</td>
+                <td class="px-5 py-4">$3,000 – $6,000</td>
+                <td class="px-5 py-4">₹2,49,000 – ₹4,98,000</td>
+              </tr>
+
+              <!-- Dental -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Dental & Oral Surgery
+                </td>
+                <td class="px-5 py-4">Dental Implants</td>
+                <td class="px-5 py-4">$1,000 – $3,000</td>
+                <td class="px-5 py-4">₹83,000 – ₹2,49,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Full Mouth Rehabilitation</td>
+                <td class="px-5 py-4">$5,000 – $10,000</td>
+                <td class="px-5 py-4">₹4,15,000 – ₹8,30,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Smile Design</td>
+                <td class="px-5 py-4">$1,000 – $3,000</td>
+                <td class="px-5 py-4">₹83,000 – ₹2,49,000</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Root Canal Treatment</td>
+                <td class="px-5 py-4">$100 – $300</td>
+                <td class="px-5 py-4">₹8,300 – ₹24,900</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Orthodontics (Braces / Aligners)</td>
+                <td class="px-5 py-4">$500 – $3,000</td>
+                <td class="px-5 py-4">₹41,500 – ₹2,49,000</td>
+              </tr>
+
+              <!-- Ayurveda -->
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4 font-medium">
+                  Ayurveda, Wellness & Rejuvenation
+                </td>
+                <td class="px-5 py-4">Ayurvedic Detox (Panchakarma)</td>
+                <td class="px-5 py-4">$200 – $600</td>
+                <td class="px-5 py-4">₹16,600 – ₹49,800</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Stress Relief / Mental Wellness</td>
+                <td class="px-5 py-4">$100 – $500</td>
+                <td class="px-5 py-4">₹8,300 – ₹41,500</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Weight Management</td>
+                <td class="px-5 py-4">$100 – $500</td>
+                <td class="px-5 py-4">₹8,300 – ₹41,500</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-4"></td>
+                <td class="px-5 py-4">Yoga & Naturopathy Packages</td>
+                <td class="px-5 py-4">$100 – $400</td>
+                <td class="px-5 py-4">₹8,300 – ₹33,200</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="mt-6 text-xs text-slate-500 max-w-4xl">
+          * All costs are indicative and subject to change based on hospital selection,
+          city, treatment complexity, and patient medical condition.
+          Final estimates are shared after detailed medical evaluation.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ================= COUNTRY COMPARISON SECTION ================= -->
+    <section id="country-comparison" class="py-16 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span class="inline-flex items-center gap-2 text-sm font-medium text-blue-500 mb-3">
+            <i class='bx bx-world'></i>
+            Global Comparison
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
+            Compare Costs Across <span class="text-teal-500">Top Countries</span>
+          </h2>
+          <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+            See how India compares with other leading medical tourism destinations. Select a specialty to view detailed
+            cost comparisons.
+          </p>
+        </div>
+
+        <!-- Specialty Tabs -->
+        <div class="mb-8 flex flex-wrap gap-3 justify-center">
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="cardiology">Cardiology</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="orthopedics">Orthopedics</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="neurology">Neurology</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="oncology">Oncology</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="gastroenterology">Gastroenterology</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="urology">Urology</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="gynecology">Gynecology</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="cosmetic">Cosmetic</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="ophthalmology">Ophthalmology</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="ent">ENT</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="dental">Dental</button>
+          <button
+            class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition"
+            data-tab="ayurveda">Ayurveda</button>
+        </div>
+
+        <!-- Cardiology Comparison -->
+        <div class="comparison-content" id="cardiology-comparison">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-sm">
+                <thead class="bg-slate-50">
+                  <tr>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-left">Procedure</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center bg-teal-50">India</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Germany</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Singapore</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Spain</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">UAE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Angioplasty (PTCA)</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$4,000</td>
+                    <td class="px-5 py-4 text-center">$6,000</td>
+                    <td class="px-5 py-4 text-center">$25,000</td>
+                    <td class="px-5 py-4 text-center">$15,000</td>
+                    <td class="px-5 py-4 text-center">$8,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Bypass Surgery (CABG)</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$6,500</td>
+                    <td class="px-5 py-4 text-center">$20,000</td>
+                    <td class="px-5 py-4 text-center">$30,000</td>
+                    <td class="px-5 py-4 text-center">$27,000</td>
+                    <td class="px-5 py-4 text-center">$25,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Heart Valve Replacement</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$8,000</td>
+                    <td class="px-5 py-4 text-center">$45,000</td>
+                    <td class="px-5 py-4 text-center">$35,000</td>
+                    <td class="px-5 py-4 text-center">$40,000</td>
+                    <td class="px-5 py-4 text-center">$35,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Pacemaker Implantation</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$4,000</td>
+                    <td class="px-5 py-4 text-center">$12,000</td>
+                    <td class="px-5 py-4 text-center">$14,000</td>
+                    <td class="px-5 py-4 text-center">$10,000</td>
+                    <td class="px-5 py-4 text-center">$12,000</td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-4">Cardiac Consultation</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$200</td>
+                    <td class="px-5 py-4 text-center">$300</td>
+                    <td class="px-5 py-4 text-center">$500</td>
+                    <td class="px-5 py-4 text-center">$400</td>
+                    <td class="px-5 py-4 text-center">$1,500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orthopedics Comparison -->
+        <div class="comparison-content hidden" id="orthopedics-comparison">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-sm">
+                <thead class="bg-slate-50">
+                  <tr>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-left">Procedure</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center bg-teal-50">India</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Germany</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">USA</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Australia</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Switzerland</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Total Knee Replacement</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$6,000</td>
+                    <td class="px-5 py-4 text-center">$18,000</td>
+                    <td class="px-5 py-4 text-center">$35,000</td>
+                    <td class="px-5 py-4 text-center">$25,000</td>
+                    <td class="px-5 py-4 text-center">$30,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Hip Replacement</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$7,000</td>
+                    <td class="px-5 py-4 text-center">$20,000</td>
+                    <td class="px-5 py-4 text-center">$30,000</td>
+                    <td class="px-5 py-4 text-center">$28,000</td>
+                    <td class="px-5 py-4 text-center">$25,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Shoulder/Elbow Replacement</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$5,500</td>
+                    <td class="px-5 py-4 text-center">$15,000</td>
+                    <td class="px-5 py-4 text-center">$25,000</td>
+                    <td class="px-5 py-4 text-center">$22,000</td>
+                    <td class="px-5 py-4 text-center">$28,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Arthroscopy</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$3,000</td>
+                    <td class="px-5 py-4 text-center">$8,000</td>
+                    <td class="px-5 py-4 text-center">$12,000</td>
+                    <td class="px-5 py-4 text-center">$10,000</td>
+                    <td class="px-5 py-4 text-center">$12,000</td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-4">Spinal Surgery</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$6,500</td>
+                    <td class="px-5 py-4 text-center">$22,000</td>
+                    <td class="px-5 py-4 text-center">$50,000</td>
+                    <td class="px-5 py-4 text-center">$35,000</td>
+                    <td class="px-5 py-4 text-center">$40,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oncology Comparison -->
+        <div class="comparison-content hidden" id="oncology-comparison">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-sm">
+                <thead class="bg-slate-50">
+                  <tr>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-left">Procedure</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center bg-teal-50">India</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Germany</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">USA</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">UK</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Singapore</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Chemotherapy (per cycle)</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$500</td>
+                    <td class="px-5 py-4 text-center">$3,000</td>
+                    <td class="px-5 py-4 text-center">$10,000</td>
+                    <td class="px-5 py-4 text-center">$5,000</td>
+                    <td class="px-5 py-4 text-center">$4,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Radiation Therapy</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$4,000</td>
+                    <td class="px-5 py-4 text-center">$20,000</td>
+                    <td class="px-5 py-4 text-center">$50,000</td>
+                    <td class="px-5 py-4 text-center">$30,000</td>
+                    <td class="px-5 py-4 text-center">$25,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Surgical Oncology</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$5,000</td>
+                    <td class="px-5 py-4 text-center">$25,000</td>
+                    <td class="px-5 py-4 text-center">$40,000</td>
+                    <td class="px-5 py-4 text-center">$35,000</td>
+                    <td class="px-5 py-4 text-center">$30,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Bone Marrow Transplant</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$30,000</td>
+                    <td class="px-5 py-4 text-center">$200,000</td>
+                    <td class="px-5 py-4 text-center">$400,000</td>
+                    <td class="px-5 py-4 text-center">$250,000</td>
+                    <td class="px-5 py-4 text-center">$150,000</td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-4">Cancer Second Opinion</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$200</td>
+                    <td class="px-5 py-4 text-center">$1,000</td>
+                    <td class="px-5 py-4 text-center">$5,000</td>
+                    <td class="px-5 py-4 text-center">$2,000</td>
+                    <td class="px-5 py-4 text-center">$1,500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gynecology Comparison -->
+        <div class="comparison-content hidden" id="gynecology-comparison">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-sm">
+                <thead class="bg-slate-50">
+                  <tr>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-left">Procedure</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center bg-teal-50">India</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Spain</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Czech Republic</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Germany</th>
+                    <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">USA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">IVF / ICSI / Fertility</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$3,500</td>
+                    <td class="px-5 py-4 text-center">$6,500</td>
+                    <td class="px-5 py-4 text-center">$3,500</td>
+                    <td class="px-5 py-4 text-center">$5,500</td>
+                    <td class="px-5 py-4 text-center">$15,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Hysterectomy</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$4,000</td>
+                    <td class="px-5 py-4 text-center">$10,000</td>
+                    <td class="px-5 py-4 text-center">$6,000</td>
+                    <td class="px-5 py-4 text-center">$12,000</td>
+                    <td class="px-5 py-4 text-center">$20,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Laparoscopic Gynec Surgery</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$3,000</td>
+                    <td class="px-5 py-4 text-center">$8,000</td>
+                    <td class="px-5 py-4 text-center">$5,000</td>
+                    <td class="px-5 py-4 text-center">$10,000</td>
+                    <td class="px-5 py-4 text-center">$18,000</td>
+                  </tr>
+                  <tr class="border-b border-slate-100">
+                    <td class="px-5 py-4">Surrogacy Assistance</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$35,000</td>
+                    <td class="px-5 py-4 text-center">$60,000</td>
+                    <td class="px-5 py-4 text-center">$50,000</td>
+                    <td class="px-5 py-4 text-center">N/A</td>
+                    <td class="px-5 py-4 text-center">$120,000</td>
+                  </tr>
+                  <tr>
+                    <td class="px-5 py-4">Maternity / Delivery Packages</td>
+                    <td class="px-5 py-4 text-center font-semibold text-teal-600">$2,500</td>
+                    <td class="px-5 py-4 text-center">$7,000</td>
+                    <td class="px-5 py-4 text-center">$4,500</td>
+                    <td class="px-5 py-4 text-center">$8,000</td>
+                    <td class="px-5 py-4 text-center">$15,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- More comparisons - showing key ones, rest follow same pattern -->
+        <div class="mt-8 text-center">
+          <p class="text-sm text-slate-500 mb-4">Select a specialty tab above to view detailed comparisons</p>
+          <a href="#"
+            class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-teal-500 text-white font-medium hover:bg-blue-600 transition openConsultantModal">
+            <i class='bx bx-calendar text-xl'></i>
+            Get Personalized Cost Estimate
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VISUAL COST COMPARISON CARDS ================= -->
+    <section class="py-16 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span class="inline-flex items-center gap-2 text-sm font-medium text-blue-500 mb-3">
+            <i class='bx bx-bar-chart-alt-2'></i>
+            Quick Comparison
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
+            Popular Treatments <span class="text-teal-500">Compared</span>
+          </h2>
+          <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+            See how much you can save on the most sought-after medical procedures.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
+                <i class='bx bx-heart text-2xl text-teal-500'></i>
+              </div>
+              <h3 class="font-semibold text-lg text-slate-900">Bypass Surgery</h3>
+            </div>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center p-3 bg-teal-50 rounded-lg">
+                <span class="text-sm text-slate-600">India</span>
+                <span class="font-bold text-teal-600">$6,500</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                <span class="text-sm text-slate-600">USA</span>
+                <span class="font-semibold text-slate-700 line-through">$70,000</span>
+              </div>
+              <div class="pt-3 border-t border-slate-200">
+                <p class="text-sm text-slate-500">You Save</p>
+                <p class="text-2xl font-bold text-teal-500">$63,500</p>
+                <p class="text-sm text-teal-600 font-medium">91% less</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
+                <i class='bx bx-bone text-2xl text-teal-500'></i>
+              </div>
+              <h3 class="font-semibold text-lg text-slate-900">Knee Replacement</h3>
+            </div>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center p-3 bg-teal-50 rounded-lg">
+                <span class="text-sm text-slate-600">India</span>
+                <span class="font-bold text-teal-600">$6,000</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                <span class="text-sm text-slate-600">USA</span>
+                <span class="font-semibold text-slate-700 line-through">$35,000</span>
+              </div>
+              <div class="pt-3 border-t border-slate-200">
+                <p class="text-sm text-slate-500">You Save</p>
+                <p class="text-2xl font-bold text-teal-500">$29,000</p>
+                <p class="text-sm text-teal-600 font-medium">83% less</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
+                <i class='bx bx-dna text-2xl text-teal-500'></i>
+              </div>
+              <h3 class="font-semibold text-lg text-slate-900">Liver Transplant</h3>
+            </div>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center p-3 bg-teal-50 rounded-lg">
+                <span class="text-sm text-slate-600">India</span>
+                <span class="font-bold text-teal-600">$28,000</span>
+              </div>
+              <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                <span class="text-sm text-slate-600">USA</span>
+                <span class="font-semibold text-slate-700 line-through">$300,000</span>
+              </div>
+              <div class="pt-3 border-t border-slate-200">
+                <p class="text-sm text-slate-500">You Save</p>
+                <p class="text-2xl font-bold text-teal-500">$272,000</p>
+                <p class="text-sm text-teal-600 font-medium">91% less</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <a href="#country-comparison"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition">
+            <i class='bx bx-table text-xl'></i>
+            View All Comparisons
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY INDIA IS AFFORDABLE ================= -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span class="inline-flex items-center gap-2 text-sm font-medium text-blue-500 mb-3">
+            <i class='bx bx-info-circle'></i>
+            Value Proposition
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
+            Why India Offers <span class="text-teal-500">Affordable Healthcare</span>
+          </h2>
+          <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+            India combines world-class medical expertise with cost-effective treatment options, making it the preferred
+            destination for medical tourism.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-slate-50 rounded-2xl p-6">
+            <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+              <i class='bx bx-dollar-circle text-3xl text-teal-500'></i>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Competitive Pricing</h3>
+            <p class="text-slate-600">Lower operational costs and favorable exchange rates make treatments 60-80% more
+              affordable than Western countries.</p>
+          </div>
+
+          <div class="bg-slate-50 rounded-2xl p-6">
+            <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+              <i class='bx bx-award text-3xl text-teal-500'></i>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">World-Class Quality</h3>
+            <p class="text-slate-600">JCI-accredited hospitals with internationally trained doctors using cutting-edge
+              technology and equipment.</p>
+          </div>
+
+          <div class="bg-slate-50 rounded-2xl p-6">
+            <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+              <i class='bx bx-time text-3xl text-teal-500'></i>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">No Waiting Lists</h3>
+            <p class="text-slate-600">Immediate access to treatments without long waiting periods, ensuring timely
+              medical care when you need it most.</p>
+          </div>
+
+          <div class="bg-slate-50 rounded-2xl p-6">
+            <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+              <i class='bx bx-globe text-3xl text-teal-500'></i>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">English-Speaking Staff</h3>
+            <p class="text-slate-600">Seamless communication with medical professionals fluent in English, ensuring
+              clear understanding of your treatment.</p>
+          </div>
+
+          <div class="bg-slate-50 rounded-2xl p-6">
+            <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+              <i class='bx bx-shield-quarter text-3xl text-teal-500'></i>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">High Success Rates</h3>
+            <p class="text-slate-600">Proven track record with success rates matching or exceeding international
+              standards across all specialties.</p>
+          </div>
+
+          <div class="bg-slate-50 rounded-2xl p-6">
+            <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+              <i class='bx bx-hotel text-3xl text-teal-500'></i>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Complete Packages</h3>
+            <p class="text-slate-600">All-inclusive medical tourism packages covering treatment, accommodation, and
+              travel assistance at transparent prices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CONSULTANT MODAL -->
+    <div id="consultantModal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+
+      <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
+
+        <!-- CLOSE BUTTON -->
+        <button onclick="closeConsultantModal()"
+          class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- BODY -->
+        <div class="px-4 py-4">
+          <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+              class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">
+              Loading…
+            </iframe>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="pt-6 border-t border-gray-200"></div>
-
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" target="_blank"
-      class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition" style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
-      <span>Book Consultation</span>
-      <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
-        <i class='bx bx-right-arrow-alt text-xl'></i>
-      </span>
+    <!-- Whatsapp Icon -->
+    <a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp"
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
+      <i class='bx bxl-whatsapp text-white text-3xl'></i>
     </a>
-  </nav>
-</div>
 
-<!-- ================= MAIN CONTENT ================= -->
-<main class="page-wrapper max-w-7xl mx-auto ">
+  </main>
 
 
+  <!-- FOOTER -->
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
 
+      <!-- TOP GRID -->
+      <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
 
-<!-- Scripts -->
-<!-- Cost calculator functionality is now inline -->
-
-
-<!-- PRICING & PACKAGES -->
-<section class="relative bg-white py-10 border-t border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
-
-    <!-- HEADER -->
-    <div class="text-center mb-18">
-      <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
-        Plans & Packages
-      </p>
-      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900">
-        Transparent <span class="text-teal-500">Healthcare Pricing</span>
-      </h2>
-      <p class="mt-4 text-sm sm:text-base text-slate-500 max-w-2xl mx-auto">
-        Clearly structured packages designed to support patients at every stage
-        of their medical journey, with no hidden costs.
-      </p>
-    </div>
-
-    <!-- PRICING GRID -->
-    <div class="grid gap-10 lg:grid-cols-3 items-stretch mt-10">
-
-      <!-- ESSENTIAL -->
-      <article class="rounded-3xl border border-slate-200 bg-white p-8 flex flex-col">
-        <div class="mb-6">
-          <span class="inline-block text-xs uppercase tracking-widest text-blue-600 font-medium mb-2">
-            Essential
-          </span>
-          <h3 class="text-3xl font-semibold text-slate-900">$199</h3>
-          <p class="text-sm text-slate-500 mt-1">
-            For initial medical clarity
-          </p>
-        </div>
-
-        <ul class="space-y-4 text-sm text-slate-600 mb-10">
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Online medical consultation</li>
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Hospital & doctor shortlisting</li>
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Preliminary treatment estimates</li>
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Email-based assistance</li>
-        </ul>
-
-        <button class="mt-auto w-full py-3 rounded-full border border-slate-300 text-slate-900 font-medium hover:bg-slate-50 transition">
-          Get Started
-        </button>
-      </article>
-
-      <!-- COMPLETE CARE (FEATURED) -->
-      <article class="relative rounded-3xl border-2 border-teal-500 bg-blue-50 p-9 flex flex-col">
-        <span class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-teal-500 text-white text-xs font-medium">
-          Most Chosen
-        </span>
-
-        <div class="mb-6 mt-2">
-          <span class="inline-block text-xs uppercase tracking-widest text-blue-600 font-medium mb-2">
-            Complete Care
-          </span>
-          <h3 class="text-3xl font-semibold text-slate-900">$699</h3>
-          <p class="text-sm text-slate-600 mt-1">
-            End-to-end medical coordination
-          </p>
-        </div>
-
-        <ul class="space-y-4 text-sm text-slate-700 mb-10">
-          <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Dedicated medical coordinator</li>
-          <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Doctor & hospital matching</li>
-          <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Travel & visa guidance</li>
-          <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Appointment scheduling</li>
-          <li class="flex gap-3"><i class="bx bx-check text-blue-600 mt-0.5"></i> Priority patient support</li>
-        </ul>
-
-        <button class="mt-auto w-full py-3 rounded-full bg-teal-500 text-white font-medium hover:bg-blue-600 transition">
-          Choose Complete Care
-        </button>
-      </article>
-
-      <!-- ELITE -->
-      <article class="rounded-3xl border border-slate-200 bg-white p-8 flex flex-col">
-        <div class="mb-6">
-          <span class="inline-block text-xs uppercase tracking-widest text-blue-600 font-medium mb-2">
-            Elite
-          </span>
-          <h3 class="text-3xl font-semibold text-slate-900">$1,499</h3>
-          <p class="text-sm text-slate-500 mt-1">
-            White-glove medical experience
-          </p>
-        </div>
-
-        <ul class="space-y-4 text-sm text-slate-600 mb-10">
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Personal case manager</li>
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Airport pickup & accommodation</li>
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> On-ground hospital assistance</li>
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> Post-treatment follow-ups</li>
-          <li class="flex gap-3"><i class="bx bx-check text-teal-500 mt-0.5"></i> 24/7 priority access</li>
-        </ul>
-
-        <button class="mt-auto w-full py-3 rounded-full border border-slate-300 text-slate-900 font-medium hover:bg-slate-50 transition">
-          Choose Elite
-        </button>
-      </article>
-
-    </div>
-
-    <!-- CTA BUTTONS -->
-    <div class="mt-16 flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="#"
-         class="group inline-flex items-center gap-4 px-6 py-3 rounded-full bg-white border border-slate-300 text-slate-900 font-medium hover:bg-teal-500 hover:text-white transition">
-        <span class="h-9 w-9 rounded-full bg-slate-900 text-white flex items-center justify-center transition group-hover:bg-white group-hover:text-teal-500">
-          <i class="bx bx-right-arrow-alt text-xl"></i>
-        </span>
-        View All Pricing Plans
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= MEDICAL COSTS – INDIA (WHITE THEME) ================= -->
-<section class="bg-white py-10">
-  <div class="max-w-7xl mx-auto px-6">
-
-    <!-- Heading -->
-    <div class="max-w-3xl mb-12">
-      <p class="text-xs uppercase tracking-widest text-blue-600 mb-3">
-        India
-      </p>
-      <h2 class="text-3xl sm:text-4xl font-semibold text-teal-500 leading-tight">
-        Medical Treatment Cost Overview
-      </h2>
-      <p class="mt-4 text-slate-600 text-sm sm:text-base">
-        Estimated treatment costs across leading hospitals in India.
-        Pricing varies by hospital, city, and patient condition.
-        All figures are indicative and shared with transparency.
-      </p>
-    </div>
-
-    <!-- Table Wrapper -->
-    <div class="overflow-x-auto rounded-2xl border border-slate-200">
-      <table class="min-w-[900px] w-full border-collapse text-sm">
-
-        <!-- Table Head -->
-        <thead class="bg-slate-50">
-          <tr class="text-left text-slate-700">
-            <th class="px-5 py-4 font-medium border-b border-slate-200">
-              Medical Specialty
-            </th>
-            <th class="px-5 py-4 font-medium border-b border-slate-200">
-              Treatment
-            </th>
-            <th class="px-5 py-4 font-medium border-b border-slate-200">
-              Cost Range (USD)
-            </th>
-            <th class="px-5 py-4 font-medium border-b border-slate-200">
-              Cost Range (INR approx.)
-            </th>
-          </tr>
-        </thead>
-
-        <!-- Table Body -->
-        <tbody class="text-slate-700">
-
-          <!-- Cardiology -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Cardiology & Cardiac Surgery
-            </td>
-            <td class="px-5 py-4">Angioplasty (PTCA)</td>
-            <td class="px-5 py-4">$3,000 – $5,000</td>
-            <td class="px-5 py-4">₹2,49,000 – ₹4,15,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Bypass Surgery (CABG)</td>
-            <td class="px-5 py-4">$5,500 – $7,000</td>
-            <td class="px-5 py-4">₹4,57,000 – ₹5,81,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Heart Valve Replacement</td>
-            <td class="px-5 py-4">$3,900 – $6,000</td>
-            <td class="px-5 py-4">₹3,23,700 – ₹4,98,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Pacemaker Implantation</td>
-            <td class="px-5 py-4">$11,000 – $22,000</td>
-            <td class="px-5 py-4">₹9,13,000 – ₹18,26,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Cardiac Consultation / Check-up</td>
-            <td class="px-5 py-4">$400 – $600</td>
-            <td class="px-5 py-4">₹33,200 – ₹49,800</td>
-          </tr>
-
-          <!-- Orthopedics -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Orthopedics & Joint Replacement
-            </td>
-            <td class="px-5 py-4">Total Knee Replacement</td>
-            <td class="px-5 py-4">$5,500 – $6,500</td>
-            <td class="px-5 py-4">₹4,57,000 – ₹5,39,500</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Hip Replacement</td>
-            <td class="px-5 py-4">$2,500 – $5,000</td>
-            <td class="px-5 py-4">₹2,07,500 – ₹4,15,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Shoulder / Elbow Replacement</td>
-            <td class="px-5 py-4">$3,000 – $7,000</td>
-            <td class="px-5 py-4">₹2,49,000 – ₹5,81,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Arthroscopy</td>
-            <td class="px-5 py-4">$3,000 – $6,000</td>
-            <td class="px-5 py-4">₹2,49,000 – ₹4,98,000</td>
-          </tr>
-
-          <!-- Neurology -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Neurology & Neurosurgery
-            </td>
-            <td class="px-5 py-4">Brain Tumor Surgery</td>
-            <td class="px-5 py-4">$5,000 – $7,000</td>
-            <td class="px-5 py-4">₹4,15,000 – ₹5,81,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Spine Surgery (Cervical / Lumbar)</td>
-            <td class="px-5 py-4">$5,000 – $9,000</td>
-            <td class="px-5 py-4">₹4,15,000 – ₹7,47,000</td>
-          </tr>
-
-          <!-- Oncology -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Oncology (Cancer Treatment)
-            </td>
-            <td class="px-5 py-4">Chemotherapy</td>
-            <td class="px-5 py-4">$650 – $2,000 per cycle</td>
-            <td class="px-5 py-4">₹53,950 – ₹1,66,000 per cycle</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Radiation Therapy</td>
-            <td class="px-5 py-4">$1,800 – $12,000</td>
-            <td class="px-5 py-4">₹1,49,400 – ₹9,96,000</td>
-          </tr>
-
-          <!-- Gastro -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Gastroenterology & Hepatology
-            </td>
-            <td class="px-5 py-4">Liver Transplant</td>
-            <td class="px-5 py-4">$28,000 – $35,000</td>
-            <td class="px-5 py-4">₹23,24,000 – ₹29,05,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Gallbladder / Biliary Surgery</td>
-            <td class="px-5 py-4">$2,000 – $4,000</td>
-            <td class="px-5 py-4">₹1,66,000 – ₹3,32,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Bariatric Surgery</td>
-            <td class="px-5 py-4">$4,000 – $8,000</td>
-            <td class="px-5 py-4">₹3,32,000 – ₹6,64,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Endoscopy / Colonoscopy</td>
-            <td class="px-5 py-4">$200 – $800</td>
-            <td class="px-5 py-4">₹16,600 – ₹66,400</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">GI Cancer Treatment</td>
-            <td class="px-5 py-4">$8,000 – $20,000</td>
-            <td class="px-5 py-4">₹6,64,000 – ₹16,60,000</td>
-          </tr>
-
-          <!-- Urology -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Urology & Nephrology
-            </td>
-            <td class="px-5 py-4">Kidney Transplant</td>
-            <td class="px-5 py-4">$25,000 – $35,000</td>
-            <td class="px-5 py-4">₹20,75,000 – ₹29,05,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Prostate Surgery (TURP / Laser)</td>
-            <td class="px-5 py-4">$2,200 – $5,000</td>
-            <td class="px-5 py-4">₹1,82,600 – ₹4,15,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Kidney Stone Removal</td>
-            <td class="px-5 py-4">$1,400 – $3,000</td>
-            <td class="px-5 py-4">₹1,16,200 – ₹2,49,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Dialysis (per session)</td>
-            <td class="px-5 py-4">$150 – $500</td>
-            <td class="px-5 py-4">₹12,450 – ₹41,500</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Urethral Reconstruction</td>
-            <td class="px-5 py-4">$2,000 – $5,000</td>
-            <td class="px-5 py-4">₹1,66,000 – ₹4,15,000</td>
-          </tr>
-
-          <!-- Gynecology -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Gynecology & Fertility
-            </td>
-            <td class="px-5 py-4">IVF / ICSI / Fertility Treatments</td>
-            <td class="px-5 py-4">$2,300 – $5,000</td>
-            <td class="px-5 py-4">₹1,90,900 – ₹4,15,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Hysterectomy</td>
-            <td class="px-5 py-4">$2,000 – $5,000</td>
-            <td class="px-5 py-4">₹1,66,000 – ₹4,15,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Laparoscopic Gynec Surgery</td>
-            <td class="px-5 py-4">$1,500 – $4,000</td>
-            <td class="px-5 py-4">₹1,24,500 – ₹3,32,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Surrogacy Assistance</td>
-            <td class="px-5 py-4">$20,000 – $30,000</td>
-            <td class="px-5 py-4">₹16,60,000 – ₹24,90,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Maternity / Delivery Packages</td>
-            <td class="px-5 py-4">$2,000 – $5,000</td>
-            <td class="px-5 py-4">₹1,66,000 – ₹4,15,000</td>
-          </tr>
-
-          <!-- Cosmetic -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Cosmetic & Plastic Surgery
-            </td>
-            <td class="px-5 py-4">Hair Transplant</td>
-            <td class="px-5 py-4">$1,000 – $5,000</td>
-            <td class="px-5 py-4">₹83,000 – ₹4,15,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Rhinoplasty (Nose Job)</td>
-            <td class="px-5 py-4">$1,500 – $4,000</td>
-            <td class="px-5 py-4">₹1,24,500 – ₹3,32,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Liposuction</td>
-            <td class="px-5 py-4">$1,500 – $5,000</td>
-            <td class="px-5 py-4">₹1,24,500 – ₹4,15,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Tummy Tuck / Abdominoplasty</td>
-            <td class="px-5 py-4">$2,000 – $6,000</td>
-            <td class="px-5 py-4">₹1,66,000 – ₹4,98,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Breast Augmentation / Reduction</td>
-            <td class="px-5 py-4">$3,000 – $6,000</td>
-            <td class="px-5 py-4">₹2,49,000 – ₹4,98,000</td>
-          </tr>
-
-          <!-- Ophthalmology -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Ophthalmology (Eye Care)
-            </td>
-            <td class="px-5 py-4">Cataract Surgery</td>
-            <td class="px-5 py-4">$700 – $2,000</td>
-            <td class="px-5 py-4">₹58,100 – ₹1,66,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">LASIK / Refractive Surgery</td>
-            <td class="px-5 py-4">$1,000 – $2,500</td>
-            <td class="px-5 py-4">₹83,000 – ₹2,07,500</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Retinal Surgery</td>
-            <td class="px-5 py-4">$1,000 – $3,500</td>
-            <td class="px-5 py-4">₹83,000 – ₹2,90,500</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Glaucoma Treatment</td>
-            <td class="px-5 py-4">$500 – $1,500</td>
-            <td class="px-5 py-4">₹41,500 – ₹1,24,500</td>
-          </tr>
-
-          <!-- ENT -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              ENT (Ear, Nose & Throat)
-            </td>
-            <td class="px-5 py-4">Cochlear Implant</td>
-            <td class="px-5 py-4">$20,000 – $25,000</td>
-            <td class="px-5 py-4">₹16,60,000 – ₹20,75,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Sinus Surgery</td>
-            <td class="px-5 py-4">$1,500 – $4,000</td>
-            <td class="px-5 py-4">₹1,24,500 – ₹3,32,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Tonsil / Adenoid Removal</td>
-            <td class="px-5 py-4">$300 – $1,000</td>
-            <td class="px-5 py-4">₹24,900 – ₹83,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Ear Reconstruction</td>
-            <td class="px-5 py-4">$3,000 – $6,000</td>
-            <td class="px-5 py-4">₹2,49,000 – ₹4,98,000</td>
-          </tr>
-
-          <!-- Dental -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Dental & Oral Surgery
-            </td>
-            <td class="px-5 py-4">Dental Implants</td>
-            <td class="px-5 py-4">$1,000 – $3,000</td>
-            <td class="px-5 py-4">₹83,000 – ₹2,49,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Full Mouth Rehabilitation</td>
-            <td class="px-5 py-4">$5,000 – $10,000</td>
-            <td class="px-5 py-4">₹4,15,000 – ₹8,30,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Smile Design</td>
-            <td class="px-5 py-4">$1,000 – $3,000</td>
-            <td class="px-5 py-4">₹83,000 – ₹2,49,000</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Root Canal Treatment</td>
-            <td class="px-5 py-4">$100 – $300</td>
-            <td class="px-5 py-4">₹8,300 – ₹24,900</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Orthodontics (Braces / Aligners)</td>
-            <td class="px-5 py-4">$500 – $3,000</td>
-            <td class="px-5 py-4">₹41,500 – ₹2,49,000</td>
-          </tr>
-
-          <!-- Ayurveda -->
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4 font-medium">
-              Ayurveda, Wellness & Rejuvenation
-            </td>
-            <td class="px-5 py-4">Ayurvedic Detox (Panchakarma)</td>
-            <td class="px-5 py-4">$200 – $600</td>
-            <td class="px-5 py-4">₹16,600 – ₹49,800</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Stress Relief / Mental Wellness</td>
-            <td class="px-5 py-4">$100 – $500</td>
-            <td class="px-5 py-4">₹8,300 – ₹41,500</td>
-          </tr>
-          <tr class="border-b border-slate-100">
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Weight Management</td>
-            <td class="px-5 py-4">$100 – $500</td>
-            <td class="px-5 py-4">₹8,300 – ₹41,500</td>
-          </tr>
-          <tr>
-            <td class="px-5 py-4"></td>
-            <td class="px-5 py-4">Yoga & Naturopathy Packages</td>
-            <td class="px-5 py-4">$100 – $400</td>
-            <td class="px-5 py-4">₹8,300 – ₹33,200</td>
-          </tr>
-
-        </tbody>
-      </table>
-    </div>
-
-    <!-- Disclaimer -->
-    <p class="mt-6 text-xs text-slate-500 max-w-4xl">
-      * All costs are indicative and subject to change based on hospital selection,
-      city, treatment complexity, and patient medical condition.
-      Final estimates are shared after detailed medical evaluation.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= COUNTRY COMPARISON SECTION ================= -->
-<section id="country-comparison" class="py-16 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <span class="inline-flex items-center gap-2 text-sm font-medium text-blue-500 mb-3">
-        <i class='bx bx-world'></i>
-        Global Comparison
-      </span>
-      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
-        Compare Costs Across <span class="text-teal-500">Top Countries</span>
-      </h2>
-      <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
-        See how India compares with other leading medical tourism destinations. Select a specialty to view detailed cost comparisons.
-      </p>
-    </div>
-
-    <!-- Specialty Tabs -->
-    <div class="mb-8 flex flex-wrap gap-3 justify-center">
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="cardiology">Cardiology</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="orthopedics">Orthopedics</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="neurology">Neurology</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="oncology">Oncology</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="gastroenterology">Gastroenterology</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="urology">Urology</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="gynecology">Gynecology</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="cosmetic">Cosmetic</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="ophthalmology">Ophthalmology</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="ent">ENT</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="dental">Dental</button>
-      <button class="comparison-tab px-5 py-2.5 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition" data-tab="ayurveda">Ayurveda</button>
-    </div>
-
-    <!-- Cardiology Comparison -->
-    <div class="comparison-content" id="cardiology-comparison">
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse text-sm">
-            <thead class="bg-slate-50">
-              <tr>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-left">Procedure</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center bg-teal-50">India</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Germany</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Singapore</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Spain</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">UAE</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Angioplasty (PTCA)</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$4,000</td><td class="px-5 py-4 text-center">$6,000</td><td class="px-5 py-4 text-center">$25,000</td><td class="px-5 py-4 text-center">$15,000</td><td class="px-5 py-4 text-center">$8,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Bypass Surgery (CABG)</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$6,500</td><td class="px-5 py-4 text-center">$20,000</td><td class="px-5 py-4 text-center">$30,000</td><td class="px-5 py-4 text-center">$27,000</td><td class="px-5 py-4 text-center">$25,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Heart Valve Replacement</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$8,000</td><td class="px-5 py-4 text-center">$45,000</td><td class="px-5 py-4 text-center">$35,000</td><td class="px-5 py-4 text-center">$40,000</td><td class="px-5 py-4 text-center">$35,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Pacemaker Implantation</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$4,000</td><td class="px-5 py-4 text-center">$12,000</td><td class="px-5 py-4 text-center">$14,000</td><td class="px-5 py-4 text-center">$10,000</td><td class="px-5 py-4 text-center">$12,000</td></tr>
-              <tr><td class="px-5 py-4">Cardiac Consultation</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$200</td><td class="px-5 py-4 text-center">$300</td><td class="px-5 py-4 text-center">$500</td><td class="px-5 py-4 text-center">$400</td><td class="px-5 py-4 text-center">$1,500</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- Orthopedics Comparison -->
-    <div class="comparison-content hidden" id="orthopedics-comparison">
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse text-sm">
-            <thead class="bg-slate-50">
-              <tr>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-left">Procedure</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center bg-teal-50">India</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Germany</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">USA</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Australia</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Switzerland</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Total Knee Replacement</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$6,000</td><td class="px-5 py-4 text-center">$18,000</td><td class="px-5 py-4 text-center">$35,000</td><td class="px-5 py-4 text-center">$25,000</td><td class="px-5 py-4 text-center">$30,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Hip Replacement</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$7,000</td><td class="px-5 py-4 text-center">$20,000</td><td class="px-5 py-4 text-center">$30,000</td><td class="px-5 py-4 text-center">$28,000</td><td class="px-5 py-4 text-center">$25,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Shoulder/Elbow Replacement</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$5,500</td><td class="px-5 py-4 text-center">$15,000</td><td class="px-5 py-4 text-center">$25,000</td><td class="px-5 py-4 text-center">$22,000</td><td class="px-5 py-4 text-center">$28,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Arthroscopy</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$3,000</td><td class="px-5 py-4 text-center">$8,000</td><td class="px-5 py-4 text-center">$12,000</td><td class="px-5 py-4 text-center">$10,000</td><td class="px-5 py-4 text-center">$12,000</td></tr>
-              <tr><td class="px-5 py-4">Spinal Surgery</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$6,500</td><td class="px-5 py-4 text-center">$22,000</td><td class="px-5 py-4 text-center">$50,000</td><td class="px-5 py-4 text-center">$35,000</td><td class="px-5 py-4 text-center">$40,000</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- Oncology Comparison -->
-    <div class="comparison-content hidden" id="oncology-comparison">
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse text-sm">
-            <thead class="bg-slate-50">
-              <tr>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-left">Procedure</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center bg-teal-50">India</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Germany</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">USA</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">UK</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Singapore</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Chemotherapy (per cycle)</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$500</td><td class="px-5 py-4 text-center">$3,000</td><td class="px-5 py-4 text-center">$10,000</td><td class="px-5 py-4 text-center">$5,000</td><td class="px-5 py-4 text-center">$4,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Radiation Therapy</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$4,000</td><td class="px-5 py-4 text-center">$20,000</td><td class="px-5 py-4 text-center">$50,000</td><td class="px-5 py-4 text-center">$30,000</td><td class="px-5 py-4 text-center">$25,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Surgical Oncology</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$5,000</td><td class="px-5 py-4 text-center">$25,000</td><td class="px-5 py-4 text-center">$40,000</td><td class="px-5 py-4 text-center">$35,000</td><td class="px-5 py-4 text-center">$30,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Bone Marrow Transplant</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$30,000</td><td class="px-5 py-4 text-center">$200,000</td><td class="px-5 py-4 text-center">$400,000</td><td class="px-5 py-4 text-center">$250,000</td><td class="px-5 py-4 text-center">$150,000</td></tr>
-              <tr><td class="px-5 py-4">Cancer Second Opinion</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$200</td><td class="px-5 py-4 text-center">$1,000</td><td class="px-5 py-4 text-center">$5,000</td><td class="px-5 py-4 text-center">$2,000</td><td class="px-5 py-4 text-center">$1,500</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- Gynecology Comparison -->
-    <div class="comparison-content hidden" id="gynecology-comparison">
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse text-sm">
-            <thead class="bg-slate-50">
-              <tr>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-left">Procedure</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center bg-teal-50">India</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Spain</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Czech Republic</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">Germany</th>
-                <th class="px-5 py-4 font-medium border-b border-slate-200 text-center">USA</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">IVF / ICSI / Fertility</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$3,500</td><td class="px-5 py-4 text-center">$6,500</td><td class="px-5 py-4 text-center">$3,500</td><td class="px-5 py-4 text-center">$5,500</td><td class="px-5 py-4 text-center">$15,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Hysterectomy</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$4,000</td><td class="px-5 py-4 text-center">$10,000</td><td class="px-5 py-4 text-center">$6,000</td><td class="px-5 py-4 text-center">$12,000</td><td class="px-5 py-4 text-center">$20,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Laparoscopic Gynec Surgery</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$3,000</td><td class="px-5 py-4 text-center">$8,000</td><td class="px-5 py-4 text-center">$5,000</td><td class="px-5 py-4 text-center">$10,000</td><td class="px-5 py-4 text-center">$18,000</td></tr>
-              <tr class="border-b border-slate-100"><td class="px-5 py-4">Surrogacy Assistance</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$35,000</td><td class="px-5 py-4 text-center">$60,000</td><td class="px-5 py-4 text-center">$50,000</td><td class="px-5 py-4 text-center">N/A</td><td class="px-5 py-4 text-center">$120,000</td></tr>
-              <tr><td class="px-5 py-4">Maternity / Delivery Packages</td><td class="px-5 py-4 text-center font-semibold text-teal-600">$2,500</td><td class="px-5 py-4 text-center">$7,000</td><td class="px-5 py-4 text-center">$4,500</td><td class="px-5 py-4 text-center">$8,000</td><td class="px-5 py-4 text-center">$15,000</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- More comparisons - showing key ones, rest follow same pattern -->
-    <div class="mt-8 text-center">
-      <p class="text-sm text-slate-500 mb-4">Select a specialty tab above to view detailed comparisons</p>
-      <a href="#" class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-teal-500 text-white font-medium hover:bg-blue-600 transition openConsultantModal">
-        <i class='bx bx-calendar text-xl'></i>
-        Get Personalized Cost Estimate
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= VISUAL COST COMPARISON CARDS ================= -->
-<section class="py-16 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <span class="inline-flex items-center gap-2 text-sm font-medium text-blue-500 mb-3">
-        <i class='bx bx-bar-chart-alt-2'></i>
-        Quick Comparison
-      </span>
-      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
-        Popular Treatments <span class="text-teal-500">Compared</span>
-      </h2>
-      <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
-        See how much you can save on the most sought-after medical procedures.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
-            <i class='bx bx-heart text-2xl text-teal-500'></i>
-          </div>
-          <h3 class="font-semibold text-lg text-slate-900">Bypass Surgery</h3>
-        </div>
-        <div class="space-y-3">
-          <div class="flex justify-between items-center p-3 bg-teal-50 rounded-lg">
-            <span class="text-sm text-slate-600">India</span>
-            <span class="font-bold text-teal-600">$6,500</span>
-          </div>
-          <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
-            <span class="text-sm text-slate-600">USA</span>
-            <span class="font-semibold text-slate-700 line-through">$70,000</span>
-          </div>
-          <div class="pt-3 border-t border-slate-200">
-            <p class="text-sm text-slate-500">You Save</p>
-            <p class="text-2xl font-bold text-teal-500">$63,500</p>
-            <p class="text-sm text-teal-600 font-medium">91% less</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
-            <i class='bx bx-bone text-2xl text-teal-500'></i>
-          </div>
-          <h3 class="font-semibold text-lg text-slate-900">Knee Replacement</h3>
-        </div>
-        <div class="space-y-3">
-          <div class="flex justify-between items-center p-3 bg-teal-50 rounded-lg">
-            <span class="text-sm text-slate-600">India</span>
-            <span class="font-bold text-teal-600">$6,000</span>
-          </div>
-          <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
-            <span class="text-sm text-slate-600">USA</span>
-            <span class="font-semibold text-slate-700 line-through">$35,000</span>
-          </div>
-          <div class="pt-3 border-t border-slate-200">
-            <p class="text-sm text-slate-500">You Save</p>
-            <p class="text-2xl font-bold text-teal-500">$29,000</p>
-            <p class="text-sm text-teal-600 font-medium">83% less</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
-            <i class='bx bx-dna text-2xl text-teal-500'></i>
-          </div>
-          <h3 class="font-semibold text-lg text-slate-900">Liver Transplant</h3>
-        </div>
-        <div class="space-y-3">
-          <div class="flex justify-between items-center p-3 bg-teal-50 rounded-lg">
-            <span class="text-sm text-slate-600">India</span>
-            <span class="font-bold text-teal-600">$28,000</span>
-          </div>
-          <div class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
-            <span class="text-sm text-slate-600">USA</span>
-            <span class="font-semibold text-slate-700 line-through">$300,000</span>
-          </div>
-          <div class="pt-3 border-t border-slate-200">
-            <p class="text-sm text-slate-500">You Save</p>
-            <p class="text-2xl font-bold text-teal-500">$272,000</p>
-            <p class="text-sm text-teal-600 font-medium">91% less</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-8 text-center">
-      <a href="#country-comparison" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-300 text-slate-700 font-medium hover:bg-teal-500 hover:text-white hover:border-teal-500 transition">
-        <i class='bx bx-table text-xl'></i>
-        View All Comparisons
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WHY INDIA IS AFFORDABLE ================= -->
-<section class="py-16 bg-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <span class="inline-flex items-center gap-2 text-sm font-medium text-blue-500 mb-3">
-        <i class='bx bx-info-circle'></i>
-        Value Proposition
-      </span>
-      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
-        Why India Offers <span class="text-teal-500">Affordable Healthcare</span>
-      </h2>
-      <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
-        India combines world-class medical expertise with cost-effective treatment options, making it the preferred destination for medical tourism.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-slate-50 rounded-2xl p-6">
-        <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
-          <i class='bx bx-dollar-circle text-3xl text-teal-500'></i>
-        </div>
-        <h3 class="text-xl font-semibold text-slate-900 mb-2">Competitive Pricing</h3>
-        <p class="text-slate-600">Lower operational costs and favorable exchange rates make treatments 60-80% more affordable than Western countries.</p>
-      </div>
-
-      <div class="bg-slate-50 rounded-2xl p-6">
-        <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
-          <i class='bx bx-award text-3xl text-teal-500'></i>
-        </div>
-        <h3 class="text-xl font-semibold text-slate-900 mb-2">World-Class Quality</h3>
-        <p class="text-slate-600">JCI-accredited hospitals with internationally trained doctors using cutting-edge technology and equipment.</p>
-      </div>
-
-      <div class="bg-slate-50 rounded-2xl p-6">
-        <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
-          <i class='bx bx-time text-3xl text-teal-500'></i>
-        </div>
-        <h3 class="text-xl font-semibold text-slate-900 mb-2">No Waiting Lists</h3>
-        <p class="text-slate-600">Immediate access to treatments without long waiting periods, ensuring timely medical care when you need it most.</p>
-      </div>
-
-      <div class="bg-slate-50 rounded-2xl p-6">
-        <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
-          <i class='bx bx-globe text-3xl text-teal-500'></i>
-        </div>
-        <h3 class="text-xl font-semibold text-slate-900 mb-2">English-Speaking Staff</h3>
-        <p class="text-slate-600">Seamless communication with medical professionals fluent in English, ensuring clear understanding of your treatment.</p>
-      </div>
-
-      <div class="bg-slate-50 rounded-2xl p-6">
-        <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
-          <i class='bx bx-shield-quarter text-3xl text-teal-500'></i>
-        </div>
-        <h3 class="text-xl font-semibold text-slate-900 mb-2">High Success Rates</h3>
-        <p class="text-slate-600">Proven track record with success rates matching or exceeding international standards across all specialties.</p>
-      </div>
-
-      <div class="bg-slate-50 rounded-2xl p-6">
-        <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
-          <i class='bx bx-hotel text-3xl text-teal-500'></i>
-        </div>
-        <h3 class="text-xl font-semibold text-slate-900 mb-2">Complete Packages</h3>
-        <p class="text-slate-600">All-inclusive medical tourism packages covering treatment, accommodation, and travel assistance at transparent prices.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- CONSULTANT MODAL -->
-  <div id="consultantModal"
-  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
-
-  <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
-
-    <!-- CLOSE BUTTON -->
-    <button
-      onclick="closeConsultantModal()"
-      class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none"
-        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-
-    <!-- BODY -->
-    <div class="px-4 py-4">
-      <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
-          class="w-full h-full"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0">
-          Loading…
-        </iframe>
-      </div>
-    </div>
-
-  </div>
-  </div>
-
-  <!-- Whatsapp Icon -->
- <a
-  href="https://wa.me/918530054299"
-  target="_blank"
-  aria-label="Chat on WhatsApp"
-  class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
-  <i class='bx bxl-whatsapp text-white text-3xl'></i>
-</a>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
-  <div class="max-w-7xl mx-auto px-6">
-
-    <!-- TOP GRID -->
-    <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
-
-      <!-- Brand -->
-      <div class="lg:col-span-2">
-        <a href="../../index.html">
-          <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
-          <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
-            Arogya Yatri is a global medical tourism platform connecting patients
-            with world-class hospitals, trusted doctors, and seamless healthcare
-            journeys across borders.
-          </p>
-        </a>
-
-        <!-- Social -->
-        <div class="flex items-center gap-4">
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-facebook text-lg"></i>
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <a href="../../index.html">
+            <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
+            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
+              Arogya Yatri is a global medical tourism platform connecting patients
+              with world-class hospitals, trusted doctors, and seamless healthcare
+              journeys across borders.
+            </p>
           </a>
-          <a href="https://www.instagram.com/arogya.yatri/"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-instagram text-lg"></i>
-          </a>
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-youtube text-lg"></i>
-          </a>
-        </div>
-      </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Quick Links</h4>
-        <ul class="space-y-3 text-sm">
-          <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
-          <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+          <!-- Social -->
+          <div class="flex items-center gap-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-facebook text-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/arogya.yatri/"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-instagram text-lg"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-youtube text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
             <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
-          <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-          <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
-        </ul>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
+          </ul>
+        </div>
+
+
+
+        <!-- CONTACT (NEW) -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Contact</h4>
+
+          <ul class="space-y-4 text-sm">
+
+            <!-- Phone -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
+              <a href="tel:8530054299" class="hover:text-white transition">
+                +91 85300 54299
+              </a>
+            </li>
+
+            <!-- Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
+                apoorva@ewan.co.in
+              </a>
+            </li>
+
+            <!-- Alternate Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
+                pushkaraj.thakurdas@ewan.co.in
+              </a>
+            </li>
+
+            <!-- WhatsApp CTA -->
+            <li class="pt-2">
+              <a href="https://wa.me/918530054299" target="_blank"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
+                <i class="bx bxl-whatsapp text-lg"></i>
+                WhatsApp Us
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
       </div>
 
-      
+      <!-- DIVIDER -->
+      <div class="border-t border-white/10 mb-8"></div>
 
-      <!-- CONTACT (NEW) -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Contact</h4>
+      <!-- BOTTOM BAR -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>
+          © 2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.
+        </p>
 
-        <ul class="space-y-4 text-sm">
-
-          <!-- Phone -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
-            <a href="tel:8530054299" class="hover:text-white transition">
-              +91 85300 54299
-            </a>
-          </li>
-
-          <!-- Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
-              apoorva@ewan.co.in
-            </a>
-          </li>
-
-          <!-- Alternate Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
-              pushkaraj.thakurdas@ewan.co.in
-            </a>
-          </li>
-
-          <!-- WhatsApp CTA -->
-          <li class="pt-2">
-            <a
-              href="https://wa.me/918530054299"
-              target="_blank"
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
-              <i class="bx bxl-whatsapp text-lg"></i>
-              WhatsApp Us
-            </a>
-          </li>
-
-        </ul>
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2">
+            <i class="bx bx-shield-quarter text-teal-400"></i>
+            Secure & Confidential
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="bx bx-world text-teal-400"></i>
+            Global Healthcare Network
+          </span>
+        </div>
       </div>
 
     </div>
+  </footer>
 
-    <!-- DIVIDER -->
-    <div class="border-t border-white/10 mb-8"></div>
+  <!-- MODAL SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const openButtons = document.querySelectorAll('.openConsultantModal');
+      const modal = document.getElementById('consultantModal');
+      const closeBtn = document.getElementById('closeConsultantModal');
+      const form = document.getElementById('consultantForm');
 
-    <!-- BOTTOM BAR -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-      <p>
-        © 2025 Arogya Yatri. A service by Ewan Business Solutions. All rights reserved.
-      </p>
-
-      <div class="flex items-center gap-6">
-        <span class="flex items-center gap-2">
-          <i class="bx bx-shield-quarter text-teal-400"></i>
-          Secure & Confidential
-        </span>
-        <span class="flex items-center gap-2">
-          <i class="bx bx-world text-teal-400"></i>
-          Global Healthcare Network
-        </span>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-<!-- MODAL SCRIPT -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openButtons = document.querySelectorAll('.openConsultantModal');
-    const modal = document.getElementById('consultantModal');
-    const closeBtn = document.getElementById('closeConsultantModal');
-    const form = document.getElementById('consultantForm');
-
-    openButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
+      openButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
       });
-    });
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-      });
-    }
-
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        });
       }
-    });
 
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const name = form.querySelector('input[name="name"]').value;
-        const country = form.querySelector('select[name="country"]').value;
-        const whatsapp = form.querySelector('input[name="whatsapp"]').value;
-        const treatment = form.querySelector('textarea[name="treatment"]').value;
-        const contactMethod = form.querySelector('select[name="contactMethod"]').value;
-        const contactTime = form.querySelector('select[name="contactTime"]').value;
-
-        const message =
-          `Consultation Request\n\n` +
-          `Name: ${name}\n` +
-          `Country: ${country}\n` +
-          `WhatsApp Number: ${whatsapp}\n` +
-          `Treatment/Concern: ${treatment}\n` +
-          `Preferred Way to Contact: ${contactMethod}\n` +
-          `Preferred Time to Contact: ${contactTime}`;
-
-        const whatsappURL =
-          `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
-
-        window.open(whatsappURL, '_blank');
-      });
-    }
-  });
-</script>
-<script>
-  function closeConsultantModal() {
-    document.getElementById("consultantModal").classList.add("hidden")
-  }
-</script>
-
-<!-- MENU TOGGLE SCRIPT -->
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeBtn = document.getElementById('closeBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
-  closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
-</script>
-
-<!-- COUNTRY COMPARISON TABS SCRIPT -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.comparison-tab');
-    const contents = document.querySelectorAll('.comparison-content');
-    
-    // Set initial active tab
-    if (tabs.length > 0) {
-      const firstTab = tabs[0];
-      firstTab.classList.add('bg-teal-500', 'text-white', 'border-teal-500');
-      firstTab.classList.remove('border-slate-300', 'text-slate-700');
-    }
-    
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const targetTab = tab.getAttribute('data-tab');
-        
-        // Remove active class from all tabs
-        tabs.forEach(t => {
-          t.classList.remove('bg-teal-500', 'text-white', 'border-teal-500');
-          t.classList.add('border-slate-300', 'text-slate-700');
-        });
-        
-        // Add active class to clicked tab
-        tab.classList.add('bg-teal-500', 'text-white', 'border-teal-500');
-        tab.classList.remove('border-slate-300', 'text-slate-700');
-        
-        // Hide all content
-        contents.forEach(content => {
-          content.classList.add('hidden');
-        });
-        
-        // Show target content
-        const targetContent = document.getElementById(targetTab + '-comparison');
-        if (targetContent) {
-          targetContent.classList.remove('hidden');
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
         }
       });
-    });
-  });
-</script>
 
-<!-- CATEGORY FILTER SCRIPT -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Wait for treatment dropdown to be populated
-    setTimeout(() => {
-      const categoryFilters = document.querySelectorAll('.category-filter');
-      const treatmentSelect = document.getElementById('treatmentSelect');
-      
-      categoryFilters.forEach(filter => {
-        filter.addEventListener('click', () => {
-          const category = filter.getAttribute('data-category');
-          
-          // Update active state
-          categoryFilters.forEach(f => {
-            f.classList.remove('bg-teal-500', 'text-white', 'border-teal-500', 'active');
-            f.classList.add('border-slate-300', 'text-slate-700');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = form.querySelector('input[name="name"]').value;
+          const country = form.querySelector('select[name="country"]').value;
+          const whatsapp = form.querySelector('input[name="whatsapp"]').value;
+          const treatment = form.querySelector('textarea[name="treatment"]').value;
+          const contactMethod = form.querySelector('select[name="contactMethod"]').value;
+          const contactTime = form.querySelector('select[name="contactTime"]').value;
+
+          const message =
+            `Consultation Request\n\n` +
+            `Name: ${name}\n` +
+            `Country: ${country}\n` +
+            `WhatsApp Number: ${whatsapp}\n` +
+            `Treatment/Concern: ${treatment}\n` +
+            `Preferred Way to Contact: ${contactMethod}\n` +
+            `Preferred Time to Contact: ${contactTime}`;
+
+          const whatsappURL =
+            `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+
+          window.open(whatsappURL, '_blank');
+        });
+      }
+    });
+  </script>
+  <script>
+    function closeConsultantModal() {
+      document.getElementById("consultantModal").classList.add("hidden")
+    }
+  </script>
+
+  <!-- MENU TOGGLE SCRIPT -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
+    closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
+  </script>
+
+  <!-- COUNTRY COMPARISON TABS SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.comparison-tab');
+      const contents = document.querySelectorAll('.comparison-content');
+
+      // Set initial active tab
+      if (tabs.length > 0) {
+        const firstTab = tabs[0];
+        firstTab.classList.add('bg-teal-500', 'text-white', 'border-teal-500');
+        firstTab.classList.remove('border-slate-300', 'text-slate-700');
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const targetTab = tab.getAttribute('data-tab');
+
+          // Remove active class from all tabs
+          tabs.forEach(t => {
+            t.classList.remove('bg-teal-500', 'text-white', 'border-teal-500');
+            t.classList.add('border-slate-300', 'text-slate-700');
           });
-          filter.classList.add('bg-teal-500', 'text-white', 'border-teal-500', 'active');
-          filter.classList.remove('border-slate-300', 'text-slate-700');
-          
-          // Filter treatment options
-          if (treatmentSelect) {
-            const options = treatmentSelect.querySelectorAll('option, optgroup');
-            options.forEach(opt => {
-              if (category === 'all') {
-                opt.style.display = '';
-              } else if (opt.tagName === 'OPTGROUP') {
-                const optCategory = opt.getAttribute('data-category');
-                opt.style.display = optCategory === category ? '' : 'none';
-              } else {
-                const optgroup = opt.closest('optgroup');
-                if (optgroup) {
-                  const optCategory = optgroup.getAttribute('data-category');
-                  opt.style.display = optCategory === category ? '' : 'none';
-                }
-              }
-            });
+
+          // Add active class to clicked tab
+          tab.classList.add('bg-teal-500', 'text-white', 'border-teal-500');
+          tab.classList.remove('border-slate-300', 'text-slate-700');
+
+          // Hide all content
+          contents.forEach(content => {
+            content.classList.add('hidden');
+          });
+
+          // Show target content
+          const targetContent = document.getElementById(targetTab + '-comparison');
+          if (targetContent) {
+            targetContent.classList.remove('hidden');
           }
         });
       });
-    }, 100);
-  });
-</script>
+    });
+  </script>
 
-<!-- COST CALCULATOR SCRIPT -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const treatmentSelect = document.getElementById('treatmentSelect');
-    const countrySelect = document.getElementById('countrySelect');
-    const calculateBtn = document.getElementById('calculateBtn');
-    const resetBtn = document.getElementById('resetBtn');
-    const resultsDiv = document.getElementById('calculatorResults');
-    const usdCostInput = document.getElementById('usdCost');
-    const localCostInput = document.getElementById('localCost');
+  <!-- CATEGORY FILTER SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Wait for treatment dropdown to be populated
+      setTimeout(() => {
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const treatmentSelect = document.getElementById('treatmentSelect');
 
-    // Treatment cost data (India vs other countries in USD) - Data from context.md
-    const costData = {
-      'angioplasty_ptca': { 
-        india: 4000, 
-        germany: 6000, 
-        singapore: 25000, 
-        spain: 15000, 
-        uae: 8000 
-      },
-      'bypass_surgery_cabg': { 
-        india: 6500, 
-        germany: 20000, 
-        singapore: 30000, 
-        spain: 27000, 
-        uae: 25000 
-      },
-      'heart_valve_replacement': {
-        india: 8000,
-        germany: 45000,
-        singapore: 35000,
-        spain: 40000,
-        uae: 35000
-      },
-      'pacemaker_implantation': {
-        india: 4000,
-        germany: 12000,
-        singapore: 14000,
-        spain: 10000,
-        uae: 12000
-      },
-      'cardiac_consultation_checkup': {
-        india: 200,
-        germany: 300,
-        singapore: 500,
-        spain: 400,
-        uae: 1500
-      },
-      'total_knee_replacement': { 
-        india: 6000, 
-        germany: 18000, 
-        usa: 35000, 
-        australia: 25000, 
-        switzerland: 30000 
-      },
-      'hip_replacement': { 
-        india: 7000, 
-        germany: 20000, 
-        usa: 30000, 
-        australia: 28000, 
-        switzerland: 25000 
-      },
-      'shoulder_elbow_replacement': {
-        india: 5500,
-        germany: 15000,
-        usa: 25000,
-        australia: 22000,
-        switzerland: 28000
-      },
-      'arthroscopy': {
-        india: 3000,
-        germany: 8000,
-        usa: 12000,
-        australia: 10000,
-        switzerland: 12000
-      },
-      'spinal_surgery': {
-        india: 6500,
-        germany: 22000,
-        usa: 50000,
-        australia: 35000,
-        switzerland: 40000
-      },
-      'brain_tumor_surgery': { 
-        india: 7500, 
-        germany: 25000, 
-        usa: 100000, 
-        uk: 40000, 
-        singapore: 30000 
-      },
-      'spine_surgery_cervical_lumbar': {
-        india: 5500,
-        germany: 20000,
-        usa: 60000,
-        uk: 25000,
-        singapore: 22000
-      },
-      'deep_brain_stimulation': {
-        india: 20000,
-        germany: 40000,
-        usa: 70000,
-        uk: 60000,
-        singapore: 55000
-      },
-      'epilepsy_surgery': {
-        india: 8000,
-        germany: 22000,
-        usa: 80000,
-        uk: 35000,
-        singapore: 28000
-      },
-      'stroke_rehabilitation': {
-        india: 3000,
-        germany: 15000,
-        usa: 50000,
-        uk: 20000,
-        singapore: 18000
-      },
-      'chemotherapy': {
-        india: 500,
-        germany: 3000,
-        usa: 10000,
-        uk: 5000,
-        singapore: 4000
-      },
-      'radiation_therapy': {
-        india: 4000,
-        germany: 20000,
-        usa: 50000,
-        uk: 30000,
-        singapore: 25000
-      },
-      'surgical_oncology': {
-        india: 5000,
-        germany: 25000,
-        usa: 40000,
-        uk: 35000,
-        singapore: 30000
-      },
-      'bone_marrow_transplant': {
-        india: 30000,
-        germany: 200000,
-        usa: 400000,
-        uk: 250000,
-        singapore: 150000
-      },
-      'cancer_second_opinion': {
-        india: 200,
-        germany: 1000,
-        usa: 5000,
-        uk: 2000,
-        singapore: 1500
-      },
-      'liver_transplant': {
-        india: 28000,
-        germany: 250000,
-        singapore: 50000,
-        japan: 60000,
-        usa: 300000
-      },
-      'gallbladder_biliary_surgery': {
-        india: 3000,
-        germany: 10000,
-        singapore: 8000,
-        japan: 12000,
-        usa: 20000
-      },
-      'bariatric_surgery': {
-        india: 4500,
-        germany: 15000,
-        singapore: 12000,
-        japan: 14000,
-        usa: 25000
-      },
-      'endoscopy_colonoscopy': {
-        india: 200,
-        germany: 1000,
-        singapore: 800,
-        japan: 900,
-        usa: 3000
-      },
-      'gi_cancer_treatment': {
-        india: 7000,
-        germany: 50000,
-        singapore: 28500,
-        japan: 40000,
-        usa: 60000
-      },
-      'kidney_transplant': {
-        india: 13000,
-        germany: 100000,
-        singapore: 50000,
-        spain: 40000,
-        uae: 45000
-      },
-      'prostate_surgery_turp_laser': {
-        india: 2000,
-        germany: 9000,
-        singapore: 8000,
-        spain: 9000,
-        uae: 6000
-      },
-      'kidney_stone_removal': {
-        india: 500,
-        germany: 6000,
-        singapore: 5000,
-        spain: 9000,
-        uae: 4000
-      },
-      'dialysis_per_session': {
-        india: 50,
-        germany: 300,
-        singapore: 400,
-        spain: 250,
-        uae: 350
-      },
-      'urethral_reconstruction': {
-        india: 4000,
-        germany: 15000,
-        singapore: 12000,
-        spain: 12000,
-        uae: 10000
-      },
-      'ivf_icsi_fertility_treatments': { 
-        india: 3500, 
-        spain: 6500, 
-        czech: 3500, 
-        germany: 5500, 
-        usa: 15000 
-      },
-      'hysterectomy': {
-        india: 4000,
-        spain: 10000,
-        czech: 6000,
-        germany: 12000,
-        usa: 20000
-      },
-      'laparoscopic_gynec_surgery': {
-        india: 3000,
-        spain: 8000,
-        czech: 5000,
-        germany: 10000,
-        usa: 18000
-      },
-      'surrogacy_assistance': {
-        india: 35000,
-        spain: 60000,
-        czech: 50000,
-        usa: 120000
-      },
-      'maternity_delivery_packages': {
-        india: 2500,
-        spain: 7000,
-        czech: 4500,
-        germany: 8000,
-        usa: 15000
-      },
-      'hair_transplant': {
-        india: 3000,
-        south_korea: 4000,
-        germany: 6000,
-        usa: 12000,
-        brazil: 5000
-      },
-      'rhinoplasty_nose_job': {
-        india: 2000,
-        south_korea: 5000,
-        germany: 7000,
-        usa: 8000,
-        brazil: 4000
-      },
-      'liposuction': {
-        india: 2500,
-        south_korea: 4500,
-        germany: 6000,
-        usa: 7000,
-        brazil: 4500
-      },
-      'tummy_tuck_abdominoplasty': {
-        india: 3500,
-        south_korea: 7000,
-        germany: 9000,
-        usa: 12000,
-        brazil: 5500
-      },
-      'breast_augmentation_reduction': {
-        india: 3000,
-        south_korea: 6000,
-        germany: 8000,
-        usa: 10000,
-        brazil: 4500
-      },
-      'cataract_surgery': { 
-        india: 1000, 
-        germany: 2000, 
-        singapore: 3500, 
-        spain: 2500, 
-        uae: 3000 
-      },
-      'lasik_refractive_surgery': {
-        india: 800,
-        germany: 2500,
-        singapore: 3000,
-        spain: 2000,
-        uae: 2500
-      },
-      'retinal_surgery': {
-        india: 2000,
-        germany: 6000,
-        singapore: 5000,
-        spain: 5000,
-        uae: 4500
-      },
-      'glaucoma_treatment': {
-        india: 1500,
-        germany: 6500,
-        singapore: 4000,
-        spain: 6000,
-        uae: 4000
-      },
-      'cochlear_implant': {
-        india: 15000,
-        germany: 30000,
-        south_korea: 25000,
-        spain: 28000,
-        usa: 50000
-      },
-      'sinus_surgery': {
-        india: 3000,
-        germany: 8000,
-        south_korea: 6000,
-        spain: 7000,
-        usa: 12000
-      },
-      'tonsil_adenoid_removal': {
-        india: 1500,
-        germany: 4000,
-        south_korea: 3000,
-        spain: 3500,
-        usa: 6000
-      },
-      'ear_reconstruction': {
-        india: 4000,
-        germany: 10000,
-        south_korea: 7000,
-        spain: 8000,
-        usa: 15000
-      },
-      'dental_implants': { 
-        india: 600, 
-        usa: 4000, 
-        germany: 1200, 
-        singapore: 2500, 
-        spain: 1100 
-      },
-      'full_mouth_rehabilitation': {
-        india: 9000,
-        usa: 50000,
-        germany: 20000,
-        singapore: 25000,
-        spain: 18000
-      },
-      'smile_design': {
-        india: 3500,
-        usa: 20000,
-        germany: 8000,
-        singapore: 12000,
-        spain: 9000
-      },
-      'root_canal_treatment': {
-        india: 100,
-        usa: 1200,
-        germany: 400,
-        singapore: 600,
-        spain: 350
-      },
-      'orthodontics_braces_aligners': {
-        india: 1500,
-        usa: 6000,
-        germany: 3500,
-        singapore: 4500,
-        spain: 3000
-      },
-      'ayurvedic_detox_panchakarma': {
-        india: 400,
-        usa: 2000,
-        germany: 1500,
-        singapore: 1200,
-        spain: 1000
-      },
-      'stress_relief_mental_wellness': {
-        india: 300,
-        usa: 1500,
-        germany: 1200,
-        singapore: 1000,
-        spain: 800
-      },
-      'weight_management': {
-        india: 300,
-        usa: 2000,
-        germany: 1500,
-        singapore: 1200,
-        spain: 1000
-      },
-      'yoga_naturopathy_packages': {
-        india: 250,
-        usa: 1200,
-        germany: 1000,
-        singapore: 800,
-        spain: 700
-      }
-    };
+        categoryFilters.forEach(filter => {
+          filter.addEventListener('click', () => {
+            const category = filter.getAttribute('data-category');
 
-    const countryNames = {
-      usa: 'United States',
-      uk: 'United Kingdom',
-      germany: 'Germany',
-      singapore: 'Singapore',
-      spain: 'Spain',
-      uae: 'UAE',
-      australia: 'Australia',
-      switzerland: 'Switzerland',
-      czech: 'Czech Republic',
-      japan: 'Japan',
-      south_korea: 'South Korea',
-      brazil: 'Brazil'
-    };
+            // Update active state
+            categoryFilters.forEach(f => {
+              f.classList.remove('bg-teal-500', 'text-white', 'border-teal-500', 'active');
+              f.classList.add('border-slate-300', 'text-slate-700');
+            });
+            filter.classList.add('bg-teal-500', 'text-white', 'border-teal-500', 'active');
+            filter.classList.remove('border-slate-300', 'text-slate-700');
 
-    // Treatment display names mapping
-    const treatmentNames = {
-      'angioplasty_ptca': 'Angioplasty (PTCA)',
-      'bypass_surgery_cabg': 'Bypass Surgery (CABG)',
-      'heart_valve_replacement': 'Heart Valve Replacement',
-      'pacemaker_implantation': 'Pacemaker Implantation',
-      'cardiac_consultation_checkup': 'Cardiac Consultation / Check-up',
-      'total_knee_replacement': 'Total Knee Replacement',
-      'hip_replacement': 'Hip Replacement',
-      'shoulder_elbow_replacement': 'Shoulder / Elbow Replacement',
-      'arthroscopy': 'Arthroscopy',
-      'spinal_surgery': 'Spinal Surgery',
-      'brain_tumor_surgery': 'Brain Tumor Surgery',
-      'spine_surgery_cervical_lumbar': 'Spine Surgery (Cervical / Lumbar)',
-      'deep_brain_stimulation': 'Deep Brain Stimulation',
-      'epilepsy_surgery': 'Epilepsy Surgery',
-      'stroke_rehabilitation': 'Stroke Rehabilitation',
-      'chemotherapy': 'Chemotherapy (per cycle)',
-      'radiation_therapy': 'Radiation Therapy (course)',
-      'surgical_oncology': 'Surgical Oncology',
-      'bone_marrow_transplant': 'Bone Marrow Transplant',
-      'cancer_second_opinion': 'Cancer Second Opinion',
-      'liver_transplant': 'Liver Transplant',
-      'gallbladder_biliary_surgery': 'Gallbladder / Biliary Surgery',
-      'bariatric_surgery': 'Bariatric (Weight Loss) Surgery',
-      'endoscopy_colonoscopy': 'Endoscopy / Colonoscopy',
-      'gi_cancer_treatment': 'GI Cancer Treatment',
-      'kidney_transplant': 'Kidney Transplant',
-      'prostate_surgery_turp_laser': 'Prostate Surgery (TURP / Laser)',
-      'kidney_stone_removal': 'Kidney Stone Removal',
-      'dialysis_per_session': 'Dialysis (per session)',
-      'urethral_reconstruction': 'Urethral Reconstruction',
-      'ivf_icsi_fertility_treatments': 'IVF / ICSI / Fertility Treatments',
-      'hysterectomy': 'Hysterectomy',
-      'laparoscopic_gynec_surgery': 'Laparoscopic Gynec Surgery',
-      'surrogacy_assistance': 'Surrogacy Assistance',
-      'maternity_delivery_packages': 'Maternity / Delivery Packages',
-      'hair_transplant': 'Hair Transplant',
-      'rhinoplasty_nose_job': 'Rhinoplasty (Nose Job)',
-      'liposuction': 'Liposuction',
-      'tummy_tuck_abdominoplasty': 'Tummy Tuck / Abdominoplasty',
-      'breast_augmentation_reduction': 'Breast Augmentation / Reduction',
-      'cataract_surgery': 'Cataract Surgery',
-      'lasik_refractive_surgery': 'LASIK / Refractive Surgery',
-      'retinal_surgery': 'Retinal Surgery',
-      'glaucoma_treatment': 'Glaucoma Treatment',
-      'cochlear_implant': 'Cochlear Implant',
-      'sinus_surgery': 'Sinus Surgery',
-      'tonsil_adenoid_removal': 'Tonsil / Adenoid Removal',
-      'ear_reconstruction': 'Ear Reconstruction',
-      'dental_implants': 'Dental Implants (per tooth)',
-      'full_mouth_rehabilitation': 'Full Mouth Rehabilitation',
-      'smile_design': 'Smile Design (full)',
-      'root_canal_treatment': 'Root Canal Treatment',
-      'orthodontics_braces_aligners': 'Orthodontics (Braces / Aligners)',
-      'ayurvedic_detox_panchakarma': 'Ayurvedic Detox (Panchakarma)',
-      'stress_relief_mental_wellness': 'Stress Relief / Mental Wellness',
-      'weight_management': 'Weight Management',
-      'yoga_naturopathy_packages': 'Yoga & Naturopathy Packages'
-    };
+            // Filter treatment options
+            if (treatmentSelect) {
+              const options = treatmentSelect.querySelectorAll('option, optgroup');
+              options.forEach(opt => {
+                if (category === 'all') {
+                  opt.style.display = '';
+                } else if (opt.tagName === 'OPTGROUP') {
+                  const optCategory = opt.getAttribute('data-category');
+                  opt.style.display = optCategory === category ? '' : 'none';
+                } else {
+                  const optgroup = opt.closest('optgroup');
+                  if (optgroup) {
+                    const optCategory = optgroup.getAttribute('data-category');
+                    opt.style.display = optCategory === category ? '' : 'none';
+                  }
+                }
+              });
+            }
+          });
+        });
+      }, 100);
+    });
+  </script>
 
-    // Populate treatment dropdown dynamically
-    function populateTreatmentDropdown() {
-      if (!treatmentSelect) return;
-      
-      // Clear existing options except the first one
-      treatmentSelect.innerHTML = '<option selected disabled>Choose a treatment</option>';
-      
-      // Group treatments by category for better organization
-      // Map category names to filter button data-category values
-      const categoryMapping = {
-        'Cardiology & Cardiac Surgery': { filterKey: 'cardiology', treatments: ['angioplasty_ptca', 'bypass_surgery_cabg', 'heart_valve_replacement', 'pacemaker_implantation', 'cardiac_consultation_checkup'] },
-        'Orthopedics & Joint Replacement': { filterKey: 'orthopedics', treatments: ['total_knee_replacement', 'hip_replacement', 'shoulder_elbow_replacement', 'arthroscopy', 'spinal_surgery'] },
-        'Neurology & Neurosurgery': { filterKey: 'neurology', treatments: ['brain_tumor_surgery', 'spine_surgery_cervical_lumbar', 'deep_brain_stimulation', 'epilepsy_surgery', 'stroke_rehabilitation'] },
-        'Oncology (Cancer Treatment)': { filterKey: 'oncology', treatments: ['chemotherapy', 'radiation_therapy', 'surgical_oncology', 'bone_marrow_transplant', 'cancer_second_opinion'] },
-        'Gastroenterology & Hepatology': { filterKey: 'gastroenterology', treatments: ['liver_transplant', 'gallbladder_biliary_surgery', 'bariatric_surgery', 'endoscopy_colonoscopy', 'gi_cancer_treatment'] },
-        'Urology & Nephrology': { filterKey: 'urology', treatments: ['kidney_transplant', 'prostate_surgery_turp_laser', 'kidney_stone_removal', 'dialysis_per_session', 'urethral_reconstruction'] },
-        'Gynecology & Fertility': { filterKey: 'gynecology', treatments: ['ivf_icsi_fertility_treatments', 'hysterectomy', 'laparoscopic_gynec_surgery', 'surrogacy_assistance', 'maternity_delivery_packages'] },
-        'Cosmetic & Plastic Surgery': { filterKey: 'cosmetic', treatments: ['hair_transplant', 'rhinoplasty_nose_job', 'liposuction', 'tummy_tuck_abdominoplasty', 'breast_augmentation_reduction'] },
-        'Ophthalmology (Eye Care)': { filterKey: 'ophthalmology', treatments: ['cataract_surgery', 'lasik_refractive_surgery', 'retinal_surgery', 'glaucoma_treatment'] },
-        'ENT (Ear, Nose & Throat)': { filterKey: 'ent', treatments: ['cochlear_implant', 'sinus_surgery', 'tonsil_adenoid_removal', 'ear_reconstruction'] },
-        'Dental & Oral Surgery': { filterKey: 'dental', treatments: ['dental_implants', 'full_mouth_rehabilitation', 'smile_design', 'root_canal_treatment', 'orthodontics_braces_aligners'] },
-        'Ayurveda, Wellness & Rejuvenation': { filterKey: 'ayurveda', treatments: ['ayurvedic_detox_panchakarma', 'stress_relief_mental_wellness', 'weight_management', 'yoga_naturopathy_packages'] }
+  <!-- COST CALCULATOR SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const treatmentSelect = document.getElementById('treatmentSelect');
+      const countrySelect = document.getElementById('countrySelect');
+      const calculateBtn = document.getElementById('calculateBtn');
+      const resetBtn = document.getElementById('resetBtn');
+      const resultsDiv = document.getElementById('calculatorResults');
+      const usdCostInput = document.getElementById('usdCost');
+      const localCostInput = document.getElementById('localCost');
+
+      // Treatment cost data (India vs other countries in USD) - Data from context.md
+      const costData = {
+        'angioplasty_ptca': {
+          india: 4000,
+          germany: 6000,
+          singapore: 25000,
+          spain: 15000,
+          uae: 8000
+        },
+        'bypass_surgery_cabg': {
+          india: 6500,
+          germany: 20000,
+          singapore: 30000,
+          spain: 27000,
+          uae: 25000
+        },
+        'heart_valve_replacement': {
+          india: 8000,
+          germany: 45000,
+          singapore: 35000,
+          spain: 40000,
+          uae: 35000
+        },
+        'pacemaker_implantation': {
+          india: 4000,
+          germany: 12000,
+          singapore: 14000,
+          spain: 10000,
+          uae: 12000
+        },
+        'cardiac_consultation_checkup': {
+          india: 200,
+          germany: 300,
+          singapore: 500,
+          spain: 400,
+          uae: 1500
+        },
+        'total_knee_replacement': {
+          india: 6000,
+          germany: 18000,
+          usa: 35000,
+          australia: 25000,
+          switzerland: 30000
+        },
+        'hip_replacement': {
+          india: 7000,
+          germany: 20000,
+          usa: 30000,
+          australia: 28000,
+          switzerland: 25000
+        },
+        'shoulder_elbow_replacement': {
+          india: 5500,
+          germany: 15000,
+          usa: 25000,
+          australia: 22000,
+          switzerland: 28000
+        },
+        'arthroscopy': {
+          india: 3000,
+          germany: 8000,
+          usa: 12000,
+          australia: 10000,
+          switzerland: 12000
+        },
+        'spinal_surgery': {
+          india: 6500,
+          germany: 22000,
+          usa: 50000,
+          australia: 35000,
+          switzerland: 40000
+        },
+        'brain_tumor_surgery': {
+          india: 7500,
+          germany: 25000,
+          usa: 100000,
+          uk: 40000,
+          singapore: 30000
+        },
+        'spine_surgery_cervical_lumbar': {
+          india: 5500,
+          germany: 20000,
+          usa: 60000,
+          uk: 25000,
+          singapore: 22000
+        },
+        'deep_brain_stimulation': {
+          india: 20000,
+          germany: 40000,
+          usa: 70000,
+          uk: 60000,
+          singapore: 55000
+        },
+        'epilepsy_surgery': {
+          india: 8000,
+          germany: 22000,
+          usa: 80000,
+          uk: 35000,
+          singapore: 28000
+        },
+        'stroke_rehabilitation': {
+          india: 3000,
+          germany: 15000,
+          usa: 50000,
+          uk: 20000,
+          singapore: 18000
+        },
+        'chemotherapy': {
+          india: 500,
+          germany: 3000,
+          usa: 10000,
+          uk: 5000,
+          singapore: 4000
+        },
+        'radiation_therapy': {
+          india: 4000,
+          germany: 20000,
+          usa: 50000,
+          uk: 30000,
+          singapore: 25000
+        },
+        'surgical_oncology': {
+          india: 5000,
+          germany: 25000,
+          usa: 40000,
+          uk: 35000,
+          singapore: 30000
+        },
+        'bone_marrow_transplant': {
+          india: 30000,
+          germany: 200000,
+          usa: 400000,
+          uk: 250000,
+          singapore: 150000
+        },
+        'cancer_second_opinion': {
+          india: 200,
+          germany: 1000,
+          usa: 5000,
+          uk: 2000,
+          singapore: 1500
+        },
+        'liver_transplant': {
+          india: 28000,
+          germany: 250000,
+          singapore: 50000,
+          japan: 60000,
+          usa: 300000
+        },
+        'gallbladder_biliary_surgery': {
+          india: 3000,
+          germany: 10000,
+          singapore: 8000,
+          japan: 12000,
+          usa: 20000
+        },
+        'bariatric_surgery': {
+          india: 4500,
+          germany: 15000,
+          singapore: 12000,
+          japan: 14000,
+          usa: 25000
+        },
+        'endoscopy_colonoscopy': {
+          india: 200,
+          germany: 1000,
+          singapore: 800,
+          japan: 900,
+          usa: 3000
+        },
+        'gi_cancer_treatment': {
+          india: 7000,
+          germany: 50000,
+          singapore: 28500,
+          japan: 40000,
+          usa: 60000
+        },
+        'kidney_transplant': {
+          india: 13000,
+          germany: 100000,
+          singapore: 50000,
+          spain: 40000,
+          uae: 45000
+        },
+        'prostate_surgery_turp_laser': {
+          india: 2000,
+          germany: 9000,
+          singapore: 8000,
+          spain: 9000,
+          uae: 6000
+        },
+        'kidney_stone_removal': {
+          india: 500,
+          germany: 6000,
+          singapore: 5000,
+          spain: 9000,
+          uae: 4000
+        },
+        'dialysis_per_session': {
+          india: 50,
+          germany: 300,
+          singapore: 400,
+          spain: 250,
+          uae: 350
+        },
+        'urethral_reconstruction': {
+          india: 4000,
+          germany: 15000,
+          singapore: 12000,
+          spain: 12000,
+          uae: 10000
+        },
+        'ivf_icsi_fertility_treatments': {
+          india: 3500,
+          spain: 6500,
+          czech: 3500,
+          germany: 5500,
+          usa: 15000
+        },
+        'hysterectomy': {
+          india: 4000,
+          spain: 10000,
+          czech: 6000,
+          germany: 12000,
+          usa: 20000
+        },
+        'laparoscopic_gynec_surgery': {
+          india: 3000,
+          spain: 8000,
+          czech: 5000,
+          germany: 10000,
+          usa: 18000
+        },
+        'surrogacy_assistance': {
+          india: 35000,
+          spain: 60000,
+          czech: 50000,
+          usa: 120000
+        },
+        'maternity_delivery_packages': {
+          india: 2500,
+          spain: 7000,
+          czech: 4500,
+          germany: 8000,
+          usa: 15000
+        },
+        'hair_transplant': {
+          india: 3000,
+          south_korea: 4000,
+          germany: 6000,
+          usa: 12000,
+          brazil: 5000
+        },
+        'rhinoplasty_nose_job': {
+          india: 2000,
+          south_korea: 5000,
+          germany: 7000,
+          usa: 8000,
+          brazil: 4000
+        },
+        'liposuction': {
+          india: 2500,
+          south_korea: 4500,
+          germany: 6000,
+          usa: 7000,
+          brazil: 4500
+        },
+        'tummy_tuck_abdominoplasty': {
+          india: 3500,
+          south_korea: 7000,
+          germany: 9000,
+          usa: 12000,
+          brazil: 5500
+        },
+        'breast_augmentation_reduction': {
+          india: 3000,
+          south_korea: 6000,
+          germany: 8000,
+          usa: 10000,
+          brazil: 4500
+        },
+        'cataract_surgery': {
+          india: 1000,
+          germany: 2000,
+          singapore: 3500,
+          spain: 2500,
+          uae: 3000
+        },
+        'lasik_refractive_surgery': {
+          india: 800,
+          germany: 2500,
+          singapore: 3000,
+          spain: 2000,
+          uae: 2500
+        },
+        'retinal_surgery': {
+          india: 2000,
+          germany: 6000,
+          singapore: 5000,
+          spain: 5000,
+          uae: 4500
+        },
+        'glaucoma_treatment': {
+          india: 1500,
+          germany: 6500,
+          singapore: 4000,
+          spain: 6000,
+          uae: 4000
+        },
+        'cochlear_implant': {
+          india: 15000,
+          germany: 30000,
+          south_korea: 25000,
+          spain: 28000,
+          usa: 50000
+        },
+        'sinus_surgery': {
+          india: 3000,
+          germany: 8000,
+          south_korea: 6000,
+          spain: 7000,
+          usa: 12000
+        },
+        'tonsil_adenoid_removal': {
+          india: 1500,
+          germany: 4000,
+          south_korea: 3000,
+          spain: 3500,
+          usa: 6000
+        },
+        'ear_reconstruction': {
+          india: 4000,
+          germany: 10000,
+          south_korea: 7000,
+          spain: 8000,
+          usa: 15000
+        },
+        'dental_implants': {
+          india: 600,
+          usa: 4000,
+          germany: 1200,
+          singapore: 2500,
+          spain: 1100
+        },
+        'full_mouth_rehabilitation': {
+          india: 9000,
+          usa: 50000,
+          germany: 20000,
+          singapore: 25000,
+          spain: 18000
+        },
+        'smile_design': {
+          india: 3500,
+          usa: 20000,
+          germany: 8000,
+          singapore: 12000,
+          spain: 9000
+        },
+        'root_canal_treatment': {
+          india: 100,
+          usa: 1200,
+          germany: 400,
+          singapore: 600,
+          spain: 350
+        },
+        'orthodontics_braces_aligners': {
+          india: 1500,
+          usa: 6000,
+          germany: 3500,
+          singapore: 4500,
+          spain: 3000
+        },
+        'ayurvedic_detox_panchakarma': {
+          india: 400,
+          usa: 2000,
+          germany: 1500,
+          singapore: 1200,
+          spain: 1000,
+          france: 1620
+        },
+        'stress_relief_mental_wellness': {
+          india: 300,
+          usa: 1500,
+          germany: 1200,
+          singapore: 1000,
+          spain: 800,
+          france: 864
+        },
+        'weight_management': {
+          india: 300,
+          usa: 2000,
+          germany: 1500,
+          singapore: 1200,
+          spain: 1000,
+          france: 1944
+        },
+        'yoga_naturopathy_packages': {
+          india: 250,
+          usa: 1200,
+          germany: 1000,
+          singapore: 800,
+          spain: 700,
+          france: 648
+        }
       };
 
-      // Add treatments grouped by category
-      Object.keys(categoryMapping).forEach(categoryName => {
-        const categoryInfo = categoryMapping[categoryName];
-        const optgroup = document.createElement('optgroup');
-        optgroup.label = categoryName;
-        optgroup.setAttribute('data-category', categoryInfo.filterKey);
-        
-        categoryInfo.treatments.forEach(treatmentKey => {
-          if (costData[treatmentKey]) {
-            const option = document.createElement('option');
-            option.value = treatmentKey;
-            option.textContent = treatmentNames[treatmentKey] || treatmentKey;
-            optgroup.appendChild(option);
+      const countryNames = {
+        usa: 'United States',
+        uk: 'United Kingdom',
+        germany: 'Germany',
+        singapore: 'Singapore',
+        spain: 'Spain',
+        uae: 'UAE',
+        australia: 'Australia',
+        switzerland: 'Switzerland',
+        czech: 'Czech Republic',
+        japan: 'Japan',
+        south_korea: 'South Korea',
+        brazil: 'Brazil',
+        france: 'France'
+      };
+
+      // Treatment display names mapping
+      const treatmentNames = {
+        'angioplasty_ptca': 'Angioplasty (PTCA)',
+        'bypass_surgery_cabg': 'Bypass Surgery (CABG)',
+        'heart_valve_replacement': 'Heart Valve Replacement',
+        'pacemaker_implantation': 'Pacemaker Implantation',
+        'cardiac_consultation_checkup': 'Cardiac Consultation / Check-up',
+        'total_knee_replacement': 'Total Knee Replacement',
+        'hip_replacement': 'Hip Replacement',
+        'shoulder_elbow_replacement': 'Shoulder / Elbow Replacement',
+        'arthroscopy': 'Arthroscopy',
+        'spinal_surgery': 'Spinal Surgery',
+        'brain_tumor_surgery': 'Brain Tumor Surgery',
+        'spine_surgery_cervical_lumbar': 'Spine Surgery (Cervical / Lumbar)',
+        'deep_brain_stimulation': 'Deep Brain Stimulation',
+        'epilepsy_surgery': 'Epilepsy Surgery',
+        'stroke_rehabilitation': 'Stroke Rehabilitation',
+        'chemotherapy': 'Chemotherapy (per cycle)',
+        'radiation_therapy': 'Radiation Therapy (course)',
+        'surgical_oncology': 'Surgical Oncology',
+        'bone_marrow_transplant': 'Bone Marrow Transplant',
+        'cancer_second_opinion': 'Cancer Second Opinion',
+        'liver_transplant': 'Liver Transplant',
+        'gallbladder_biliary_surgery': 'Gallbladder / Biliary Surgery',
+        'bariatric_surgery': 'Bariatric (Weight Loss) Surgery',
+        'endoscopy_colonoscopy': 'Endoscopy / Colonoscopy',
+        'gi_cancer_treatment': 'GI Cancer Treatment',
+        'kidney_transplant': 'Kidney Transplant',
+        'prostate_surgery_turp_laser': 'Prostate Surgery (TURP / Laser)',
+        'kidney_stone_removal': 'Kidney Stone Removal',
+        'dialysis_per_session': 'Dialysis (per session)',
+        'urethral_reconstruction': 'Urethral Reconstruction',
+        'ivf_icsi_fertility_treatments': 'IVF / ICSI / Fertility Treatments',
+        'hysterectomy': 'Hysterectomy',
+        'laparoscopic_gynec_surgery': 'Laparoscopic Gynec Surgery',
+        'surrogacy_assistance': 'Surrogacy Assistance',
+        'maternity_delivery_packages': 'Maternity / Delivery Packages',
+        'hair_transplant': 'Hair Transplant',
+        'rhinoplasty_nose_job': 'Rhinoplasty (Nose Job)',
+        'liposuction': 'Liposuction',
+        'tummy_tuck_abdominoplasty': 'Tummy Tuck / Abdominoplasty',
+        'breast_augmentation_reduction': 'Breast Augmentation / Reduction',
+        'cataract_surgery': 'Cataract Surgery',
+        'lasik_refractive_surgery': 'LASIK / Refractive Surgery',
+        'retinal_surgery': 'Retinal Surgery',
+        'glaucoma_treatment': 'Glaucoma Treatment',
+        'cochlear_implant': 'Cochlear Implant',
+        'sinus_surgery': 'Sinus Surgery',
+        'tonsil_adenoid_removal': 'Tonsil / Adenoid Removal',
+        'ear_reconstruction': 'Ear Reconstruction',
+        'dental_implants': 'Dental Implants (per tooth)',
+        'full_mouth_rehabilitation': 'Full Mouth Rehabilitation',
+        'smile_design': 'Smile Design (full)',
+        'root_canal_treatment': 'Root Canal Treatment',
+        'orthodontics_braces_aligners': 'Orthodontics (Braces / Aligners)',
+        'ayurvedic_detox_panchakarma': 'Ayurvedic Detox (Panchakarma)',
+        'stress_relief_mental_wellness': 'Stress Relief / Mental Wellness',
+        'weight_management': 'Weight Management',
+        'yoga_naturopathy_packages': 'Yoga & Naturopathy Packages'
+      };
+
+      // Populate treatment dropdown dynamically
+      function populateTreatmentDropdown() {
+        if (!treatmentSelect) return;
+
+        // Clear existing options except the first one
+        treatmentSelect.innerHTML = '<option selected disabled>Choose a treatment</option>';
+
+        // Group treatments by category for better organization
+        // Map category names to filter button data-category values
+        const categoryMapping = {
+          'Cardiology & Cardiac Surgery': { filterKey: 'cardiology', treatments: ['angioplasty_ptca', 'bypass_surgery_cabg', 'heart_valve_replacement', 'pacemaker_implantation', 'cardiac_consultation_checkup'] },
+          'Orthopedics & Joint Replacement': { filterKey: 'orthopedics', treatments: ['total_knee_replacement', 'hip_replacement', 'shoulder_elbow_replacement', 'arthroscopy', 'spinal_surgery'] },
+          'Neurology & Neurosurgery': { filterKey: 'neurology', treatments: ['brain_tumor_surgery', 'spine_surgery_cervical_lumbar', 'deep_brain_stimulation', 'epilepsy_surgery', 'stroke_rehabilitation'] },
+          'Oncology (Cancer Treatment)': { filterKey: 'oncology', treatments: ['chemotherapy', 'radiation_therapy', 'surgical_oncology', 'bone_marrow_transplant', 'cancer_second_opinion'] },
+          'Gastroenterology & Hepatology': { filterKey: 'gastroenterology', treatments: ['liver_transplant', 'gallbladder_biliary_surgery', 'bariatric_surgery', 'endoscopy_colonoscopy', 'gi_cancer_treatment'] },
+          'Urology & Nephrology': { filterKey: 'urology', treatments: ['kidney_transplant', 'prostate_surgery_turp_laser', 'kidney_stone_removal', 'dialysis_per_session', 'urethral_reconstruction'] },
+          'Gynecology & Fertility': { filterKey: 'gynecology', treatments: ['ivf_icsi_fertility_treatments', 'hysterectomy', 'laparoscopic_gynec_surgery', 'surrogacy_assistance', 'maternity_delivery_packages'] },
+          'Cosmetic & Plastic Surgery': { filterKey: 'cosmetic', treatments: ['hair_transplant', 'rhinoplasty_nose_job', 'liposuction', 'tummy_tuck_abdominoplasty', 'breast_augmentation_reduction'] },
+          'Ophthalmology (Eye Care)': { filterKey: 'ophthalmology', treatments: ['cataract_surgery', 'lasik_refractive_surgery', 'retinal_surgery', 'glaucoma_treatment'] },
+          'ENT (Ear, Nose & Throat)': { filterKey: 'ent', treatments: ['cochlear_implant', 'sinus_surgery', 'tonsil_adenoid_removal', 'ear_reconstruction'] },
+          'Dental & Oral Surgery': { filterKey: 'dental', treatments: ['dental_implants', 'full_mouth_rehabilitation', 'smile_design', 'root_canal_treatment', 'orthodontics_braces_aligners'] },
+          'Ayurveda, Wellness & Rejuvenation': { filterKey: 'ayurveda', treatments: ['ayurvedic_detox_panchakarma', 'stress_relief_mental_wellness', 'weight_management', 'yoga_naturopathy_packages'] }
+        };
+
+        // Add treatments grouped by category
+        Object.keys(categoryMapping).forEach(categoryName => {
+          const categoryInfo = categoryMapping[categoryName];
+          const optgroup = document.createElement('optgroup');
+          optgroup.label = categoryName;
+          optgroup.setAttribute('data-category', categoryInfo.filterKey);
+
+          categoryInfo.treatments.forEach(treatmentKey => {
+            if (costData[treatmentKey]) {
+              const option = document.createElement('option');
+              option.value = treatmentKey;
+              option.textContent = treatmentNames[treatmentKey] || treatmentKey;
+              optgroup.appendChild(option);
+            }
+          });
+
+          if (optgroup.children.length > 0) {
+            treatmentSelect.appendChild(optgroup);
           }
         });
-        
-        if (optgroup.children.length > 0) {
-          treatmentSelect.appendChild(optgroup);
-        }
-      });
-    }
-
-    // Populate country dropdown based on selected treatment
-    function populateCountryDropdown(selectedTreatment) {
-      if (!countrySelect) return;
-      
-      // Clear existing options
-      countrySelect.innerHTML = '<option selected disabled>Choose a country</option>';
-      
-      if (!selectedTreatment || !costData[selectedTreatment]) {
-        return;
       }
 
-      const treatmentData = costData[selectedTreatment];
-      const availableCountries = Object.keys(treatmentData).filter(key => key !== 'india');
-      
-      // Sort countries for consistent display
-      const countryOrder = ['usa', 'uk', 'germany', 'singapore', 'spain', 'uae', 'australia', 'switzerland', 'czech', 'japan', 'south_korea', 'brazil'];
-      
-      countryOrder.forEach(countryKey => {
-        if (availableCountries.includes(countryKey)) {
-          const option = document.createElement('option');
-          option.value = countryKey;
-          option.textContent = countryNames[countryKey] || countryKey;
-          countrySelect.appendChild(option);
-        }
-      });
-    }
+      // Populate country dropdown based on selected treatment
+      function populateCountryDropdown(selectedTreatment) {
+        if (!countrySelect) return;
 
-    // Update cost inputs when treatment or country is selected
-    function updateCostInputs() {
-      const selectedTreatment = treatmentSelect.value;
-      const selectedCountry = countrySelect.value;
-      
-      if (usdCostInput) usdCostInput.value = '';
-      if (localCostInput) localCostInput.value = '';
-      
-      if (selectedTreatment && selectedCountry && costData[selectedTreatment]) {
+        // Clear existing options
+        countrySelect.innerHTML = '<option selected disabled>Choose a country</option>';
+
+        if (!selectedTreatment || !costData[selectedTreatment]) {
+          return;
+        }
+
         const treatmentData = costData[selectedTreatment];
-        const indiaCost = treatmentData.india;
-        const countryCost = treatmentData[selectedCountry];
-        
-        if (indiaCost && countryCost) {
-          if (usdCostInput) usdCostInput.value = `$${indiaCost.toLocaleString()}`;
-          if (localCostInput) localCostInput.value = `$${countryCost.toLocaleString()}`;
+        const availableCountries = Object.keys(treatmentData).filter(key => key !== 'india');
+
+        // Sort countries for consistent display
+        const countryOrder = ['usa', 'uk', 'germany', 'singapore', 'spain', 'uae', 'australia', 'switzerland', 'czech', 'japan', 'south_korea', 'brazil', 'france'];
+
+        countryOrder.forEach(countryKey => {
+          if (availableCountries.includes(countryKey)) {
+            const option = document.createElement('option');
+            option.value = countryKey;
+            option.textContent = countryNames[countryKey] || countryKey;
+            countrySelect.appendChild(option);
+          }
+        });
+      }
+
+      // Update cost inputs when treatment or country is selected
+      function updateCostInputs() {
+        const selectedTreatment = treatmentSelect.value;
+        const selectedCountry = countrySelect.value;
+
+        if (usdCostInput) usdCostInput.value = '';
+        if (localCostInput) localCostInput.value = '';
+
+        if (selectedTreatment && selectedCountry && costData[selectedTreatment]) {
+          const treatmentData = costData[selectedTreatment];
+          const indiaCost = treatmentData.india;
+          const countryCost = treatmentData[selectedCountry];
+
+          if (indiaCost && countryCost) {
+            if (usdCostInput) usdCostInput.value = `$${indiaCost.toLocaleString()}`;
+            if (localCostInput) localCostInput.value = `$${countryCost.toLocaleString()}`;
+          }
         }
       }
-    }
 
-    // Initialize dropdowns
-    populateTreatmentDropdown();
+      // Initialize dropdowns
+      populateTreatmentDropdown();
 
-    // Event listeners
-    if (treatmentSelect) {
-      treatmentSelect.addEventListener('change', () => {
-        const selectedTreatment = treatmentSelect.value;
-        // Clear country selection and repopulate
-        if (countrySelect) {
-          countrySelect.innerHTML = '<option selected disabled>Choose a country</option>';
-        }
-        populateCountryDropdown(selectedTreatment);
-        // Clear cost inputs
-        if (usdCostInput) usdCostInput.value = '';
-        if (localCostInput) localCostInput.value = '';
-        if (resultsDiv) resultsDiv.classList.add('hidden');
-      });
-    }
+      // Event listeners
+      if (treatmentSelect) {
+        treatmentSelect.addEventListener('change', () => {
+          const selectedTreatment = treatmentSelect.value;
+          // Clear country selection and repopulate
+          if (countrySelect) {
+            countrySelect.innerHTML = '<option selected disabled>Choose a country</option>';
+          }
+          populateCountryDropdown(selectedTreatment);
+          // Clear cost inputs
+          if (usdCostInput) usdCostInput.value = '';
+          if (localCostInput) localCostInput.value = '';
+          if (resultsDiv) resultsDiv.classList.add('hidden');
+        });
+      }
 
-    if (countrySelect) {
-      countrySelect.addEventListener('change', () => {
-        updateCostInputs();
-        if (resultsDiv) resultsDiv.classList.add('hidden');
-      });
-    }
+      if (countrySelect) {
+        countrySelect.addEventListener('change', () => {
+          updateCostInputs();
+          if (resultsDiv) resultsDiv.classList.add('hidden');
+        });
+      }
 
-    // Calculate button functionality
-    if (calculateBtn) {
-      calculateBtn.addEventListener('click', () => {
-        const treatment = treatmentSelect.value;
-        const country = countrySelect.value;
+      // Calculate button functionality
+      if (calculateBtn) {
+        calculateBtn.addEventListener('click', () => {
+          const treatment = treatmentSelect.value;
+          const country = countrySelect.value;
 
-        if (!treatment) {
-          alert('Please select a treatment');
-          return;
-        }
-
-        if (!country) {
-          alert('Please select a country');
-          return;
-        }
-
-        const data = costData[treatment];
-        if (!data) {
-          alert('Cost data not available for this treatment');
-          return;
-        }
-
-        const indiaCost = data.india;
-        const otherCountryCost = data[country];
-        
-        if (!otherCountryCost) {
-          alert(`Cost data not available for ${countryNames[country]} for this treatment. Please select a different country.`);
-          return;
-        }
-
-        const savings = otherCountryCost - indiaCost;
-        const savingsPercent = Math.round((savings / otherCountryCost) * 100);
-
-        // Update results display
-        if (resultsDiv) {
-          // India cost
-          const resultIndiaUSD = document.getElementById('resultIndiaUSD');
-          const resultIndiaINR = document.getElementById('resultIndiaINR');
-          if (resultIndiaUSD) resultIndiaUSD.textContent = `$${indiaCost.toLocaleString()}`;
-          if (resultIndiaINR) {
-            const inrCost = Math.round(indiaCost * 83); // Approximate conversion
-            resultIndiaINR.textContent = `₹${inrCost.toLocaleString('en-IN')}`;
+          if (!treatment) {
+            alert('Please select a treatment');
+            return;
           }
 
-          // Selected country cost
-          const resultCountryName = document.getElementById('resultCountryName');
-          const resultCountryUSD = document.getElementById('resultCountryUSD');
-          const resultCountryLocal = document.getElementById('resultCountryLocal');
-          
-          if (resultCountryName) resultCountryName.textContent = countryNames[country] || country;
-          if (resultCountryUSD) resultCountryUSD.textContent = `$${otherCountryCost.toLocaleString()}`;
-          if (resultCountryLocal) {
-            // For now, show USD as local currency (can be enhanced with actual currency conversion)
-            resultCountryLocal.textContent = `$${otherCountryCost.toLocaleString()}`;
+          if (!country) {
+            alert('Please select a country');
+            return;
           }
 
-          // Savings
-          const savingsAmount = document.getElementById('savingsAmount');
-          const savingsPercentage = document.getElementById('savingsPercentage');
-          
-          if (savingsAmount) savingsAmount.textContent = `Save up to $${savings.toLocaleString()}`;
-          if (savingsPercentage) savingsPercentage.textContent = `${savingsPercent}%`;
+          const data = costData[treatment];
+          if (!data) {
+            alert('Cost data not available for this treatment');
+            return;
+          }
 
-          resultsDiv.classList.remove('hidden');
-          resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-      });
-    }
+          const indiaCost = data.india;
+          const otherCountryCost = data[country];
 
-    // Reset button functionality
-    if (resetBtn) {
-      resetBtn.addEventListener('click', () => {
-        if (treatmentSelect) treatmentSelect.value = '';
-        if (countrySelect) {
-          countrySelect.innerHTML = '<option selected disabled>Choose a country</option>';
-        }
-        if (usdCostInput) usdCostInput.value = '';
-        if (localCostInput) localCostInput.value = '';
-        if (resultsDiv) {
-          resultsDiv.classList.add('hidden');
-        }
-      });
-    }
-  });
-</script>
+          if (!otherCountryCost) {
+            alert(`Cost data not available for ${countryNames[country]} for this treatment. Please select a different country.`);
+            return;
+          }
 
-<script src="../script/scroll-animations.js"></script>
+          const savings = otherCountryCost - indiaCost;
+          const savingsPercent = Math.round((savings / otherCountryCost) * 100);
+
+          // Update results display
+          if (resultsDiv) {
+            // India cost
+            const resultIndiaUSD = document.getElementById('resultIndiaUSD');
+            const resultIndiaINR = document.getElementById('resultIndiaINR');
+            if (resultIndiaUSD) resultIndiaUSD.textContent = `$${indiaCost.toLocaleString()}`;
+            if (resultIndiaINR) {
+              const inrCost = Math.round(indiaCost * 83); // Approximate conversion
+              resultIndiaINR.textContent = `₹${inrCost.toLocaleString('en-IN')}`;
+            }
+
+            // Selected country cost
+            const resultCountryName = document.getElementById('resultCountryName');
+            const resultCountryUSD = document.getElementById('resultCountryUSD');
+            const resultCountryLocal = document.getElementById('resultCountryLocal');
+
+            if (resultCountryName) resultCountryName.textContent = countryNames[country] || country;
+            if (resultCountryUSD) resultCountryUSD.textContent = `$${otherCountryCost.toLocaleString()}`;
+            if (resultCountryLocal) {
+              // For now, show USD as local currency (can be enhanced with actual currency conversion)
+              resultCountryLocal.textContent = `$${otherCountryCost.toLocaleString()}`;
+            }
+
+            // Savings
+            const savingsAmount = document.getElementById('savingsAmount');
+            const savingsPercentage = document.getElementById('savingsPercentage');
+
+            if (savingsAmount) savingsAmount.textContent = `Save up to $${savings.toLocaleString()}`;
+            if (savingsPercentage) savingsPercentage.textContent = `${savingsPercent}%`;
+
+            resultsDiv.classList.remove('hidden');
+            resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+      }
+
+      // Reset button functionality
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          if (treatmentSelect) treatmentSelect.value = '';
+          if (countrySelect) {
+            countrySelect.innerHTML = '<option selected disabled>Choose a country</option>';
+          }
+          if (usdCostInput) usdCostInput.value = '';
+          if (localCostInput) localCostInput.value = '';
+          if (resultsDiv) {
+            resultsDiv.classList.add('hidden');
+          }
+        });
+      }
+    });
+  </script>
+
+  <script src="../script/scroll-animations.js"></script>
 </body>
+
 </html>

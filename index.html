@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arogya Yatri - A Service by Ewan Business Solutions</title>
+  <title>Arogya Yatri - A Medical Tourism Facilitator</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
@@ -502,7 +502,7 @@
             Arogya Yatri
           </div>
           <div class="text-xs o">
-            A service by Ewan Business Solutions
+            A Medical Tourism Facilitator
           </div>
         </div>
       </a>
@@ -562,7 +562,7 @@
       <div>
         <a href="index.html">
           <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
-          <div class="text-sm text-gray-500">A service by Ewan Business Solutions</div>
+          <div class="text-sm text-gray-500">A Medical Tourism Facilitator</div>
         </a>
       </div>
       <button id="closeBtn" class="text-2xl text-black">
@@ -1463,8 +1463,20 @@
 
       <!-- Key Benefits - Mobile Slider (lg:hidden) -->
       <div class="relative max-w-md mx-auto lg:hidden">
+        <!-- Prev Arrow -->
+        <button type="button" id="benefitsMobilePrevBtn"
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center rounded-full bg-white border-2 border-slate-200 text-slate-600 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-600 transition-all shadow-md"
+          aria-label="Previous">
+          <i class='bx bx-chevron-left text-xl'></i>
+        </button>
+        <!-- Next Arrow -->
+        <button type="button" id="benefitsMobileNextBtn"
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center rounded-full bg-white border-2 border-slate-200 text-slate-600 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-600 transition-all shadow-md"
+          aria-label="Next">
+          <i class='bx bx-chevron-right text-xl'></i>
+        </button>
         <!-- Slider Container -->
-        <div class="benefits-slider-container overflow-hidden rounded-2xl">
+        <div class="benefits-slider-container overflow-hidden rounded-2xl mx-10">
           <div class="benefits-slider flex transition-transform duration-300 ease-in-out">
 
             <!-- Slide 1 (Government Support + Zero Waiting) -->
@@ -1680,6 +1692,21 @@
             </div>
 
           </div>
+        </div>
+        <!-- Mobile Dot Indicators -->
+        <div class="flex justify-center gap-2 mt-4" id="benefitsMobileDots">
+          <button type="button"
+            class="benefits-mobile-dot w-2.5 h-2.5 rounded-full bg-teal-500 transition-colors cursor-pointer"
+            data-slide="0" aria-label="Go to slide 1"></button>
+          <button type="button"
+            class="benefits-mobile-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-teal-400 transition-colors cursor-pointer"
+            data-slide="1" aria-label="Go to slide 2"></button>
+          <button type="button"
+            class="benefits-mobile-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-teal-400 transition-colors cursor-pointer"
+            data-slide="2" aria-label="Go to slide 3"></button>
+          <button type="button"
+            class="benefits-mobile-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-teal-400 transition-colors cursor-pointer"
+            data-slide="3" aria-label="Go to slide 4"></button>
         </div>
       </div>
 
@@ -2730,20 +2757,61 @@
       let benefitsCurrentSlide = 0;
       const benefitsTotalSlides = 4;
       const benefitsSlider = document.querySelector('.benefits-slider');
+      const benefitsMobilePrevBtn = document.getElementById('benefitsMobilePrevBtn');
+      const benefitsMobileNextBtn = document.getElementById('benefitsMobileNextBtn');
+      const benefitsMobileDotsEl = document.getElementById('benefitsMobileDots');
+      let benefitsMobileInterval = null;
+      const BENEFITS_MOBILE_INTERVAL_MS = 2500;
 
       function updateBenefitsSlider() {
         if (benefitsSlider) {
           benefitsSlider.style.transform = `translateX(-${benefitsCurrentSlide * 100}%)`;
         }
+        if (benefitsMobileDotsEl) {
+          benefitsMobileDotsEl.querySelectorAll('.benefits-mobile-dot').forEach(function (dot, i) {
+            dot.classList.toggle('bg-teal-500', i === benefitsCurrentSlide);
+            dot.classList.toggle('bg-slate-300', i !== benefitsCurrentSlide);
+          });
+        }
       }
 
-      function goToNextSlide() {
+      function goToNextBenefitsMobile() {
         benefitsCurrentSlide = (benefitsCurrentSlide + 1) % benefitsTotalSlides;
         updateBenefitsSlider();
       }
+      function goToPrevBenefitsMobile() {
+        benefitsCurrentSlide = (benefitsCurrentSlide - 1 + benefitsTotalSlides) % benefitsTotalSlides;
+        updateBenefitsSlider();
+      }
+      function startBenefitsMobileAutoSlide() {
+        if (benefitsMobileInterval) clearInterval(benefitsMobileInterval);
+        benefitsMobileInterval = setInterval(goToNextBenefitsMobile, BENEFITS_MOBILE_INTERVAL_MS);
+      }
 
       updateBenefitsSlider();
-      setInterval(goToNextSlide, 2500); // Continuous infinite loop every 2.5s
+      startBenefitsMobileAutoSlide();
+
+      if (benefitsMobilePrevBtn) {
+        benefitsMobilePrevBtn.addEventListener('click', function () {
+          goToPrevBenefitsMobile();
+          startBenefitsMobileAutoSlide();
+        });
+      }
+      if (benefitsMobileNextBtn) {
+        benefitsMobileNextBtn.addEventListener('click', function () {
+          goToNextBenefitsMobile();
+          startBenefitsMobileAutoSlide();
+        });
+      }
+      if (benefitsMobileDotsEl) {
+        benefitsMobileDotsEl.querySelectorAll('.benefits-mobile-dot').forEach(function (dot) {
+          dot.addEventListener('click', function () {
+            benefitsCurrentSlide = parseInt(dot.getAttribute('data-slide'), 10);
+            updateBenefitsSlider();
+            startBenefitsMobileAutoSlide();
+          });
+        });
+      }
 
       // Desktop Benefits – continuous infinite single-row auto-slider with nav (lg+ only)
       const benefitsDesktopSlider = document.querySelector('.benefits-desktop-slider');
@@ -3108,7 +3176,7 @@
       <!-- BOTTOM BAR -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
         <p>
-          © 2025 Arogya Yatri. A service by Ewan Business Solutions. All rights reserved.
+          © 2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.
         </p>
 
         <div class="flex items-center gap-6">
@@ -3533,11 +3601,11 @@
 
         // Ayurveda, Wellness & Rejuvenation
         'ayurveda-detox': {
-          india: 400, usa: 3250, germany: 2500,
+          india: 400, usa: 3250, germany: 2500, france: 1620,
           australia: 3650, canada: 5100
         },
         'yoga-naturopathy': {
-          india: 250, usa: 1750, germany: 1500,
+          india: 250, usa: 1750, germany: 1500, france: 648,
           australia: 2965, canada: 4050
         },
 
@@ -3618,10 +3686,10 @@
           india: 1500, australia: 4950, canada: 6750
         },
         'stress-relief': {
-          india: 1200, australia: 2665, canada: 3600
+          india: 1200, australia: 2665, canada: 3600, france: 864
         },
         'weight-management': {
-          india: 1400, australia: 4300, canada: 5850
+          india: 1400, australia: 4300, canada: 5850, france: 1944
         }
       };
 

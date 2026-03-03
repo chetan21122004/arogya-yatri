@@ -68,10 +68,10 @@ COUNTRY_DATA.france = {
     root_canal_treatment: { usd: [110, 330], local: [100, 300] },
     orthodontics_braces: { usd: [550, 3300], local: [500, 3000] },
 
-    ayurvedic_detox_panchakarma: { usd: [0, 0], local: [0, 0] },
-    stress_relief_mental_wellness: { usd: [0, 0], local: [0, 0] },
-    weight_management: { usd: [0, 0], local: [0, 0] },
-    yoga_naturopathy_packages: { usd: [0, 0], local: [0, 0] }
+    ayurvedic_detox_panchakarma: { usd: [1620, 5400], local: [1500, 5000] },
+    stress_relief_mental_wellness: { usd: [864, 2700], local: [800, 2500] },
+    weight_management: { usd: [1944, 4860], local: [1800, 4500] },
+    yoga_naturopathy_packages: { usd: [648, 3240], local: [600, 3000] }
 
   }
 };

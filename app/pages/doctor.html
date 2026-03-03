@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arogya Yatri - Doctors</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -30,719 +32,729 @@
     }
   </script>
 
-<style>
+  <style>
     /* Hide scrollbar globally */
-html, body {
-    scrollbar-width: none;      /* Firefox */
-    -ms-overflow-style: none;   /* IE & Edge */
-}
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-    display: none;              /* Chrome, Safari */
-}
-*::-webkit-scrollbar {
-    display: none;
-}
-
-html { scroll-behavior: smooth; }
-
-/* ===== NAVBAR ===== */
-#siteHeader {
-    height: 72px;
-    background: white;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-}
-
-.nav-link {
-    position: relative;
-    color: black;
-    padding: 4px 0;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: black;
-    transform: translateX(-50%);
-    transition: width .25s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-.nav-cta {
-    border-color: black;
-}
-
-/* ===== PAGE OFFSET FOR FIXED NAV ===== */
-.page-wrapper {
-    padding-top: 80px;
-}
-
-@media (min-width: 768px) {
-    .page-wrapper {
-        padding-top: 96px;
+    html,
+    body {
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE & Edge */
     }
-}
 
-/* ===== Mobile Sidebar Fix ===== */
-#mobileMenu nav a {
-display: block;
-width: 100%;
-line-height: 1.4;
-padding: 6px 0;
-white-space: normal;
-}
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari */
+    }
 
-/* ===== DOCTOR SLIDER ===== */
-.doctor-slider-container {
-  position: relative;
-  overflow: hidden;
-  padding: 0 3rem; /* room for nav buttons */
-  max-width: 100%;
-}
+    *::-webkit-scrollbar {
+      display: none;
+    }
 
-/* Mobile: full-width single card, minimal padding so card uses whole width */
-@media (max-width: 639px) {
-  .doctor-results-section {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  .doctor-slider-container {
-    padding: 0 0.5rem; /* minimal – nav buttons overlap card edges */
-  }
-  /* Card content inset so it doesn’t sit under nav buttons */
-  .doctor-slider .doctor-card-article {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-    box-sizing: border-box;
-  }
-  .doctor-slider .doctor-card-article > div:first-child {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .doctor-slider .doctor-card-article > div:last-child {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .doctor-slide .grid {
-    gap: 0;
-  }
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-@media (min-width: 640px) {
-  .doctor-slider-container {
-    padding: 0 3.5rem;
-  }
-}
+    /* ===== NAVBAR ===== */
+    #siteHeader {
+      height: 72px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
 
-@media (min-width: 1024px) {
-  .doctor-slider-container {
-    padding: 0 4.5rem; /* extra room for 4-card layout + visible buttons */
-  }
-}
+    .nav-link {
+      position: relative;
+      color: black;
+      padding: 4px 0;
+    }
 
-.doctor-slider {
-  display: flex;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: transform;
-}
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width .25s ease;
+    }
 
-.doctor-slide {
-  flex: 0 0 100%;
-  min-width: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
+    .nav-link:hover::after {
+      width: 100%;
+    }
 
-/* Mobile: 1 card. Tablet: 2 cards. Desktop: 4 cards */
-.doctor-slide .grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 1rem;
-  align-items: stretch;
-}
+    .nav-cta {
+      border-color: black;
+    }
 
-@media (min-width: 768px) {
-  .doctor-slide .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
-}
+    /* ===== PAGE OFFSET FOR FIXED NAV ===== */
+    .page-wrapper {
+      padding-top: 80px;
+    }
 
-@media (min-width: 1024px) {
-  .doctor-slide .grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-  }
-}
+    @media (min-width: 768px) {
+      .page-wrapper {
+        padding-top: 96px;
+      }
+    }
 
-.doctor-nav-btn {
-  min-width: 44px;
-  min-height: 44px;
-  z-index: 30;
-  background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
+    /* ===== Mobile Sidebar Fix ===== */
+    #mobileMenu nav a {
+      display: block;
+      width: 100%;
+      line-height: 1.4;
+      padding: 6px 0;
+      white-space: normal;
+    }
 
-.doctor-nav-btn:hover:not(:disabled) {
-  background: rgb(240 253 250);
-  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.3);
-  transform: scale(1.1);
-  border-color: rgb(20 184 166);
-}
+    /* ===== DOCTOR SLIDER ===== */
+    .doctor-slider-container {
+      position: relative;
+      overflow: hidden;
+      padding: 0 3rem;
+      /* room for nav buttons */
+      max-width: 100%;
+    }
 
-.doctor-nav-btn:active:not(:disabled) {
-  transform: scale(0.95);
-}
+    /* Mobile: full-width single card, minimal padding so card uses whole width */
+    @media (max-width: 639px) {
+      .doctor-results-section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
 
-.doctor-nav-btn:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-  pointer-events: none;
-}
+      .doctor-slider-container {
+        padding: 0 0.5rem;
+        /* minimal – nav buttons overlap card edges */
+      }
 
-/* Mobile: nav buttons aligned and visible, don’t overlap card content */
-@media (max-width: 639px) {
-  .doctor-nav-btn {
-    width: 44px;
-    height: 44px;
-    min-width: 44px;
-    min-height: 44px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-    left: 0.5rem;
-    right: auto;
-  }
-  .doctor-nav-btn:last-of-type {
-    left: auto;
-    right: 0.5rem;
-  }
-}
+      /* Card content inset so it doesn’t sit under nav buttons */
+      .doctor-slider .doctor-card-article {
+        padding-left: 2.75rem;
+        padding-right: 2.75rem;
+        box-sizing: border-box;
+      }
 
-</style>
- 
+      .doctor-slider .doctor-card-article>div:first-child {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .doctor-slider .doctor-card-article>div:last-child {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .doctor-slide .grid {
+        gap: 0;
+      }
+    }
+
+    @media (min-width: 640px) {
+      .doctor-slider-container {
+        padding: 0 3.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .doctor-slider-container {
+        padding: 0 4.5rem;
+        /* extra room for 4-card layout + visible buttons */
+      }
+    }
+
+    .doctor-slider {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+
+    .doctor-slide {
+      flex: 0 0 100%;
+      min-width: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Mobile: 1 card. Tablet: 2 cards. Desktop: 4 cards */
+    .doctor-slide .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 1rem;
+      align-items: stretch;
+    }
+
+    @media (min-width: 768px) {
+      .doctor-slide .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .doctor-slide .grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+      }
+    }
+
+    .doctor-nav-btn {
+      min-width: 44px;
+      min-height: 44px;
+      z-index: 30;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .doctor-nav-btn:hover:not(:disabled) {
+      background: rgb(240 253 250);
+      box-shadow: 0 6px 20px rgba(20, 184, 166, 0.3);
+      transform: scale(1.1);
+      border-color: rgb(20 184 166);
+    }
+
+    .doctor-nav-btn:active:not(:disabled) {
+      transform: scale(0.95);
+    }
+
+    .doctor-nav-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    /* Mobile: nav buttons aligned and visible, don’t overlap card content */
+    @media (max-width: 639px) {
+      .doctor-nav-btn {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+        left: 0.5rem;
+        right: auto;
+      }
+
+      .doctor-nav-btn:last-of-type {
+        left: auto;
+        right: 0.5rem;
+      }
+    }
+  </style>
+
 </head>
 
 <body class="font-body bg-white text-black">
 
-<!-- ================= NAVBAR ================= -->
-<header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
-  <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
+  <!-- ================= NAVBAR ================= -->
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+    <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
 
-    <!-- Logo -->
-    <a href="../../index.html" class="flex items-center">
-      <div class="leading-tight">
-        <div class="text-2xl tracking-tight">Arogya Yatri</div>
-        <div class="text-xs opacity-70">A service by Ewan Business Solutions</div>
+      <!-- Logo -->
+      <a href="../../index.html" class="flex items-center">
+        <div class="leading-tight">
+          <div class="text-2xl tracking-tight">Arogya Yatri</div>
+          <div class="text-xs opacity-70">A Medical Tourism Facilitator</div>
+        </div>
+      </a>
+
+      <!-- Center Links -->
+      <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
+
+        <li>
+          <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
+            Treatment
+          </a>
+        </li>
+
+
+
+        <li>
+          <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
+            Doctor
+          </a>
+        </li>
+
+        <li>
+          <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
+            Destinations
+          </a>
+        </li>
+
+        <!-- Explore Dropdown -->
+        <li class="relative group flex items-center">
+          <button class="nav-link inline-flex items-center gap-1 leading-none">
+            Explore
+            <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
+          </button>
+
+          <div
+            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About
+              Us</a>
+            <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
+            <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+            <a href="news.html"
+              class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+          </div>
+        </li>
+      </ul>
+
+
+      <!-- CTA -->
+      <div class="ml-auto hidden md:flex items-center">
+        <a
+          class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
+            <i class='bx bx-right-arrow-alt'></i>
+          </span>
+          <span class="text-sm font-medium">Book Consultation</span>
+        </a>
       </div>
-    </a>
 
-    <!-- Center Links -->
-    <ul
-      class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
+        <i class='bx bx-menu'></i>
+      </button>
 
-      <li>
-        <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
-          Treatment
-        </a>
-      </li>
+    </nav>
+  </header>
 
-       
+  <!-- ================= MOBILE SIDEBAR ================= -->
+  <div id="mobileMenu"
+    class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
 
-      <li>
-        <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
-          Doctor
-        </a>
-      </li>
+    <!-- Header -->
+    <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+      <a href="../../index.html">
+        <div>
+          <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
+          <div class="text-sm text-gray-500">A Medical Tourism Facilitator</div>
+        </div>
+      </a>
+      <button id="closeBtn" class="text-2xl text-black">
+        <i class='bx bx-x'></i>
+      </button>
+    </div>
 
-      <li>
-        <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
-          Destinations
-        </a>
-      </li>
+    <!-- Nav -->
+    <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+      <a href="treatments.html" class="block">Treatment</a>
 
-      <!-- Explore Dropdown -->
-      <li class="relative group flex items-center">
-        <button
-          class="nav-link inline-flex items-center gap-1 leading-none">
-          Explore
-          <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
+      <a href="doctor.html" class="block">Doctor</a>
+      <a href="destinations.html" class="block">Destinations</a>
+
+      <!-- Mobile Explore Dropdown -->
+      <div>
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
+          <span>Explore</span>
+          <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
         </button>
 
-        <div
-          class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-          <a href="about.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
-          <a href="faq.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
-          <a href="testimonial.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
-          <a href="news.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+        <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+          <a href="about.html" class="block">About Us</a>
+          <a href="faq.html" class="block">FAQ</a>
+          <a href="testimonial.html" class="block">Testimonials</a>
+          <a href="news.html" class="block">News/Blogs</a>
         </div>
-      </li>
-    </ul>
-
-   
-  <!-- CTA -->
-  <div class="ml-auto hidden md:flex items-center">
-    <a
-      class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
-      <span
-        class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
-        <i class='bx bx-right-arrow-alt'></i>
-      </span>
-      <span class="text-sm font-medium">Book Consultation</span>
-    </a>
-  </div>
-
-    <!-- Mobile Button -->
-    <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
-      <i class='bx bx-menu'></i>
-    </button>
-
-  </nav>
-</header>
-
-<!-- ================= MOBILE SIDEBAR ================= -->
-<div id="mobileMenu"
-  class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
-
-  <!-- Header -->
-  <div class="p-6 border-b border-gray-200 flex justify-between items-start">
-    <a href="../../index.html">
-      <div>
-        <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
-        <div class="text-sm text-gray-500">A service by Ewan Business Solutions</div>
       </div>
-    </a>
-    <button id="closeBtn" class="text-2xl text-black">
-      <i class='bx bx-x'></i>
-    </button>
+
+      <div class="pt-6 border-t border-gray-200"></div>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+        target="_blank"
+        class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
+        style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
+        <span>Book Consultation</span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
+          <i class='bx bx-right-arrow-alt text-xl'></i>
+        </span>
+      </a>
+    </nav>
   </div>
 
-  <!-- Nav -->
-  <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
-    <a href="treatments.html" class="block">Treatment</a>
-      
-    <a href="doctor.html" class="block">Doctor</a>
-    <a href="destinations.html" class="block">Destinations</a>
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="page-wrapper max-w-7xl mx-auto px-4 sm:px-6">
 
-    <!-- Mobile Explore Dropdown -->
-    <div>
-      <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
-        <span>Explore</span>
-        <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
-      </button>
+    <!-- ================== DOCTORS PAGE HEADING ================== -->
+    <section class="relative bg-white py-8 md:py-0 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 animate-on-scroll">
 
-      <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
-        <a href="about.html" class="block">About Us</a>
-        <a href="faq.html" class="block">FAQ</a>
-        <a href="testimonial.html" class="block">Testimonials</a>
-        <a href="news.html" class="block">News/Blogs</a>
+        <div class="grid lg:grid-cols-12 gap-6 md:gap-10 items-center">
+
+          <!-- LEFT CONTENT -->
+          <div class="lg:col-span-7">
+            <div
+              class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-xs font-medium mb-4">
+              <i class='bx bx-shield-plus'></i>
+              Verified Medical Experts
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
+              Find the Right Doctor
+              <span class="text-blue-500">With Confidence</span>
+            </h1>
+
+            <p class="mt-4 md:mt-5 text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed">
+              Explore experienced specialists across multiple medical fields.
+              Every doctor listed is carefully verified to ensure trusted care,
+              transparent guidance, and professional excellence.
+            </p>
+
+            <!-- STATS -->
+            <div class="mt-6 md:mt-8 grid grid-cols-3 gap-3 md:flex md:flex-wrap md:gap-6">
+              <div class="flex flex-col sm:flex-row items-center sm:items-center gap-2 sm:gap-3">
+                <div
+                  class="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                  <i class='bx bx-user-check text-lg sm:text-xl'></i>
+                </div>
+                <div class="text-center sm:text-left">
+                  <div class="text-base sm:text-lg font-semibold text-slate-900">100+</div>
+                  <div class="text-xs sm:text-sm text-slate-500">Verified Doctors</div>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-center sm:items-center gap-2 sm:gap-3">
+                <div
+                  class="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                  <i class='bx bx-clinic text-lg sm:text-xl'></i>
+                </div>
+                <div class="text-center sm:text-left">
+                  <div class="text-base sm:text-lg font-semibold text-slate-900">25+</div>
+                  <div class="text-xs sm:text-sm text-slate-500">Specialities</div>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-center sm:items-center gap-2 sm:gap-3">
+                <div
+                  class="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                  <i class='bx bx-time-five text-lg sm:text-xl'></i>
+                </div>
+                <div class="text-center sm:text-left">
+                  <div class="text-base sm:text-lg font-semibold text-slate-900">24/7</div>
+                  <div class="text-xs sm:text-sm text-slate-500">Care Support</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative max-w-md hidden sm:block">
+              <!-- Replace src with your PNG image -->
+              <img src="../../src/images/doctor-page-hero.png" alt="Doctor Illustration"
+                class="w-full h-auto object-contain" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="doctor-results-section mb-8 md:mb-12 px-4 sm:px-6 py-6 sm:py-8 z-20 animate-on-scroll">
+      <div class="max-w-7xl mx-auto">
+        <div class="doctor-slider-container relative">
+          <div id="doctorSlider" class="doctor-slider flex transition-transform duration-500 ease-in-out">
+            <!-- Slides inserted by JS -->
+          </div>
+          <button id="doctorPrevBtn"
+            class="doctor-nav-btn absolute left-2 sm:left-4 lg:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 active:bg-teal-100 transition-all shadow-lg hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed"
+            aria-label="Previous doctors">
+            <i class='bx bx-chevron-left text-lg sm:text-xl lg:text-2xl'></i>
+          </button>
+          <button id="doctorNextBtn"
+            class="doctor-nav-btn absolute right-2 sm:right-4 lg:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 active:bg-teal-100 transition-all shadow-lg hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed"
+            aria-label="Next doctors">
+            <i class='bx bx-chevron-right text-lg sm:text-xl lg:text-2xl'></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CONSULTANT MODAL -->
+    <div id="consultantModal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-0 sm:px-4">
+
+      <div class="relative w-full h-full sm:h-auto sm:max-w-md sm:rounded-[28px] bg-white shadow-2xl overflow-hidden">
+
+        <!-- CLOSE BUTTON -->
+        <button onclick="closeConsultantModal()"
+          class="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 w-11 h-11 sm:w-9 sm:h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 active:bg-slate-200 transition min-h-[44px] min-w-[44px] sm:min-h-0 sm:min-w-0">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-5 sm:h-5 text-slate-700" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- BODY -->
+        <div class="px-3 sm:px-4 py-3 sm:py-4 h-full sm:h-auto">
+          <div
+            class="w-full h-[calc(100vh-1.5rem)] sm:h-[520px] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+              class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">
+              Loading…
+            </iframe>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="pt-6 border-t border-gray-200"></div>
-
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" target="_blank" class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition" style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
-      <span>Book Consultation</span>
-      <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
-        <i class='bx bx-right-arrow-alt text-xl'></i>
-      </span>
+    <!-- Whatsapp Icon -->
+    <a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp"
+      class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 active:scale-95 transition-transform duration-300 min-h-[48px] min-w-[48px] sm:min-h-[56px] sm:min-w-[56px]">
+      <i class='bx bxl-whatsapp text-white text-2xl sm:text-3xl'></i>
     </a>
-  </nav>
-</div>
 
-<!-- ================= MAIN CONTENT ================= -->
-<main class="page-wrapper max-w-7xl mx-auto px-4 sm:px-6">
+  </main>
 
-<!-- ================== DOCTORS PAGE HEADING ================== -->
-<section class="relative bg-white py-8 md:py-0 border-b border-slate-100">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 animate-on-scroll">
+  <!-- FOOTER -->
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
 
-    <div class="grid lg:grid-cols-12 gap-6 md:gap-10 items-center">
+      <!-- TOP GRID -->
+      <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
 
-      <!-- LEFT CONTENT -->
-      <div class="lg:col-span-7">
-        <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-xs font-medium mb-4">
-          <i class='bx bx-shield-plus'></i>
-          Verified Medical Experts
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <a href="../../index.html">
+            <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
+            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
+              Arogya Yatri is a global medical tourism platform connecting patients
+              with world-class hospitals, trusted doctors, and seamless healthcare
+              journeys across borders.
+            </p>
+          </a>
+
+          <!-- Social -->
+          <div class="flex items-center gap-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-facebook text-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/arogya.yatri/"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-instagram text-lg"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-youtube text-lg"></i>
+            </a>
+          </div>
         </div>
 
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
-          Find the Right Doctor  
-          <span class="text-blue-500">With Confidence</span>
-        </h1>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
+          </ul>
+        </div>
 
-        <p class="mt-4 md:mt-5 text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed">
-          Explore experienced specialists across multiple medical fields.
-          Every doctor listed is carefully verified to ensure trusted care,
-          transparent guidance, and professional excellence.
+
+
+        <!-- CONTACT (NEW) -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Contact</h4>
+
+          <ul class="space-y-4 text-sm">
+
+            <!-- Phone -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
+              <a href="tel:8530054299" class="hover:text-white transition">
+                +91 85300 54299
+              </a>
+            </li>
+
+            <!-- Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
+                apoorva@ewan.co.in
+              </a>
+            </li>
+
+            <!-- Alternate Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
+                pushkaraj.thakurdas@ewan.co.in
+              </a>
+            </li>
+
+            <!-- WhatsApp CTA -->
+            <li class="pt-2">
+              <a href="https://wa.me/918530054299" target="_blank"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
+                <i class="bx bxl-whatsapp text-lg"></i>
+                WhatsApp Us
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="border-t border-white/10 mb-8"></div>
+
+      <!-- BOTTOM BAR -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>
+          © 2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.
         </p>
 
-        <!-- STATS -->
-        <div class="mt-6 md:mt-8 grid grid-cols-3 gap-3 md:flex md:flex-wrap md:gap-6">
-          <div class="flex flex-col sm:flex-row items-center sm:items-center gap-2 sm:gap-3">
-            <div class="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
-              <i class='bx bx-user-check text-lg sm:text-xl'></i>
-            </div>
-            <div class="text-center sm:text-left">
-              <div class="text-base sm:text-lg font-semibold text-slate-900">100+</div>
-              <div class="text-xs sm:text-sm text-slate-500">Verified Doctors</div>
-            </div>
-          </div>
-
-          <div class="flex flex-col sm:flex-row items-center sm:items-center gap-2 sm:gap-3">
-            <div class="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
-              <i class='bx bx-clinic text-lg sm:text-xl'></i>
-            </div>
-            <div class="text-center sm:text-left">
-              <div class="text-base sm:text-lg font-semibold text-slate-900">25+</div>
-              <div class="text-xs sm:text-sm text-slate-500">Specialities</div>
-            </div>
-          </div>
-
-          <div class="flex flex-col sm:flex-row items-center sm:items-center gap-2 sm:gap-3">
-            <div class="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
-              <i class='bx bx-time-five text-lg sm:text-xl'></i>
-            </div>
-            <div class="text-center sm:text-left">
-              <div class="text-base sm:text-lg font-semibold text-slate-900">24/7</div>
-              <div class="text-xs sm:text-sm text-slate-500">Care Support</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT IMAGE -->
-      <div class="lg:col-span-5 flex justify-center lg:justify-end">
-        <div class="relative max-w-md hidden sm:block">
-          <!-- Replace src with your PNG image -->
-          <img
-            src="../../src/images/doctor-page-hero.png"
-            alt="Doctor Illustration"
-            class="w-full h-auto object-contain"
-          />
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2">
+            <i class="bx bx-shield-quarter text-teal-400"></i>
+            Secure & Confidential
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="bx bx-world text-teal-400"></i>
+            Global Healthcare Network
+          </span>
         </div>
       </div>
 
     </div>
+  </footer>
 
-  </div>
-</section>
+  <!-- MODAL SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('consultantModal');
+      const doctorSlider = document.getElementById('doctorSlider');
 
-<!-- Results -->
-<section class="doctor-results-section mb-8 md:mb-12 px-4 sm:px-6 py-6 sm:py-8 z-20 animate-on-scroll">
-  <div class="max-w-7xl mx-auto">
-    <div class="doctor-slider-container relative">
-      <div id="doctorSlider" class="doctor-slider flex transition-transform duration-500 ease-in-out">
-        <!-- Slides inserted by JS -->
-      </div>
-      <button id="doctorPrevBtn" class="doctor-nav-btn absolute left-2 sm:left-4 lg:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 active:bg-teal-100 transition-all shadow-lg hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed" aria-label="Previous doctors">
-        <i class='bx bx-chevron-left text-lg sm:text-xl lg:text-2xl'></i>
-      </button>
-      <button id="doctorNextBtn" class="doctor-nav-btn absolute right-2 sm:right-4 lg:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white border-2 border-slate-300 text-slate-700 hover:bg-teal-50 hover:border-teal-300 hover:text-teal-700 active:bg-teal-100 transition-all shadow-lg hover:shadow-xl disabled:opacity-40 disabled:cursor-not-allowed" aria-label="Next doctors">
-        <i class='bx bx-chevron-right text-lg sm:text-xl lg:text-2xl'></i>
-      </button>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- CONSULTANT MODAL -->
-  <div id="consultantModal"
-  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-0 sm:px-4">
-
-  <div class="relative w-full h-full sm:h-auto sm:max-w-md sm:rounded-[28px] bg-white shadow-2xl overflow-hidden">
-
-    <!-- CLOSE BUTTON -->
-    <button
-      onclick="closeConsultantModal()"
-      class="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 w-11 h-11 sm:w-9 sm:h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 active:bg-slate-200 transition min-h-[44px] min-w-[44px] sm:min-h-0 sm:min-w-0">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-5 sm:h-5 text-slate-700" fill="none"
-        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-
-    <!-- BODY -->
-    <div class="px-3 sm:px-4 py-3 sm:py-4 h-full sm:h-auto">
-      <div class="w-full h-[calc(100vh-1.5rem)] sm:h-[520px] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
-          class="w-full h-full"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0">
-          Loading…
-        </iframe>
-      </div>
-    </div>
-
-  </div>
-  </div>
-
-  <!-- Whatsapp Icon -->
- <a
-  href="https://wa.me/918530054299"
-  target="_blank"
-  aria-label="Chat on WhatsApp"
-  class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 active:scale-95 transition-transform duration-300 min-h-[48px] min-w-[48px] sm:min-h-[56px] sm:min-w-[56px]">
-  <i class='bx bxl-whatsapp text-white text-2xl sm:text-3xl'></i>
-</a>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
-  <div class="max-w-7xl mx-auto px-6">
-
-    <!-- TOP GRID -->
-    <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
-
-      <!-- Brand -->
-      <div class="lg:col-span-2">
-        <a href="../../index.html">
-          <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
-          <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
-            Arogya Yatri is a global medical tourism platform connecting patients
-            with world-class hospitals, trusted doctors, and seamless healthcare
-            journeys across borders.
-          </p>
-        </a>
-
-        <!-- Social -->
-        <div class="flex items-center gap-4">
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-facebook text-lg"></i>
-          </a>
-          <a href="https://www.instagram.com/arogya.yatri/"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-instagram text-lg"></i>
-          </a>
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-youtube text-lg"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Quick Links</h4>
-        <ul class="space-y-3 text-sm">
-          <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
-          <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
-            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
-          <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-          <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
-        </ul>
-      </div>
-
-      
-
-      <!-- CONTACT (NEW) -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Contact</h4>
-
-        <ul class="space-y-4 text-sm">
-
-          <!-- Phone -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
-            <a href="tel:8530054299" class="hover:text-white transition">
-              +91 85300 54299
-            </a>
-          </li>
-
-          <!-- Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
-              apoorva@ewan.co.in
-            </a>
-          </li>
-
-          <!-- Alternate Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
-              pushkaraj.thakurdas@ewan.co.in
-            </a>
-          </li>
-
-          <!-- WhatsApp CTA -->
-          <li class="pt-2">
-            <a
-              href="https://wa.me/918530054299"
-              target="_blank"
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
-              <i class="bx bxl-whatsapp text-lg"></i>
-              WhatsApp Us
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- DIVIDER -->
-    <div class="border-t border-white/10 mb-8"></div>
-
-    <!-- BOTTOM BAR -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-      <p>
-        © 2025 Arogya Yatri. A service by Ewan Business Solutions. All rights reserved.
-      </p>
-
-      <div class="flex items-center gap-6">
-        <span class="flex items-center gap-2">
-          <i class="bx bx-shield-quarter text-teal-400"></i>
-          Secure & Confidential
-        </span>
-        <span class="flex items-center gap-2">
-          <i class="bx bx-world text-teal-400"></i>
-          Global Healthcare Network
-        </span>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-<!-- MODAL SCRIPT -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('consultantModal');
-    const doctorSlider = document.getElementById('doctorSlider');
-
-    // Attach click handlers for all existing "Book Consultation" buttons (navbar, mobile menu, etc.)
-    const openButtons = document.querySelectorAll('.openConsultantModal');
-    openButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-      });
-    });
-
-    // Event delegation for dynamically rendered "Book Consultation" buttons inside the doctor slider
-    if (doctorSlider) {
-      doctorSlider.addEventListener('click', (e) => {
-        if (e.target.closest('.openConsultantModal')) {
+      // Attach click handlers for all existing "Book Consultation" buttons (navbar, mobile menu, etc.)
+      const openButtons = document.querySelectorAll('.openConsultantModal');
+      openButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
           e.preventDefault();
           modal.classList.remove('hidden');
           modal.classList.add('flex');
           document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+      });
+
+      // Event delegation for dynamically rendered "Book Consultation" buttons inside the doctor slider
+      if (doctorSlider) {
+        doctorSlider.addEventListener('click', (e) => {
+          if (e.target.closest('.openConsultantModal')) {
+            e.preventDefault();
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+          }
+        });
+      }
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+          document.body.style.overflow = ''; // Restore scrolling
         }
       });
+
+      // Close on Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+          document.body.style.overflow = ''; // Restore scrolling
+        }
+      });
+    });
+  </script>
+  <script>
+    function closeConsultantModal() {
+      document.getElementById("consultantModal").classList.add("hidden")
+    }
+  </script>
+
+  <!-- MENU TOGGLE SCRIPT -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
+    closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
+  </script>
+
+  <!-- MOBILE EXPLORE DROPDOWN SCRIPT -->
+  <script>
+    const exploreBtn = document.getElementById('mobileExploreBtn');
+    const exploreMenu = document.getElementById('mobileExploreMenu');
+    const exploreIcon = document.getElementById('mobileExploreIcon');
+
+    if (exploreBtn && exploreMenu && exploreIcon) {
+      exploreBtn.addEventListener('click', () => {
+        exploreMenu.classList.toggle('hidden');
+        exploreIcon.classList.toggle('bx-chevron-down');
+        exploreIcon.classList.toggle('bx-chevron-up');
+      });
+    }
+  </script>
+
+  <!-- ================== DATA + LOGIC (FIXED, NOTHING REMOVED) ================== -->
+  <script>
+    const doctors = [
+      { name: "Dr. Ravindra Kulkarni", gender: "male", spec: "Obstetrics & Gynaecology", edu: "MBBS MD OB-GYN", exp: ">35 years", image: "../../src/images/doctors/ravindra.png" },
+      { name: "Dr. Chaitanya Ganapule", gender: "male", spec: "Obstetrics & Gynaecology", edu: "MBBS MD OB-GYN Certificate in infertility & IVF, Dip in Gynaec Endoscopy", exp: "25 years", image: "../../src/images/doctors/chaitanya.png" },
+      { name: "Dr. Padmaja Jadhav", gender: "female", spec: "Obstetrics & Gynaecology", edu: "MBBS DGO", exp: ">25 years", image: "../../src/images/doctors/padmaja.png" },
+      { name: "Dr. Anuprita Burande", gender: "female", spec: "Obstetrics & Gynaecology", edu: "MBBS, DNB (obgyn)", exp: ">15 years", image: "../../src/images/doctors/anuprita.png" },
+      { name: "Dr. Ashwini Ganapule", gender: "female", spec: "Dentist / IVF Lab Director", edu: "BDS, MSc (Clinical Embryology)", exp: "25 years", image: "../../src/images/doctors/ashwini.png" },
+      { name: "Dr. Sandeep Kadam", gender: "male", spec: "Paediatrician", edu: "MD, DM Neonatology", exp: ">20 years", image: "../../src/images/doctors/sandeep.png" },
+      { name: "Dr. Dhyey Pandya", gender: "male", spec: "Pediatrician and neonatologist", edu: "MD, DrNB(Neo)", exp: "> 13 years", image: "../../src/images/doctors/dhyey.png" },
+      { name: "Dr. Pranav Thusay", gender: "male", spec: "Plastic & Reconstructive Surgeon", edu: "MBBS, DNB, M.Ch", exp: "> 10 years", image: "../../src/images/doctors/pranav.png" },
+      { name: "Dr. Mihir Chitale", gender: "male", spec: "Cancer Specialist", edu: "MBBS, DNB (G.Surg.), FMAS (Minimal Access surgery-M.U.H.S.) , FCLS , Fellowship in G.I. Surgery & Endocrine surgery, Gynae- Oncology , Surgical Oncology , Robotic surgery", exp: "15 years", image: "../../src/images/doctors/mihir.png" },
+      { name: "Dr. Anup Kumar Rawool", gender: "male", spec: "Genetics", edu: "DM (Medical Genetic ) MD (Genaral Medicine) MBA ( Hosp Admin ), PGDGM, PGDHHM , MBBS , CCMG", exp: "21 years", image: "../../src/images/doctors/anup.png" },
+      { name: "Dr. Shirish Gandhi", gender: "male", spec: "Radiologist", edu: "MBBS, DMRD, DNB", exp: "30 years", image: "../../src/images/doctors/shirish.png" },
+      { name: "Shanta Borkar", gender: "female", spec: "Lactation professional", edu: "MS ACLP", exp: "> 3 years", image: "../../src/images/doctors/shanta.png" },
+      { name: "Avanti Damle", gender: "female", spec: "Sports Nutritionist", edu: "Bsc PG sports nutrition , PG in Alternative Medicine", exp: "21 years", image: "../../src/images/doctors/avanti.png" },
+      { name: "Dr. Apurva Kangude (PT)", gender: "female", spec: "Physiotherapist", edu: "Bpth APTA CAPP-OB", exp: ">7 years", image: "../../src/images/doctors/apurva.png" },
+      { name: "Dr. Sheetal Chopde", gender: "female", spec: "Ayurvedic Medicine", edu: "BAMS (Bachelor of Ayurvedic Medicine & Surgery)", exp: ">10 years", image: "../../src/images/doctors/default-female.jpg" }
+    ];
+
+    // Slider state
+    let currentSlide = 0;
+    let cardsPerSlide = 1; // Mobile 1, tablet 2, desktop 4
+    let totalSlides = 0;
+    let autoSlideInterval = null;
+    const AUTO_SLIDE_INTERVAL = 4000; // 4 seconds
+
+    const slider = document.getElementById("doctorSlider");
+    const sliderContainer = document.querySelector('.doctor-slider-container');
+    const prevBtn = document.getElementById("doctorPrevBtn");
+    const nextBtn = document.getElementById("doctorNextBtn");
+
+    function getCardsPerSlide() {
+      // Mobile: 1 card. Tablet: 2 cards. Desktop: 4 cards
+      if (window.innerWidth >= 1024) return 4;
+      if (window.innerWidth >= 768) return 2;
+      return 1;
     }
 
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-        document.body.style.overflow = ''; // Restore scrolling
-      }
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-        document.body.style.overflow = ''; // Restore scrolling
-      }
-    });
-  });
-</script>
-<script>
-  function closeConsultantModal() {
-    document.getElementById("consultantModal").classList.add("hidden")
-  }
-</script>
-
-<!-- MENU TOGGLE SCRIPT -->
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeBtn = document.getElementById('closeBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
-  closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
-</script>
-
-<!-- MOBILE EXPLORE DROPDOWN SCRIPT -->
-<script>
-  const exploreBtn = document.getElementById('mobileExploreBtn');
-  const exploreMenu = document.getElementById('mobileExploreMenu');
-  const exploreIcon = document.getElementById('mobileExploreIcon');
-
-  if (exploreBtn && exploreMenu && exploreIcon) {
-    exploreBtn.addEventListener('click', () => {
-      exploreMenu.classList.toggle('hidden');
-      exploreIcon.classList.toggle('bx-chevron-down');
-      exploreIcon.classList.toggle('bx-chevron-up');
-    });
-  }
-</script>
-
-<!-- ================== DATA + LOGIC (FIXED, NOTHING REMOVED) ================== -->
-<script>
-const doctors = [
-  {name:"Dr. Ravindra Kulkarni", gender:"male", spec:"Obstetrics & Gynaecology", edu:"MBBS MD OB-GYN", exp:">35 years",image:"../../src/images/doctors/ravindra.png"},
-  {name:"Dr. Chaitanya Ganapule", gender:"male", spec:"Obstetrics & Gynaecology", edu:"MBBS MD OB-GYN Certificate in infertility & IVF, Dip in Gynaec Endoscopy", exp:"25 years",image:"../../src/images/doctors/chaitanya.png"},
-  {name:"Dr. Padmaja Jadhav", gender:"female", spec:"Obstetrics & Gynaecology", edu:"MBBS DGO", exp:">25 years",image:"../../src/images/doctors/padmaja.png"},
-  {name:"Dr. Anuprita Burande", gender:"female", spec:"Obstetrics & Gynaecology", edu:"MBBS, DNB (obgyn)", exp:">15 years",image:"../../src/images/doctors/anuprita.png"},
-  {name:"Dr. Ashwini Ganapule", gender:"female", spec:"Dentist / IVF Lab Director", edu:"BDS, MSc (Clinical Embryology)", exp:"25 years",image:"../../src/images/doctors/ashwini.png"},
-  {name:"Dr. Sandeep Kadam", gender:"male", spec:"Paediatrician", edu:"MD, DM Neonatology", exp:">20 years",image:"../../src/images/doctors/sandeep.png"},
-  {name:"Dr. Dhyey Pandya", gender:"male", spec:"Pediatrician and neonatologist", edu:"MD, DrNB(Neo)", exp:"> 13 years",image:"../../src/images/doctors/dhyey.png"},
-  {name:"Dr. Pranav Thusay", gender:"male", spec:"Plastic & Reconstructive Surgeon", edu:"MBBS, DNB, M.Ch", exp:"> 10 years",image:"../../src/images/doctors/pranav.png"},
-  {name:"Dr. Mihir Chitale", gender:"male", spec:"Cancer Specialist", edu:"MBBS, DNB (G.Surg.), FMAS (Minimal Access surgery-M.U.H.S.) , FCLS , Fellowship in G.I. Surgery & Endocrine surgery, Gynae- Oncology , Surgical Oncology , Robotic surgery", exp:"15 years",image:"../../src/images/doctors/mihir.png"},
-  {name:"Dr. Anup Kumar Rawool", gender:"male", spec:"Genetics", edu:"DM (Medical Genetic ) MD (Genaral Medicine) MBA ( Hosp Admin ), PGDGM, PGDHHM , MBBS , CCMG", exp:"21 years",image:"../../src/images/doctors/anup.png"},
-  {name:"Dr. Shirish Gandhi", gender:"male", spec:"Radiologist", edu:"MBBS, DMRD, DNB", exp:"30 years",image:"../../src/images/doctors/shirish.png"},
-  {name:"Shanta Borkar", gender:"female", spec:"Lactation professional", edu:"MS ACLP", exp:"> 3 years",image:"../../src/images/doctors/shanta.png"},
-  {name:"Avanti Damle", gender:"female", spec:"Sports Nutritionist", edu:"Bsc PG sports nutrition , PG in Alternative Medicine", exp:"21 years",image:"../../src/images/doctors/avanti.png"},
-  {name:"Dr. Apurva Kangude (PT)", gender:"female", spec:"Physiotherapist", edu:"Bpth APTA CAPP-OB", exp:">7 years",image:"../../src/images/doctors/apurva.png"}
-];
-
-// Slider state
-let currentSlide = 0;
-let cardsPerSlide = 1; // Mobile 1, tablet 2, desktop 4
-let totalSlides = 0;
-let autoSlideInterval = null;
-const AUTO_SLIDE_INTERVAL = 4000; // 4 seconds
-
-const slider = document.getElementById("doctorSlider");
-const sliderContainer = document.querySelector('.doctor-slider-container');
-const prevBtn = document.getElementById("doctorPrevBtn");
-const nextBtn = document.getElementById("doctorNextBtn");
-
-function getCardsPerSlide() {
-  // Mobile: 1 card. Tablet: 2 cards. Desktop: 4 cards
-  if (window.innerWidth >= 1024) return 4;
-  if (window.innerWidth >= 768) return 2;
-  return 1;
-}
-
-function createDoctorCard(d) {
-  return `
+    function createDoctorCard(d) {
+      return `
     <article class="doctor-card-article group bg-white rounded-2xl border border-slate-200 hover:border-teal-400 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-1">
       <!-- Image Section -->
       <div class="relative pt-6 sm:pt-8 pb-3 sm:pb-4 px-4 sm:px-6 flex justify-center bg-gradient-to-b from-slate-50 to-white">
@@ -750,8 +762,8 @@ function createDoctorCard(d) {
           <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl ring-2 ring-teal-100 group-hover:ring-teal-300 transition-all duration-300 bg-slate-100">
             <img
               src="${d.image || (d.gender === 'male'
-                ? '../../src/images/doctors/default-male.jpg'
-                : '../../src/images/doctors/default-female.jpg')}"
+          ? '../../src/images/doctors/default-male.jpg'
+          : '../../src/images/doctors/default-female.jpg')}"
               alt="${d.name}"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               loading="lazy"
@@ -798,160 +810,161 @@ function createDoctorCard(d) {
         </div>
       </div>
     </article>`;
-}
-
-function renderDoctors() {
-  cardsPerSlide = getCardsPerSlide();
-  totalSlides = Math.ceil(doctors.length / cardsPerSlide);
-  
-  // Clear existing slides
-  slider.innerHTML = "";
-  
-  // Group doctors into slides
-  for (let i = 0; i < totalSlides; i++) {
-    const startIndex = i * cardsPerSlide;
-    const endIndex = Math.min(startIndex + cardsPerSlide, doctors.length);
-    const slideDoctors = doctors.slice(startIndex, endIndex);
-    
-    // Create slide container
-    const slide = document.createElement('div');
-    slide.className = 'doctor-slide w-full flex-shrink-0';
-    
-    // Create grid container
-    const grid = document.createElement('div');
-    grid.className = 'doctor-slide-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-rows-1 gap-4 md:gap-5 lg:gap-6';
-    
-    // Add cards to grid
-    slideDoctors.forEach(d => {
-      grid.innerHTML += createDoctorCard(d);
-    });
-    
-    slide.appendChild(grid);
-    slider.appendChild(slide);
-  }
-  
-  // Update slider position
-  goToSlide(currentSlide);
-  updateNavigationButtons();
-  
-  // Start auto-slide after rendering
-  startAutoSlide();
-}
-
-function goToSlide(slideIndex) {
-  if (slideIndex < 0) slideIndex = 0;
-  if (slideIndex >= totalSlides) slideIndex = totalSlides - 1;
-  
-  currentSlide = slideIndex;
-  
-  // Calculate translateX based on slide index
-  const translateX = -slideIndex * 100;
-  slider.style.transform = `translateX(${translateX}%)`;
-  
-  updateNavigationButtons();
-}
-
-function nextSlide() {
-  if (currentSlide < totalSlides - 1) {
-    goToSlide(currentSlide + 1);
-  } else {
-    // Loop back to first slide
-    goToSlide(0);
-  }
-}
-
-function startAutoSlide() {
-  // Clear any existing interval
-  stopAutoSlide();
-  
-  // Only start auto-slide if there's more than one slide
-  if (totalSlides > 1) {
-    autoSlideInterval = setInterval(() => {
-      nextSlide();
-    }, AUTO_SLIDE_INTERVAL);
-  }
-}
-
-function stopAutoSlide() {
-  if (autoSlideInterval) {
-    clearInterval(autoSlideInterval);
-    autoSlideInterval = null;
-  }
-}
-
-function updateNavigationButtons() {
-  if (prevBtn) {
-    prevBtn.disabled = currentSlide === 0;
-  }
-  if (nextBtn) {
-    nextBtn.disabled = currentSlide >= totalSlides - 1;
-  }
-}
-
-// Event listeners
-if (prevBtn) {
-  prevBtn.addEventListener('click', () => {
-    stopAutoSlide();
-    if (currentSlide > 0) {
-      goToSlide(currentSlide - 1);
-    } else {
-      // Loop to last slide
-      goToSlide(totalSlides - 1);
     }
-    // Restart auto-slide after manual navigation
-    setTimeout(() => startAutoSlide(), 1000);
-  });
-}
 
-if (nextBtn) {
-  nextBtn.addEventListener('click', () => {
-    stopAutoSlide();
-    if (currentSlide < totalSlides - 1) {
-      goToSlide(currentSlide + 1);
-    } else {
-      // Loop to first slide
-      goToSlide(0);
-    }
-    // Restart auto-slide after manual navigation
-    setTimeout(() => startAutoSlide(), 1000);
-  });
-}
+    function renderDoctors() {
+      cardsPerSlide = getCardsPerSlide();
+      totalSlides = Math.ceil(doctors.length / cardsPerSlide);
 
-// Pause auto-slide on hover, resume on mouse leave
-if (sliderContainer) {
-  sliderContainer.addEventListener('mouseenter', () => {
-    stopAutoSlide();
-  });
-  
-  sliderContainer.addEventListener('mouseleave', () => {
-    startAutoSlide();
-  });
-}
+      // Clear existing slides
+      slider.innerHTML = "";
 
-// Handle window resize
-let resizeTimeout;
-window.addEventListener('resize', () => {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(() => {
-    stopAutoSlide();
-    const oldCardsPerSlide = cardsPerSlide;
-    cardsPerSlide = getCardsPerSlide();
-    
-    // Recalculate if cards per slide changed
-    if (oldCardsPerSlide !== cardsPerSlide) {
-      currentSlide = 0; // Reset to first slide
-      renderDoctors();
-    } else {
-      // Just restart auto-slide if no structural change
+      // Group doctors into slides
+      for (let i = 0; i < totalSlides; i++) {
+        const startIndex = i * cardsPerSlide;
+        const endIndex = Math.min(startIndex + cardsPerSlide, doctors.length);
+        const slideDoctors = doctors.slice(startIndex, endIndex);
+
+        // Create slide container
+        const slide = document.createElement('div');
+        slide.className = 'doctor-slide w-full flex-shrink-0';
+
+        // Create grid container
+        const grid = document.createElement('div');
+        grid.className = 'doctor-slide-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-rows-1 gap-4 md:gap-5 lg:gap-6';
+
+        // Add cards to grid
+        slideDoctors.forEach(d => {
+          grid.innerHTML += createDoctorCard(d);
+        });
+
+        slide.appendChild(grid);
+        slider.appendChild(slide);
+      }
+
+      // Update slider position
+      goToSlide(currentSlide);
+      updateNavigationButtons();
+
+      // Start auto-slide after rendering
       startAutoSlide();
     }
-  }, 250);
-});
 
-// Initialize
-renderDoctors();
-</script>
+    function goToSlide(slideIndex) {
+      if (slideIndex < 0) slideIndex = 0;
+      if (slideIndex >= totalSlides) slideIndex = totalSlides - 1;
 
-<script src="../script/scroll-animations.js"></script>
+      currentSlide = slideIndex;
+
+      // Calculate translateX based on slide index
+      const translateX = -slideIndex * 100;
+      slider.style.transform = `translateX(${translateX}%)`;
+
+      updateNavigationButtons();
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        goToSlide(currentSlide + 1);
+      } else {
+        // Loop back to first slide
+        goToSlide(0);
+      }
+    }
+
+    function startAutoSlide() {
+      // Clear any existing interval
+      stopAutoSlide();
+
+      // Only start auto-slide if there's more than one slide
+      if (totalSlides > 1) {
+        autoSlideInterval = setInterval(() => {
+          nextSlide();
+        }, AUTO_SLIDE_INTERVAL);
+      }
+    }
+
+    function stopAutoSlide() {
+      if (autoSlideInterval) {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = null;
+      }
+    }
+
+    function updateNavigationButtons() {
+      if (prevBtn) {
+        prevBtn.disabled = currentSlide === 0;
+      }
+      if (nextBtn) {
+        nextBtn.disabled = currentSlide >= totalSlides - 1;
+      }
+    }
+
+    // Event listeners
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        stopAutoSlide();
+        if (currentSlide > 0) {
+          goToSlide(currentSlide - 1);
+        } else {
+          // Loop to last slide
+          goToSlide(totalSlides - 1);
+        }
+        // Restart auto-slide after manual navigation
+        setTimeout(() => startAutoSlide(), 1000);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        stopAutoSlide();
+        if (currentSlide < totalSlides - 1) {
+          goToSlide(currentSlide + 1);
+        } else {
+          // Loop to first slide
+          goToSlide(0);
+        }
+        // Restart auto-slide after manual navigation
+        setTimeout(() => startAutoSlide(), 1000);
+      });
+    }
+
+    // Pause auto-slide on hover, resume on mouse leave
+    if (sliderContainer) {
+      sliderContainer.addEventListener('mouseenter', () => {
+        stopAutoSlide();
+      });
+
+      sliderContainer.addEventListener('mouseleave', () => {
+        startAutoSlide();
+      });
+    }
+
+    // Handle window resize
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        stopAutoSlide();
+        const oldCardsPerSlide = cardsPerSlide;
+        cardsPerSlide = getCardsPerSlide();
+
+        // Recalculate if cards per slide changed
+        if (oldCardsPerSlide !== cardsPerSlide) {
+          currentSlide = 0; // Reset to first slide
+          renderDoctors();
+        } else {
+          // Just restart auto-slide if no structural change
+          startAutoSlide();
+        }
+      }, 250);
+    });
+
+    // Initialize
+    renderDoctors();
+  </script>
+
+  <script src="../script/scroll-animations.js"></script>
 </body>
+
 </html>

@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arogya Yatri - Destinations</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -36,1430 +38,1574 @@
     }
   </script>
 
-<style>
+  <style>
     /* Hide scrollbar globally */
-html, body {
-    scrollbar-width: none;      /* Firefox */
-    -ms-overflow-style: none;   /* IE & Edge */
-}
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-    display: none;              /* Chrome, Safari */
-}
-*::-webkit-scrollbar {
-    display: none;
-}
+    html,
+    body {
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE & Edge */
+    }
 
-html { scroll-behavior: smooth; }
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari */
+    }
 
-/* ===== NAVBAR ===== */
-#siteHeader {
-    height: 72px;
-    background: white;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-}
+    *::-webkit-scrollbar {
+      display: none;
+    }
 
-.nav-link {
-    position: relative;
-    color: black;
-    padding: 4px 0;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: black;
-    transform: translateX(-50%);
-    transition: width .25s ease;
-}
+    /* ===== NAVBAR ===== */
+    #siteHeader {
+      height: 72px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
 
-.nav-link:hover::after {
-    width: 100%;
-}
+    .nav-link {
+      position: relative;
+      color: black;
+      padding: 4px 0;
+    }
 
-.nav-cta {
-    border-color: black;
-}
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width .25s ease;
+    }
 
-/* ===== PAGE OFFSET FOR FIXED NAV ===== */
-.page-wrapper {
-    padding-top: 96px;
-}
+    .nav-link:hover::after {
+      width: 100%;
+    }
 
-/* ===== Mobile Sidebar Fix ===== */
-#mobileMenu nav a {
-display: block;
-width: 100%;
-line-height: 1.4;
-padding: 6px 0;
-white-space: normal;
-}
+    .nav-cta {
+      border-color: black;
+    }
 
-/* ===== HERO SLIDER ===== */
-.hero-slider {
-    position: relative;
-    height: 100vh;
-    min-height: 600px;
-    overflow: hidden;
-}
+    /* ===== PAGE OFFSET FOR FIXED NAV ===== */
+    .page-wrapper {
+      padding-top: 96px;
+    }
 
-.hero-slider .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    /* ===== Mobile Sidebar Fix ===== */
+    #mobileMenu nav a {
+      display: block;
+      width: 100%;
+      line-height: 1.4;
+      padding: 6px 0;
+      white-space: normal;
+    }
 
-.slide-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
-    z-index: 2;
-}
-
-.slide-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    padding: 80px 24px 120px;
-}
-
-/* Swiper Navigation Customization */
-.hero-slider .swiper-button-next,
-.hero-slider .swiper-button-prev {
-    width: 48px;
-    height: 48px;
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 50%;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.hero-slider .swiper-button-next:hover,
-.hero-slider .swiper-button-prev:hover {
-    background: rgba(255,255,255,0.3);
-    transform: scale(1.1);
-}
-
-.hero-slider .swiper-button-next::after,
-.hero-slider .swiper-button-prev::after {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.hero-slider .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background: rgba(255,255,255,0.4);
-    opacity: 1;
-    transition: all 0.3s ease;
-}
-
-.hero-slider .swiper-pagination-bullet-active {
-    background: white;
-    width: 32px;
-    border-radius: 6px;
-}
-
-/* ===== DESTINATION CARDS CAROUSEL ===== */
-.destinations-carousel {
-    padding: 40px 0 60px !important;
-}
-
-.destination-card {
-    position: relative;
-    height: 420px;
-    border-radius: 24px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.destination-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-}
-
-.destination-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.destination-card:hover img {
-    transform: scale(1.1);
-}
-
-.card-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 50%, transparent 100%);
-    z-index: 1;
-    transition: background 0.4s ease;
-}
-
-.destination-card:hover .card-overlay {
-    background: linear-gradient(to top, rgba(20, 184, 166, 0.9) 0%, rgba(0,0,0,0.6) 50%, transparent 100%);
-}
-
-.card-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    padding: 32px;
-}
-
-.card-badge {
-    display: inline-block;
-    padding: 6px 12px;
-    background: rgba(20, 184, 166, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(20, 184, 166, 0.4);
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #5eead4;
-    margin-bottom: 12px;
-}
-
-/* Carousel Navigation */
-.destinations-carousel .swiper-button-next,
-.destinations-carousel .swiper-button-prev {
-    width: 44px;
-    height: 44px;
-    background: white;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 50%;
-    color: #0F172A;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.destinations-carousel .swiper-button-next:hover,
-.destinations-carousel .swiper-button-prev:hover {
-    background: #14b8a6;
-    color: white;
-    transform: scale(1.1);
-}
-
-.destinations-carousel .swiper-button-next::after,
-.destinations-carousel .swiper-button-prev::after {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.destinations-carousel .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: #cbd5e1;
-    opacity: 1;
-}
-
-.destinations-carousel .swiper-pagination-bullet-active {
-    background: #14b8a6;
-    width: 24px;
-    border-radius: 5px;
-}
-
-@media (max-width: 768px) {
+    /* ===== HERO SLIDER ===== */
     .hero-slider {
-        height: 70vh;
-        min-height: 500px;
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      overflow: hidden;
     }
-    
+
+    .hero-slider .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 100%);
+      z-index: 2;
+    }
+
     .slide-content {
-        padding: 60px 20px 80px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      padding: 80px 24px 120px;
     }
-    
+
+    /* Swiper Navigation Customization */
     .hero-slider .swiper-button-next,
     .hero-slider .swiper-button-prev {
-        width: 40px;
-        height: 40px;
+      width: 48px;
+      height: 48px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      color: white;
+      transition: all 0.3s ease;
     }
-    
+
+    .hero-slider .swiper-button-next:hover,
+    .hero-slider .swiper-button-prev:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
+    }
+
     .hero-slider .swiper-button-next::after,
     .hero-slider .swiper-button-prev::after {
-        font-size: 20px;
+      font-size: 24px;
+      font-weight: bold;
     }
-    
+
+    .hero-slider .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.4);
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+
+    .hero-slider .swiper-pagination-bullet-active {
+      background: white;
+      width: 32px;
+      border-radius: 6px;
+    }
+
+    /* ===== DESTINATION CARDS CAROUSEL ===== */
+    .destinations-carousel {
+      padding: 40px 0 60px !important;
+    }
+
     .destination-card {
-        height: 360px;
+      position: relative;
+      height: 420px;
+      border-radius: 24px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
+    .destination-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .destination-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 100%);
+      z-index: 1;
+      transition: background 0.4s ease;
+    }
+
+    .destination-card:hover .card-overlay {
+      background: linear-gradient(to top, rgba(20, 184, 166, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      padding: 32px;
+    }
+
+    .card-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      background: rgba(20, 184, 166, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(20, 184, 166, 0.4);
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #5eead4;
+      margin-bottom: 12px;
+    }
+
+    /* Carousel Navigation */
     .destinations-carousel .swiper-button-next,
     .destinations-carousel .swiper-button-prev {
-        display: none;
+      width: 44px;
+      height: 44px;
+      background: white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      color: #0F172A;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
     }
-}
 
-/* ===== GALLERY SLIDER ===== */
-.slider-track {
-  display: flex;
-  gap: 5px;
-  animation: slide 9s linear infinite;
-}
+    .destinations-carousel .swiper-button-next:hover,
+    .destinations-carousel .swiper-button-prev:hover {
+      background: #14b8a6;
+      color: white;
+      transform: scale(1.1);
+    }
 
-/* Mobile: Faster animation to maintain same visual speed */
-@media (max-width: 768px) {
-  .slider-track {
-    animation-duration: 3s; /* Much faster on mobile */
-  }
-}
+    .destinations-carousel .swiper-button-next::after,
+    .destinations-carousel .swiper-button-prev::after {
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-@media (max-width: 480px) {
-  .slider-track {
-    animation-duration: 2.5s; /* Even faster on very small screens */
-  }
-}
+    .destinations-carousel .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #cbd5e1;
+      opacity: 1;
+    }
 
-.slider-item {
-  flex: 0 0 280px;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-  background: #f8fafc;
-}
+    .destinations-carousel .swiper-pagination-bullet-active {
+      background: #14b8a6;
+      width: 24px;
+      border-radius: 5px;
+    }
 
-.slider-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    @media (max-width: 768px) {
+      .hero-slider {
+        height: 70vh;
+        min-height: 500px;
+      }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
+      .slide-content {
+        padding: 60px 20px 80px;
+      }
 
-</style>
+      .hero-slider .swiper-button-next,
+      .hero-slider .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+      }
+
+      .hero-slider .swiper-button-next::after,
+      .hero-slider .swiper-button-prev::after {
+        font-size: 20px;
+      }
+
+      .destination-card {
+        height: 360px;
+      }
+
+      .destinations-carousel .swiper-button-next,
+      .destinations-carousel .swiper-button-prev {
+        display: none;
+      }
+    }
+
+    /* ===== GALLERY SWIPER ===== */
+    .gallery-card {
+      position: relative;
+      height: 300px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #f8fafc;
+      cursor: pointer;
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.05);
+    }
+
+    /* ===== WHATSAPP HIGHLIGHT ===== */
+    @keyframes wa-pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+      }
+
+      50% {
+        box-shadow: 0 0 0 12px rgba(34, 197, 94, 0);
+      }
+    }
+
+    .wa-highlight {
+      animation: wa-pulse 1.8s ease-in-out infinite;
+    }
+  </style>
 
 </head>
 
 <body class="font-body bg-white text-black">
 
-<!-- ================= NAVBAR ================= -->
-<header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
-  <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
+  <!-- ================= NAVBAR ================= -->
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+    <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
 
-    <!-- Logo -->
-    <a href="../../index.html" class="flex items-center">
-      <div class="leading-tight">
-        <div class="text-2xl tracking-tight">Arogya Yatri</div>
-        <div class="text-xs opacity-70">A service by Ewan Business Solutions</div>
-      </div>
-    </a>
-
-    <!-- Center Links -->
-    <ul
-      class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
-      
-      <li>
-        <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
-          Treatment
-        </a>
-      </li>
-
-       
-
-      <li>
-        <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
-          Doctor
-        </a>
-      </li>
-
-      <li>
-        <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
-          Destinations
-        </a>
-      </li>
-
-      <!-- Explore Dropdown -->
-      <li class="relative group flex items-center">
-        <button
-          class="nav-link inline-flex items-center gap-1 leading-none">
-          Explore
-          <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
-        </button>
-
-        <div
-          class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-          <a href="about.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
-          <a href="faq.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
-          <a href="testimonial.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
-          <a href="news.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+      <!-- Logo -->
+      <a href="../../index.html" class="flex items-center">
+        <div class="leading-tight">
+          <div class="text-2xl tracking-tight">Arogya Yatri</div>
+          <div class="text-xs opacity-70">A Medical Tourism Facilitator</div>
         </div>
-      </li>
-    </ul>
-
-    <!-- CTA -->
-    <div class="ml-auto hidden md:flex items-center">
-      <a
-        class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
-        <span
-          class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
-          <i class='bx bx-right-arrow-alt'></i>
-        </span>
-        <span class="text-sm font-medium">Book Consultation</span>
       </a>
-    </div>
 
-    <!-- Mobile Button -->
-    <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
-      <i class='bx bx-menu'></i>
-    </button>
+      <!-- Center Links -->
+      <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
 
-  </nav>
-</header>
+        <li>
+          <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
+            Treatment
+          </a>
+        </li>
 
-<!-- ================= MOBILE SIDEBAR ================= -->
-<div id="mobileMenu"
-  class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
 
-  <!-- Header -->
-  <div class="p-6 border-b border-gray-200 flex justify-between items-start">
-    <a href="../../index.html">
-      <div>
-        <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
-        <div class="text-sm text-gray-500">A service by Ewan Business Solutions</div>
+
+        <li>
+          <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
+            Doctor
+          </a>
+        </li>
+
+        <li>
+          <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
+            Destinations
+          </a>
+        </li>
+
+        <!-- Explore Dropdown -->
+        <li class="relative group flex items-center">
+          <button class="nav-link inline-flex items-center gap-1 leading-none">
+            Explore
+            <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
+          </button>
+
+          <div
+            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About
+              Us</a>
+            <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
+            <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+            <a href="news.html"
+              class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="ml-auto hidden md:flex items-center">
+        <a
+          class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
+            <i class='bx bx-right-arrow-alt'></i>
+          </span>
+          <span class="text-sm font-medium">Book Consultation</span>
+        </a>
       </div>
-    </a>
-    <button id="closeBtn" class="text-2xl text-black">
-      <i class='bx bx-x'></i>
-    </button>
-  </div>
 
-  <!-- Nav -->
-  <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
-    <a href="treatments.html" class="block">Treatment</a>
-      
-    <a href="doctor.html" class="block">Doctor</a>
-    <a href="destinations.html" class="block">Destinations</a>
-
-    <!-- Mobile Explore Dropdown -->
-    <div>
-      <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
-        <span>Explore</span>
-        <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
+        <i class='bx bx-menu'></i>
       </button>
 
-      <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
-        <a href="about.html" class="block">About Us</a>
-        <a href="faq.html" class="block">FAQ</a>
-        <a href="testimonial.html" class="block">Testimonials</a>
-        <a href="news.html" class="block">News/Blogs</a>
-      </div>
-    </div>
+    </nav>
+  </header>
 
-    <div class="pt-6 border-t border-gray-200"></div>
+  <!-- ================= MOBILE SIDEBAR ================= -->
+  <div id="mobileMenu"
+    class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
 
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" target="_blank" class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition" style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
-      <span>Book Consultation</span>
-      <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
-        <i class='bx bx-right-arrow-alt text-xl'></i>
-      </span>
-    </a>
-  </nav>
-</div>
-
-<!-- ================= MOBILE DROPDOWN SCRIPT ================= -->
-<script>
-  const mobileExploreBtn = document.getElementById('mobileExploreBtn')
-  const mobileExploreMenu = document.getElementById('mobileExploreMenu')
-  const mobileExploreIcon = document.getElementById('mobileExploreIcon')
-
-  mobileExploreBtn.addEventListener('click', () => {
-    mobileExploreMenu.classList.toggle('hidden')
-    mobileExploreIcon.classList.toggle('bx-chevron-down')
-    mobileExploreIcon.classList.toggle('bx-chevron-up')
-  })
-</script>
-
-
-<!-- ================= MAIN CONTENT ================= -->
-<main>
-
-
-<!-- ================= TOP CITIES FOR 1-DAY TOUR ================= -->
-<section id="cities" class="bg-white py-4 pt-20 border-t border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
-    
     <!-- Header -->
-    <div class="text-center mb-">
-      <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
-        Quick Getaways
-      </p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
-        Top Cities for <span class="text-teal-500">1-Day Tour</span>
-      </h2>
-      <p class="mt-4 text-sm sm:text-base text-slate-500 max-w-2xl mx-auto">
-        Perfect destinations for a memorable day trip, combining culture, history, and local experiences.
-      </p>
+    <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+      <a href="../../index.html">
+        <div>
+          <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
+          <div class="text-sm text-gray-500">A Medical Tourism Facilitator</div>
+        </div>
+      </a>
+      <button id="closeBtn" class="text-2xl text-black">
+        <i class='bx bx-x'></i>
+      </button>
     </div>
 
-    <!-- Cities Carousel -->
-    <div class="swiper destinations-carousel citiesSwiper">
-      <div class="swiper-wrapper">
-        
-        <!-- City Card 1 - Jaipur -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jaipur - Amber Fort" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Pink City, Rajput Royalty Capital</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Jaipur</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Explore the regal charm of Jaipur by visiting Amber Fort and City Palace. Shop vibrant bazaars filled with traditional Rajasthani crafts.
-              </p>
-            </div>
-          </article>
-        </div>
+    <!-- Nav -->
+    <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+      <a href="treatments.html" class="block">Treatment</a>
 
-        <!-- City Card 2 - Udaipur -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1661964079694-ccfaf7dc8028?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Udaipur - Lake Pichola" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Venice of the East, City of Lakes</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Udaipur</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Discover romantic boat rides on Lake Pichola with views of palaces and temples. Visit the City Palace and enjoy serene gardens.
-              </p>
-            </div>
-          </article>
-        </div>
+      <a href="doctor.html" class="block">Doctor</a>
+      <a href="destinations.html" class="block">Destinations</a>
 
-        <!-- City Card 3 - Kolkata -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1571679654681-ba01b9e1e117?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kolkata - Victoria Memorial" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">City of Joy, Cultural Capital</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Kolkata</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Dive into Kolkata's rich art and literary heritage. Visit Victoria Memorial, Howrah Bridge, and local markets.
-              </p>
-            </div>
-          </article>
-        </div>
+      <!-- Mobile Explore Dropdown -->
+      <div>
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
+          <span>Explore</span>
+          <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+        </button>
 
-        <!-- City Card 4 - Hyderabad -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1696941515998-d83f24967aca?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hyderabad - Charminar" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">City of Pearls, Hyderabad Bazaar</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Hyderabad</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Explore historic Charminar and Golconda Fort. Taste the legendary Hyderabadi biryani and shop in colorful bazaars.
-              </p>
-            </div>
-          </article>
+        <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+          <a href="about.html" class="block">About Us</a>
+          <a href="faq.html" class="block">FAQ</a>
+          <a href="testimonial.html" class="block">Testimonials</a>
+          <a href="news.html" class="block">News/Blogs</a>
         </div>
-
-        <!-- City Card 5 - Mumbai -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mumbai - Gateway of India" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Gateway of India City, Bollywood Hub</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Mumbai</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Walk along Marine Drive, see the Gateway of India, and explore Elephanta Caves. Experience Mumbai's vibrant nightlife.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 6 - Varanasi -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?q=80&w=798&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Varanasi - Ghats" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Spiritual Capital, City of Temples</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Varanasi</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Witness the mystical Ganga Aarti on the ghats and explore ancient temples. Experience India's spiritual heart.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 7 - Lucknow -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1642071547593-12c221a72613?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lucknow - Bara Imambara" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">City of Nawabs, Heritage City</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Lucknow</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Relish Awadhi cuisine and visit the Bara Imambara and Rumi Darwaza. Lucknow's blend of history and architecture.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 8 - Bengaluru -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1588416936097-41850ab3d86d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bengaluru - Lalbagh" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Garden City, Silicon Valley of India</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Bengaluru</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Enjoy a pleasant climate while exploring Lalbagh Botanical Garden and Cubbon Park. Discover café culture and tech hubs.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 9 - Darjeeling -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1724159609417-0b84ff619e7c?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Darjeeling - Tea Gardens" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Queen of Hills, Land of Orchids</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Darjeeling</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Experience panoramic views of the Himalayas on the Toy Train, visit tea gardens, and stroll through colonial streets.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 10 - Chennai -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1697729444936-8c6a6f643312?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chennai - Marina Beach" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">City of Temples, South Indian Heritage</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Chennai</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Visit Marina Beach, Kapaleeshwarar Temple, and Fort St. George. Chennai's classical music and temple architecture.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 11 - Jodhpur -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1686825780583-8be7c349a4b4?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jodhpur - Mehrangarh Fort" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Blue City, Sun City</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Jodhpur</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Explore the majestic Mehrangarh Fort and wander the blue-painted old town streets. Enjoy panoramic views.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 12 - Mysore -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1590766940554-634a7ed41450?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mysore - Palace" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">City of Palaces, The Lake City</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Mysore</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Discover the magnificent Mysore Palace, bustling Devaraja Market, and tranquil Brindavan Gardens.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 13 - Goa -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Goa - Beaches" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Pearl of the Orient, Beach Paradise</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Goa</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Relax on sandy beaches, enjoy water sports, and explore Portuguese heritage churches. Lively nightlife awaits.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 14 - Leh -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1697729579473-8ab642d5678c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Leh - Himalayas" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Gateway to Ladakh</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Leh</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Explore Buddhist monasteries and the stark beauty of the Himalayas. Spiritual sites and breathtaking landscapes.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 15 - Jaisalmer -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1713349881676-594b95a5742b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jaisalmer - Fort" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Golden City, Desert Jewel</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Jaisalmer</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Wander through the UNESCO-listed Jaisalmer Fort, explore sandstone havelis, and experience desert camel safaris.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- City Card 16 - Pune -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1715678710159-ee67d5bdba85?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pune - Heritage" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">1-Day Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Oxford of the East, Cultural Capital of Maharashtra</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Pune</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Dive into Pune's rich history with visits to Shaniwar Wada and Aga Khan Palace. Enjoy spiritual peace at Osho Ashram.
-              </p>
-            </div>
-          </article>
-        </div>
-
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
+
+      <div class="pt-6 border-t border-gray-200"></div>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+        target="_blank"
+        class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
+        style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
+        <span>Book Consultation</span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
+          <i class='bx bx-right-arrow-alt text-xl'></i>
+        </span>
+      </a>
+    </nav>
   </div>
-</section>
 
-<!-- ================= TOP STATES FOR 2-3 DAYS TOUR ================= -->
-<section id="states" class="bg-slate-50 py-4 border-t border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
-    
-    <!-- Header -->
-    <div class="text-center">
-      <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
-        Extended Exploration
-      </p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
-        Top States for <span class="text-teal-500">2-3 Days Tour</span>
-      </h2>
-      <p class="mt-4 text-sm sm:text-base text-slate-500 max-w-2xl mx-auto">
-        Immerse yourself in diverse cultures, landscapes, and experiences across India's most captivating states.
-      </p>
-    </div>
+  <!-- ================= MOBILE DROPDOWN SCRIPT ================= -->
+  <script>
+    const mobileExploreBtn = document.getElementById('mobileExploreBtn')
+    const mobileExploreMenu = document.getElementById('mobileExploreMenu')
+    const mobileExploreIcon = document.getElementById('mobileExploreIcon')
 
-    <!-- States Carousel -->
-    <div class="swiper destinations-carousel statesSwiper">
-      <div class="swiper-wrapper">
-        
-        <!-- State Card 1 - Maharashtra -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1572782252655-9c8771392601?q=80&w=622&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maharashtra - Mumbai" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Land of Bollywood & Beaches</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Maharashtra</h3>
-              <p class="text-sm text-white/90 leading-relaxed">
-                Explore Mumbai's iconic Gateway of India, vibrant nightlife, and Bollywood charm. Visit the ancient caves of Ajanta & Ellora.
-              </p>
-            </div>
-          </article>
-        </div>
+    mobileExploreBtn.addEventListener('click', () => {
+      mobileExploreMenu.classList.toggle('hidden')
+      mobileExploreIcon.classList.toggle('bx-chevron-down')
+      mobileExploreIcon.classList.toggle('bx-chevron-up')
+    })
+  </script>
 
-        <!-- State Card 2 - Tamil Nadu -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1597389935051-2f9dc0f05456?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tamil Nadu - Temples" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Land of Temples & Classical Dance</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Tamil Nadu</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Discover Chennai's heritage temples and Marina Beach. Explore Madurai's Meenakshi Temple and Tamil culture.
-              </p>
-            </div>
-          </article>
-        </div>
 
-        <!-- State Card 3 - Uttar Pradesh -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1586432578073-f6aa2dea1325?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Uttar Pradesh - Taj Mahal" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Cradle of Indian Civilization</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Uttar Pradesh</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Witness the Taj Mahal in Agra, spiritual Varanasi ghats, and Lucknow's royal Nawabi culture.
-              </p>
-            </div>
-          </article>
-        </div>
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
 
-        <!-- State Card 4 - Rajasthan -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1661962388409-eb7a041606fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rajasthan - Desert" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Land of Kings & Desert Splendor</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Rajasthan</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Experience Jaipur's royal palaces, Udaipur's romantic lakes, and Jaisalmer's golden forts. Desert safaris await.
-              </p>
-            </div>
-          </article>
-        </div>
 
-        <!-- State Card 5 - Kerala -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1583513645242-25a32d451084?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kerala - Backwaters" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">God's Own Country & Backwater Paradise</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Kerala</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Cruise the idyllic backwaters of Alleppey, visit Munnar's tea plantations, and enjoy Ayurvedic wellness retreats.
-              </p>
-            </div>
-          </article>
-        </div>
+    <!-- ================= TOP CITIES FOR 1-DAY TOUR ================= -->
+    <section id="cities" class="bg-white py-4 pt-20 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
 
-        <!-- State Card 6 - Karnataka -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1697730504977-26847b1f1f91?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Karnataka - Heritage" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Silicon Valley & Royal Heritage</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Karnataka</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Explore Bangalore's cosmopolitan vibe, Mysore's splendid palace, and Hampi's ancient ruins steeped in history.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 7 - West Bengal -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1697730497487-7bda47e4baff?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="West Bengal - Kolkata" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Cultural and Tea Heritage</p>
-              <h3 class="text-2xl font-bold text-white mb-3">West Bengal</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Visit Kolkata's colonial architecture, art galleries, and street food. Take a trip to Darjeeling's tea gardens.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 8 - Gujarat -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1642841819300-20ed449c02a1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gujarat - Heritage" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Heritage & Wildlife Marvel</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Gujarat</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Marvel at the Statue of Unity, explore ancient temples and forts, and spot Asiatic lions at Gir National Park.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 9 - Goa -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1664304458186-9a67c1330d02?q=80&w=690&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Goa - Beaches" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Beach Paradise & Portuguese Legacy</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Goa</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Relax on Goa's sandy beaches, savor vibrant nightlife, and explore historic Portuguese churches.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 10 - Punjab -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1697730331435-92e07494db43?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Punjab - Golden Temple" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Land of the Five Rivers & Spirituality</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Punjab</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Visit the Golden Temple in Amritsar, experience the Wagah Border ceremony, and explore Patiala's palaces.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 11 - Andhra Pradesh -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1572333837703-3f5d7a24c714?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Andhra Pradesh - Temples" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Temple & Nature Destinations</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Andhra Pradesh</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Explore Tirupati's sacred temple, Visakhapatnam's beaches, and the scenic Araku Valley.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 12 - Himachal Pradesh -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1697729690458-2d64ca777c04?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himachal Pradesh - Mountains" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Himalayan Adventure & Serenity</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Himachal Pradesh</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Enjoy the hill stations of Shimla and Manali, trekking, and breathtaking Himalayan landscapes.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 13 - Odisha -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1706790574525-d218c4c52b5c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Odisha - Temples" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Temple Trails & Tribal Culture</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Odisha</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Visit the Sun Temple at Konark, Jagannath Temple in Puri, and explore Bhubaneswar's ancient heritage.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 14 - Delhi NCR -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://plus.unsplash.com/premium_photo-1697730373510-51b7fcf2ff52?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Delhi NCR - Red Fort" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Historic & Modern Metropolis</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Delhi & NCR</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Dive into Delhi's rich history at the Red Fort and Qutub Minar, shop in vibrant markets, and enjoy world-class dining.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <!-- State Card 15 - Jammu & Kashmir -->
-        <div class="swiper-slide">
-          <article class="destination-card group">
-            <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jammu & Kashmir - Dal Lake" loading="lazy">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <span class="card-badge">2-3 Days Tour</span>
-              <p class="text-xs font-semibold text-teal-300 mb-2">Paradise on Earth</p>
-              <h3 class="text-2xl font-bold text-white mb-3">Jammu & Kashmir</h3>
-              <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
-                Explore Srinagar's Dal Lake and houseboats, Gulmarg's ski slopes, and the spiritual heritage of Leh.
-              </p>
-            </div>
-          </article>
-        </div>
-
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div>
-</section>
-
-<!-- Gallery -->
-<section class="bg-white py-10 relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 animate-on-scroll">
-
-    <!-- Heading -->
-    <h2 class="text-4xl md:text-4xl font-extrabold text-slate-900">
-      Arogya Yatri <span class="text-teal-500">Gallery</span>
-    </h2>
-
-    <!-- Slogan -->
-    <p class="mt-3 text-slate-600 max-w-2xl">
-      Explore India's premier medical destinations and world-class healthcare facilities through our visual journey.
-    </p>
-
-    <div class="mt-14 relative overflow-hidden">
-      <div class="slider-track">
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_one.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_two.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_three.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_four.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_five.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_six.webp" alt="">
-        </div>
-
-        <!-- duplicate -->
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_seven.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_eight.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_nine.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_ten.webp" alt="">
-        </div>
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_eleven.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_twelve.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_french_discovers.webp" alt="">
-        </div>
-
-        <div class="slider-item">
-          <img src="../../src/images/instagram/insta_french_discovers_two.webp" alt="">
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
-  <div class="max-w-7xl mx-auto px-6">
-
-    <!-- TOP GRID -->
-    <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
-
-      <!-- Brand -->
-      <div class="lg:col-span-2">
-        <a href="../../index.html">
-          <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
-          <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
-            Arogya Yatri is a global medical tourism platform connecting patients
-            with world-class hospitals, trusted doctors, and seamless healthcare
-            journeys across borders.
+        <!-- Header -->
+        <div class="text-center mb-">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
+            Quick Getaways
           </p>
-        </a>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
+            Top Cities for <span class="text-teal-500">1-Day Tour</span>
+          </h2>
+          <p class="mt-4 text-sm sm:text-base text-slate-500 max-w-2xl mx-auto">
+            Perfect destinations for a memorable day trip, combining culture, history, and local experiences.
+          </p>
+        </div>
 
-        <!-- Social -->
-        <div class="flex items-center gap-4">
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-facebook text-lg"></i>
+        <!-- Cities Carousel -->
+        <div class="swiper destinations-carousel citiesSwiper">
+          <div class="swiper-wrapper">
+
+            <!-- City Card 1 - Jaipur -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Jaipur - Amber Fort" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Pink City, Rajput Royalty Capital</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Jaipur</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Explore the regal charm of Jaipur by visiting Amber Fort and City Palace. Shop vibrant bazaars
+                    filled with traditional Rajasthani crafts.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 2 - Udaipur -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1661964079694-ccfaf7dc8028?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Udaipur - Lake Pichola" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Venice of the East, City of Lakes</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Udaipur</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Discover romantic boat rides on Lake Pichola with views of palaces and temples. Visit the City
+                    Palace and enjoy serene gardens.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 3 - Kolkata -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1571679654681-ba01b9e1e117?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Kolkata - Victoria Memorial" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">City of Joy, Cultural Capital</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Kolkata</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Dive into Kolkata's rich art and literary heritage. Visit Victoria Memorial, Howrah Bridge, and
+                    local markets.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 4 - Hyderabad -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1696941515998-d83f24967aca?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Hyderabad - Charminar" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">City of Pearls, Hyderabad Bazaar</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Hyderabad</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Explore historic Charminar and Golconda Fort. Taste the legendary Hyderabadi biryani and shop in
+                    colorful bazaars.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 5 - Mumbai -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Mumbai - Gateway of India" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Gateway of India City, Bollywood Hub</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Mumbai</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Walk along Marine Drive, see the Gateway of India, and explore Elephanta Caves. Experience Mumbai's
+                    vibrant nightlife.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 6 - Varanasi -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?q=80&w=798&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Varanasi - Ghats" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Spiritual Capital, City of Temples</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Varanasi</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Witness the mystical Ganga Aarti on the ghats and explore ancient temples. Experience India's
+                    spiritual heart.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 7 - Lucknow -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1642071547593-12c221a72613?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Lucknow - Bara Imambara" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">City of Nawabs, Heritage City</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Lucknow</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Relish Awadhi cuisine and visit the Bara Imambara and Rumi Darwaza. Lucknow's blend of history and
+                    architecture.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 8 - Bengaluru -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1588416936097-41850ab3d86d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Bengaluru - Lalbagh" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Garden City, Silicon Valley of India</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Bengaluru</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Enjoy a pleasant climate while exploring Lalbagh Botanical Garden and Cubbon Park. Discover café
+                    culture and tech hubs.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 9 - Darjeeling -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1724159609417-0b84ff619e7c?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Darjeeling - Tea Gardens" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Queen of Hills, Land of Orchids</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Darjeeling</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Experience panoramic views of the Himalayas on the Toy Train, visit tea gardens, and stroll through
+                    colonial streets.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 10 - Chennai -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697729444936-8c6a6f643312?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Chennai - Marina Beach" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">City of Temples, South Indian Heritage</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Chennai</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Visit Marina Beach, Kapaleeshwarar Temple, and Fort St. George. Chennai's classical music and temple
+                    architecture.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 11 - Jodhpur -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1686825780583-8be7c349a4b4?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Jodhpur - Mehrangarh Fort" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Blue City, Sun City</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Jodhpur</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Explore the majestic Mehrangarh Fort and wander the blue-painted old town streets. Enjoy panoramic
+                    views.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 12 - Mysore -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1590766940554-634a7ed41450?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Mysore - Palace" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">City of Palaces, The Lake City</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Mysore</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Discover the magnificent Mysore Palace, bustling Devaraja Market, and tranquil Brindavan Gardens.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 13 - Goa -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Goa - Beaches" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Pearl of the Orient, Beach Paradise</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Goa</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Relax on sandy beaches, enjoy water sports, and explore Portuguese heritage churches. Lively
+                    nightlife awaits.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 14 - Leh -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697729579473-8ab642d5678c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Leh - Himalayas" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Gateway to Ladakh</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Leh</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Explore Buddhist monasteries and the stark beauty of the Himalayas. Spiritual sites and breathtaking
+                    landscapes.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 15 - Jaisalmer -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1713349881676-594b95a5742b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Jaisalmer - Fort" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Golden City, Desert Jewel</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Jaisalmer</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Wander through the UNESCO-listed Jaisalmer Fort, explore sandstone havelis, and experience desert
+                    camel safaris.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- City Card 16 - Pune -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1715678710159-ee67d5bdba85?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Pune - Heritage" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">1-Day Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Oxford of the East, Cultural Capital of
+                    Maharashtra</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Pune</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Dive into Pune's rich history with visits to Shaniwar Wada and Aga Khan Palace. Enjoy spiritual
+                    peace at Osho Ashram.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TOP STATES FOR 2-3 DAYS TOUR ================= -->
+    <section id="states" class="bg-slate-50 py-4 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+
+        <!-- Header -->
+        <div class="text-center">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
+            Extended Exploration
+          </p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
+            Top States for <span class="text-teal-500">2-3 Days Tour</span>
+          </h2>
+          <p class="mt-4 text-sm sm:text-base text-slate-500 max-w-2xl mx-auto">
+            Immerse yourself in diverse cultures, landscapes, and experiences across India's most captivating states.
+          </p>
+        </div>
+
+        <!-- States Carousel -->
+        <div class="swiper destinations-carousel statesSwiper">
+          <div class="swiper-wrapper">
+
+            <!-- State Card 1 - Maharashtra -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1572782252655-9c8771392601?q=80&w=622&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Maharashtra - Mumbai" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Land of Bollywood & Beaches</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Maharashtra</h3>
+                  <p class="text-sm text-white/90 leading-relaxed">
+                    Explore Mumbai's iconic Gateway of India, vibrant nightlife, and Bollywood charm. Visit the ancient
+                    caves of Ajanta & Ellora.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 2 - Tamil Nadu -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1597389935051-2f9dc0f05456?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Tamil Nadu - Temples" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Land of Temples & Classical Dance</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Tamil Nadu</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Discover Chennai's heritage temples and Marina Beach. Explore Madurai's Meenakshi Temple and Tamil
+                    culture.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 3 - Uttar Pradesh -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1586432578073-f6aa2dea1325?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Uttar Pradesh - Taj Mahal" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Cradle of Indian Civilization</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Uttar Pradesh</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Witness the Taj Mahal in Agra, spiritual Varanasi ghats, and Lucknow's royal Nawabi culture.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 4 - Rajasthan -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1661962388409-eb7a041606fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Rajasthan - Desert" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Land of Kings & Desert Splendor</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Rajasthan</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Experience Jaipur's royal palaces, Udaipur's romantic lakes, and Jaisalmer's golden forts. Desert
+                    safaris await.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 5 - Kerala -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1583513645242-25a32d451084?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Kerala - Backwaters" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">God's Own Country & Backwater Paradise</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Kerala</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Cruise the idyllic backwaters of Alleppey, visit Munnar's tea plantations, and enjoy Ayurvedic
+                    wellness retreats.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 6 - Karnataka -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697730504977-26847b1f1f91?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Karnataka - Heritage" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Silicon Valley & Royal Heritage</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Karnataka</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Explore Bangalore's cosmopolitan vibe, Mysore's splendid palace, and Hampi's ancient ruins steeped
+                    in history.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 7 - West Bengal -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697730497487-7bda47e4baff?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="West Bengal - Kolkata" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Cultural and Tea Heritage</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">West Bengal</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Visit Kolkata's colonial architecture, art galleries, and street food. Take a trip to Darjeeling's
+                    tea gardens.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 8 - Gujarat -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1642841819300-20ed449c02a1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Gujarat - Heritage" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Heritage & Wildlife Marvel</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Gujarat</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Marvel at the Statue of Unity, explore ancient temples and forts, and spot Asiatic lions at Gir
+                    National Park.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 9 - Goa -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1664304458186-9a67c1330d02?q=80&w=690&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Goa - Beaches" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Beach Paradise & Portuguese Legacy</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Goa</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Relax on Goa's sandy beaches, savor vibrant nightlife, and explore historic Portuguese churches.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 10 - Punjab -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697730331435-92e07494db43?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Punjab - Golden Temple" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Land of the Five Rivers & Spirituality</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Punjab</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Visit the Golden Temple in Amritsar, experience the Wagah Border ceremony, and explore Patiala's
+                    palaces.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 11 - Andhra Pradesh -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1572333837703-3f5d7a24c714?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Andhra Pradesh - Temples" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Temple & Nature Destinations</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Andhra Pradesh</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Explore Tirupati's sacred temple, Visakhapatnam's beaches, and the scenic Araku Valley.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 12 - Himachal Pradesh -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697729690458-2d64ca777c04?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Himachal Pradesh - Mountains" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Himalayan Adventure & Serenity</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Himachal Pradesh</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Enjoy the hill stations of Shimla and Manali, trekking, and breathtaking Himalayan landscapes.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 13 - Odisha -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1706790574525-d218c4c52b5c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Odisha - Temples" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Temple Trails & Tribal Culture</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Odisha</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Visit the Sun Temple at Konark, Jagannath Temple in Puri, and explore Bhubaneswar's ancient
+                    heritage.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 14 - Delhi NCR -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697730373510-51b7fcf2ff52?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Delhi NCR - Red Fort" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Historic & Modern Metropolis</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Delhi & NCR</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Dive into Delhi's rich history at the Red Fort and Qutub Minar, shop in vibrant markets, and enjoy
+                    world-class dining.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- State Card 15 - Jammu & Kashmir -->
+            <div class="swiper-slide">
+              <article class="destination-card group">
+                <img
+                  src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Jammu & Kashmir - Dal Lake" loading="lazy">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <span class="card-badge">2-3 Days Tour</span>
+                  <p class="text-xs font-semibold text-teal-300 mb-2">Paradise on Earth</p>
+                  <h3 class="text-2xl font-bold text-white mb-3">Jammu & Kashmir</h3>
+                  <p class="text-sm text-white/90 leading-relaxed line-clamp-2">
+                    Explore Srinagar's Dal Lake and houseboats, Gulmarg's ski slopes, and the spiritual heritage of Leh.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="bg-white py-10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">Visual Journey</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
+            Arogya Yatri <span class="text-teal-500">Gallery</span>
+          </h2>
+          <p class="mt-4 text-sm sm:text-base text-slate-500 max-w-2xl mx-auto">
+            Explore India's premier medical destinations and world-class healthcare facilities through our visual
+            journey.
+          </p>
+        </div>
+
+        <!-- Gallery Carousel -->
+        <div class="swiper destinations-carousel gallerySwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_one.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_two.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_three.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_four.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_five.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_six.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_seven.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_eight.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_nine.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_ten.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_eleven.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_twelve.webp" alt="Arogya Yatri Gallery" loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_french_discovers.webp" alt="Arogya Yatri Gallery"
+                  loading="lazy">
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery-card">
+                <img src="../../src/images/instagram/insta_french_discovers_two.webp" alt="Arogya Yatri Gallery"
+                  loading="lazy">
+              </article>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- TOP GRID -->
+      <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
+
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <a href="../../index.html">
+            <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
+            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
+              Arogya Yatri is a global medical tourism platform connecting patients
+              with world-class hospitals, trusted doctors, and seamless healthcare
+              journeys across borders.
+            </p>
           </a>
-          <a href="https://www.instagram.com/arogya.yatri/"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-instagram text-lg"></i>
-          </a>
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-youtube text-lg"></i>
-          </a>
+
+          <!-- Social -->
+          <div class="flex items-center gap-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-facebook text-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/arogya.yatri/"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-instagram text-lg"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-youtube text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
+          </ul>
+        </div>
+
+
+
+        <!-- CONTACT (NEW) -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Contact</h4>
+
+          <ul class="space-y-4 text-sm">
+
+            <!-- Phone -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
+              <a href="tel:8530054299" class="hover:text-white transition">
+                +91 85300 54299
+              </a>
+            </li>
+
+            <!-- Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
+                apoorva@ewan.co.in
+              </a>
+            </li>
+
+            <!-- Alternate Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
+                pushkaraj.thakurdas@ewan.co.in
+              </a>
+            </li>
+
+            <!-- WhatsApp CTA -->
+            <li class="pt-2">
+              <a href="https://wa.me/918530054299" target="_blank"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
+                <i class="bx bxl-whatsapp text-lg"></i>
+                WhatsApp Us
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="border-t border-white/10 mb-8"></div>
+
+      <!-- BOTTOM BAR -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>
+          © 2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.
+        </p>
+
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2">
+            <i class="bx bx-shield-quarter text-teal-400"></i>
+            Secure & Confidential
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="bx bx-world text-teal-400"></i>
+            Global Healthcare Network
+          </span>
         </div>
       </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Quick Links</h4>
-        <ul class="space-y-3 text-sm">
-          <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
-          <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
-            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
-          <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-          <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
-        </ul>
-      </div>
-
-      
-
-      <!-- CONTACT (NEW) -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Contact</h4>
-
-        <ul class="space-y-4 text-sm">
-
-          <!-- Phone -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
-            <a href="tel:8530054299" class="hover:text-white transition">
-              +91 85300 54299
-            </a>
-          </li>
-
-          <!-- Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
-              apoorva@ewan.co.in
-            </a>
-          </li>
-
-          <!-- Alternate Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
-              pushkaraj.thakurdas@ewan.co.in
-            </a>
-          </li>
-
-          <!-- WhatsApp CTA -->
-          <li class="pt-2">
-            <a
-              href="https://wa.me/918530054299"
-              target="_blank"
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
-              <i class="bx bxl-whatsapp text-lg"></i>
-              WhatsApp Us
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
     </div>
+  </footer>
 
-    <!-- DIVIDER -->
-    <div class="border-t border-white/10 mb-8"></div>
-
-    <!-- BOTTOM BAR -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-      <p>
-        © 2025 Arogya Yatri. A service by Ewan Business Solutions. All rights reserved.
-      </p>
-
-      <div class="flex items-center gap-6">
-        <span class="flex items-center gap-2">
-          <i class="bx bx-shield-quarter text-teal-400"></i>
-          Secure & Confidential
-        </span>
-        <span class="flex items-center gap-2">
-          <i class="bx bx-world text-teal-400"></i>
-          Global Healthcare Network
-        </span>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-<!-- CONSULTANT MODAL -->
+  <!-- CONSULTANT MODAL -->
   <div id="consultantModal"
-  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
 
-  <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
+    <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
 
-    <!-- CLOSE BUTTON -->
-    <button
-      onclick="closeConsultantModal()"
-      class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none"
-        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
+      <!-- CLOSE BUTTON -->
+      <button onclick="closeConsultantModal()"
+        class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
 
-    <!-- BODY -->
-    <div class="px-4 py-4">
-      <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
-          class="w-full h-full"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0">
-          Loading…
-        </iframe>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- BODY -->
+      <div class="px-4 py-4">
+        <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+            class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
       </div>
-    </div>
 
-  </div>
+    </div>
   </div>
 
   <!-- Whatsapp Icon -->
- <a
-  href="https://wa.me/918530054299"
-  target="_blank"
-  aria-label="Chat on WhatsApp"
-  class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
-  <i class='bx bxl-whatsapp text-white text-3xl'></i>
-</a>
+  <a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp"
+    class="wa-highlight fixed bottom-6 right-6 z-50 flex items-center gap-2 pl-3 pr-4 py-2.5 rounded-full bg-green-500 text-white shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
+    <i class='bx bxl-whatsapp text-2xl'></i>
+    <span class="text-sm font-semibold hidden sm:inline">Chat on WhatsApp</span>
+  </a>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- ================= SWIPER INITIALIZATION ================= -->
-<script>
-  // Hero Slider
-  const heroSwiper = new Swiper('.heroSwiper', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.heroSwiper .swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.heroSwiper .swiper-button-next',
-      prevEl: '.heroSwiper .swiper-button-prev',
-    },
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
-  });
-
-  // Cities Carousel
-  const citiesSwiper = new Swiper('.citiesSwiper', {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.citiesSwiper .swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.citiesSwiper .swiper-button-next',
-      prevEl: '.citiesSwiper .swiper-button-prev',
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 24,
+  <!-- ================= SWIPER INITIALIZATION ================= -->
+  <script>
+    // Hero Slider
+    const heroSwiper = new Swiper('.heroSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
       },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 24,
+      pagination: {
+        el: '.heroSwiper .swiper-pagination',
+        clickable: true,
       },
-    },
-  });
-
-  // States Carousel
-  const statesSwiper = new Swiper('.statesSwiper', {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.statesSwiper .swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.statesSwiper .swiper-button-next',
-      prevEl: '.statesSwiper .swiper-button-prev',
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 24,
+      navigation: {
+        nextEl: '.heroSwiper .swiper-button-next',
+        prevEl: '.heroSwiper .swiper-button-prev',
       },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 24,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
       },
-    },
-  });
-</script>
-
-<!-- ================= MODAL SCRIPT ================= -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openButtons = document.querySelectorAll('.openConsultantModal');
-    const modal = document.getElementById('consultantModal');
-    const closeBtn = document.getElementById('closeConsultantModal');
-    const form = document.getElementById('consultantForm');
-
-    openButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-      });
     });
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-      });
-    }
+    // Cities Carousel
+    const citiesSwiper = new Swiper('.citiesSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.citiesSwiper .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.citiesSwiper .swiper-button-next',
+        prevEl: '.citiesSwiper .swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      },
+    });
 
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+    // States Carousel
+    const statesSwiper = new Swiper('.statesSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.statesSwiper .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.statesSwiper .swiper-button-next',
+        prevEl: '.statesSwiper .swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      },
+    });
+
+    // Gallery Carousel
+    const gallerySwiper = new Swiper('.gallerySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.gallerySwiper .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.gallerySwiper .swiper-button-next',
+        prevEl: '.gallerySwiper .swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      },
+    });
+  </script>
+
+  <!-- ================= MODAL SCRIPT ================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const openButtons = document.querySelectorAll('.openConsultantModal');
+      const modal = document.getElementById('consultantModal');
+      const closeBtn = document.getElementById('closeConsultantModal');
+      const form = document.getElementById('consultantForm');
+
+      openButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      });
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        });
+      }
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      });
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = form.querySelector('input[name="name"]').value;
+          const country = form.querySelector('select[name="country"]').value;
+          const whatsapp = form.querySelector('input[name="whatsapp"]').value;
+          const treatment = form.querySelector('textarea[name="treatment"]').value;
+          const contactMethod = form.querySelector('select[name="contactMethod"]').value;
+          const contactTime = form.querySelector('select[name="contactTime"]').value;
+
+          const message =
+            `Consultation Request\n\n` +
+            `Name: ${name}\n` +
+            `Country: ${country}\n` +
+            `WhatsApp Number: ${whatsapp}\n` +
+            `Treatment/Concern: ${treatment}\n` +
+            `Preferred Way to Contact: ${contactMethod}\n` +
+            `Preferred Time to Contact: ${contactTime}`;
+
+          const whatsappURL =
+            `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+
+          window.open(whatsappURL, '_blank');
+        });
       }
     });
-
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const name = form.querySelector('input[name="name"]').value;
-        const country = form.querySelector('select[name="country"]').value;
-        const whatsapp = form.querySelector('input[name="whatsapp"]').value;
-        const treatment = form.querySelector('textarea[name="treatment"]').value;
-        const contactMethod = form.querySelector('select[name="contactMethod"]').value;
-        const contactTime = form.querySelector('select[name="contactTime"]').value;
-
-        const message =
-          `Consultation Request\n\n` +
-          `Name: ${name}\n` +
-          `Country: ${country}\n` +
-          `WhatsApp Number: ${whatsapp}\n` +
-          `Treatment/Concern: ${treatment}\n` +
-          `Preferred Way to Contact: ${contactMethod}\n` +
-          `Preferred Time to Contact: ${contactTime}`;
-
-        const whatsappURL =
-          `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
-
-        window.open(whatsappURL, '_blank');
-      });
+  </script>
+  <script>
+    function closeConsultantModal() {
+      document.getElementById("consultantModal").classList.add("hidden")
     }
-  });
-</script>
-<script>
-  function closeConsultantModal() {
-    document.getElementById("consultantModal").classList.add("hidden")
-  }
-</script>
+  </script>
 
-<!-- ================= SIDEBAR SCRIPT ================= -->
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeBtn = document.getElementById('closeBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
+  <!-- ================= SIDEBAR SCRIPT ================= -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-  menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
-  closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
-</script>
+    menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
+    closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
+  </script>
 
-<script src="../script/scroll-animations.js"></script>
+  <script src="../script/scroll-animations.js"></script>
 </body>
+
 </html>

@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arogya Yatri - Testimonials</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -30,823 +32,812 @@
     }
   </script>
 
-<style>
+  <style>
     /* Hide scrollbar globally */
-html, body {
-    scrollbar-width: none;      /* Firefox */
-    -ms-overflow-style: none;   /* IE & Edge */
-}
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-    display: none;              /* Chrome, Safari */
-}
-*::-webkit-scrollbar {
-    display: none;
-}
+    html,
+    body {
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE & Edge */
+    }
 
-html { scroll-behavior: smooth; }
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari */
+    }
 
-/* ===== NAVBAR ===== */
-#siteHeader {
-    height: 72px;
-    background: white;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-}
+    *::-webkit-scrollbar {
+      display: none;
+    }
 
-.nav-link {
-    position: relative;
-    color: black;
-    padding: 4px 0;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: black;
-    transform: translateX(-50%);
-    transition: width .25s ease;
-}
+    /* ===== NAVBAR ===== */
+    #siteHeader {
+      height: 72px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
 
-.nav-link:hover::after {
-    width: 100%;
-}
+    .nav-link {
+      position: relative;
+      color: black;
+      padding: 4px 0;
+    }
 
-.nav-cta {
-    border-color: black;
-}
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width .25s ease;
+    }
 
-/* ===== PAGE OFFSET FOR FIXED NAV ===== */
-.page-wrapper {
-    padding-top: 96px;
-}
+    .nav-link:hover::after {
+      width: 100%;
+    }
 
-/* ===== Mobile Sidebar Fix ===== */
-#mobileMenu nav a {
-display: block;
-width: 100%;
-line-height: 1.4;
-padding: 6px 0;
-white-space: normal;
-}
+    .nav-cta {
+      border-color: black;
+    }
 
-</style>
+    /* ===== PAGE OFFSET FOR FIXED NAV ===== */
+    .page-wrapper {
+      padding-top: 96px;
+    }
+
+    /* ===== Mobile Sidebar Fix ===== */
+    #mobileMenu nav a {
+      display: block;
+      width: 100%;
+      line-height: 1.4;
+      padding: 6px 0;
+      white-space: normal;
+    }
+  </style>
 
 </head>
 
 <body class="font-body bg-white text-black">
-<!-- ================= NAVBAR ================= -->
-<header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
-  <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
+  <!-- ================= NAVBAR ================= -->
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+    <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
 
-    <!-- Logo -->
-    <a href="../../index.html" class="flex items-center">
-      <div class="leading-tight">
-        <div class="text-2xl tracking-tight">Arogya Yatri</div>
-        <div class="text-xs opacity-70">A service by Ewan Business Solutions</div>
-      </div>
-    </a>
-
-    <!-- Center Links -->
-    <ul
-      class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
-
-      <li>
-        <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
-          Treatment
-        </a>
-      </li>
-
-       
-
-      <li>
-        <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
-          Doctor
-        </a>
-      </li>
-
-      <li>
-        <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
-          Destinations
-        </a>
-      </li>
-
-      <!-- Explore Dropdown -->
-      <li class="relative group flex items-center">
-        <button
-          class="nav-link inline-flex items-center gap-1 leading-none">
-          Explore
-          <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
-        </button>
-
-        <div
-          class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-          <a href="about.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
-          <a href="faq.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
-          <a href="testimonial.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
-          <a href="news.html"
-            class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+      <!-- Logo -->
+      <a href="../../index.html" class="flex items-center">
+        <div class="leading-tight">
+          <div class="text-2xl tracking-tight">Arogya Yatri</div>
+          <div class="text-xs opacity-70">A Medical Tourism Facilitator</div>
         </div>
-      </li>
-    </ul>
-
-    <!-- CTA -->
-    <div class="ml-auto hidden md:flex items-center">
-      <a
-        class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
-        <span
-          class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
-          <i class='bx bx-right-arrow-alt'></i>
-        </span>
-        <span class="text-sm font-medium">Book Consultation</span>
       </a>
-    </div>
 
-    <!-- Mobile Button -->
-    <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
-      <i class='bx bx-menu'></i>
-    </button>
+      <!-- Center Links -->
+      <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
 
-  </nav>
-</header>
+        <li>
+          <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
+            Treatment
+          </a>
+        </li>
 
-<!-- ================= MOBILE SIDEBAR ================= -->
-<div id="mobileMenu"
-  class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
 
-  <!-- Header -->
-  <div class="p-6 border-b border-gray-200 flex justify-between items-start">
-    <a href="../../index.html">
-      <div>
-        <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
-        <div class="text-sm text-gray-500">A service by Ewan Business Solutions</div>
+
+        <li>
+          <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
+            Doctor
+          </a>
+        </li>
+
+        <li>
+          <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
+            Destinations
+          </a>
+        </li>
+
+        <!-- Explore Dropdown -->
+        <li class="relative group flex items-center">
+          <button class="nav-link inline-flex items-center gap-1 leading-none">
+            Explore
+            <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
+          </button>
+
+          <div
+            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About
+              Us</a>
+            <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
+            <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+            <a href="news.html"
+              class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="ml-auto hidden md:flex items-center">
+        <a
+          class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
+            <i class='bx bx-right-arrow-alt'></i>
+          </span>
+          <span class="text-sm font-medium">Book Consultation</span>
+        </a>
       </div>
-    </a>
-    <button id="closeBtn" class="text-2xl text-black">
-      <i class='bx bx-x'></i>
-    </button>
-  </div>
 
-  <!-- Nav -->
-  <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
-    <a href="treatments.html" class="block">Treatment</a>
-      
-    <a href="doctor.html" class="block">Doctor</a>
-    <a href="destinations.html" class="block">Destinations</a>
-
-    <!-- Mobile Explore Dropdown -->
-    <div>
-      <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
-        <span>Explore</span>
-        <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
+        <i class='bx bx-menu'></i>
       </button>
 
-      <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
-        <a href="about.html" class="block">About Us</a>
-        <a href="faq.html" class="block">FAQ</a>
-        <a href="testimonial.html" class="block">Testimonials</a>
-        <a href="news.html" class="block">News/Blogs</a>
-      </div>
-    </div>
+    </nav>
+  </header>
 
-    <div class="pt-6 border-t border-gray-200"></div>
-
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" target="_blank"
-      class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition" style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
-      <span>Book Consultation</span>
-      <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
-        <i class='bx bx-right-arrow-alt text-xl'></i>
-      </span>
-    </a>
-  </nav>
-</div>
-
-<!-- ================= MAIN CONTENT ================= -->
-<main class="page-wrapper max-w-7xl mx-auto ">
-  <!-- ================= TRUSTED PATIENT EXPERIENCES ================= -->
-  <section class="bg-white py-14">
-    <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+  <!-- ================= MOBILE SIDEBAR ================= -->
+  <div id="mobileMenu"
+    class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
 
     <!-- Header -->
-      <div class="grid lg:grid-cols-12 gap-14 mb-20">
+    <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+      <a href="../../index.html">
+        <div>
+          <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
+          <div class="text-sm text-gray-500">A Medical Tourism Facilitator</div>
+        </div>
+      </a>
+      <button id="closeBtn" class="text-2xl text-black">
+        <i class='bx bx-x'></i>
+      </button>
+    </div>
 
-      <!-- Left Content -->
-      <div class="lg:col-span-7">
+    <!-- Nav -->
+    <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+      <a href="treatments.html" class="block">Treatment</a>
 
-        <span class="inline-block text-xs tracking-[0.25em] uppercase text-blue-600 font-medium mb-4">
-          Patient Experiences
+      <a href="doctor.html" class="block">Doctor</a>
+      <a href="destinations.html" class="block">Destinations</a>
+
+      <!-- Mobile Explore Dropdown -->
+      <div>
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
+          <span>Explore</span>
+          <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+        </button>
+
+        <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+          <a href="about.html" class="block">About Us</a>
+          <a href="faq.html" class="block">FAQ</a>
+          <a href="testimonial.html" class="block">Testimonials</a>
+          <a href="news.html" class="block">News/Blogs</a>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-gray-200"></div>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+        target="_blank"
+        class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
+        style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
+        <span>Book Consultation</span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
+          <i class='bx bx-right-arrow-alt text-xl'></i>
         </span>
+      </a>
+    </nav>
+  </div>
 
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
-          Trusted Care,
-          <br class="hidden sm:block">
-          <span class="text-teal-500">
-            Proven Medical Outcomes
-          </span>
-        </h2>
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="page-wrapper max-w-7xl mx-auto ">
+    <!-- ================= TRUSTED PATIENT EXPERIENCES ================= -->
+    <section class="bg-white py-14">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
 
-        <p class="mt-6 text-base text-slate-600 max-w-2xl">
-          Patients across continents rely on us for ethical medical guidance,
-          globally accredited hospitals, and seamless coordination designed
-          around clarity and confidence.
+        <!-- Header -->
+        <div class="grid lg:grid-cols-12 gap-14 mb-20">
+
+          <!-- Left Content -->
+          <div class="lg:col-span-7">
+
+            <span class="inline-block text-xs tracking-[0.25em] uppercase text-blue-600 font-medium mb-4">
+              Patient Experiences
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
+              Trusted Care,
+              <br class="hidden sm:block">
+              <span class="text-teal-500">
+                Proven Medical Outcomes
+              </span>
+            </h2>
+
+            <p class="mt-6 text-base text-slate-600 max-w-2xl">
+              Patients across continents rely on us for ethical medical guidance,
+              globally accredited hospitals, and seamless coordination designed
+              around clarity and confidence.
+            </p>
+
+
+          </div>
+
+          <!-- Right Side: Compact Gallery -->
+          <div class="lg:col-span-5 flex items-start">
+
+            <div class="grid grid-cols-3 gap-4 w-full max-w-md ml-auto">
+
+              <div class="aspect-square rounded-xl overflow-hidden">
+                <img src="../../src/images/instagram/insta_one.webp" class="w-full h-full object-cover" alt="">
+              </div>
+
+              <div class="aspect-square rounded-xl overflow-hidden">
+                <img src="../../src/images/instagram/insta_two.webp" class="w-full h-full object-cover" alt="">
+              </div>
+
+              <div class="aspect-square rounded-xl overflow-hidden">
+                <img src="../../src/images/instagram/insta_three.webp" class="w-full h-full object-cover" alt="">
+              </div>
+              <div class="aspect-square rounded-xl overflow-hidden">
+                <img src="../../src/images/instagram/insta_four.webp" class="w-full h-full object-cover" alt="">
+              </div>
+              <div class="aspect-square rounded-xl overflow-hidden">
+                <img src="../../src/images/instagram/insta_five.webp" class="w-full h-full object-cover" alt="">
+              </div>
+              <div class="aspect-square rounded-xl overflow-hidden">
+                <img src="../../src/images/instagram/insta_six.webp" class="w-full h-full object-cover" alt="">
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- Testimonials -->
+        <div class="space-y-10 mt-20">
+
+          <!-- Dental Testimonial -->
+          <article class="border-b border-slate-200 pb-10">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+
+              <div class="md:col-span-3 flex items-center gap-4">
+                <img src="../../src/images/testinomials/male_four.webp" class="w-14 h-14 rounded-full object-cover"
+                  alt="Patient">
+                <div>
+                  <p class="font-semibold text-slate-900">Isabelle Moreau</p>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class='bx bx-map'></i> Toulouse, France
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:col-span-7">
+                <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half'></i>
+                  <span class="ml-3 text-sm text-slate-500">
+                    Dental Care
+                  </span>
+                </div>
+
+                <p class="text-slate-700 leading-relaxed max-w-3xl">
+                  Every stage of my dental treatment was explained clearly and patiently. From treatment selection to
+                  recovery planning, everything felt well organized, transparent, and genuinely focused on my comfort
+                  and peace of mind. I always knew what was happening next, which made the entire experience stress free
+                  and reassuring.
+                </p>
+              </div>
+
+              <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class='bx bx-plus-medical'></i>
+                  Dental Implants
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Ayurveda Testimonial -->
+          <article class="border-b border-slate-200 pb-10">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+
+              <div class="md:col-span-3 flex items-center gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="w-14 h-14 rounded-full object-cover" alt="Patient">
+                <div>
+                  <p class="font-semibold text-slate-900">Marie Dubois</p>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class='bx bx-map'></i> Paris, France
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:col-span-7">
+                <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <span class="ml-3 text-sm text-slate-500">
+                    Ayurveda & Wellness
+                  </span>
+                </div>
+
+                <p class="text-slate-700 leading-relaxed max-w-3xl">
+                  The team handled everything with empathy and real attention to detail. My Ayurvedic detox experience
+                  was transformative - I always felt informed, listened to, and supported, not just physically but
+                  emotionally as well, which made the entire wellness journey feel safe and deeply rejuvenating.
+                </p>
+              </div>
+
+              <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class='bx bx-plus-medical'></i>
+                  Panchakarma
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Dental Testimonial -->
+          <article class="border-b border-slate-200 pb-10">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+
+              <div class="md:col-span-3 flex items-center gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="w-14 h-14 rounded-full object-cover" alt="Patient">
+                <div>
+                  <p class="font-semibold text-slate-900">Élise Rousseau</p>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class='bx bx-map'></i> Nice, France
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:col-span-7">
+                <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half'></i>
+                  <span class="ml-3 text-sm text-slate-500">
+                    Dental Care
+                  </span>
+                </div>
+
+                <p class="text-slate-700 leading-relaxed max-w-3xl">
+                  From the very beginning, everything about my dental treatment was communicated in a clear and
+                  reassuring way. Treatment decisions and recovery planning were all handled in an organized and
+                  transparent manner, making the experience feel thoughtful, smooth, and truly focused on my well being.
+                </p>
+              </div>
+
+              <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class='bx bx-plus-medical'></i>
+                  Full Mouth Rehabilitation
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Ayurveda Testimonial -->
+          <article class="border-b border-slate-200 pb-10">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+
+              <div class="md:col-span-3 flex items-center gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="w-14 h-14 rounded-full object-cover" alt="Patient">
+                <div>
+                  <p class="font-semibold text-slate-900">Sophie Laurent</p>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class='bx bx-map'></i> Lyon, France
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:col-span-7">
+                <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <span class="ml-3 text-sm text-slate-500">
+                    Ayurveda & Wellness
+                  </span>
+                </div>
+
+                <p class="text-slate-700 leading-relaxed max-w-3xl">
+                  Each step of my wellness journey was guided with clear explanations and genuine care. The Ayurvedic
+                  treatments and yoga sessions were perfectly planned, and the entire experience felt organized,
+                  transparent, and centered around holistic healing and rejuvenation.
+                </p>
+              </div>
+
+              <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class='bx bx-plus-medical'></i>
+                  Yoga & Naturopathy
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Dental Testimonial -->
+          <article class="border-b border-slate-200 pb-10">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+
+              <div class="md:col-span-3 flex items-center gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="w-14 h-14 rounded-full object-cover" alt="Patient">
+                <div>
+                  <p class="font-semibold text-slate-900">Antoine Martin</p>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class='bx bx-map'></i> Bordeaux, France
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:col-span-7">
+                <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half'></i>
+                  <span class="ml-3 text-sm text-slate-500">
+                    Dental Care
+                  </span>
+                </div>
+
+                <p class="text-slate-700 leading-relaxed max-w-3xl">
+                  Every part of my dental treatment journey was explained with clarity and patience. From treatment
+                  planning to post-procedure recovery, everything felt seamless, transparent, and thoughtfully designed
+                  around my comfort and needs. The results exceeded my expectations.
+                </p>
+              </div>
+
+              <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class='bx bx-plus-medical'></i>
+                  Smile Design
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Ayurveda Testimonial -->
+          <article class="border-b border-slate-200 pb-10">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+
+              <div class="md:col-span-3 flex items-center gap-4">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1690587673708-d6ba8a1579a5?q=80&w=679&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="w-14 h-14 rounded-full object-cover" alt="Patient">
+                <div>
+                  <p class="font-semibold text-slate-900">Camille Bernard</p>
+                  <p class="text-xs text-slate-500 flex items-center gap-1">
+                    <i class='bx bx-map'></i> Marseille, France
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:col-span-7">
+                <div class="flex items-center gap-1 text-yellow-400 mb-3">
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <span class="ml-3 text-sm text-slate-500">
+                    Ayurveda & Wellness
+                  </span>
+                </div>
+
+                <p class="text-slate-700 leading-relaxed max-w-3xl">
+                  From start to finish, my Ayurvedic wellness program was handled with clear communication and careful
+                  planning. The stress relief and weight management therapies were perfectly organized, and everything
+                  felt genuinely focused on my holistic well being and inner balance.
+                </p>
+              </div>
+
+              <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
+                <div class="flex items-center gap-2">
+                  <i class='bx bx-plus-medical'></i>
+                  Stress Relief & Weight Management
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- CONSULTANT MODAL -->
+    <div id="consultantModal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+
+      <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
+
+        <!-- CLOSE BUTTON -->
+        <button onclick="closeConsultantModal()"
+          class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- BODY -->
+        <div class="px-4 py-4">
+          <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+              class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">
+              Loading…
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Whatsapp Icon -->
+    <a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp"
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
+      <i class='bx bxl-whatsapp text-white text-3xl'></i>
+    </a>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- TOP GRID -->
+      <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
+
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <a href="../../index.html">
+            <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
+            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
+              Arogya Yatri is a global medical tourism platform connecting patients
+              with world-class hospitals, trusted doctors, and seamless healthcare
+              journeys across borders.
+            </p>
+          </a>
+
+          <!-- Social -->
+          <div class="flex items-center gap-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-facebook text-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/arogya.yatri/"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-instagram text-lg"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-youtube text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
+          </ul>
+        </div>
+
+
+
+        <!-- CONTACT (NEW) -->
+        <div>
+          <h4 class="text-white font-semibold mb-5">Contact</h4>
+
+          <ul class="space-y-4 text-sm">
+
+            <!-- Phone -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
+              <a href="tel:8530054299" class="hover:text-white transition">
+                +91 85300 54299
+              </a>
+            </li>
+
+            <!-- Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
+                apoorva@ewan.co.in
+              </a>
+            </li>
+
+            <!-- Alternate Email -->
+            <li class="flex items-start gap-3">
+              <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
+              <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
+                pushkaraj.thakurdas@ewan.co.in
+              </a>
+            </li>
+
+            <!-- WhatsApp CTA -->
+            <li class="pt-2">
+              <a href="https://wa.me/918530054299" target="_blank"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
+                <i class="bx bxl-whatsapp text-lg"></i>
+                WhatsApp Us
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="border-t border-white/10 mb-8"></div>
+
+      <!-- BOTTOM BAR -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>
+          © 2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.
         </p>
 
-      
-      </div>
-
-      <!-- Right Side: Compact Gallery -->
-      <div class="lg:col-span-5 flex items-start">
-
-        <div class="grid grid-cols-3 gap-4 w-full max-w-md ml-auto">
-
-          <div class="aspect-square rounded-xl overflow-hidden">
-            <img
-              src="../../src/images/instagram/insta_one.webp"
-              class="w-full h-full object-cover"
-              alt="">
-          </div>
-
-          <div class="aspect-square rounded-xl overflow-hidden">
-            <img
-              src="../../src/images/instagram/insta_two.webp"
-              class="w-full h-full object-cover"
-              alt="">
-          </div>
-
-          <div class="aspect-square rounded-xl overflow-hidden">
-            <img
-              src="../../src/images/instagram/insta_three.webp"
-              class="w-full h-full object-cover"
-              alt="">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden">
-            <img
-              src="../../src/images/instagram/insta_four.webp"
-              class="w-full h-full object-cover"
-              alt="">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden">
-            <img
-              src="../../src/images/instagram/insta_five.webp"
-              class="w-full h-full object-cover"
-              alt="">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden">
-            <img
-              src="../../src/images/instagram/insta_six.webp"
-              class="w-full h-full object-cover"
-              alt="">
-          </div>
-
-        </div>
-
-      </div>
-
-
-      </div>
-      
-      <!-- Testimonials -->
-      <div class="space-y-10 mt-20">
-
-        <!-- Dental Testimonial -->
-        <article class="border-b border-slate-200 pb-10">
-          <div class="grid md:grid-cols-12 gap-8 items-start">
-
-            <div class="md:col-span-3 flex items-center gap-4">
-              <img src="../../src/images/testinomials/male_four.webp"
-                  class="w-14 h-14 rounded-full object-cover"
-                  alt="Patient">
-              <div>
-                <p class="font-semibold text-slate-900">Isabelle Moreau</p>
-                <p class="text-xs text-slate-500 flex items-center gap-1">
-                  <i class='bx bx-map'></i> Toulouse, France
-                </p>
-              </div>
-            </div>
-
-            <div class="md:col-span-7">
-              <div class="flex items-center gap-1 text-yellow-400 mb-3">
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star-half'></i>
-                <span class="ml-3 text-sm text-slate-500">
-                  Dental Care
-                </span>
-              </div>
-
-              <p class="text-slate-700 leading-relaxed max-w-3xl">
-                Every stage of my dental treatment was explained clearly and patiently. From treatment selection to recovery planning, everything felt well organized, transparent, and genuinely focused on my comfort and peace of mind. I always knew what was happening next, which made the entire experience stress free and reassuring.
-              </p>
-            </div>
-
-            <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
-              <div class="flex items-center gap-2">
-                <i class='bx bx-plus-medical'></i>
-                Dental Implants
-              </div>
-            </div>
-
-          </div>
-        </article>
-
-        <!-- Ayurveda Testimonial -->
-        <article class="border-b border-slate-200 pb-10">
-          <div class="grid md:grid-cols-12 gap-8 items-start">
-
-            <div class="md:col-span-3 flex items-center gap-4">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-14 h-14 rounded-full object-cover"
-                  alt="Patient">
-              <div>
-                <p class="font-semibold text-slate-900">Marie Dubois</p>
-                <p class="text-xs text-slate-500 flex items-center gap-1">
-                  <i class='bx bx-map'></i> Paris, France
-                </p>
-              </div>
-            </div>
-
-            <div class="md:col-span-7">
-              <div class="flex items-center gap-1 text-yellow-400 mb-3">
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <span class="ml-3 text-sm text-slate-500">
-                  Ayurveda & Wellness
-                </span>
-              </div>
-
-              <p class="text-slate-700 leading-relaxed max-w-3xl">
-                The team handled everything with empathy and real attention to detail. My Ayurvedic detox experience was transformative - I always felt informed, listened to, and supported, not just physically but emotionally as well, which made the entire wellness journey feel safe and deeply rejuvenating.
-              </p>
-            </div>
-
-            <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
-              <div class="flex items-center gap-2">
-                <i class='bx bx-plus-medical'></i>
-                Panchakarma
-              </div>
-            </div>
-
-          </div>
-        </article>
-
-        <!-- Dental Testimonial -->
-        <article class="border-b border-slate-200 pb-10">
-          <div class="grid md:grid-cols-12 gap-8 items-start">
-
-            <div class="md:col-span-3 flex items-center gap-4">
-              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-14 h-14 rounded-full object-cover"
-                  alt="Patient">
-              <div>
-                <p class="font-semibold text-slate-900">Élise Rousseau</p>
-                <p class="text-xs text-slate-500 flex items-center gap-1">
-                  <i class='bx bx-map'></i> Nice, France
-                </p>
-              </div>
-            </div>
-
-            <div class="md:col-span-7">
-              <div class="flex items-center gap-1 text-yellow-400 mb-3">
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star-half'></i>
-                <span class="ml-3 text-sm text-slate-500">
-                  Dental Care
-                </span>
-              </div>
-
-              <p class="text-slate-700 leading-relaxed max-w-3xl">
-                From the very beginning, everything about my dental treatment was communicated in a clear and reassuring way. Treatment decisions and recovery planning were all handled in an organized and transparent manner, making the experience feel thoughtful, smooth, and truly focused on my well being.
-              </p>
-            </div>
-
-            <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
-              <div class="flex items-center gap-2">
-                <i class='bx bx-plus-medical'></i>
-                Full Mouth Rehabilitation
-              </div>
-            </div>
-
-          </div>
-        </article>
-
-        <!-- Ayurveda Testimonial -->
-        <article class="border-b border-slate-200 pb-10">
-          <div class="grid md:grid-cols-12 gap-8 items-start">
-
-            <div class="md:col-span-3 flex items-center gap-4">
-              <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-14 h-14 rounded-full object-cover"
-                  alt="Patient">
-              <div>
-                <p class="font-semibold text-slate-900">Sophie Laurent</p>
-                <p class="text-xs text-slate-500 flex items-center gap-1">
-                  <i class='bx bx-map'></i> Lyon, France
-                </p>
-              </div>
-            </div>
-
-            <div class="md:col-span-7">
-              <div class="flex items-center gap-1 text-yellow-400 mb-3">
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <span class="ml-3 text-sm text-slate-500">
-                  Ayurveda & Wellness
-                </span>
-              </div>
-
-              <p class="text-slate-700 leading-relaxed max-w-3xl">
-                Each step of my wellness journey was guided with clear explanations and genuine care. The Ayurvedic treatments and yoga sessions were perfectly planned, and the entire experience felt organized, transparent, and centered around holistic healing and rejuvenation.
-              </p>
-            </div>
-
-            <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
-              <div class="flex items-center gap-2">
-                <i class='bx bx-plus-medical'></i>
-                Yoga & Naturopathy
-              </div>
-            </div>
-
-          </div>
-        </article>
-
-        <!-- Dental Testimonial -->
-        <article class="border-b border-slate-200 pb-10">
-          <div class="grid md:grid-cols-12 gap-8 items-start">
-
-            <div class="md:col-span-3 flex items-center gap-4">
-              <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-14 h-14 rounded-full object-cover"
-                  alt="Patient">
-              <div>
-                <p class="font-semibold text-slate-900">Antoine Martin</p>
-                <p class="text-xs text-slate-500 flex items-center gap-1">
-                  <i class='bx bx-map'></i> Bordeaux, France
-                </p>
-              </div>
-            </div>
-
-            <div class="md:col-span-7">
-              <div class="flex items-center gap-1 text-yellow-400 mb-3">
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star-half'></i>
-                <span class="ml-3 text-sm text-slate-500">
-                  Dental Care
-                </span>
-              </div>
-
-              <p class="text-slate-700 leading-relaxed max-w-3xl">
-                Every part of my dental treatment journey was explained with clarity and patience. From treatment planning to post-procedure recovery, everything felt seamless, transparent, and thoughtfully designed around my comfort and needs. The results exceeded my expectations.
-              </p>
-            </div>
-
-            <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
-              <div class="flex items-center gap-2">
-                <i class='bx bx-plus-medical'></i>
-                Smile Design
-              </div>
-            </div>
-
-          </div>
-        </article>
-
-        <!-- Ayurveda Testimonial -->
-        <article class="border-b border-slate-200 pb-10">
-          <div class="grid md:grid-cols-12 gap-8 items-start">
-
-            <div class="md:col-span-3 flex items-center gap-4">
-              <img src="https://plus.unsplash.com/premium_photo-1690587673708-d6ba8a1579a5?q=80&w=679&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="w-14 h-14 rounded-full object-cover"
-                  alt="Patient">
-              <div>
-                <p class="font-semibold text-slate-900">Camille Bernard</p>
-                <p class="text-xs text-slate-500 flex items-center gap-1">
-                  <i class='bx bx-map'></i> Marseille, France
-                </p>
-              </div>
-            </div>
-
-            <div class="md:col-span-7">
-              <div class="flex items-center gap-1 text-yellow-400 mb-3">
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i><i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <span class="ml-3 text-sm text-slate-500">
-                  Ayurveda & Wellness
-                </span>
-              </div>
-
-              <p class="text-slate-700 leading-relaxed max-w-3xl">
-                From start to finish, my Ayurvedic wellness program was handled with clear communication and careful planning. The stress relief and weight management therapies were perfectly organized, and everything felt genuinely focused on my holistic well being and inner balance.
-              </p>
-            </div>
-
-            <div class="md:col-span-2 text-sm text-slate-500 space-y-2">
-              <div class="flex items-center gap-2">
-                <i class='bx bx-plus-medical'></i>
-                Stress Relief & Weight Management
-              </div>
-            </div>
-
-          </div>
-        </article>
-
-      </div>
-
-    </div>
-  </section>
-
-
-
-  <!-- CONSULTANT MODAL -->
-  <div id="consultantModal"
-  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
-
-  <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
-
-    <!-- CLOSE BUTTON -->
-    <button
-      onclick="closeConsultantModal()"
-      class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none"
-        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-
-    <!-- BODY -->
-    <div class="px-4 py-4">
-      <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
-          class="w-full h-full"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0">
-          Loading…
-        </iframe>
-      </div>
-    </div>
-
-  </div>
-  </div>
-
-  <!-- Whatsapp Icon -->
- <a
-  href="https://wa.me/918530054299"
-  target="_blank"
-  aria-label="Chat on WhatsApp"
-  class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
-  <i class='bx bxl-whatsapp text-white text-3xl'></i>
-</a>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
-  <div class="max-w-7xl mx-auto px-6">
-
-    <!-- TOP GRID -->
-    <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
-
-      <!-- Brand -->
-      <div class="lg:col-span-2">
-        <a href="../../index.html">
-          <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
-          <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
-            Arogya Yatri is a global medical tourism platform connecting patients
-            with world-class hospitals, trusted doctors, and seamless healthcare
-            journeys across borders.
-          </p>
-        </a>
-
-        <!-- Social -->
-        <div class="flex items-center gap-4">
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-facebook text-lg"></i>
-          </a>
-          <a href="https://www.instagram.com/arogya.yatri/"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-instagram text-lg"></i>
-          </a>
-          <a href="#"
-            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-            <i class="bx bxl-youtube text-lg"></i>
-          </a>
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2">
+            <i class="bx bx-shield-quarter text-teal-400"></i>
+            Secure & Confidential
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="bx bx-world text-teal-400"></i>
+            Global Healthcare Network
+          </span>
         </div>
       </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Quick Links</h4>
-        <ul class="space-y-3 text-sm">
-          <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
-          <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
-            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
-          <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-          <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-          <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
-        </ul>
-      </div>
-
-      
-
-      <!-- CONTACT (NEW) -->
-      <div>
-        <h4 class="text-white font-semibold mb-5">Contact</h4>
-
-        <ul class="space-y-4 text-sm">
-
-          <!-- Phone -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
-            <a href="tel:8530054299" class="hover:text-white transition">
-              +91 85300 54299
-            </a>
-          </li>
-
-          <!-- Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
-              apoorva@ewan.co.in
-            </a>
-          </li>
-
-          <!-- Alternate Email -->
-          <li class="flex items-start gap-3">
-            <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
-            <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
-              pushkaraj.thakurdas@ewan.co.in
-            </a>
-          </li>
-
-          <!-- WhatsApp CTA -->
-          <li class="pt-2">
-            <a
-              href="https://wa.me/918530054299"
-              target="_blank"
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
-              <i class="bx bxl-whatsapp text-lg"></i>
-              WhatsApp Us
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
     </div>
+  </footer>
 
-    <!-- DIVIDER -->
-    <div class="border-t border-white/10 mb-8"></div>
+  <!-- MODAL SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const openButtons = document.querySelectorAll('.openConsultantModal');
+      const modal = document.getElementById('consultantModal');
+      const closeBtn = document.getElementById('closeConsultantModal');
+      const form = document.getElementById('consultantForm');
 
-    <!-- BOTTOM BAR -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-      <p>
-        © 2025 Arogya Yatri. A service by Ewan Business Solutions. All rights reserved.
-      </p>
-
-      <div class="flex items-center gap-6">
-        <span class="flex items-center gap-2">
-          <i class="bx bx-shield-quarter text-teal-400"></i>
-          Secure & Confidential
-        </span>
-        <span class="flex items-center gap-2">
-          <i class="bx bx-world text-teal-400"></i>
-          Global Healthcare Network
-        </span>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-<!-- MODAL SCRIPT -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openButtons = document.querySelectorAll('.openConsultantModal');
-    const modal = document.getElementById('consultantModal');
-    const closeBtn = document.getElementById('closeConsultantModal');
-    const form = document.getElementById('consultantForm');
-
-    openButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
+      openButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
       });
-    });
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        });
+      }
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
       });
-    }
 
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = form.querySelector('input[name="name"]').value;
+          const country = form.querySelector('select[name="country"]').value;
+          const whatsapp = form.querySelector('input[name="whatsapp"]').value;
+          const treatment = form.querySelector('textarea[name="treatment"]').value;
+          const contactMethod = form.querySelector('select[name="contactMethod"]').value;
+          const contactTime = form.querySelector('select[name="contactTime"]').value;
+
+          const message =
+            `Consultation Request\n\n` +
+            `Name: ${name}\n` +
+            `Country: ${country}\n` +
+            `WhatsApp Number: ${whatsapp}\n` +
+            `Treatment/Concern: ${treatment}\n` +
+            `Preferred Way to Contact: ${contactMethod}\n` +
+            `Preferred Time to Contact: ${contactTime}`;
+
+          const whatsappURL =
+            `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+
+          window.open(whatsappURL, '_blank');
+        });
       }
     });
+  </script>
 
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
+  <!-- MENU TOGGLE SCRIPT -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-        const name = form.querySelector('input[name="name"]').value;
-        const country = form.querySelector('select[name="country"]').value;
-        const whatsapp = form.querySelector('input[name="whatsapp"]').value;
-        const treatment = form.querySelector('textarea[name="treatment"]').value;
-        const contactMethod = form.querySelector('select[name="contactMethod"]').value;
-        const contactTime = form.querySelector('select[name="contactTime"]').value;
+    menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
+    closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
+  </script>
 
-        const message =
-          `Consultation Request\n\n` +
-          `Name: ${name}\n` +
-          `Country: ${country}\n` +
-          `WhatsApp Number: ${whatsapp}\n` +
-          `Treatment/Concern: ${treatment}\n` +
-          `Preferred Way to Contact: ${contactMethod}\n` +
-          `Preferred Time to Contact: ${contactTime}`;
+  <!-- MOBILE EXPLORE DROPDOWN SCRIPT -->
+  <script>
+    const exploreBtn = document.getElementById('mobileExploreBtn');
+    const exploreMenu = document.getElementById('mobileExploreMenu');
+    const exploreIcon = document.getElementById('mobileExploreIcon');
 
-        const whatsappURL =
-          `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
-
-        window.open(whatsappURL, '_blank');
+    if (exploreBtn && exploreMenu && exploreIcon) {
+      exploreBtn.addEventListener('click', () => {
+        exploreMenu.classList.toggle('hidden');
+        exploreIcon.classList.toggle('bx-chevron-down');
+        exploreIcon.classList.toggle('bx-chevron-up');
       });
     }
-  });
-</script>
+  </script>
 
-<!-- MENU TOGGLE SCRIPT -->
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeBtn = document.getElementById('closeBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
+  <script>
+    function closeConsultantModal() {
+      document.getElementById("consultantModal").classList.add("hidden")
+    }
+  </script>
 
-  menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
-  closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
-</script>
+  <!-- CTA section -->
+  <script>
+    document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+      e.preventDefault();
 
-<!-- MOBILE EXPLORE DROPDOWN SCRIPT -->
-<script>
-  const exploreBtn = document.getElementById('mobileExploreBtn');
-  const exploreMenu = document.getElementById('mobileExploreMenu');
-  const exploreIcon = document.getElementById('mobileExploreIcon');
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const treatment = document.getElementById('treatment').value.trim();
 
-  if (exploreBtn && exploreMenu && exploreIcon) {
-    exploreBtn.addEventListener('click', () => {
-      exploreMenu.classList.toggle('hidden');
-      exploreIcon.classList.toggle('bx-chevron-down');
-      exploreIcon.classList.toggle('bx-chevron-up');
+      const message =
+        `New Consultation Request:%0A%0A` +
+        `Name: ${name}%0A` +
+        `Phone: ${phone}%0A` +
+        `Email: ${email}%0A` +
+        `Treatment: ${treatment}`;
+
+      const whatsappURL = `https://wa.me/1234567890?text=${message}`;
+
+      window.open(whatsappURL, '_blank');
     });
-  }
-</script>
+  </script>
 
-<script>
-  function closeConsultantModal() {
-    document.getElementById("consultantModal").classList.add("hidden")
-  }
-</script>
-
-<!-- CTA section -->
-<script>
-  document.getElementById('whatsappForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const treatment = document.getElementById('treatment').value.trim();
-
-    const message =
-      `New Consultation Request:%0A%0A` +
-      `Name: ${name}%0A` +
-      `Phone: ${phone}%0A` +
-      `Email: ${email}%0A` +
-      `Treatment: ${treatment}`;
-
-    const whatsappURL = `https://wa.me/1234567890?text=${message}`;
-
-    window.open(whatsappURL, '_blank');
-  });
-</script>
-
-<script src="../script/scroll-animations.js"></script>
+  <script src="../script/scroll-animations.js"></script>
 </body>
+
 </html>
