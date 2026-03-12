@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dharra – Women's Rest & Renewal Retreat | Arogya Yatri</title>
+  <meta name="description" content="Dharra – A Women's Rest & Renewal Retreat. Personalised Ayurvedic healing, yoga, and meditation at Malhar Marchi Resort, Pune. Limited to 8 women. Book now.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/animations.css">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            logo: ['Anton', 'sans-serif'],
+            body: ['Lexend', 'sans-serif'],
+            display: ['Playfair Display', 'serif']
+          },
+          colors: {
+            primaryDark: '#0F172A',
+            retreat: '#2F6F5E'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html, body { scrollbar-width: none; -ms-overflow-style: none; }
+    html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+    *::-webkit-scrollbar { display: none; }
+    html { scroll-behavior: smooth; }
+
+    /* NAVBAR */
+    #siteHeader { height: 72px; background: white; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+    .nav-link { position: relative; color: black; padding: 4px 0; }
+    .nav-link::after { content: ''; position: absolute; left: 50%; bottom: -6px; width: 0; height: 2px; background: black; transform: translateX(-50%); transition: width .25s ease; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-cta { border-color: black; }
+    .page-wrapper { padding-top: 96px; }
+
+    /* HERO */
+    .hero-retreat {
+      background: linear-gradient(135deg, #0d3d2f 0%, #1a5c45 40%, #2F6F5E 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-retreat::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1400&auto=format&fit=crop') center/cover;
+      opacity: 0.12;
+    }
+
+    /* EXPERIENCE CHECKLIST */
+    .check-item { display: flex; gap: 12px; align-items: flex-start; }
+    .check-icon { width: 22px; height: 22px; min-width: 22px; background: #2F6F5E; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+
+    /* TIMELINE */
+    .timeline-item { position: relative; padding-left: 36px; }
+    .timeline-item::before { content: ''; position: absolute; left: 10px; top: 28px; bottom: -16px; width: 2px; background: linear-gradient(to bottom, #2F6F5E, transparent); }
+    .timeline-item:last-child::before { display: none; }
+    .timeline-dot { position: absolute; left: 0; top: 6px; width: 22px; height: 22px; background: #2F6F5E; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+    /* PULSE on WA button */
+    @keyframes wa-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,.6); }
+      50% { box-shadow: 0 0 0 10px rgba(34,197,94,0); }
+    }
+    .wa-pulse { animation: wa-pulse 2s ease-in-out infinite; }
+
+    /* CARD hover */
+    .info-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .info-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+  </style>
+</head>
+
+<body class="font-body bg-white text-black">
+
+  <!-- ================= NAVBAR ================= -->
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+    <nav class="relative max-w-7xl mx-auto px-6 h-[72px] flex items-center">
+      <a href="../../index.html" class="flex items-center">
+        <div class="leading-tight">
+          <div class="text-2xl tracking-tight">Arogya Yatri</div>
+          <div class="text-xs opacity-70">A Medical Tourism Facilitator</div>
+        </div>
+      </a>
+
+      <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
+        <li><a href="treatments.html" class="nav-link">Treatment</a></li>
+        <li><a href="doctor.html" class="nav-link">Doctor</a></li>
+        <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+        <li><a href="retreats.html" class="nav-link">Retreats</a></li>
+        <li class="relative group flex items-center">
+          <button class="nav-link inline-flex items-center gap-1 leading-none">
+            Explore <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
+          </button>
+          <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About Us</a>
+            <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
+            <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+            <a href="news.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="ml-auto hidden md:flex items-center">
+        <a class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center">
+            <i class='bx bx-right-arrow-alt'></i>
+          </span>
+          <span class="text-sm font-medium">Book Consultation</span>
+        </a>
+      </div>
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
+        <i class='bx bx-menu'></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ================= MOBILE SIDEBAR ================= -->
+  <div id="mobileMenu" class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+    <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+      <a href="../../index.html">
+        <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
+        <div class="text-sm text-gray-500">A Medical Tourism Facilitator</div>
+      </a>
+      <button id="closeBtn" class="text-2xl text-black"><i class='bx bx-x'></i></button>
+    </div>
+    <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+      <a href="treatments.html" class="block">Treatment</a>
+      <a href="doctor.html" class="block">Doctor</a>
+      <a href="destinations.html" class="block">Destinations</a>
+      <a href="retreats.html" class="block">Retreats</a>
+      <div>
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
+          <span>Explore</span>
+          <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+        </button>
+        <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+          <a href="about.html" class="block">About Us</a>
+          <a href="faq.html" class="block">FAQ</a>
+          <a href="testimonial.html" class="block">Testimonials</a>
+          <a href="news.html" class="block">News/Blogs</a>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-gray-200"></div>
+      <a class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition" style="display:inline-flex;padding:10px 20px;border-radius:9999px;border:1px solid black;">
+        <span>Book Consultation</span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
+          <i class='bx bx-right-arrow-alt text-xl'></i>
+        </span>
+      </a>
+    </nav>
+  </div>
+
+  <main class="page-wrapper">
+
+    <!-- =============== HERO =============== -->
+    <section class="hero-retreat py-20 md:py-32 text-white">
+      <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+        <p class="text-xs tracking-[0.3em] uppercase text-teal-300 font-medium mb-4">Women's Wellness Retreat</p>
+        <h1 class="font-display text-5xl sm:text-6xl md:text-7xl font-semibold leading-tight mb-2 italic">
+          Let Her Rest
+        </h1>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-widest mb-6">DHARRA</h2>
+        <p class="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
+          A Women's Rest &amp; Renewal Retreat — Held with care and personal attention.
+        </p>
+
+        <!-- Status Badge -->
+        <div class="inline-flex items-center gap-3 bg-white/15 border-2 border-white/40 text-white font-semibold px-8 py-4 rounded-2xl text-base sm:text-lg shadow-xl mb-4">
+          <i class='bx bx-time-five text-2xl text-teal-300'></i>
+          Recurring Programme · Next Batch: Coming Soon
+        </div>
+        <p class="text-white/70 text-sm mb-10">Register your interest to be notified when the next batch opens.</p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/918530054299?text=I'm interested in the Dharra Women's Retreat. Please inform me when the next batch is announced." target="_blank"
+            class="wa-pulse inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-green-500 hover:bg-green-600 text-white font-semibold text-base transition shadow-xl">
+            <i class='bx bxl-whatsapp text-xl'></i> Register Your Interest
+          </a>
+          <a href="#details" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-white/60 text-white hover:bg-white/10 font-medium text-base transition">
+            View Details <i class='bx bx-chevron-down'></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== KEY INFO CARDS =============== -->
+    <section id="details" class="bg-white py-16 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Price -->
+          <div class="info-card bg-gradient-to-br from-teal-50 to-green-50 border border-teal-100 rounded-2xl p-6 text-center">
+            <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-4">
+              <i class='bx bx-rupee text-2xl text-teal-600'></i>
+            </div>
+            <div class="text-3xl font-bold text-teal-700 mb-1">₹24,800</div>
+            <div class="text-sm text-slate-600 font-medium">Per Participant</div>
+            <div class="mt-2 text-xs text-slate-500">Limited to 8 women only</div>
+          </div>
+
+          <!-- Dates -->
+          <div class="info-card bg-gradient-to-br from-slate-50 to-amber-50 border border-amber-100 rounded-2xl p-6 text-center">
+            <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-4">
+              <i class='bx bx-calendar text-2xl text-amber-600'></i>
+            </div>
+            <div class="text-base font-bold text-slate-800 mb-1">Next Batch</div>
+            <div class="text-sm text-slate-600">Date: To Be Announced</div>
+            <div class="text-xs text-amber-600 font-semibold mt-1">Register to get notified</div>
+          </div>
+
+          <!-- Transport -->
+          <div class="info-card bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100 rounded-2xl p-6 text-center">
+            <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center mx-auto mb-4">
+              <i class='bx bx-bus text-2xl text-orange-600'></i>
+            </div>
+            <div class="text-base font-bold text-slate-800 mb-1">Commute Included</div>
+            <div class="text-sm text-slate-600">Pickup &amp; drop from</div>
+            <div class="text-sm text-slate-600 font-medium">Pune Resort, Pune</div>
+          </div>
+
+          <!-- Venue -->
+          <div class="info-card bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100 rounded-2xl p-6 text-center">
+            <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center mx-auto mb-4">
+              <i class='bx bx-map text-2xl text-rose-600'></i>
+            </div>
+            <div class="text-base font-bold text-slate-800 mb-1">Venue</div>
+            <div class="text-sm text-slate-500">Malhar Marchi Resort</div>
+            <div class="text-xs text-slate-400 mt-1">Peaceful natural surroundings</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== WHAT YOU WILL EXPERIENCE =============== -->
+    <section class="bg-slate-50 py-16 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+
+        <div class="text-center mb-12">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">Curated Experience</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
+            What You Will <span class="text-teal-500">Experience</span>
+          </h2>
+          <p class="mt-4 text-slate-500 max-w-2xl mx-auto text-sm sm:text-base">
+            Every element of Dharra is designed to restore, renew, and reconnect you with yourself.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+          <!-- Experience 1 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="check-item">
+              <div class="check-icon">
+                <i class='bx bx-check text-white text-sm'></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-1">Personalised Prakriti Analysis & Consultation</h3>
+                <p class="text-sm text-slate-500">Understand your body &amp; receive a personalised wellness roadmap tailored just for you.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="check-item">
+              <div class="check-icon">
+                <i class='bx bx-check text-white text-sm'></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-1">Ayurvedic Potli Massage & Gut Cleansing Ritual</h3>
+                <p class="text-sm text-slate-500">Detox – restore – rejuvenate. Ancient techniques to purify body and mind.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="check-item">
+              <div class="check-icon">
+                <i class='bx bx-check text-white text-sm'></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-1">Guided Inner Stillness Meditation Journey</h3>
+                <p class="text-sm text-slate-500">Release physical &amp; emotional tension. Reconnect with inner peace and begin deep self-exploration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 4 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="check-item">
+              <div class="check-icon">
+                <i class='bx bx-check text-white text-sm'></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-1">Posture & Alignment Yoga Therapy</h3>
+                <p class="text-sm text-slate-500">Relieve strain &amp; restore balance through evidence-based yoga therapy sessions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 5 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="check-item">
+              <div class="check-icon">
+                <i class='bx bx-check text-white text-sm'></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-1">Self-Exploration & Restorative Healing Activities</h3>
+                <p class="text-sm text-slate-500">Joyful connection &amp; emotional renewal in a safe and nurturing group environment.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 6 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="check-item">
+              <div class="check-icon">
+                <i class='bx bx-check text-white text-sm'></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900 mb-1">Good Wholesome Meals & Natural Surroundings</h3>
+                <p class="text-sm text-slate-500">Peaceful nature-immersed setting with nourishing sattvic meals and compassionate expert guidance.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== ITINERARY TIMELINE =============== -->
+    <section class="bg-white py-16 border-b border-slate-100">
+      <div class="max-w-4xl mx-auto px-6 animate-on-scroll">
+        <div class="text-center mb-12">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">Schedule</p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900">Your <span class="text-teal-500">3-Day Journey</span></h2>
+        </div>
+
+        <div class="space-y-8">
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class='bx bx-car text-white text-xs'></i></div>
+            <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+              <div class="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-1">Day 1 — Friday (Arrival Day)</div>
+              <h3 class="font-semibold text-slate-900 mb-2">Arrival &amp; Welcome</h3>
+              <p class="text-sm text-slate-600">Commute pickup from Pune. Check-in at Malhar Marchi Resort. Welcome ceremony, introductions, and an evening orientation session.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class='bx bx-leaf text-white text-xs'></i></div>
+            <div class="bg-teal-50 rounded-2xl p-5 border border-teal-100">
+              <div class="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-1">Day 2 — Saturday (Full Retreat Day)</div>
+              <h3 class="font-semibold text-slate-900 mb-2">Full Retreat Day</h3>
+              <p class="text-sm text-slate-600">Prakriti consultation, Ayurvedic therapies, yoga, meditation, healing activities, and wholesome meals in serene natural surroundings.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class='bx bx-home-heart text-white text-xs'></i></div>
+            <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+              <div class="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-1">Day 3 — Sunday (Return Day)</div>
+              <h3 class="font-semibold text-slate-900 mb-2">Return &amp; Renewal</h3>
+              <p class="text-sm text-slate-600">Morning session, closing ceremony, takeaway wellness roadmap, and comfortable return commute to Pune.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== WHY LIMITED TO 8 =============== -->
+    <section class="bg-gradient-to-br from-teal-900 to-slate-900 py-16 text-white">
+      <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll">
+        <div class="w-16 h-16 rounded-2xl bg-teal-700/50 flex items-center justify-center mx-auto mb-6">
+          <i class='bx bx-group text-3xl text-teal-300'></i>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Limited to an Intimate Group of <span class="text-yellow-400">8 Women</span></h2>
+        <p class="text-white/70 max-w-2xl mx-auto text-base leading-relaxed">
+          Dharra is intentionally kept small to ensure every woman receives personalised care, attention, and a deeply transformative experience. Each session is crafted for you — not a crowd.
+        </p>
+        <div class="mt-8 grid grid-cols-3 gap-6 max-w-md mx-auto">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-teal-400">8</div>
+            <div class="text-xs text-white/60 mt-1">Max Participants</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-teal-400">3</div>
+            <div class="text-xs text-white/60 mt-1">Days of Renewal</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-teal-400">100%</div>
+            <div class="text-xs text-white/60 mt-1">Personalised</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== REGISTER INTEREST CTA =============== -->
+    <section class="bg-white py-16">
+      <div class="max-w-3xl mx-auto px-6 text-center animate-on-scroll">
+        <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">Stay Updated</p>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 mb-4">
+          Be the First to Know About the <span class="text-teal-500">Next Dharra Batch</span>
+        </h2>
+        <p class="text-slate-500 mb-8 max-w-lg mx-auto">
+          Dharra runs in small, intimate batches of 8 women. Register your interest now and we'll reach out as soon as the next date is confirmed.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/918530054299?text=I'm interested in the Dharra Women's Retreat. Please inform me when the next batch is announced."
+            target="_blank"
+            class="wa-pulse inline-flex items-center gap-3 px-8 py-4 rounded-full bg-green-500 hover:bg-green-600 text-white font-semibold text-base transition shadow-xl">
+            <i class='bx bxl-whatsapp text-2xl'></i>
+            Register Your Interest
+          </a>
+          <div class="flex flex-col items-center gap-1">
+            <a href="tel:918530054299" class="text-slate-700 hover:text-teal-600 transition font-medium flex items-center gap-2">
+              <i class='bx bx-phone text-lg'></i> +91 85300 54299
+            </a>
+            <span class="text-xs text-slate-400">www.arogyayatri.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTANT MODAL -->
+    <div id="consultantModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-0 sm:px-4">
+      <div class="relative w-full h-full sm:h-auto sm:max-w-md sm:rounded-[28px] bg-white shadow-2xl overflow-hidden">
+        <button onclick="closeConsultantModal()" class="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 w-11 h-11 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <div class="px-3 sm:px-4 py-3 sm:py-4 h-full sm:h-auto">
+          <div class="w-full h-[calc(100vh-1.5rem)] sm:h-[520px] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform" class="w-full h-full" frameborder="0">Loading…</iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp"
+      class="wa-pulse fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 active:scale-95 transition-transform duration-300">
+      <i class='bx bxl-whatsapp text-white text-3xl'></i>
+    </a>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
+        <div class="lg:col-span-2">
+          <a href="../../index.html">
+            <h3 class="text-2xl text-white mb-3">Arogya Yatri</h3>
+            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">Arogya Yatri is a global medical tourism platform connecting patients with world-class hospitals, trusted doctors, and seamless healthcare journeys across borders.</p>
+          </a>
+          <div class="flex items-center gap-4">
+            <a href="https://www.instagram.com/arogya.yatri/" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
+              <i class="bx bxl-instagram text-lg"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="retreats.html" class="hover:text-white transition">Retreats</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-5">Contact</h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start gap-3"><i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i><a href="tel:8530054299" class="hover:text-white transition">+91 85300 54299</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">apoorva@ewan.co.in</a></li>
+            <li class="pt-2">
+              <a href="https://wa.me/918530054299?text=I'm interested in the Dharra Women's Retreat" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
+                <i class="bx bxl-whatsapp text-lg"></i> WhatsApp Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mb-8"></div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>© 2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2"><i class="bx bx-shield-quarter text-teal-400"></i> Secure & Confidential</span>
+          <span class="flex items-center gap-2"><i class="bx bx-world text-teal-400"></i> Global Healthcare Network</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function closeConsultantModal() { document.getElementById("consultantModal").classList.add("hidden"); }
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.openConsultantModal').forEach(btn => {
+        btn.addEventListener('click', e => { e.preventDefault(); document.getElementById('consultantModal').classList.remove('hidden'); document.getElementById('consultantModal').classList.add('flex'); });
+      });
+      document.getElementById('consultantModal').addEventListener('click', e => { if (e.target === document.getElementById('consultantModal')) closeConsultantModal(); });
+      document.getElementById('menuBtn').onclick = () => document.getElementById('mobileMenu').classList.remove('-translate-x-full');
+      document.getElementById('closeBtn').onclick = () => document.getElementById('mobileMenu').classList.add('-translate-x-full');
+      const exploreBtn = document.getElementById('mobileExploreBtn');
+      if (exploreBtn) {
+        exploreBtn.addEventListener('click', () => {
+          document.getElementById('mobileExploreMenu').classList.toggle('hidden');
+          document.getElementById('mobileExploreIcon').classList.toggle('bx-chevron-down');
+          document.getElementById('mobileExploreIcon').classList.toggle('bx-chevron-up');
+        });
+      }
+    });
+  </script>
+  <script src="../script/scroll-animations.js"></script>
+</body>
+</html>

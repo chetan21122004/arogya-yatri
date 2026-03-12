@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retreats & Wellness Packages | Arogya Yatri</title>
+  <meta name="description"
+    content="Explore Arogya Yatri's curated wellness retreats and Ayurvedic packages in India. Personalised healing experiences with French-speaking support.">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/animations.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { logo: ['Anton', 'sans-serif'], body: ['Lexend', 'sans-serif'], display: ['Playfair Display', 'serif'] },
+          colors: { primaryDark: '#0F172A' }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html,
+    body {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    *::-webkit-scrollbar {
+      display: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #siteHeader {
+      height: 72px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .06);
+    }
+
+    .nav-link {
+      position: relative;
+      color: black;
+      padding: 4px 0;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: black;
+      transform: translateX(-50%);
+      transition: width .25s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      border-color: black;
+    }
+
+    .page-wrapper {
+      padding-top: 96px;
+    }
+
+    /* HERO */
+    .hero-retreats {
+      background: linear-gradient(135deg, #0d3d2f 0%, #1a5c45 50%, #1e3a5f 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-retreats::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1600618528240-fb9fc964b853?q=80&w=1400&auto=format&fit=crop') center/cover;
+      opacity: .12;
+    }
+
+    /* RETREAT CARD */
+    .retreat-card {
+      border-radius: 24px;
+      overflow: hidden;
+      background: white;
+      border: 1px solid #e2e8f0;
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .retreat-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+    }
+
+    .retreat-card .card-img {
+      height: 240px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .retreat-card .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .retreat-card:hover .card-img img {
+      transform: scale(1.06);
+    }
+
+    /* BADGE */
+    .badge-live {
+      background: #ef4444;
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      animation: badge-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes badge-pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .7;
+      }
+    }
+
+    @keyframes wa-pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, .6);
+      }
+
+      50% {
+        box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+      }
+    }
+
+    .wa-pulse {
+      animation: wa-pulse 2s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="font-body bg-white text-black">
+
+  <!-- NAVBAR -->
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+    <nav class="relative max-w-7xl mx-auto px-6 h-[72px] flex items-center">
+      <a href="../../index.html" class="flex items-center">
+        <div class="leading-tight">
+          <div class="text-2xl tracking-tight">Arogya Yatri</div>
+          <div class="text-xs opacity-70">A Medical Tourism Facilitator</div>
+        </div>
+      </a>
+      <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
+        <li><a href="treatments.html" class="nav-link">Treatment</a></li>
+        <li><a href="doctor.html" class="nav-link">Doctor</a></li>
+        <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+        <li><a href="retreats.html" class="nav-link" style="border-bottom:2px solid black;">Retreats</a></li>
+        <li class="relative group flex items-center">
+          <button class="nav-link inline-flex items-center gap-1 leading-none">Explore <i
+              class='bx bx-chevron-down text-sm relative top-[1px]'></i></button>
+          <div
+            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About
+              Us</a>
+            <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
+            <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+            <a href="news.html"
+              class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+          </div>
+        </li>
+      </ul>
+      <div class="ml-auto hidden md:flex items-center">
+        <a
+          class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center"><i
+              class='bx bx-right-arrow-alt'></i></span>
+          <span class="text-sm font-medium">Book Consultation</span>
+        </a>
+      </div>
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center"><i class='bx bx-menu'></i></button>
+    </nav>
+  </header>
+
+  <!-- MOBILE SIDEBAR -->
+  <div id="mobileMenu"
+    class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+    <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+      <a href="../../index.html">
+        <div class="font-body text-2xl text-primaryDark">Arogya Yatri</div>
+        <div class="text-sm text-gray-500">A Medical Tourism Facilitator</div>
+      </a>
+      <button id="closeBtn" class="text-2xl text-black"><i class='bx bx-x'></i></button>
+    </div>
+    <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+      <a href="treatments.html" class="block">Treatment</a>
+      <a href="doctor.html" class="block">Doctor</a>
+      <a href="destinations.html" class="block">Destinations</a>
+      <a href="retreats.html" class="block font-semibold text-teal-600">Retreats</a>
+      <div>
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
+          <span>Explore</span><i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
+        </button>
+        <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+          <a href="about.html" class="block">About Us</a>
+          <a href="faq.html" class="block">FAQ</a>
+          <a href="testimonial.html" class="block">Testimonials</a>
+          <a href="news.html" class="block">News/Blogs</a>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-gray-200"></div>
+      <a class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
+        style="display:inline-flex;padding:10px 20px;border-radius:9999px;border:1px solid black;">
+        <span>Book Consultation</span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white"><i
+            class='bx bx-right-arrow-alt text-xl'></i></span>
+      </a>
+    </nav>
+  </div>
+
+  <main class="page-wrapper">
+
+    <!-- HERO -->
+    <section class="hero-retreats py-20 md:py-28 text-white">
+      <div class="relative z-10 max-w-7xl mx-auto px-6 text-center animate-on-scroll">
+        <p class="text-xs tracking-[0.3em] uppercase text-teal-300 font-medium mb-4">Wellness & Healing</p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight mb-4">
+          Retreats & <span class="font-display italic">Wellness</span> Packages
+        </h1>
+        <p class="text-base sm:text-lg text-white/75 max-w-2xl mx-auto">
+          Curated healing experiences in India, guided by expert practitioners with personalised care and full
+          facilitation support.
+        </p>
+      </div>
+    </section>
+
+    <!-- RETREAT CARDS -->
+    <section class="bg-slate-50 py-16">
+      <div class="max-w-7xl mx-auto px-6 animate-on-scroll">
+
+        <div class="text-center mb-12">
+          <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">Upcoming Programmes</p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900">Choose Your <span class="text-teal-500">Healing
+              Journey</span></h2>
+          <p class="mt-4 text-slate-500 max-w-xl mx-auto text-sm sm:text-base">Each retreat is carefully designed for a
+            specific wellness goal — find the one that speaks to you.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+          <!-- ── Card 1: Dharra ── -->
+          <div class="retreat-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop"
+                alt="Dharra Women's Retreat" loading="lazy">
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider bg-teal-600 text-white px-3 py-1 rounded-full">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white inline-block"></span>
+                  Recurring Programme
+                </span>
+                <span class="bg-white/90 text-slate-800 text-xs font-semibold px-3 py-1 rounded-full">Women Only</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <p class="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-1">Women's Wellness</p>
+                  <h3 class="text-xl font-bold text-slate-900">Dharra – Let Her Rest</h3>
+                  <p class="text-sm text-slate-500 mt-1">Women's Rest &amp; Renewal Retreat</p>
+                </div>
+                <div class="text-right shrink-0 ml-3">
+                  <div class="text-lg font-bold text-teal-700">₹24,800</div>
+                  <div class="text-xs text-slate-400">per person</div>
+                </div>
+              </div>
+
+              <div class="space-y-2 mb-5">
+                <div class="flex items-center gap-2 text-sm text-slate-600">
+                  <i class='bx bx-calendar text-amber-500'></i>
+                  <span class="font-semibold text-amber-700">Next Batch: TBA — Register Now</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-600">
+                  <i class='bx bx-map text-teal-500'></i>
+                  <span>Malhar Marchi Resort, Pune</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-600">
+                  <i class='bx bx-group text-teal-500'></i>
+                  <span>Max 8 participants</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-600">
+                  <i class='bx bx-bus text-teal-500'></i>
+                  <span>Commute from Pune included</span>
+                </div>
+              </div>
+
+              <p class="text-sm text-slate-500 mb-6 leading-relaxed">
+                A deeply healing 3-day retreat combining Ayurvedic therapies, yoga, meditation, and nourishing wholesome
+                meals in a serene natural setting.
+              </p>
+
+              <div class="mt-auto flex flex-col sm:flex-row gap-3">
+                <a href="https://wa.me/918530054299?text=I'm interested in the Dharra Women's Retreat. Please inform me when the next batch is announced."
+                  target="_blank"
+                  class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-semibold text-sm transition shadow-md">
+                  <i class='bx bxl-whatsapp text-lg'></i> Register Interest
+                </a>
+                <a href="retreat-dharra.html"
+                  class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border-2 border-slate-300 text-slate-700 hover:border-slate-900 hover:text-slate-900 font-semibold text-sm transition">
+                  View Details <i class='bx bx-right-arrow-alt'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Card 2: Ayurveda May 2026 ── -->
+          <div class="retreat-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
+                alt="Ayurvedic Rejuvenation India May 2026" loading="lazy">
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span
+                  class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider bg-yellow-400 text-slate-900 px-3 py-1 rounded-full">
+                  <span class="w-1.5 h-1.5 rounded-full bg-slate-900 animate-pulse inline-block"></span>
+                  Booking Open
+                </span>
+                <span class="bg-white/90 text-slate-800 text-xs font-semibold px-3 py-1 rounded-full">🇫🇷 French
+                  Support</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <p class="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-1">Ayurvedic Rejuvenation
+                  </p>
+                  <h3 class="text-xl font-bold text-slate-900">Ayurveda in India this May</h3>
+                  <p class="text-sm text-slate-500 mt-1">Personalised 8-day wellness programme</p>
+                </div>
+                <div class="text-right shrink-0 ml-3">
+                  <div class="text-sm font-bold text-teal-700">Contact for</div>
+                  <div class="text-xs text-slate-400">pricing</div>
+                </div>
+              </div>
+
+              <div class="space-y-2 mb-5">
+                <div class="flex items-center gap-2 text-sm text-slate-600">
+                  <i class='bx bx-calendar text-teal-500'></i>
+                  <span>23 May – 30 May 2026</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-600">
+                  <i class='bx bx-map text-teal-500'></i>
+                  <span>India (multiple wellness centres)</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-600">
+                  <i class='bx bx-user-circle text-teal-500'></i>
+                  <span>Expert Ayurvedic doctor guidance</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-600">
+                  <span class="text-base">🇫🇷</span>
+                  <span>French-speaking team in France &amp; India</span>
+                </div>
+              </div>
+
+              <p class="text-sm text-slate-500 mb-6 leading-relaxed">
+                A fully personalised Ayurvedic rejuvenation journey in India, with end-to-end facilitation,
+                French-language support, and authentic Panchakarma treatments.
+              </p>
+
+              <div class="mt-auto flex flex-col sm:flex-row gap-3">
+                <a href="https://wa.me/918530054299?text=I'm interested in the Ayurvedic Rejuvenation Retreat (May 23-30, 2026). Please share more details."
+                  target="_blank"
+                  class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-green-500 hover:bg-green-600 text-white font-semibold text-sm transition shadow-md">
+                  <i class='bx bxl-whatsapp text-lg'></i> Enquire on WhatsApp
+                </a>
+                <a href="retreat-ayurveda-may2026.html"
+                  class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border-2 border-slate-300 text-slate-700 hover:border-slate-900 hover:text-slate-900 font-semibold text-sm transition">
+                  View Details <i class='bx bx-right-arrow-alt'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+      </div>
+    </section>
+
+
+    <!-- CTA STRIP -->
+    <section class="bg-gradient-to-r from-teal-600 to-teal-800 py-14 text-white">
+      <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Not Sure Which Retreat Is Right for You?</h2>
+        <p class="text-white/80 mb-8">Our wellness coordinators will help you choose the perfect programme based on your
+          health goals and schedule.</p>
+        <a href="https://wa.me/918530054299?text=I'd like to learn more about your retreat programmes." target="_blank"
+          class="wa-pulse inline-flex items-center gap-3 px-8 py-4 rounded-full bg-green-500 hover:bg-green-600 text-white font-semibold text-base transition shadow-xl">
+          <i class='bx bxl-whatsapp text-2xl'></i> Talk to a Wellness Coordinator
+        </a>
+      </div>
+    </section>
+
+    <!-- CONSULTANT MODAL -->
+    <div id="consultantModal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-0 sm:px-4">
+      <div class="relative w-full h-full sm:h-auto sm:max-w-md sm:rounded-[28px] bg-white shadow-2xl overflow-hidden">
+        <button onclick="closeConsultantModal()"
+          class="absolute top-3 right-3 z-10 w-11 h-11 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <div class="px-3 sm:px-4 py-3 sm:py-4 h-full sm:h-auto">
+          <div
+            class="w-full h-[calc(100vh-1.5rem)] sm:h-[520px] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
+              class="w-full h-full" frameborder="0">Loading…</iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/918530054299" target="_blank"
+      class="wa-pulse fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 active:scale-95 transition-transform duration-300">
+      <i class='bx bxl-whatsapp text-white text-3xl'></i>
+    </a>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
+        <div class="lg:col-span-2">
+          <a href="../../index.html">
+            <h3 class="text-2xl text-white mb-3">Arogya Yatri</h3>
+          </a>
+          <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">A global medical tourism platform connecting
+            patients with world-class hospitals, trusted doctors, and seamless healthcare journeys across borders.</p>
+          <div class="flex items-center gap-4">
+            <a href="https://www.instagram.com/arogya.yatri/"
+              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i
+                class="bx bxl-instagram text-lg"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="retreats.html" class="hover:text-white transition">Retreats</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-5">Contact</h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start gap-3"><i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i><a
+                href="tel:8530054299" class="hover:text-white transition">+91 85300 54299</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a
+                href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">apoorva@ewan.co.in</a>
+            </li>
+            <li class="pt-2">
+              <a href="https://wa.me/918530054299" target="_blank"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
+                <i class="bx bxl-whatsapp text-lg"></i> WhatsApp Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mb-8"></div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>© 2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2"><i class="bx bx-shield-quarter text-teal-400"></i> Secure &amp;
+            Confidential</span>
+          <span class="flex items-center gap-2"><i class="bx bx-world text-teal-400"></i> Global Healthcare
+            Network</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function closeConsultantModal() { document.getElementById("consultantModal").classList.add("hidden"); }
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.openConsultantModal').forEach(btn => {
+        btn.addEventListener('click', e => { e.preventDefault(); const m = document.getElementById('consultantModal'); m.classList.remove('hidden'); m.classList.add('flex'); });
+      });
+      document.getElementById('consultantModal').addEventListener('click', e => { if (e.target === document.getElementById('consultantModal')) closeConsultantModal(); });
+      document.getElementById('menuBtn').onclick = () => document.getElementById('mobileMenu').classList.remove('-translate-x-full');
+      document.getElementById('closeBtn').onclick = () => document.getElementById('mobileMenu').classList.add('-translate-x-full');
+      const eb = document.getElementById('mobileExploreBtn');
+      if (eb) { eb.addEventListener('click', () => { document.getElementById('mobileExploreMenu').classList.toggle('hidden'); document.getElementById('mobileExploreIcon').classList.toggle('bx-chevron-down'); document.getElementById('mobileExploreIcon').classList.toggle('bx-chevron-up'); }); }
+    });
+  </script>
+  <script src="../script/scroll-animations.js"></script>
+</body>
+
+</html>
