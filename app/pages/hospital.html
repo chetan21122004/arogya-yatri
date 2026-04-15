@@ -127,83 +127,40 @@
 <body class="font-body bg-white text-black">
 
   <!-- ================= NAVBAR ================= -->
-  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+      <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
     <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
-
-      <!-- Logo -->
       <a href="../../index.html" class="flex items-center">
         <div class="leading-tight">
           <div class="text-2xl tracking-tight">Arogya Yatri</div>
           <div class="text-xs opacity-70">A Medical Tourism Facilitator</div>
         </div>
       </a>
-
-      <!-- Center Links -->
       <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
-
-        <li>
-          <a href="treatments.html" class="nav-link inline-flex items-center leading-none">
-            Treatment
-          </a>
-        </li>
-
-
-
-        <li>
-          <a href="doctor.html" class="nav-link inline-flex items-center leading-none">
-            Doctor
-          </a>
-        </li>
-
-        <li>
-          <a href="destinations.html" class="nav-link inline-flex items-center leading-none">
-            Destinations
-          </a>
-        </li>
-
-        <!-- Explore Dropdown -->
+        <li><a href="treatments.html" class="nav-link inline-flex items-center leading-none">Treatment</a></li>
+        <li><a href="doctor.html" class="nav-link inline-flex items-center leading-none">Doctor</a></li>
+        <li><a href="destinations.html" class="nav-link inline-flex items-center leading-none">Destinations</a></li>
         <li class="relative group flex items-center">
-          <button class="nav-link inline-flex items-center gap-1 leading-none">
-            Explore
-            <i class='bx bx-chevron-down text-sm relative top-[1px]'></i>
-          </button>
-
-          <div
-            class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-t-xl">About
-              Us</a>
+          <button class="nav-link inline-flex items-center gap-1 leading-none">Explore <i class='bx bx-chevron-down text-sm relative top-[1px]'></i></button>
+          <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 rounded-t-xl hover:bg-slate-50">About Us</a>
             <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
             <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
-            <a href="news.html"
-              class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50 rounded-b-xl">News/Blogs</a>
+            <a href="news.html" class="block px-5 py-3 text-sm text-slate-800 rounded-b-xl hover:bg-slate-50">News/Blogs</a>
           </div>
         </li>
       </ul>
-
-      <!-- CTA -->
       <div class="ml-auto hidden md:flex items-center">
-        <a
-          class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
-          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center circleicon">
-            <i class='bx bx-right-arrow-alt'></i>
-          </span>
+        <a class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center"><i class='bx bx-right-arrow-alt'></i></span>
           <span class="text-sm font-medium">Book Consultation</span>
         </a>
       </div>
-
-      <!-- Mobile Button -->
-      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center">
-        <i class='bx bx-menu'></i>
-      </button>
-
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center"><i class='bx bx-menu'></i></button>
     </nav>
   </header>
 
-  <!-- ================= MOBILE SIDEBAR ================= -->
   <div id="mobileMenu"
     class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
-
-    <!-- Header -->
     <div class="p-6 border-b border-gray-200 flex justify-between items-start">
       <a href="../../index.html">
         <div>
@@ -211,25 +168,14 @@
           <div class="text-sm text-gray-500">A Medical Tourism Facilitator</div>
         </div>
       </a>
-      <button id="closeBtn" class="text-2xl text-black">
-        <i class='bx bx-x'></i>
-      </button>
+      <button id="closeBtn" class="text-2xl text-black"><i class='bx bx-x'></i></button>
     </div>
-
-    <!-- Nav -->
     <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
       <a href="treatments.html" class="block">Treatment</a>
-
       <a href="doctor.html" class="block">Doctor</a>
       <a href="destinations.html" class="block">Destinations</a>
-
-      <!-- Mobile Explore Dropdown -->
       <div>
-        <button id="mobileExploreBtn" class="w-full flex items-center justify-between">
-          <span>Explore</span>
-          <i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i>
-        </button>
-
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between"><span>Explore</span><i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i></button>
         <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
           <a href="about.html" class="block">About Us</a>
           <a href="faq.html" class="block">FAQ</a>
@@ -237,23 +183,18 @@
           <a href="news.html" class="block">News/Blogs</a>
         </div>
       </div>
-
       <div class="pt-6 border-t border-gray-200"></div>
-
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOv7WZLFWBiCBvqrF9mIMLRLxN8jjjyeE-08HHJx_eOEJ7lw/viewform"
         target="_blank"
         class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
         style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
         <span>Book Consultation</span>
-        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white">
-          <i class='bx bx-right-arrow-alt text-xl'></i>
-        </span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white"><i class='bx bx-right-arrow-alt text-xl'></i></span>
       </a>
     </nav>
   </div>
 
-  <!-- ================= MAIN CONTENT ================= -->
-  <main class="page-wrapper max-w-7xl mx-auto ">
+<main class="page-wrapper max-w-7xl mx-auto ">
 
     <!-- ================= PREMIUM IMAGE HERO ================= -->
     <section class="bg-white py-5 px-4 sm:px-6">
@@ -675,7 +616,7 @@
         <!-- Heading -->
         <div class="max-w-3xl mb-14">
           <p class="text-xs uppercase tracking-widest text-teal-500 mb-3">
-            Medical Travel Advantage
+            Why India Leads in Medical Tourism
           </p>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">
             Why Choose
@@ -959,41 +900,20 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
     <div class="max-w-7xl mx-auto px-6">
-
-      <!-- TOP GRID -->
       <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
-
-        <!-- Brand -->
         <div class="lg:col-span-2">
           <a href="../../index.html">
             <h3 class="font-brand text-2xl text-white mb-3">Arogya Yatri</h3>
-            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
-              Arogya Yatri is a global medical tourism platform connecting patients
-              with world-class hospitals, trusted doctors, and seamless healthcare
-              journeys across borders.
-            </p>
+            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">Arogya Yatri is India's trusted medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, panchakarma retreats, and more. Zero waiting. 120+ languages. Complete end-to-end support.</p>
           </a>
-
-          <!-- Social -->
           <div class="flex items-center gap-4">
-            <a href="#"
-              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-              <i class="bx bxl-facebook text-lg"></i>
-            </a>
-            <a href="https://www.instagram.com/arogya.yatri/"
-              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-              <i class="bx bxl-instagram text-lg"></i>
-            </a>
-            <a href="#"
-              class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition">
-              <i class="bx bxl-youtube text-lg"></i>
-            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-facebook text-lg"></i></a>
+            <a href="https://www.instagram.com/arogya.yatri/" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-instagram text-lg"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-youtube text-lg"></i></a>
           </div>
         </div>
-
-        <!-- Quick Links -->
         <div>
           <h4 class="text-white font-semibold mb-5">Quick Links</h4>
           <ul class="space-y-3 text-sm">
@@ -1001,78 +921,28 @@
             <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
             <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
             <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Arogya Yatri: Medical Tourism Facilitator India</a></li>
             <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
           </ul>
         </div>
-
-
-
-        <!-- CONTACT (NEW) -->
         <div>
-          <h4 class="text-white font-semibold mb-5">Contact</h4>
-
+          <h4 class="text-white font-semibold mb-5">Get in Touch</h4>
           <ul class="space-y-4 text-sm">
-
-            <!-- Phone -->
-            <li class="flex items-start gap-3">
-              <i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i>
-              <a href="tel:8530054299" class="hover:text-white transition">
-                +91 85300 54299
-              </a>
-            </li>
-
-            <!-- Email -->
-            <li class="flex items-start gap-3">
-              <i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i>
-              <a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">
-                apoorva@ewan.co.in
-              </a>
-            </li>
-
-            <!-- Alternate Email -->
-            <li class="flex items-start gap-3">
-              <i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i>
-              <a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">
-                pushkaraj.thakurdas@ewan.co.in
-              </a>
-            </li>
-
-            <!-- WhatsApp CTA -->
-            <li class="pt-2">
-              <a href="https://wa.me/918530054299" target="_blank"
-                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition">
-                <i class="bx bxl-whatsapp text-lg"></i>
-                WhatsApp Us
-              </a>
-            </li>
-
+            <li class="flex items-start gap-3"><i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i><a href="tel:8530054299" class="hover:text-white transition">+91 85300 54299</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">apoorva@ewan.co.in</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i><a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">pushkaraj.thakurdas@ewan.co.in</a></li>
+            <li class="pt-2"><a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition"><i class="bx bxl-whatsapp text-lg"></i> WhatsApp Us</a></li>
           </ul>
         </div>
-
       </div>
-
-      <!-- DIVIDER -->
       <div class="border-t border-white/10 mb-8"></div>
-
-      <!-- BOTTOM BAR -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-        <p>
-          © 2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.
-        </p>
-
+        <p>&copy; 2025 Arogya Yatri. Medical Tourism Facilitator India and Pune. All rights reserved.</p>
         <div class="flex items-center gap-6">
-          <span class="flex items-center gap-2">
-            <i class="bx bx-shield-quarter text-teal-400"></i>
-            Secure & Confidential
-          </span>
-          <span class="flex items-center gap-2">
-            <i class="bx bx-world text-teal-400"></i>
-            Global Healthcare Network
-          </span>
+          <span class="flex items-center gap-2"><i class="bx bx-shield-quarter text-teal-400"></i>Secure & Confidential</span>
+          <span class="flex items-center gap-2"><i class="bx bx-world text-teal-400"></i>Global Healthcare Network</span>
         </div>
       </div>
-
     </div>
   </footer>
 
@@ -1123,8 +993,8 @@
             `Country: ${country}\n` +
             `WhatsApp Number: ${whatsapp}\n` +
             `Treatment/Concern: ${treatment}\n` +
-            `Preferred Way to Contact: ${contactMethod}\n` +
-            `Preferred Time to Contact: ${contactTime}`;
+            `Preferred Way to Get in Touch: ${contactMethod}\n` +
+            `Preferred Time to Get in Touch: ${contactTime}`;
 
           const whatsappURL =
             `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
