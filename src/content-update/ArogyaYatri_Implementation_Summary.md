@@ -1,4 +1,4 @@
-﻿# Arogya Yatri Page-by-Page Change Summary (Approval Copy)
+﻿# Sano Healthcare and Tourism Page-by-Page Change Summary (Approval Copy)
 
 ## What was updated
 - Full-document audit completed for all 11 pages/sections.

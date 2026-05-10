@@ -1,9 +1,9 @@
-﻿# Arogya Yatri FAQ + Schema Alignment (Pass 3)
+﻿# Sano Healthcare and Tourism FAQ + Schema Alignment (Pass 3)
 
 ## AEO-Optimized FAQ Replacements
 
-1. **What is Arogya Yatri?**  
-Arogya Yatri is a care coordination platform that helps you plan Ayurveda treatment and retreat-based healing journeys in India with verified experts.
+1. **What is Sano Healthcare and Tourism?**  
+Sano Healthcare and Tourism is a care coordination platform that helps you plan Ayurveda treatment and retreat-based healing journeys in India with verified experts.
 
 2. **Who should consider Ayurveda treatment in India?**  
 People seeking holistic support for stress, lifestyle disorders, pain, digestive concerns, and preventive wellness often choose Ayurveda programs in India.
@@ -29,7 +29,7 @@ Yes. We support treatment planning, retreat coordination, stay options, and prac
 9. **How much does an Ayurveda retreat cost?**  
 Cost depends on destination, program duration, and inclusions. We provide transparent options so you can compare before booking.
 
-10. **Can international patients book through Arogya Yatri?**  
+10. **Can international patients book through Sano Healthcare and Tourism?**  
 Yes. International patients can consult remotely, confirm programs, and travel with structured pre-arrival guidance.
 
 11. **Will I get a personalized diet and routine plan?**  
@@ -47,10 +47,10 @@ Yes. Follow-up helps maintain results and adjust your plan for long-term continu
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Arogya Yatri?",
+      "name": "What is Sano Healthcare and Tourism?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Arogya Yatri is a care coordination platform that helps you plan Ayurveda treatment and retreat-based healing journeys in India with verified experts."
+        "text": "Sano Healthcare and Tourism is a care coordination platform that helps you plan Ayurveda treatment and retreat-based healing journeys in India with verified experts."
       }
     },
     {
@@ -82,7 +82,7 @@ Yes. Follow-up helps maintain results and adjust your plan for long-term continu
 ```
 
 ## Organization/Service Schema Consistency Notes
-- Use one brand string everywhere: `Arogya Yatri`.
+- Use one brand string everywhere: `Sano Healthcare and Tourism`.
 - Keep treatment claims realistic; avoid guaranteed cure language.
 - Keep keywords consistent with page intent: `Ayurveda treatment in India`, `Ayurveda retreats in India`, `Ayurveda doctors in India`.
 - Ensure FAQs on page match schema question text exactly.

@@ -1,10 +1,10 @@
-﻿# Arogya Yatri High-Impact Rewrite Pack (Pass 1)
+﻿# Sano Healthcare and Tourism High-Impact Rewrite Pack (Pass 1)
 
 This file provides updated SEO/AEO-ready replacements for meta, hero, and CTA content for all major pages.
 
 ## PAGE 1: Home (`index.html`)
-- Meta Title: Ayurveda Treatment in India | Arogya Yatri Medical Travel
-- Meta Description: Plan authentic Ayurveda treatment in India with verified doctors, retreat options, and complete medical travel support from Arogya Yatri.
+- Meta Title: Ayurveda Treatment in India | Sano Healthcare and Tourism Medical Travel
+- Meta Description: Plan authentic Ayurveda treatment in India with verified doctors, retreat options, and complete medical travel support from Sano Healthcare and Tourism.
 - Hero H1: Trusted Ayurveda Treatment and Healing Travel in India
 - Hero Subcopy: Get doctor-led Ayurveda plans, destination guidance, and end-to-end support for consultation, stay, and recovery.
 - Primary CTA: Start Your Ayurveda Plan
@@ -19,7 +19,7 @@ This file provides updated SEO/AEO-ready replacements for meta, hero, and CTA co
 - Secondary CTA: Get a Personalized Recommendation
 
 ## PAGE 3: Doctor (`doctor.html`)
-- Meta Title: Ayurveda Doctors in India | Verified Specialists at Arogya Yatri
+- Meta Title: Ayurveda Doctors in India | Verified Specialists at Sano Healthcare and Tourism
 - Meta Description: Connect with qualified Ayurveda doctors in India for online review, treatment planning, and supervised care.
 - Hero H1: Consult Verified Ayurveda Doctors with Confidence
 - Hero Subcopy: Receive a clear diagnosis, practical care plan, and support from consultation to follow-up.
@@ -59,16 +59,16 @@ This file provides updated SEO/AEO-ready replacements for meta, hero, and CTA co
 - Secondary CTA: Download Program Itinerary
 
 ## PAGE 8: About (`about.html`)
-- Meta Title: About Arogya Yatri | Ayurveda Travel and Care Coordination
-- Meta Description: Learn how Arogya Yatri helps patients plan safe, authentic Ayurveda healing journeys in India.
+- Meta Title: About Sano Healthcare and Tourism | Ayurveda Travel and Care Coordination
+- Meta Description: Learn how Sano Healthcare and Tourism helps patients plan safe, authentic Ayurveda healing journeys in India.
 - Hero H1: We Simplify Trusted Ayurveda Healing Travel in India
 - Hero Subcopy: Our team combines clinical coordination, retreat selection, and personalized support for better patient experiences.
 - Primary CTA: Meet Our Care Team
 - Secondary CTA: Talk to Us Today
 
 ## PAGE 9: Testimonials (`testimonial.html`)
-- Meta Title: Arogya Yatri Testimonials | Real Ayurveda Healing Experiences
-- Meta Description: Read verified patient experiences from Ayurveda retreats and treatment journeys coordinated by Arogya Yatri.
+- Meta Title: Sano Healthcare and Tourism Testimonials | Real Ayurveda Healing Experiences
+- Meta Description: Read verified patient experiences from Ayurveda retreats and treatment journeys coordinated by Sano Healthcare and Tourism.
 - Hero H1: Real Stories from Patients Who Chose Ayurveda in India
 - Hero Subcopy: Learn what improved, how long it took, and what support made the difference.
 - Primary CTA: Read Patient Stories
@@ -85,4 +85,4 @@ This file provides updated SEO/AEO-ready replacements for meta, hero, and CTA co
 ## PAGE 11: Shared Footer (All Pages)
 - Footer Short USP: Trusted Ayurveda treatment planning with verified experts and end-to-end travel support.
 - Footer CTA 1: Plan Your Healing Journey
-- Footer CTA 2: Contact Arogya Yatri
+- Footer CTA 2: Contact Sano Healthcare and Tourism

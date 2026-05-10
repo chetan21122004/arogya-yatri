@@ -3,7 +3,7 @@ Website Content Replacement Guide
 Full SEO and AEO Optimisation: Every Line Mapped Across All Pages
 Prepared for: arogyayatri.com  |  April 2026
 How to Use This Document
-This document covers every page and every content element on the Arogya Yatri website. Each row shows the exact current text on the live site (red column) alongside its SEO and AEO optimised replacement (green column). No sections are added or removed; only existing content is upgraded. Apply replacements page by page using the section references.
+This document covers every page and every content element on the Sano Healthcare and Tourism website. Each row shows the exact current text on the live site (red column) alongside its SEO and AEO optimised replacement (green column). No sections are added or removed; only existing content is upgraded. Apply replacements page by page using the section references.
 Pages covered in this document:
 Home (index.html)
 Treatments (treatments.html)
@@ -24,14 +24,14 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home Meta Title
-Best Medical Tourism Company in India | Arogya Yatri
-Medical Tourism India: Affordable Treatment at NABH Accredited Hospitals | Arogya Yatri
+Best Medical Tourism Company in India | Sano Healthcare and Tourism
+Medical Tourism India: Affordable Treatment at NABH Accredited Hospitals | Sano Healthcare and Tourism
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home Meta Description
 (Generic or missing)
-Arogya Yatri is India's trusted medical tourism facilitator in Pune. Access affordable heart surgery, cancer treatment, knee replacement, and ayurvedic retreats at NABH accredited hospitals. Free second opinion. Zero waiting period. 120+ languages.
+Sano Healthcare and Tourism is India's trusted medical tourism facilitator in Pune. Access affordable heart surgery, cancer treatment, knee replacement, and ayurvedic retreats at NABH accredited hospitals. Free second opinion. Zero waiting period. 120+ languages.
 1.2  Hero Section
 Location: Main banner, large headline and sub-tagline
 Page / Section
@@ -79,33 +79,33 @@ Home / Trust Bar Badge 4
 Travel with your Companion Free*
 Bring Your Companion Free*: Visa and Accommodation Included
 1.4  Gallery Section
-Location: Section labelled 'Arogya Yatri Gallery'
+Location: Section labelled 'Sano Healthcare and Tourism Gallery'
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Gallery Section label
-Arogya Yatri Gallery
-Arogya Yatri Gallery: Medical Tourism India in Pictures
+Sano Healthcare and Tourism Gallery
+Sano Healthcare and Tourism Gallery: Medical Tourism India in Pictures
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Gallery Section sub-heading
 Explore India's premier medical destinations and world-class healthcare facilities through our visual journey.
 Explore NABH accredited hospitals India, ayurvedic retreats, recovery destinations, and the cultural experiences that make medical tourism India a complete healing journey.
-1.5  Why Choose Arogya Yatri Section
+1.5  Why Choose Sano Healthcare and Tourism Section
 Location: 'Why Choose Us' section with 6 feature cards
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Why Us Section label
 Why Choose Us
-Why Choose Arogya Yatri
+Why Choose Sano Healthcare and Tourism
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Why Us Section H2
-Why Choose Arogya Yatri?
-Why Choose Arogya Yatri: India's Leading Medical Tourism Facilitator?
+Why Choose Sano Healthcare and Tourism?
+Why Choose Sano Healthcare and Tourism: India's Leading Medical Tourism Facilitator?
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -209,7 +209,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Calculator Disclaimer note
 Note: Cost and data are derived from Google and are approximate, subject to variation.
-Note: Costs are indicative and sourced from publicly available data. Actual cardiac surgery cost India, knee replacement India cost, and cancer treatment India costs vary by hospital, procedure complexity, and patient condition. Contact Arogya Yatri for a personalised quote from NABH accredited hospitals India.
+Note: Costs are indicative and sourced from publicly available data. Actual cardiac surgery cost India, knee replacement India cost, and cancer treatment India costs vary by hospital, procedure complexity, and patient condition. Contact Sano Healthcare and Tourism for a personalised quote from NABH accredited hospitals India.
 1.7  Why Choose India Section
 Location: Grid of 8 benefit tiles
 Page / Section
@@ -259,7 +259,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Why India Tile 5: Clear Communication
 English-speaking medical teams and professional interpreters for seamless communication. Never worry about language barriers during your treatment.
-English-speaking medical teams at NABH accredited hospitals India, combined with Arogya Yatri's 120+ language interpreter network, ensure that India hospital international patients never face a communication barrier.
+English-speaking medical teams at NABH accredited hospitals India, combined with our 120+ language interpreter network, ensure that India hospital international patients never face a communication barrier.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -285,7 +285,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Services Section label
 What We Offer
-What Arogya Yatri Offers
+What Sano Healthcare and Tourism Offers
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -297,7 +297,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Services Section sub-heading
 Comprehensive support for your entire medical journey from start to finish.
-From your first inquiry to post-treatment follow-up, Arogya Yatri, your medical tourism facilitator India, handles every detail so you can focus entirely on healing.
+From your first inquiry to post-treatment follow-up, Sano Healthcare and Tourism, your medical tourism facilitator India, handles every detail so you can focus entirely on healing.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -370,7 +370,7 @@ NEW SEO/AEO CONTENT — Use This
 Home / Services Services CTA description
 Get personalized assistance for your medical journey with our comprehensive service portfolio.
 Get personalised assistance from India's trusted medical tourism facilitator. Access the best hospitals India for foreigners, a free second opinion specialist India, transparent pricing, and complete end-to-end support.
-1.9  How Arogya Yatri Works Section: Six Steps
+1.9  How Sano Healthcare and Tourism Works Section: Six Steps
 Location: Six-step process section
 Page / Section
 CURRENT CONTENT — Replace This
@@ -382,8 +382,8 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / How It Works Section H2
-How Arogya Yatri Works
-How Arogya Yatri Works: Your Step-by-Step Medical Tourism India Journey
+How Sano Healthcare and Tourism Works
+How Sano Healthcare and Tourism Works: Your Step-by-Step Medical Tourism India Journey
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -536,8 +536,8 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Social Section sub-heading
-Real experiences from patients who trusted Arogya Yatri for their medical journey.
-Real experiences from patients across 50+ countries who trusted Arogya Yatri, their medical tourism facilitator India, for affordable heart surgery, cancer treatment, ayurvedic retreats, and more.
+Real experiences from patients who trusted Sano Healthcare and Tourism for their medical journey.
+Real experiences from patients across 50+ countries who trusted Sano Healthcare and Tourism, their medical tourism facilitator India, for affordable heart surgery, cancer treatment, ayurvedic retreats, and more.
 1.12  Contact Section
 Location: 'Let's Connect' contact block
 Page / Section
@@ -550,8 +550,8 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Home / Contact Section H2
-Let's Connect with Arogya Yatri
-Connect with Arogya Yatri: Your Medical Tourism Facilitator India
+Let's Connect with Sano Healthcare and Tourism
+Connect with Sano Healthcare and Tourism: Your Medical Tourism Facilitator India
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -566,7 +566,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Treatments Meta Title
 Medical Tourism Treatments in India | Affordable Healthcare
-Affordable Medical Treatments in India: Cardiac Surgery, Cancer, Knee Replacement and More | Arogya Yatri
+Affordable Medical Treatments in India: Cardiac Surgery, Cancer, Knee Replacement and More | Sano Healthcare and Tourism
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -612,7 +612,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Treatments / Calculator Disclaimer
 Note: Cost and data are derived from Google and are approximate, subject to variation.
-Note: Costs are indicative and sourced from publicly available data. Actual costs at NABH accredited hospitals India vary by hospital, procedure complexity, and patient condition. Contact Arogya Yatri for a personalised quote.
+Note: Costs are indicative and sourced from publicly available data. Actual costs at NABH accredited hospitals India vary by hospital, procedure complexity, and patient condition. Contact Sano Healthcare and Tourism for a personalised quote.
 2.4  Treatment Specialties Section
 Location: Grid of 12 specialty cards
 Page / Section
@@ -632,7 +632,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Treatments Section sub-heading
 World-class treatments delivered by trusted specialists across leading hospitals.
-World-class treatments delivered by trusted specialists at NABH accredited hospitals India, all accessible through Arogya Yatri, your medical tourism facilitator India.
+World-class treatments delivered by trusted specialists at NABH accredited hospitals India, all accessible through Sano Healthcare and Tourism, your medical tourism facilitator India.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -700,14 +700,14 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Doctor Meta Title
-Arogya Yatri - Doctors
-Verified Specialist Doctors in India for International Patients | Arogya Yatri Medical Tourism Facilitator
+Sano Healthcare and Tourism - Doctors
+Verified Specialist Doctors in India for International Patients | Sano Healthcare and Tourism Medical Tourism Facilitator
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Doctor Meta Description
 (Generic or missing)
-Find 100+ verified specialist doctors at NABH accredited hospitals India. Get a free second opinion specialist India from cardiologists, oncologists, orthopaedic surgeons, and 25+ specialties. Arogya Yatri medical tourism facilitator India.
+Find 100+ verified specialist doctors at NABH accredited hospitals India. Get a free second opinion specialist India from cardiologists, oncologists, orthopaedic surgeons, and 25+ specialties. Sano Healthcare and Tourism medical tourism facilitator India.
 3.2  Hero Section
 Location: Doctor page main banner
 Page / Section
@@ -754,7 +754,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Destinations Meta Title
 Medical Tourism Destinations in India | Top Healthcare Cities
-Top Medical Tourism Destinations in India: Delhi, Mumbai, Chennai, Pune | Arogya Yatri
+Top Medical Tourism Destinations in India: Delhi, Mumbai, Chennai, Pune | Sano Healthcare and Tourism
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -786,7 +786,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Destinations / Pune Pune city description
 Dive into Pune's rich history with visits to Shaniwar Wada and Aga Khan Palace. Enjoy spiritual peace at Osho Ashram.
-Pune is home to Arogya Yatri's medical tourism facilitator Pune operations. Explore Shaniwar Wada, the Aga Khan Palace, and the spiritual calm of Osho Ashram as part of your medical tourism India recovery experience.
+Pune is home to our medical tourism facilitator Pune operations. Explore Shaniwar Wada, the Aga Khan Palace, and the spiritual calm of Osho Ashram as part of your medical tourism India recovery experience.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -814,7 +814,7 @@ Destinations Section sub-heading
 Immerse yourself in diverse cultures, landscapes, and experiences across India's most captivating states.
 Immerse yourself in India's most captivating cultures, landscapes, and wellness traditions. Ideal for India hospital international patients looking to combine treatment recovery with enriching cultural experiences.
 4.4  Gallery Section on Destinations Page
-Location: 'Arogya Yatri Gallery' section on destinations page
+Location: 'Sano Healthcare and Tourism Gallery' section on destinations page
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -825,8 +825,8 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Destinations / Gallery Section H2
-Arogya Yatri Gallery
-Arogya Yatri Gallery: Medical Tourism India Experiences
+Sano Healthcare and Tourism Gallery
+Sano Healthcare and Tourism Gallery: Medical Tourism India Experiences
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -840,14 +840,14 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Retreats Meta Title
-Wellness Retreats and Ayurvedic Healing in India | Arogya Yatri
-Ayurvedic Retreats India and Panchakarma Programmes: Medically Guided | Arogya Yatri Medical Tourism Facilitator Pune
+Wellness Retreats and Ayurvedic Healing in India | Sano Healthcare and Tourism
+Ayurvedic Retreats India and Panchakarma Programmes: Medically Guided | Sano Healthcare and Tourism Medical Tourism Facilitator Pune
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Retreats Meta Description
 (Generic or missing)
-Book an ayurvedic retreat India or panchakarma retreat India with Arogya Yatri: medically guided, fully facilitated wellness experiences from Pune with 120+ language support and expert Ayurvedic doctor guidance.
+Book an ayurvedic retreat India or panchakarma retreat India with Sano Healthcare and Tourism: medically guided, fully facilitated wellness experiences from Pune with 120+ language support and expert Ayurvedic doctor guidance.
 5.2  Hero Section
 Location: Page main banner
 Page / Section
@@ -867,7 +867,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Retreats / Hero H1 sub-heading
 Curated healing experiences in India, guided by expert practitioners with personalised care and full facilitation support.
-Authentic ayurvedic retreat India and panchakarma retreat India programmes, guided by certified Ayurvedic doctors and facilitated end to end by Arogya Yatri, your medical tourism facilitator Pune. Deeply personalised. Fully supported.
+Authentic ayurvedic retreat India and panchakarma retreat India programmes, guided by certified Ayurvedic doctors and facilitated end to end by Sano Healthcare and Tourism, your medical tourism facilitator Pune. Deeply personalised. Fully supported.
 5.3  Retreat Listings Section
 Location: Section labelled 'Choose Your Healing Journey'
 Page / Section
@@ -887,7 +887,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Retreats Section sub-heading
 Each retreat is carefully designed for a specific wellness goal — find the one that speaks to you.
-Each ayurvedic retreat India and panchakarma retreat India programme is carefully designed for a specific wellness goal, with personalised care, expert doctor guidance, and complete facilitation from Arogya Yatri.
+Each ayurvedic retreat India and panchakarma retreat India programme is carefully designed for a specific wellness goal, with personalised care, expert doctor guidance, and complete facilitation from Sano Healthcare and Tourism.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -947,7 +947,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Retreats / May2026 May 2026 card — description
 A fully personalised Ayurvedic rejuvenation journey in India, with end-to-end facilitation, French-language support, and authentic Panchakarma treatments.
-A fully personalised panchakarma retreat India and ayurvedic retreat India journey with end-to-end facilitation by Arogya Yatri, French-language support in France and India, and authentic Panchakarma treatments at NABH accredited wellness centres.
+A fully personalised panchakarma retreat India and ayurvedic retreat India journey with end-to-end facilitation by Sano Healthcare and Tourism, French-language support in France and India, and authentic Panchakarma treatments at NABH accredited wellness centres.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -967,14 +967,14 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Dharra Meta Title
-Dharra: Women's Rest and Renewal Retreat | Arogya Yatri
-Dharra: Women's Ayurvedic Rest and Renewal Retreat India | Arogya Yatri Medical Tourism Facilitator Pune
+Dharra: Women's Rest and Renewal Retreat | Sano Healthcare and Tourism
+Dharra: Women's Ayurvedic Rest and Renewal Retreat India | Sano Healthcare and Tourism Medical Tourism Facilitator Pune
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Dharra Meta Description
 (Generic or missing)
-Dharra is a 3-day women-only ayurvedic retreat India near Pune. Ayurvedic therapies, Yoga, meditation, and sattvic meals. Limited to 8 women. Guided by Dr. Sheetal Chopde. Facilitated by Arogya Yatri.
+Dharra is a 3-day women-only ayurvedic retreat India near Pune. Ayurvedic therapies, Yoga, meditation, and sattvic meals. Limited to 8 women. Guided by Dr. Sheetal Chopde. Facilitated by Sano Healthcare and Tourism.
 6.2  Hero Section
 Location: Main banner
 Page / Section
@@ -1000,7 +1000,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Dharra / Hero Sub-heading
 A Women's Rest and Renewal Retreat: Held with care and personal attention.
-A 3-day women's ayurvedic retreat India held with expert Ayurvedic care, personalised attention, and complete facilitation by Arogya Yatri, your medical tourism facilitator Pune.
+A 3-day women's ayurvedic retreat India held with expert Ayurvedic care, personalised attention, and complete facilitation by Sano Healthcare and Tourism, your medical tourism facilitator Pune.
 6.3  Programme Details
 Location: Section labelled 'What You Will Experience'
 Page / Section
@@ -1058,7 +1058,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Dharra / CTA Section body
 Dharra runs in small, intimate batches of 8 women. Register your interest now and we'll reach out as soon as the next date is confirmed.
-Dharra ayurvedic retreat India runs in small, intimate batches of 8 women. Register your interest now and our team at Arogya Yatri, your medical tourism facilitator Pune, will notify you as soon as the next date is confirmed.
+Dharra ayurvedic retreat India runs in small, intimate batches of 8 women. Register your interest now and our team at Sano Healthcare and Tourism, your medical tourism facilitator Pune, will notify you as soon as the next date is confirmed.
 PAGE 7: Ayurvedic Rejuvenation May 2026 (retreat-ayurveda-may2026.html)
 7.1  Meta Title and Description
 Location: <head> tag
@@ -1066,14 +1066,14 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 May2026 Meta Title
-Ayurvedic Rejuvenation in India this May | Arogya Yatri
-Panchakarma Retreat India: 8-Day Ayurvedic Rejuvenation May 2026 | Arogya Yatri Medical Tourism Facilitator
+Ayurvedic Rejuvenation in India this May | Sano Healthcare and Tourism
+Panchakarma Retreat India: 8-Day Ayurvedic Rejuvenation May 2026 | Sano Healthcare and Tourism Medical Tourism Facilitator
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 May2026 Meta Description
 (Generic or missing)
-Join our 8-day panchakarma retreat India from 23 to 30 May 2026. Expert Ayurvedic doctor guidance, French-speaking support, and authentic treatments at NABH accredited wellness centres. Facilitated by Arogya Yatri.
+Join our 8-day panchakarma retreat India from 23 to 30 May 2026. Expert Ayurvedic doctor guidance, French-speaking support, and authentic treatments at NABH accredited wellness centres. Facilitated by Sano Healthcare and Tourism.
 7.2  Hero Section
 Location: Main banner
 Page / Section
@@ -1093,7 +1093,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 May2026 / Hero H1 sub-heading
 Personalised rejuvenation guided by an expert Ayurvedic doctor, with support from our French representative in France and French-speaking assistance in India.
-A fully personalised panchakarma retreat India and ayurvedic retreat India journey, guided throughout by Dr. Sheetal Chopde, with French-speaking support in France and India. Fully facilitated by Arogya Yatri, your medical tourism facilitator India.
+A fully personalised panchakarma retreat India and ayurvedic retreat India journey, guided throughout by Dr. Sheetal Chopde, with French-speaking support in France and India. Fully facilitated by Sano Healthcare and Tourism, your medical tourism facilitator India.
 7.3  Why Choose This Retreat Section
 Location: 'What Makes This Retreat Special' section
 Page / Section
@@ -1137,7 +1137,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 May2026 / Why Feature 4 body
 From travel planning and accommodation to daily logistics in India — we handle everything so you can focus on healing.
-From travel planning and accommodation to daily logistics during your panchakarma retreat India, Arogya Yatri, your medical tourism facilitator India, handles everything so you focus only on healing.
+From travel planning and accommodation to daily logistics during your panchakarma retreat India, Sano Healthcare and Tourism, your medical tourism facilitator India, handles everything so you focus only on healing.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1163,7 +1163,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 May2026 / Programme Section sub-heading
 23rd May to 30th May 2026: a complete week of healing in incredible India.
-23 to 30 May 2026: a complete 8 days of authentic healing in incredible India. Your panchakarma retreat India and ayurvedic retreat India journey, fully facilitated by Arogya Yatri.
+23 to 30 May 2026: a complete 8 days of authentic healing in incredible India. Your panchakarma retreat India and ayurvedic retreat India journey, fully facilitated by Sano Healthcare and Tourism.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1187,7 +1187,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 May2026 / Programme CTA body
 Contact us today to learn more about the programme, pricing, and availability. Our team will guide you every step of the way.
-Contact Arogya Yatri, your medical tourism facilitator India, to learn about the panchakarma retreat India programme, pricing, and availability. Our team will guide you every step of the way in 120+ languages.
+Contact Sano Healthcare and Tourism, your medical tourism facilitator India, to learn about the panchakarma retreat India programme, pricing, and availability. Our team will guide you every step of the way in 120+ languages.
 PAGE 8: About Us (about.html)
 8.1  Meta Title and Description
 Location: <head> tag
@@ -1195,34 +1195,34 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About Meta Title
-About Arogya Yatri
-About Arogya Yatri: Medical Tourism Facilitator India and Pune | Trusted by Patients from 50+ Countries
+About Sano Healthcare and Tourism
+About Sano Healthcare and Tourism: Medical Tourism Facilitator India and Pune | Trusted by Patients from 50+ Countries
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About Meta Description
 (Generic or missing)
-Arogya Yatri is India's dedicated medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, ayurvedic retreats, and more.
+Sano Healthcare and Tourism is India's dedicated medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, ayurvedic retreats, and more.
 8.2  Hero Section
 Location: Page H1 and opening paragraphs
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About / Hero Page H1
-About Arogya Yatri
-About Arogya Yatri: India's Trusted Medical Tourism Facilitator
+About Sano Healthcare and Tourism
+About Sano Healthcare and Tourism: India's Trusted Medical Tourism Facilitator
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About / Hero Section label
 About Us
-About Arogya Yatri: Medical Tourism Facilitator India
+About Sano Healthcare and Tourism: Medical Tourism Facilitator India
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About / Intro Opening line
-At Arogya Yatri, we manage your entire medical trip to India from start to finish.
-At Arogya Yatri, we manage every aspect of your medical tourism India journey, from the first inquiry to post-treatment follow-up. As a dedicated medical tourism facilitator India based in Pune, we connect international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, and ayurvedic retreats.
+At Sano Healthcare and Tourism, we manage your entire medical trip to India from start to finish.
+At Sano Healthcare and Tourism, we manage every aspect of your medical tourism India journey, from the first inquiry to post-treatment follow-up. As a dedicated medical tourism facilitator India based in Pune, we connect international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, and ayurvedic retreats.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1233,8 +1233,8 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About / Intro Third paragraph
-With a strong focus on transparency, comfort, and personalized guidance, Arogya Yatri manages the entire journey from your first inquiry to your return home after treatment.
-With an uncompromising focus on transparency and personalised guidance, Arogya Yatri, your medical tourism facilitator Pune, manages everything: hospital selection among NABH accredited hospitals India, medical visa India guide support, travel, accommodation, nutrition, and global medicine courier. From your first inquiry to a safe return home.
+With a strong focus on transparency, comfort, and personalized guidance, Sano Healthcare and Tourism manages the entire journey from your first inquiry to your return home after treatment.
+With an uncompromising focus on transparency and personalised guidance, Sano Healthcare and Tourism, your medical tourism facilitator Pune, manages everything: hospital selection among NABH accredited hospitals India, medical visa India guide support, travel, accommodation, nutrition, and global medicine courier. From your first inquiry to a safe return home.
 8.3  Team Section
 Location: 'We've got your back' team section
 Page / Section
@@ -1248,7 +1248,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About / Team Section H2
 We've got your back.
-We Have Got Your Back: The Experts Behind Arogya Yatri
+We Have Got Your Back: The Experts Behind Sano Healthcare and Tourism
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1278,7 +1278,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About / Team Soham Kakade — bio
 With over 15 years of international expertise, our Director is the visionary behind our promise of 'No Language Barriers.' A true polyglot, he is fluent in Chinese, Cantonese, Japanese, and Taiwanese, allowing us to offer unparalleled support to our global clientele. His deep understanding of diverse cultures and business landscapes ensures that communication is never an obstacle to quality care. When we say we speak your language, it's not just a claim — it is a standard backed by a decade-and-a-half of boots-on-the-ground experience.
-With over 15 years of international expertise, our Director is the visionary behind Arogya Yatri's promise of zero language barriers across 120+ languages. Fluent in Chinese, Cantonese, Japanese, and Taiwanese, he enables unparalleled multilingual support for India hospital international patients. His deep cross-cultural understanding ensures communication is never an obstacle to quality care at NABH accredited hospitals India.
+With over 15 years of international expertise, our Director is the visionary behind our promise of zero language barriers across 120+ languages. Fluent in Chinese, Cantonese, Japanese, and Taiwanese, he enables unparalleled multilingual support for India hospital international patients. His deep cross-cultural understanding ensures communication is never an obstacle to quality care at NABH accredited hospitals India.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1290,7 +1290,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 About / Team Dr. Sheetal Chopde — bio
 With a distinguished career spanning over 20 years, our Head of Medical Department leads with a blend of traditional wisdom and clinical precision. As an expert Ayurvedic doctor on our panel, she doesn't just provide a consultation; she provides a partnership. She will be by your side from start to finish, guiding your treatment plan and ensuring that your path to health is holistic, personalized, and medically sound. Her vast experience offers our patients the peace of mind that they are in the hands of a seasoned healer.
-With a distinguished career spanning over 20 years, Dr. Sheetal Chopde leads Arogya Yatri's medical department with a blend of traditional Ayurvedic wisdom and clinical precision. She personally guides every ayurvedic retreat India and panchakarma retreat India programme, and reviews medical reports for international patients seeking second opinion specialist India consultations. She is a partner in your healing, not just a consultant.
+With a distinguished career spanning over 20 years, Dr. Sheetal Chopde leads our medical department with a blend of traditional Ayurvedic wisdom and clinical precision. She personally guides every ayurvedic retreat India and panchakarma retreat India programme, and reviews medical reports for international patients seeking second opinion specialist India consultations. She is a partner in your healing, not just a consultant.
 8.4  Mission and Vision Section
 Location: Mission and Vision cards
 Page / Section
@@ -1350,14 +1350,14 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Testimonials Meta Title
-Success Stories and Patient Reviews | Arogya Yatri
-Patient Reviews: Medical Tourism India Success Stories | Arogya Yatri Medical Tourism Facilitator
+Success Stories and Patient Reviews | Sano Healthcare and Tourism
+Patient Reviews: Medical Tourism India Success Stories | Sano Healthcare and Tourism Medical Tourism Facilitator
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Testimonials Meta Description
 (Generic or missing)
-Read real patient reviews from 50+ countries who chose Arogya Yatri for affordable heart surgery India, cancer treatment India, panchakarma retreats, and dental care at NABH accredited hospitals India.
+Read real patient reviews from 50+ countries who chose Sano Healthcare and Tourism for affordable heart surgery India, cancer treatment India, panchakarma retreats, and dental care at NABH accredited hospitals India.
 9.2  Hero Section
 Location: Page main banner
 Page / Section
@@ -1377,7 +1377,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Testimonials / Hero Section sub-heading
 Patients across continents rely on us for ethical medical guidance, globally accredited hospitals, and seamless coordination designed around clarity and confidence.
-Patients from 50+ countries rely on Arogya Yatri, their medical tourism facilitator India, for ethical guidance, NABH accredited hospitals India, and seamless coordination from inquiry to recovery. Here are their stories.
+Patients from 50+ countries rely on Sano Healthcare and Tourism, their medical tourism facilitator India, for ethical guidance, NABH accredited hospitals India, and seamless coordination from inquiry to recovery. Here are their stories.
 9.3  Patient Review Cards
 Location: Individual patient testimonial cards
 Page / Section
@@ -1429,8 +1429,8 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 FAQ Meta Title
-Top Medical Tourism Questions Answered | Arogya Yatri FAQ
-Medical Tourism India FAQs: Cardiac Surgery Cost, Knee Replacement, Visa, Hospitals | Arogya Yatri
+Top Medical Tourism Questions Answered | Sano Healthcare and Tourism FAQ
+Medical Tourism India FAQs: Cardiac Surgery Cost, Knee Replacement, Visa, Hospitals | Sano Healthcare and Tourism
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1462,25 +1462,25 @@ Location: 'General Questions' accordion section
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
-FAQ / General Q1: What is Arogya Yatri?
-Arogya Yatri is a comprehensive medical tourism facilitation service that connects international patients with world-class hospitals and specialist doctors in India.
-Arogya Yatri is India's dedicated medical tourism facilitator, based in Pune, that connects international patients with NABH accredited hospitals India and specialist doctors for affordable treatments including heart surgery, cancer care, knee replacement, and panchakarma retreats. We are your end-to-end medical tourism facilitator India.
+FAQ / General Q1: What is Sano Healthcare and Tourism?
+Sano Healthcare and Tourism is a comprehensive medical tourism facilitation service that connects international patients with world-class hospitals and specialist doctors in India.
+Sano Healthcare and Tourism is India's dedicated medical tourism facilitator, based in Pune, that connects international patients with NABH accredited hospitals India and specialist doctors for affordable treatments including heart surgery, cancer care, knee replacement, and panchakarma retreats. We are your end-to-end medical tourism facilitator India.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
-FAQ / General Q2: Who is behind Arogya Yatri?
-Arogya Yatri is A Medical Tourism Facilitator, a company specializing in multilingual support and global healthcare coordination.
-Arogya Yatri is powered by Ewan Business Solutions, a Pune-based company specialising in multilingual support across 120+ languages and end-to-end global healthcare coordination for medical tourism India.
+FAQ / General Q2: Who is behind Sano Healthcare and Tourism?
+Sano Healthcare and Tourism is A Medical Tourism Facilitator, a company specializing in multilingual support and global healthcare coordination.
+Sano Healthcare and Tourism is powered by Ewan Business Solutions, a Pune-based company specialising in multilingual support across 120+ languages and end-to-end global healthcare coordination for medical tourism India.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 FAQ / General Q3: Which countries do you serve?
 We serve patients from all countries worldwide. Our multilingual support covers 120+ languages...
-Arogya Yatri serves patients from all countries worldwide. Our 120+ language support ensures every India hospital international patient communicates clearly with their care team at NABH accredited hospitals India.
+Sano Healthcare and Tourism serves patients from all countries worldwide. Our 120+ language support ensures every India hospital international patient communicates clearly with their care team at NABH accredited hospitals India.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
-FAQ / General Q4: Is Arogya Yatri affiliated with hospitals?
+FAQ / General Q4: Is Sano Healthcare and Tourism affiliated with hospitals?
 We work with a network of NABH and JCI-accredited hospitals across India.
 We maintain an independent network of NABH accredited hospitals India and JCI-certified centres, giving unbiased recommendations for the best hospitals India for foreigners based solely on your diagnosis, not on referral incentives.
 10.4  Treatment and Medical Care Questions
@@ -1490,7 +1490,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 FAQ / Treatment Q1: What treatments are available?
 India offers a comprehensive range of treatments including cardiac surgery, orthopedic procedures, cancer treatment, organ transplants, fertility treatments, cosmetic surgery, dental procedures, eye care, neurosurgery, and more.
-India offers a full spectrum of treatments for international patients: affordable heart surgery India, cancer treatment India, knee replacement India cost procedures, organ transplants, fertility treatments, dental care, ayurvedic retreats, panchakarma retreat India programmes, and more, all accessible at NABH accredited hospitals India through Arogya Yatri.
+India offers a full spectrum of treatments for international patients: affordable heart surgery India, cancer treatment India, knee replacement India cost procedures, organ transplants, fertility treatments, dental care, ayurvedic retreats, panchakarma retreat India programmes, and more, all accessible at NABH accredited hospitals India through Sano Healthcare and Tourism.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1546,7 +1546,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 FAQ / Cost Q4: What payment methods do you accept?
 We accept international wire transfers, credit/debit cards, and online payment platforms.
-We accept international wire transfers, credit and debit cards, and online payment platforms. Medical fees are paid directly to the NABH accredited hospitals India. Arogya Yatri facilitation fees can be paid through multiple convenient methods explained during booking.
+We accept international wire transfers, credit and debit cards, and online payment platforms. Medical fees are paid directly to the NABH accredited hospitals India. Sano Healthcare and Tourism facilitation fees can be paid through multiple convenient methods explained during booking.
 10.6  Medical Visa and Travel Questions
 Location: 'Medical Visa and Travel' accordion section
 Page / Section
@@ -1566,7 +1566,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 FAQ / Visa Q3: Can my companion travel with me?
 Yes! Under the e-Medical visa program, up to two companions can accompany you on e-Medical Attendant visas.
-Yes. Under the medical visa India guide rules, up to two companions may travel on e-Medical Attendant visas. Arogya Yatri provides free travel arrangement assistance for one companion, including visa support, shared accommodation near NABH accredited hospitals India, and airport pickup.
+Yes. Under the medical visa India guide rules, up to two companions may travel on e-Medical Attendant visas. Sano Healthcare and Tourism provides free travel arrangement assistance for one companion, including visa support, shared accommodation near NABH accredited hospitals India, and airport pickup.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1600,7 +1600,7 @@ CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 FAQ / PostCare Q1: What happens after I return home?
 Our care doesn't end when you leave India. We maintain continuous follow-up through remote consultations, monitor your recovery progress, coordinate with your local doctors if needed, arrange medicine delivery, and remain available for any questions.
-Your affordable health in India programme continues after you leave. Arogya Yatri maintains remote follow-up consultations, monitors your recovery, coordinates with your local doctors, and couriers prescribed medications internationally so the full benefit of your treatment at NABH accredited hospitals India carries forward.
+Your affordable health in India programme continues after you leave. Sano Healthcare and Tourism maintains remote follow-up consultations, monitors your recovery, coordinates with your local doctors, and couriers prescribed medications internationally so the full benefit of your treatment at NABH accredited hospitals India carries forward.
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
@@ -1635,21 +1635,21 @@ Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Footer (All Pages) Brand description text
-Arogya Yatri is a global medical tourism platform connecting patients with world-class hospitals, trusted doctors, and seamless healthcare journeys across borders.
-Arogya Yatri is India's trusted medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, panchakarma retreats, and more. Zero waiting. 120+ languages. Complete end-to-end support.
+Sano Healthcare and Tourism is a global medical tourism platform connecting patients with world-class hospitals, trusted doctors, and seamless healthcare journeys across borders.
+Sano Healthcare and Tourism is India's trusted medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, panchakarma retreats, and more. Zero waiting. 120+ languages. Complete end-to-end support.
 11.2  Footer Copyright Line
 Location: Bottom of every page
 Page / Section
 CURRENT CONTENT — Replace This
 NEW SEO/AEO CONTENT — Use This
 Footer (All Pages) Copyright text
-2025 Arogya Yatri. A Medical Tourism Facilitator. All rights reserved.
-2025 Arogya Yatri. Medical Tourism Facilitator India and Pune. All rights reserved.
+2026 Sano Healthcare and Tourism. A Medical Tourism Facilitator. All rights reserved.
+2026 Sano Healthcare and Tourism. Medical Tourism Facilitator India and Pune. All rights reserved.
 Section 12: AEO Schema Markup Code
-Add the following JSON-LD schema blocks to the pages indicated. This enables AI answer engines including Google SGE, Perplexity, and ChatGPT to surface Arogya Yatri as a direct answer source.
+Add the following JSON-LD schema blocks to the pages indicated. This enables AI answer engines including Google SGE, Perplexity, and ChatGPT to surface Sano Healthcare and Tourism as a direct answer source.
 12.1  Organization Schema: Add to All Pages
-<script type="application/ld+json"> {   "@context": "https://schema.org",   "@type": "MedicalOrganization",   "name": "Arogya Yatri",   "description": "Medical tourism facilitator India based in Pune connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement India cost procedures, ayurvedic retreats, and panchakarma retreat India programmes.",   "url": "https://www.arogyayatri.com",   "telephone": "+918530054299",   "email": "apoorva@ewan.co.in",   "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },   "areaServed": "Worldwide",   "knowsLanguage": "120+ languages",   "hasOfferCatalog": {     "@type": "OfferCatalog",     "name": "Medical Tourism India Services",     "itemListElement": [       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Affordable Heart Surgery India" } },       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Cancer Treatment India" } },       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Knee Replacement India Cost" } },       { "@type": "Offer", "itemOffered": { "@type": "WellnessProgram", "name": "Ayurvedic Retreat India" } },       { "@type": "Offer", "itemOffered": { "@type": "WellnessProgram", "name": "Panchakarma Retreat India" } }     ]   } } </script>
+<script type="application/ld+json"> {   "@context": "https://schema.org",   "@type": "MedicalOrganization",   "name": "Sano Healthcare and Tourism",   "description": "Medical tourism facilitator India based in Pune connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement India cost procedures, ayurvedic retreats, and panchakarma retreat India programmes.",   "url": "https://www.arogyayatri.com",   "telephone": "+918530054299",   "email": "apoorva@ewan.co.in",   "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },   "areaServed": "Worldwide",   "knowsLanguage": "120+ languages",   "hasOfferCatalog": {     "@type": "OfferCatalog",     "name": "Medical Tourism India Services",     "itemListElement": [       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Affordable Heart Surgery India" } },       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Cancer Treatment India" } },       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Knee Replacement India Cost" } },       { "@type": "Offer", "itemOffered": { "@type": "WellnessProgram", "name": "Ayurvedic Retreat India" } },       { "@type": "Offer", "itemOffered": { "@type": "WellnessProgram", "name": "Panchakarma Retreat India" } }     ]   } } </script>
 12.2  FAQ Schema: Add to FAQ Page
-<script type="application/ld+json"> {   "@context": "https://schema.org",   "@type": "FAQPage",   "mainEntity": [     {       "@type": "Question",       "name": "What is the cost of heart surgery in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Cardiac surgery cost India ranges from $6,000 to $10,000 for bypass surgery, up to 80% less than the US ($100,000+). Arogya Yatri provides free transparent estimates from NABH accredited hospitals India." }     },     {       "@type": "Question",       "name": "What is the cost of knee replacement in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Knee replacement India cost averages $4,500 to $7,000 including hospital stay, which is 70 to 80% lower than in the US or UK, with comparable outcomes at NABH accredited hospitals India." }     },     {       "@type": "Question",       "name": "How do I get a medical visa for India?",       "acceptedAnswer": { "@type": "Answer", "text": "India's e-Medical visa under the Heal in India programme is typically processed within 3 to 5 business days. Arogya Yatri provides a complete medical visa India guide service handling all documentation and hospital invitation letters." }     },     {       "@type": "Question",       "name": "What is an ayurvedic retreat in India?",       "acceptedAnswer": { "@type": "Answer", "text": "An ayurvedic retreat India is a medically guided wellness programme combining Panchakarma detox, Yoga, Ayurvedic diet, and personalised doctor consultations. Programmes run 7 to 21 days, facilitated end to end by Arogya Yatri." }     },     {       "@type": "Question",       "name": "Which are the best hospitals in India for foreign patients?",       "acceptedAnswer": { "@type": "Answer", "text": "The best hospitals India for foreigners hold NABH accredited hospitals India or JCI certification in cities including Delhi, Mumbai, Chennai, Hyderabad, and Pune. Arogya Yatri recommends hospitals based on your diagnosis, not referral agreements." }     },     {       "@type": "Question",       "name": "What is a panchakarma retreat in India?",       "acceptedAnswer": { "@type": "Answer", "text": "A panchakarma retreat India is a traditional Ayurvedic detox and rejuvenation programme using five cleansing therapies including Abhyanga, Shirodhara, and Basti. Programmes are medically supervised and run 7 to 21 days at NABH accredited wellness centres." }     },     {       "@type": "Question",       "name": "Can I get a second medical opinion from a specialist in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Yes. Arogya Yatri offers a free second opinion specialist India service. Submit your medical reports and our specialist panel reviews them within 48 hours, giving you an independent honest assessment before committing to any treatment." }     }   ] } </script>
+<script type="application/ld+json"> {   "@context": "https://schema.org",   "@type": "FAQPage",   "mainEntity": [     {       "@type": "Question",       "name": "What is the cost of heart surgery in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Cardiac surgery cost India ranges from $6,000 to $10,000 for bypass surgery, up to 80% less than the US ($100,000+). Sano Healthcare and Tourism provides free transparent estimates from NABH accredited hospitals India." }     },     {       "@type": "Question",       "name": "What is the cost of knee replacement in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Knee replacement India cost averages $4,500 to $7,000 including hospital stay, which is 70 to 80% lower than in the US or UK, with comparable outcomes at NABH accredited hospitals India." }     },     {       "@type": "Question",       "name": "How do I get a medical visa for India?",       "acceptedAnswer": { "@type": "Answer", "text": "India's e-Medical visa under the Heal in India programme is typically processed within 3 to 5 business days. Sano Healthcare and Tourism provides a complete medical visa India guide service handling all documentation and hospital invitation letters." }     },     {       "@type": "Question",       "name": "What is an ayurvedic retreat in India?",       "acceptedAnswer": { "@type": "Answer", "text": "An ayurvedic retreat India is a medically guided wellness programme combining Panchakarma detox, Yoga, Ayurvedic diet, and personalised doctor consultations. Programmes run 7 to 21 days, facilitated end to end by Sano Healthcare and Tourism." }     },     {       "@type": "Question",       "name": "Which are the best hospitals in India for foreign patients?",       "acceptedAnswer": { "@type": "Answer", "text": "The best hospitals India for foreigners hold NABH accredited hospitals India or JCI certification in cities including Delhi, Mumbai, Chennai, Hyderabad, and Pune. Sano Healthcare and Tourism recommends hospitals based on your diagnosis, not referral agreements." }     },     {       "@type": "Question",       "name": "What is a panchakarma retreat in India?",       "acceptedAnswer": { "@type": "Answer", "text": "A panchakarma retreat India is a traditional Ayurvedic detox and rejuvenation programme using five cleansing therapies including Abhyanga, Shirodhara, and Basti. Programmes are medically supervised and run 7 to 21 days at NABH accredited wellness centres." }     },     {       "@type": "Question",       "name": "Can I get a second medical opinion from a specialist in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Yes. Sano Healthcare and Tourism offers a free second opinion specialist India service. Submit your medical reports and our specialist panel reviews them within 48 hours, giving you an independent honest assessment before committing to any treatment." }     }   ] } </script>
 END OF DOCUMENT
-Arogya Yatri: SEO and AEO Website Content Replacement Guide — Full Site Coverage | April 2026
+Sano Healthcare and Tourism: SEO and AEO Website Content Replacement Guide — Full Site Coverage | April 2026

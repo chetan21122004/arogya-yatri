@@ -5,7 +5,7 @@ Blog Post: Heal in India Program · Article #1
 arogyayatri.com
 
 What This Document Contains
-This handoff document contains 4 ready-to-paste JSON-LD schema markup blocks for the first Arogya Yatri
+This handoff document contains 4 ready-to-paste JSON-LD schema markup blocks for the first Sano Healthcare and Tourism
 blog post, plus a step-by-step implementation checklist. No guessing is required — each section tells you exactly
 where each block goes, which fields to update, and how to validate it.
 ⚠ Important: Replace all placeholder values (URLs, dates, image paths) with real data before publishing.
@@ -16,7 +16,7 @@ Why These 4 Schema Types?
 rich results in search.
 2. FAQPage — Powers the FAQ accordion in Google search results (People Also Ask). Each Q&amp;A must
 match visible text on the page exactly.
-3. MedicalOrganization — Establishes Arogya Yatri&#39;s E-E-A-T authority as a medical entity. Critical for health-
+3. MedicalOrganization — Establishes Sano Healthcare and Tourism&#39;s E-E-A-T authority as a medical entity. Critical for health-
 related content under Google&#39;s YMYL (Your Money Your Life) guidelines.
 4. BreadcrumbList — Displays Home &gt; Blog &gt; Article in the search result snippet, improving CTR (click-
 through rate) by showing users where they are in your site.
@@ -37,12 +37,12 @@ step journey for international medical tourists.&quot;,
 india-program-blog.jpg&quot;,
 &quot;author&quot;: {
 &quot;@type&quot;: &quot;Organization&quot;,
-&quot;name&quot;: &quot;Arogya Yatri&quot;,
+&quot;name&quot;: &quot;Sano Healthcare and Tourism&quot;,
 &quot;url&quot;: &quot;https://www.arogyayatri.com&quot;
 },
 &quot;publisher&quot;: {
 &quot;@type&quot;: &quot;Organization&quot;,
-&quot;name&quot;: &quot;Arogya Yatri&quot;,
+&quot;name&quot;: &quot;Sano Healthcare and Tourism&quot;,
 &quot;logo&quot;: {
 &quot;@type&quot;: &quot;ImageObject&quot;,
 &quot;url&quot;: &quot;https://www.arogyayatri.com/logo.png&quot;
@@ -101,7 +101,7 @@ $5,000–$8,000 in India at equivalent quality.&quot;
 &quot;@type&quot;: &quot;Answer&quot;,
 &quot;text&quot;: &quot;You can apply for an e-Medical Visa online.
 Under the Heal in India Program, processing takes
-as little as 72 hours. Arogya Yatri supports your
+as little as 72 hours. Sano Healthcare and Tourism supports your
 application as part of our free service.&quot;
 }
 },
@@ -112,19 +112,18 @@ application as part of our free service.&quot;
 &quot;@type&quot;: &quot;Answer&quot;,
 &quot;text&quot;: &quot;NABH and JCI accredited hospitals across
 Delhi, Mumbai, Chennai, Bengaluru, and Pune
-regularly treat international patients. Arogya
-Yatri matches you with the right hospital based
+regularly treat international patients. Sano Healthcare and Tourism matches you with the right hospital based
 on your specific condition and budget.&quot;
 }
 },
 {
 &quot;@type&quot;: &quot;Question&quot;,
 
-&quot;name&quot;: &quot;What does Arogya Yatri&#39;s medical tourism
+&quot;name&quot;: &quot;What does our medical tourism
 service include?&quot;,
 &quot;acceptedAnswer&quot;: {
 &quot;@type&quot;: &quot;Answer&quot;,
-&quot;text&quot;: &quot;Arogya Yatri provides free report analysis,
+&quot;text&quot;: &quot;Sano Healthcare and Tourism provides free report analysis,
 hospital and doctor matching, visa assistance,
 airport pickup, 24/7 multilingual support in 120+
 languages, accommodation help, and post-treatment
@@ -142,7 +141,7 @@ social URLs, and contact details are accurate before deploying.
 {
 &quot;@context&quot;: &quot;https://schema.org&quot;,
 &quot;@type&quot;: &quot;MedicalOrganization&quot;,
-&quot;name&quot;: &quot;Arogya Yatri&quot;,
+&quot;name&quot;: &quot;Sano Healthcare and Tourism&quot;,
 &quot;url&quot;: &quot;https://www.arogyayatri.com&quot;,
 &quot;logo&quot;: &quot;https://www.arogyayatri.com/logo.png&quot;,
 &quot;description&quot;: &quot;India&#39;s trusted medical tourism facilitator
@@ -262,7 +261,7 @@ and &#39;sameAs&#39;
 
 Confirm the Pune address fields are correct
 and add the actual social media profile URLs
-for Arogya Yatri.
+for Sano Healthcare and Tourism.
 
 All platforms. This
 schema block can
@@ -316,7 +315,7 @@ and treatment page automatically.
 4. Build BreadcrumbList for every new article using the same structure — just update position 3&#39;s name
 and item URL.
 
-Questions? Contact the Arogya Yatri content team before publishing. arogyayatri.com
+Questions? Contact the Sano Healthcare and Tourism content team before publishing. arogyayatri.com
 
 
 
@@ -351,7 +350,7 @@ their visit
 benchmarks used in the US, UK, and Europe
 Think of it as the Indian government removing every speed bump from your path to
 treatment. When you travel through an accredited medical tourism facilitator like
-Arogya Yatri, you get all this — plus a human team holding your hand through every
+Sano Healthcare and Tourism, you get all this — plus a human team holding your hand through every
 step.
 �� INTERLINK: &quot;Learn about NABH accredited hospitals in India&quot; Insert link to /treatments page
 
@@ -378,14 +377,14 @@ States typically costs $5,000–$8,000 in India — at the same level of surgica
 and post-op care. That&#39;s not a compromise. That&#39;s an advantage.
 �� INTERLINK: &quot;Compare treatment costs and calculate your savings&quot; Insert link to cost
 comparison tool
-Zero waiting period is another difference that matters. Many patients reach Arogya Yatri
+Zero waiting period is another difference that matters. Many patients reach Sano Healthcare and Tourism
 after waiting 6–12 months for a procedure at home. In India, treatment can be
 scheduled within days of arrival.
 
 What Does the Journey Actually Look Like? (Step by Step)
 We know the idea of travelling abroad for medical care can feel daunting. So let&#39;s walk
 through what the experience actually looks like when you travel with a trusted facilitator.
-• Step 1 — Free Report Analysis: Upload your medical reports. Arogya Yatri&#39;s
+• Step 1 — Free Report Analysis: Upload your medical reports. Sano Healthcare and Tourism&#39;s
 expert panel reviews them within 24–48 hours and provides an honest treatment
 recommendation and cost estimate — at no charge.
 �� INTERLINK: &quot;Upload your reports for a free second opinion&quot; Insert link to consultation form
@@ -408,7 +407,7 @@ contact to the moment you&#39;re fully recovered.
 How Do You Know You&#39;re Choosing the Right Hospital and
 Facilitator?
 This is the question that deserves a direct answer. In medical tourism in India, not
-every facilitator is equal. Here&#39;s what to look for — and what Arogya Yatri specifically
+every facilitator is equal. Here&#39;s what to look for — and what Sano Healthcare and Tourism specifically
 offers:
 • Accreditation matters: Only consider hospitals with NABH (National
 Accreditation Board for Hospitals) or JCI certification. These are the gold
@@ -416,13 +415,13 @@ standards for patient safety.
 • Transparent pricing: There should be no hidden fees. A trustworthy facilitator
 provides a written cost estimate before you commit to anything.
 • Language support: Your medical decisions should never be made through
-broken communication. Arogya Yatri provides hospital interpreters in 120+
+broken communication. Sano Healthcare and Tourism provides hospital interpreters in 120+
 languages.
 • Post-treatment follow-up: The journey doesn&#39;t end at discharge. Ask any
 facilitator how they support you after you return home.
 �� INTERLINK: &quot;Read patient testimonials and real recovery stories&quot; Insert link to /testimonials
 page
-Arogya Yatri is trusted by patients from 50+ countries — and every service is built
+Sano Healthcare and Tourism is trusted by patients from 50+ countries — and every service is built
 around one idea: that you deserve the same quality of care regardless of your passport
 or your budget.
 
@@ -437,7 +436,7 @@ No commitment. No pressure. Just clarity.
 
 Ready to Begin Your Healing Journey?
 
-Fill out the free consultation form at ArogyaYatri.com and our care team will respond
+Fill out the free consultation form at arogyayatri.com and our care team will respond
 within 24 hours — with a personalised cost estimate, hospital recommendation, and
 
 step-by-step guidance.
@@ -446,7 +445,7 @@ step-by-step guidance.
 � www.arogyayatri.com | Trusted by Patients from 50+ Countries
 
 SEO &amp; AEO OPTIMIZATION NOTES (For Editor / Web Team)
-Meta Title (60 chars): Heal in India Program: Affordable Medical Tourism Guide | Arogya Yatri
+Meta Title (60 chars): Heal in India Program: Affordable Medical Tourism Guide | Sano Healthcare and Tourism
 Meta Description (155 chars): Discover how the Heal in India Program helps international patients access
 NABH accredited hospitals with 80% cost savings and zero waiting. Start with a free consultation.
 Primary Keyword: Heal in India Program (used in H1, H2, intro, body)

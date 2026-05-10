@@ -1,4 +1,4 @@
-# Arogya Yatri SEO/AEO Content Audit
+# Sano Healthcare and Tourism SEO/AEO Content Audit
 
 Document reviewed: `ArogyaYatri_SEO_AEO_Content_Replacement (1).docx`
 

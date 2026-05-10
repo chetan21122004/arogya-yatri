@@ -1,7 +1,7 @@
-# Arogya Yatri Consistency and Duplication Pass (Pass 4)
+# Sano Healthcare and Tourism Consistency and Duplication Pass (Pass 4)
 
 ## Consistency Rules Applied
-- Brand name fixed as `Arogya Yatri` across all sections.
+- Brand name fixed as `Sano Healthcare and Tourism` across all sections.
 - Primary location intent normalized to `in India` where relevant.
 - CTA voice normalized to action-first verbs: `Start`, `Book`, `Compare`, `Talk`.
 - Claims normalized to safe wording; no guaranteed outcomes.
