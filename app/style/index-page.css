@@ -13,6 +13,11 @@ display: none;
 
 html { scroll-behavior: smooth; }
 
+#siteHeader {
+background-color: #fff;
+box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
 .nav-link {
 position: relative;
 }
@@ -23,12 +28,27 @@ left: 50%;
 bottom: -4px;
 width: 0;
 height: 2px;
-background: white;
+background: black;
 transform: translateX(-50%);
 transition: width .3s ease;
 }
 .nav-link:hover::after {
 width: 100%;
+}
+
+#siteHeader .nav-link,
+#siteHeader .nav-cta,
+#siteHeader #menuBtn {
+color: black !important;
+}
+
+#siteHeader .nav-cta {
+border-color: black;
+}
+
+#siteHeader .nav-cta:hover {
+background: black;
+color: white !important;
 }
 
 .hero-overlay {
@@ -109,36 +129,6 @@ to { height: 100%; }
 
 .step-line {
 animation: grow-line 1.6s ease-out forwards;
-}
-
-/* Navbar scroll state */
-.nav-scrolled {
-background-color: white;
-box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-transition: all 0.5s;
-}
-
-/* Text color switch */
-.nav-scrolled .nav-text,
-.nav-scrolled .nav-link,
-.nav-scrolled .nav-cta,
-.nav-scrolled #menuBtn {
-color: black !important;
-}
-
-/* Underline color switch */
-.nav-scrolled .nav-link::after {
-background: black;
-}
-
-/* CTA border + hover fix */
-.nav-scrolled .nav-cta {
-border-color: black;
-}
-
-.nav-scrolled .nav-cta:hover {
-background: black;
-color: white !important;
 }
 
 /* Instagram Images Slider */
