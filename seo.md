@@ -163,8 +163,10 @@ hospitals for affordable, world-class treatment.&quot;,
 &quot;availableLanguage&quot;: &quot;English, Arabic, French, Swahili&quot;
 },
 &quot;sameAs&quot;: [
-&quot;https://www.facebook.com/arogyayatri&quot;,
-&quot;https://www.linkedin.com/company/arogyayatri&quot;
+&quot;https://www.facebook.com/sano.healthcareandtourism&quot;,
+&quot;https://www.linkedin.com/company/sanohealthcareandtourism&quot;,
+&quot;https://www.instagram.com/sano.healthcareandtourism/&quot;,
+&quot;https://x.com/sano_healthcare&quot;
 ]
 }
 &lt;/script&gt;
