@@ -11,7 +11,7 @@
   <meta property="og:title" content="Heal in India Program: Affordable Medical Tourism Guide | Sano Healthcare and Tourism">
   <meta property="og:description" content="A complete guide to costs, hospitals, visa process, and treatment journey for international medical tourists in India.">
   <meta property="og:url" content="https://www.arogyayatri.com/app/pages/blog-heal-in-india-program-guide.html">
-  <meta property="og:image" content="../../src/images/blog-indian-hospital-featured.png">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1400&auto=format&fit=crop">
   <meta name="twitter:card" content="summary_large_image">
 
   <script type="application/ld+json">
@@ -20,7 +20,7 @@
     "@type": "BlogPosting",
     "headline": "Why Thousands of International Patients Choose India's Heal in India Program for World-Class, Affordable Care",
     "description": "A complete guide to the Heal in India Program: costs, hospitals, visa process, and step-by-step journey for international medical tourists.",
-    "image": "../../src/images/blog-indian-hospital-featured.png",
+    "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1400&auto=format&fit=crop",
     "author": {
       "@type": "Organization",
       "name": "Sano Healthcare and Tourism",
@@ -171,8 +171,8 @@
     </p>
 
     <img
-      src="../../src/images/blog-indian-hospital-featured.png"
-      alt="Professional Indian hospital facility for international medical tourism patients"
+      src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1400&auto=format&fit=crop"
+      alt="Healthcare team in a modern hospital"
       class="w-full rounded-2xl shadow mb-10"
     >
 
@@ -222,7 +222,7 @@
         </ol>
         <p class="mt-4">
           Start with a free assessment via our
-          <a class="text-teal-700 font-medium underline" href="https://forms.gle/Snkvg8H7byeD8cXj7" target="_blank" rel="noopener noreferrer">consultation form</a>.
+          <a class="text-teal-700 font-medium underline" href="https://docs.google.com/forms/d/e/1FAIpQLSe_nC7525bWJQasjkrIUUBM2b435nf_1gdj9FepqtDK5fFAqA/viewform" target="_blank" rel="noopener noreferrer">consultation form</a>.
         </p>
       </section>
 
@@ -280,7 +280,7 @@
           Share your reports with Sano Healthcare and Tourism for an honest treatment roadmap, estimated costs, likely timelines, and hospital options tailored to your case.
         </p>
         <a
-          href="https://forms.gle/Snkvg8H7byeD8cXj7"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe_nC7525bWJQasjkrIUUBM2b435nf_1gdj9FepqtDK5fFAqA/viewform"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 rounded-full bg-teal-600 text-white px-6 py-3 font-medium hover:bg-teal-700 transition"

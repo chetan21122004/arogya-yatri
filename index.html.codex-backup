@@ -633,7 +633,7 @@
         <li class="relative group flex items-center">
           <button class="nav-link inline-flex items-center gap-1 leading-none">Explore <i class='bx bx-chevron-down text-sm relative top-[1px]'></i></button>
           <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            <a href="app/pages/about.html" class="block px-5 py-3 text-sm text-slate-800 rounded-t-xl hover:bg-slate-50">About SANO</a>
+            <a href="app/pages/about.html" class="block px-5 py-3 text-sm text-slate-800 rounded-t-xl hover:bg-slate-50">About Sano Healthcare and Tourism: Medical Tourism Facilitator India</a>
             <a href="app/pages/faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
             <a href="app/pages/testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
             <a href="app/pages/news.html" class="block px-5 py-3 text-sm text-slate-800 rounded-b-xl hover:bg-slate-50">News/Blogs</a>
@@ -668,14 +668,14 @@
       <div>
         <button id="mobileExploreBtn" class="w-full flex items-center justify-between"><span>Explore</span><i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i></button>
         <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
-          <a href="app/pages/about.html" class="block">About SANO</a>
+          <a href="app/pages/about.html" class="block">About Sano Healthcare and Tourism: Medical Tourism Facilitator India</a>
           <a href="app/pages/faq.html" class="block">FAQ</a>
           <a href="app/pages/testimonial.html" class="block">Testimonials</a>
           <a href="app/pages/news.html" class="block">News/Blogs</a>
         </div>
       </div>
       <div class="pt-6 border-t border-gray-200"></div>
-      <a href="https://forms.gle/Snkvg8H7byeD8cXj7"
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_nC7525bWJQasjkrIUUBM2b435nf_1gdj9FepqtDK5fFAqA/viewform"
         target="_blank"
         class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
         style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
@@ -1435,9 +1435,8 @@
       <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
         <div class="text-center mb-8">
           <h3 class="text-2xl sm:text-3xl font-semibold text-white mb-3">
-            Compare Treatment Costs
+            Compare Treatment Costs: How Much You Save With Medical Tourism India: How Much You Save With Medical Tourism India
           </h3>
-          <p class="text-xl md:text-2xl font-semibold text-slate-300 mt-3">How Much You Save With Medical Tourism India</p>
           <p class="text-slate-300 text-sm sm:text-base">
             See how much you save on cardiac surgery cost India, knee replacement India cost, and cancer treatment India versus treatment in your home country.
           </p>
@@ -3182,7 +3181,7 @@
           <!-- Header -->
           <div class="text-center ">
             <p class="text-xs tracking-widest uppercase text-teal-500 font-medium mb-3">
-              Real Patient Stories
+              Real Real Patient Stories
             </p>
             <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 leading-tight">
               Our Social Media <span class="text-teal-500">Updates</span>
@@ -3195,7 +3194,7 @@
         </div>
 
         <!-- Instagram CTA -->
-        <a href="https://www.instagram.com/sano.healthcareandtourism/" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.instagram.com/sano.healthcareandtourism?igsh=amthbzZrMXkwb2kw" target="_blank" rel="noopener noreferrer"
           class="hidden md:inline-flex items-center gap-2 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-200 transition">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -3442,7 +3441,7 @@
           <div class="flex items-center gap-4">
             <a href="https://www.facebook.com/sano.healthcareandtourism" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-facebook text-lg"></i></a>
             <a href="https://www.linkedin.com/company/sanohealthcareandtourism/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-linkedin text-lg"></i></a>
-            <a href="https://www.instagram.com/sano.healthcareandtourism/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-instagram text-lg"></i></a>
+            <a href="https://www.instagram.com/sano.healthcareandtourism?igsh=amthbzZrMXkwb2kw" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-instagram text-lg"></i></a>
             <a href="https://x.com/sano_healthcare" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-twitter text-lg"></i></a>
           </div>
         </div>
@@ -3453,7 +3452,7 @@
             <li><a href="app/pages/treatments.html" class="hover:text-white transition">Treatment</a></li>
             <li><a href="app/pages/doctor.html" class="hover:text-white transition">Doctor</a></li>
             <li><a href="app/pages/destinations.html" class="hover:text-white transition">Destinations</a></li>
-            <li><a href="app/pages/about.html" class="hover:text-white transition">About SANO</a></li>
+            <li><a href="app/pages/about.html" class="hover:text-white transition">About Sano Healthcare and Tourism: India's Trusted Medical Tourism Facilitator: Medical Tourism Facilitator India and Pune | Trusted by Patients from 50+ Countries: Medical Tourism Facilitator India</a></li>
             <li><a href="app/pages/testimonial.html" class="hover:text-white transition">Testimonials</a></li>
           </ul>
         </div>
@@ -3498,7 +3497,7 @@
       <div class="px-4 py-4">
         <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
           <iframe
-            src="https://forms.gle/Snkvg8H7byeD8cXj7"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe_nC7525bWJQasjkrIUUBM2b435nf_1gdj9FepqtDK5fFAqA/viewform"
             class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">
             Loading…
           </iframe>

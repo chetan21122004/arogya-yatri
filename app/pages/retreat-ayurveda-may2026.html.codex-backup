@@ -175,7 +175,7 @@
         <li class="relative group flex items-center">
           <button class="nav-link inline-flex items-center gap-1 leading-none">Explore <i class='bx bx-chevron-down text-sm relative top-[1px]'></i></button>
           <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 rounded-t-xl hover:bg-slate-50">About SANO</a>
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 rounded-t-xl hover:bg-slate-50">About Sano Healthcare and Tourism: Medical Tourism Facilitator India</a>
             <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
             <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
             <a href="news.html" class="block px-5 py-3 text-sm text-slate-800 rounded-b-xl hover:bg-slate-50">News/Blogs</a>
@@ -210,14 +210,14 @@
       <div>
         <button id="mobileExploreBtn" class="w-full flex items-center justify-between"><span>Explore</span><i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i></button>
         <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
-          <a href="about.html" class="block">About SANO</a>
+          <a href="about.html" class="block">About Sano Healthcare and Tourism: Medical Tourism Facilitator India</a>
           <a href="faq.html" class="block">FAQ</a>
           <a href="testimonial.html" class="block">Testimonials</a>
           <a href="news.html" class="block">News/Blogs</a>
         </div>
       </div>
       <div class="pt-6 border-t border-gray-200"></div>
-      <a href="https://forms.gle/Snkvg8H7byeD8cXj7"
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_nC7525bWJQasjkrIUUBM2b435nf_1gdj9FepqtDK5fFAqA/viewform"
         target="_blank"
         class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
         style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
@@ -458,7 +458,7 @@
         </button>
         <div class="px-3 sm:px-4 py-3 sm:py-4 h-full sm:h-auto">
           <div class="w-full h-[calc(100vh-1.5rem)] sm:h-[520px] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200">
-            <iframe src="https://forms.gle/Snkvg8H7byeD8cXj7" class="w-full h-full" frameborder="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_nC7525bWJQasjkrIUUBM2b435nf_1gdj9FepqtDK5fFAqA/viewform" class="w-full h-full" frameborder="0">Loading…</iframe>
           </div>
         </div>
       </div>
@@ -494,7 +494,7 @@
             <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
             <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
             <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-            <li><a href="about.html" class="hover:text-white transition">About SANO</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Sano Healthcare and Tourism: India's Trusted Medical Tourism Facilitator: Medical Tourism Facilitator India and Pune | Trusted by Patients from 50+ Countries: India's Medical Tourism Facilitator: Affordable Care. Zero Waiting. Full Support. in India</a></li>
             <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
           </ul>
         </div>

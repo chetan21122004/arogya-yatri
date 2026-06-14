@@ -346,7 +346,7 @@
         <li class="relative group flex items-center">
           <button class="nav-link inline-flex items-center gap-1 leading-none">Explore <i class='bx bx-chevron-down text-sm relative top-[1px]'></i></button>
           <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 rounded-t-xl hover:bg-slate-50">About SANO</a>
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 rounded-t-xl hover:bg-slate-50">About Sano Healthcare and Tourism: Medical Tourism Facilitator India</a>
             <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
             <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
             <a href="news.html" class="block px-5 py-3 text-sm text-slate-800 rounded-b-xl hover:bg-slate-50">News/Blogs</a>
@@ -381,14 +381,14 @@
       <div>
         <button id="mobileExploreBtn" class="w-full flex items-center justify-between"><span>Explore</span><i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i></button>
         <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
-          <a href="about.html" class="block">About SANO</a>
+          <a href="about.html" class="block">About Sano Healthcare and Tourism: Medical Tourism Facilitator India</a>
           <a href="faq.html" class="block">FAQ</a>
           <a href="testimonial.html" class="block">Testimonials</a>
           <a href="news.html" class="block">News/Blogs</a>
         </div>
       </div>
       <div class="pt-6 border-t border-gray-200"></div>
-      <a href="https://forms.gle/Snkvg8H7byeD8cXj7"
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_nC7525bWJQasjkrIUUBM2b435nf_1gdj9FepqtDK5fFAqA/viewform"
         target="_blank"
         class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
         style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
@@ -520,7 +520,7 @@
           <div
             class="w-full h-[calc(100vh-1.5rem)] sm:h-[520px] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200">
             <iframe
-              src="https://forms.gle/Snkvg8H7byeD8cXj7"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe_nC7525bWJQasjkrIUUBM2b435nf_1gdj9FepqtDK5fFAqA/viewform"
               class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">
               Loading…
             </iframe>
@@ -561,7 +561,7 @@
             <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
             <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
             <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-            <li><a href="about.html" class="hover:text-white transition">About SANO</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Sano Healthcare and Tourism: India's Trusted Medical Tourism Facilitator: Medical Tourism Facilitator India and Pune | Trusted by Patients from 50+ Countries: India's Medical Tourism Facilitator: Affordable Care. Zero Waiting. Full Support. in India</a></li>
             <li><a href="testimonial.html" class="hover:text-white transition">Testimonials</a></li>
           </ul>
         </div>
@@ -667,8 +667,6 @@
   <!-- ================== DATA + LOGIC (FIXED, NOTHING REMOVED) ================== -->
   <script>
     const doctors = [
-      { name: "Ms. Sharmishtha Deshpande", gender: "female", spec: "Nutritionist", edu: "Internationally Certified Nutritionist | Certified Diabetes Educator | Functional Nutrition Practitioner | Certified Hydroponics Farming Technician", exp: "12+ years", image: "../../src/images/doctors/Ms. Sharmishtha Deshpande.jpeg", featured: true, languages: "English, Hindi, Marathi", tags: ["Diabetes Reversal & Management", "Weight Management", "Functional & Preventive Nutrition", "Corporate Wellness", "Personalized Diet Planning"] },
-      { name: "Dr. Kedar Shrikant Desai", gender: "male", spec: "General Dentist", edu: "B.D.S. · Dental Implant Certifications", exp: "Since 2009", image: "../../src/images/doctors/Dr. Kedar Shrikant Desai.jpg", featured: true, languages: "English, Marathi, Hindi", tags: ["Dental Implants", "Smile Design", "Root Canal Treatment", "Cosmetic Dentistry", "Full Mouth Rehabilitation", "International Patients"] },
       { name: "Dr. Ravindra Kulkarni", gender: "male", spec: "Obstetrics & Gynaecology", edu: "MBBS MD OB-GYN", exp: ">35 years", image: "../../src/images/doctors/ravindra.png" },
       { name: "Dr. Chaitanya Ganapule", gender: "male", spec: "Obstetrics & Gynaecology", edu: "MBBS MD OB-GYN Certificate in infertility & IVF, Dip in Gynaec Endoscopy", exp: "25 years", image: "../../src/images/doctors/chaitanya.png" },
       { name: "Dr. Padmaja Jadhav", gender: "female", spec: "Obstetrics & Gynaecology", edu: "MBBS DGO", exp: ">25 years", image: "../../src/images/doctors/padmaja.png" },
@@ -706,12 +704,6 @@
     }
 
     function createDoctorCard(d) {
-      const tagsHtml = d.featured && d.tags?.length
-        ? `<div class="flex flex-wrap justify-center gap-1.5 mb-3 px-1">${d.tags.slice(0, 4).map(tag => `<span class="inline-block px-2 py-0.5 rounded-md text-[10px] font-medium bg-teal-50 text-teal-700 border border-teal-100">${tag}</span>`).join('')}</div>`
-        : '';
-      const languagesHtml = d.languages
-        ? `<p class="text-[11px] text-slate-500 text-center mb-3"><i class='bx bx-globe text-teal-500'></i> ${d.languages}</p>`
-        : '';
       return `
     <article class="doctor-card-article group bg-white rounded-2xl border border-slate-200 hover:border-teal-400 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-1">
       <!-- Image Section -->
@@ -734,7 +726,7 @@
       <div class="flex-1 flex flex-col px-4 sm:px-6 pb-4 sm:pb-6">
         <!-- Name & Specialty -->
         <div class="text-center mb-3 sm:mb-4">
-          <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors line-clamp-2">
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors line-clamp-1">
             ${d.name}
           </h3>
           <span class="inline-flex items-center px-2 sm:px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-teal-500 to-teal-600 text-white shadow-sm">
@@ -743,11 +735,9 @@
         </div>
         
         <!-- Education -->
-        <p class="text-xs text-slate-600 text-center mb-3 sm:mb-4 line-clamp-3 leading-relaxed min-h-[2.5rem]">
+        <p class="text-xs text-slate-600 text-center mb-3 sm:mb-4 line-clamp-2 leading-relaxed min-h-[2.5rem]">
           ${d.edu}
         </p>
-        ${languagesHtml}
-        ${tagsHtml}
         
         <!-- Experience -->
         <div class="flex items-center justify-center gap-2 mb-4 sm:mb-5 px-3 sm:px-4 py-2 rounded-lg bg-slate-50 group-hover:bg-teal-50 transition-colors">
