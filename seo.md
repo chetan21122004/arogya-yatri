@@ -6,21 +6,21 @@ arogyayatri.com
 
 What This Document Contains
 This handoff document contains 4 ready-to-paste JSON-LD schema markup blocks for the first Sano Healthcare and Tourism
-blog post, plus a step-by-step implementation checklist. No guessing is required — each section tells you exactly
+blog post, plus a step-by-step implementation checklist. No guessing is required - each section tells you exactly
 where each block goes, which fields to update, and how to validate it.
 ⚠ Important: Replace all placeholder values (URLs, dates, image paths) with real data before publishing.
-�� The MedicalOrganization schema can be added site-wide — not just on this post.
+�� The MedicalOrganization schema can be added site-wide - not just on this post.
 ✅ After adding, always validate using Google&#39;s Rich Results Test before requesting indexing.
 Why These 4 Schema Types?
-1. BlogPosting — Tells Google this is an article with a specific author, publish date, and topic. Enables article
+1. BlogPosting - Tells Google this is an article with a specific author, publish date, and topic. Enables article
 rich results in search.
-2. FAQPage — Powers the FAQ accordion in Google search results (People Also Ask). Each Q&amp;A must
+2. FAQPage - Powers the FAQ accordion in Google search results (People Also Ask). Each Q&amp;A must
 match visible text on the page exactly.
-3. MedicalOrganization — Establishes Sano Healthcare and Tourism&#39;s E-E-A-T authority as a medical entity. Critical for health-
+3. MedicalOrganization - Establishes Sano Healthcare and Tourism&#39;s E-E-A-T authority as a medical entity. Critical for health-
 related content under Google&#39;s YMYL (Your Money Your Life) guidelines.
-4. BreadcrumbList — Displays Home &gt; Blog &gt; Article in the search result snippet, improving CTR (click-
+4. BreadcrumbList - Displays Home &gt; Blog &gt; Article in the search result snippet, improving CTR (click-
 through rate) by showing users where they are in your site.
-Schema Block 1 — BlogPosting
+Schema Block 1 - BlogPosting
 Where to paste: Inside the &lt;head&gt; of this blog post only
 Update the image URL, datePublished, dateModified, and mainEntityOfPage @id fields before going live.
 &lt;script type=&quot;application/ld+json&quot;&gt;
@@ -31,7 +31,7 @@ Update the image URL, datePublished, dateModified, and mainEntityOfPage @id fiel
 Choose India&#39;s Heal in India Program for World-Class,
 Affordable Care&quot;,
 &quot;description&quot;: &quot;A complete guide to the Heal in India
-Program — costs, hospitals, visa process and step-by-
+Program - costs, hospitals, visa process and step-by-
 step journey for international medical tourists.&quot;,
 &quot;image&quot;: &quot;https://www.arogyayatri.com/images/heal-in-
 india-program-blog.jpg&quot;,
@@ -62,10 +62,10 @@ best hospitals India for foreigners&quot;,
 &quot;articleSection&quot;: &quot;Medical Tourism&quot;
 }
 &lt;/script&gt;
-Schema Block 2 — FAQPage
+Schema Block 2 - FAQPage
 Where to paste: Inside the &lt;head&gt; of this blog post only
 The 5 questions here map to the H2 headings and key paragraphs in the article. Do not change the answer text
-without also updating the visible article copy — Google checks both.
+without also updating the visible article copy - Google checks both.
 &lt;script type=&quot;application/ld+json&quot;&gt;
 {
 &quot;@context&quot;: &quot;https://schema.org&quot;,
@@ -133,7 +133,7 @@ follow-up after you return home.&quot;
 ]
 }
 &lt;/script&gt;
-Schema Block 3 — MedicalOrganization
+Schema Block 3 - MedicalOrganization
 Where to paste: Global &lt;head&gt; (all pages) OR this blog post &lt;head&gt;
 This can be added once globally in your site&#39;s &lt;head&gt; template so it applies to every page. Confirm the address,
 social URLs, and contact details are accurate before deploying.
@@ -170,7 +170,7 @@ hospitals for affordable, world-class treatment.&quot;,
 ]
 }
 &lt;/script&gt;
-Schema Block 4 — BreadcrumbList
+Schema Block 4 - BreadcrumbList
 Where to paste: Inside the &lt;head&gt; of this blog post only
 The third breadcrumb item URL must exactly match the canonical URL of the published post.
 &lt;script type=&quot;application/ld+json&quot;&gt;
@@ -212,7 +212,7 @@ blog post page
 
 Paste all 4 &lt;script
 type=&quot;application/ld+json&quot;&gt; blocks. Order
-doesn&#39;t matter — keep them grouped
+doesn&#39;t matter - keep them grouped
 together for easy future editing.
 
 WordPress: use a
@@ -278,7 +278,7 @@ post.
 Ensure the answer text in each FAQ
 matches what is written in the live blog post.
 Google cross-references schema answers
-with visible page content — mismatches can
+with visible page content - mismatches can
 cause rich result rejection.
 
 All platforms
@@ -293,7 +293,7 @@ for indexing in Google Search Console →
 URL Inspection → Request Indexing.
 
 No CMS access
-needed — browser-
+needed - browser-
 based validation tool
 
 Validation &amp; Testing
@@ -302,19 +302,19 @@ Validation &amp; Testing
 → Google Search Console: URL Inspection → Request Indexing after publishing
 ✅ All 4 schema types should show 0 errors and 0 warnings before going live.
 
-• BlogPosting — should show a valid &#39;Article&#39; result in the Rich Results Test
-• FAQPage — should show &#39;FAQ rich result detected&#39; with all 5 questions listed
-• MedicalOrganization — validates in schema.org validator (not a visual rich result, but crawled for E-E-A-
+• BlogPosting - should show a valid &#39;Article&#39; result in the Rich Results Test
+• FAQPage - should show &#39;FAQ rich result detected&#39; with all 5 questions listed
+• MedicalOrganization - validates in schema.org validator (not a visual rich result, but crawled for E-E-A-
 T)
-• BreadcrumbList — should show &#39;Breadcrumbs&#39; detected in Rich Results Test
+• BreadcrumbList - should show &#39;Breadcrumbs&#39; detected in Rich Results Test
 
 Ongoing Maintenance Notes
 1. Update dateModified in the BlogPosting schema whenever you make significant edits to the article body.
-2. Add new FAQs to the FAQPage schema as you add Q&amp;A content to the page — keep schema and
+2. Add new FAQs to the FAQPage schema as you add Q&amp;A content to the page - keep schema and
 visible copy in sync.
 3. Reuse the MedicalOrganization block as a site-wide global include so it appears on every blog post
 and treatment page automatically.
-4. Build BreadcrumbList for every new article using the same structure — just update position 3&#39;s name
+4. Build BreadcrumbList for every new article using the same structure - just update position 3&#39;s name
 and item URL.
 
 Questions? Contact the Sano Healthcare and Tourism content team before publishing. arogyayatri.com
@@ -328,54 +328,54 @@ WORD COUNT: ~1,050 words | INTENT: Informational + Navigational | FORMAT: Blog P
 Why Thousands of International Patients Choose
 India&#39;s Heal in India Program for World-Class,
 Affordable Care
-If you&#39;ve been told you need a complex surgery — a knee replacement, a bypass, a
-cancer treatment — and you&#39;re staring at a waiting list stretching months into the future,
+If you&#39;ve been told you need a complex surgery - a knee replacement, a bypass, a
+cancer treatment - and you&#39;re staring at a waiting list stretching months into the future,
 you&#39;re not alone. Thousands of patients across Africa, the Middle East, Europe, and
 beyond face the same reality: excellent healthcare exists, but it&#39;s either too expensive,
 too slow, or both.
 That&#39;s exactly why India has become the world&#39;s most chosen destination for medical
-travel. And the Heal in India Program — a dedicated government initiative — is the
+travel. And the Heal in India Program - a dedicated government initiative - is the
 official system designed to make your journey safe, smooth, and surprisingly affordable.
 Here&#39;s everything you need to know before you take the first step.
 
-What Is the Heal in India Program — and Why Does It Matter to
+What Is the Heal in India Program - and Why Does It Matter to
 You?
 The Heal in India Program is a Government of India initiative launched to position India
 as a global hub for affordable, high-quality healthcare. It streamlines the entire
-experience for international patients — from visa processing to hospital access.
+experience for international patients - from visa processing to hospital access.
 What this means practically:
-• e-Medical Visa in as little as 72 hours — no long bureaucratic waits
-• Fast-track airport assistance — a dedicated lane for medical travelers
+• e-Medical Visa in as little as 72 hours - no long bureaucratic waits
+• Fast-track airport assistance - a dedicated lane for medical travelers
 • Official helplines in multiple languages to support patients before and during
 their visit
-• NABH and JCI accredited hospitals — the same international quality
+• NABH and JCI accredited hospitals - the same international quality
 benchmarks used in the US, UK, and Europe
 Think of it as the Indian government removing every speed bump from your path to
 treatment. When you travel through an accredited medical tourism facilitator like
-Sano Healthcare and Tourism, you get all this — plus a human team holding your hand through every
+Sano Healthcare and Tourism, you get all this - plus a human team holding your hand through every
 step.
 �� INTERLINK: &quot;Learn about NABH accredited hospitals in India&quot; Insert link to /treatments page
 
-Which Treatments Bring Patients to India — and How Much Can
+Which Treatments Bring Patients to India - and How Much Can
 You Save?
 Medical tourism in India covers a remarkably wide range of specialties. The best
 hospitals in India for foreigners are equipped for procedures that often have multi-
 month waiting periods in other countries.
-✅ Cardiac Surgery (Bypass, Valve Replacement) — Save up to 80% vs US/UK
+✅ Cardiac Surgery (Bypass, Valve Replacement) - Save up to 80% vs US/UK
 costs
-✅ Orthopaedics (Knee &amp; Hip Replacement) — Comparable outcomes, fraction
+✅ Orthopaedics (Knee &amp; Hip Replacement) - Comparable outcomes, fraction
 of the price
-✅ Oncology (Cancer Treatment) — Advanced immunotherapy &amp; targeted
+✅ Oncology (Cancer Treatment) - Advanced immunotherapy &amp; targeted
 therapy at world-class centres
-✅ Neurosurgery — Cutting-edge procedures with internationally trained
+✅ Neurosurgery - Cutting-edge procedures with internationally trained
 surgeons
-✅ Liver &amp; Kidney Transplants — Shorter waiting time, internationally certified
+✅ Liver &amp; Kidney Transplants - Shorter waiting time, internationally certified
 teams
-✅ Fertility Treatments (IVF) — High success rates at a cost most countries
+✅ Fertility Treatments (IVF) - High success rates at a cost most countries
 can&#39;t match
-✅ Ayurveda &amp; Wellness — Holistic recovery in serene, traditional settings
+✅ Ayurveda &amp; Wellness - Holistic recovery in serene, traditional settings
 To put numbers to this: a knee replacement that costs $30,000–$50,000 in the United
-States typically costs $5,000–$8,000 in India — at the same level of surgical expertise
+States typically costs $5,000–$8,000 in India - at the same level of surgical expertise
 and post-op care. That&#39;s not a compromise. That&#39;s an advantage.
 �� INTERLINK: &quot;Compare treatment costs and calculate your savings&quot; Insert link to cost
 comparison tool
@@ -386,30 +386,30 @@ scheduled within days of arrival.
 What Does the Journey Actually Look Like? (Step by Step)
 We know the idea of travelling abroad for medical care can feel daunting. So let&#39;s walk
 through what the experience actually looks like when you travel with a trusted facilitator.
-• Step 1 — Free Report Analysis: Upload your medical reports. Sano Healthcare and Tourism&#39;s
+• Step 1 - Free Report Analysis: Upload your medical reports. Sano Healthcare and Tourism&#39;s
 expert panel reviews them within 24–48 hours and provides an honest treatment
-recommendation and cost estimate — at no charge.
+recommendation and cost estimate - at no charge.
 �� INTERLINK: &quot;Upload your reports for a free second opinion&quot; Insert link to consultation form
-• Step 2 — Hospital &amp; Doctor Match: Based on your condition, you&#39;re matched to
-the right NABH accredited hospital and specialist — not just any hospital, the
+• Step 2 - Hospital &amp; Doctor Match: Based on your condition, you&#39;re matched to
+the right NABH accredited hospital and specialist - not just any hospital, the
 right one.
 
-• Step 3 — Visa &amp; Travel Assistance: Your e-Medical Visa application is
+• Step 3 - Visa &amp; Travel Assistance: Your e-Medical Visa application is
 supported, flights are coordinated, and your companion can travel with you
 (accommodation support included).
-• Step 4 — Treatment with 24/7 Support: A multilingual care coordinator —
-available in 120+ languages — accompanies you throughout your treatment and
+• Step 4 - Treatment with 24/7 Support: A multilingual care coordinator —
+available in 120+ languages - accompanies you throughout your treatment and
 hospital stay.
-• Step 5 — Follow-Up After You Return Home: Remote consultations and
+• Step 5 - Follow-Up After You Return Home: Remote consultations and
 medicine courier services keep your recovery on track even after you&#39;ve left
 India.
-This isn&#39;t a transactional service. It&#39;s end-to-end care — from the moment you make
+This isn&#39;t a transactional service. It&#39;s end-to-end care - from the moment you make
 contact to the moment you&#39;re fully recovered.
 
 How Do You Know You&#39;re Choosing the Right Hospital and
 Facilitator?
 This is the question that deserves a direct answer. In medical tourism in India, not
-every facilitator is equal. Here&#39;s what to look for — and what Sano Healthcare and Tourism specifically
+every facilitator is equal. Here&#39;s what to look for - and what Sano Healthcare and Tourism specifically
 offers:
 • Accreditation matters: Only consider hospitals with NABH (National
 Accreditation Board for Hospitals) or JCI certification. These are the gold
@@ -423,23 +423,23 @@ languages.
 facilitator how they support you after you return home.
 �� INTERLINK: &quot;Read patient testimonials and real recovery stories&quot; Insert link to /testimonials
 page
-Sano Healthcare and Tourism is trusted by patients from 50+ countries — and every service is built
+Sano Healthcare and Tourism is trusted by patients from 50+ countries - and every service is built
 around one idea: that you deserve the same quality of care regardless of your passport
 or your budget.
 
-Your Next Step — It Starts With One Conversation
-You&#39;ve already done the hardest part — researching your options. Taking the next step
+Your Next Step - It Starts With One Conversation
+You&#39;ve already done the hardest part - researching your options. Taking the next step
 doesn&#39;t have to be overwhelming. It starts with a simple, free consultation.
 
 Share your medical reports with our team. We&#39;ll review them, give you an honest
-recommendation, and walk you through what treatment in India would look like — costs,
+recommendation, and walk you through what treatment in India would look like - costs,
 timeline, hospital options, everything.
 No commitment. No pressure. Just clarity.
 
 Ready to Begin Your Healing Journey?
 
 Fill out the free consultation form at arogyayatri.com and our care team will respond
-within 24 hours — with a personalised cost estimate, hospital recommendation, and
+within 24 hours - with a personalised cost estimate, hospital recommendation, and
 
 step-by-step guidance.
 

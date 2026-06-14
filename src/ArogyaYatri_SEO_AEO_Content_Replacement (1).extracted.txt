@@ -21,540 +21,540 @@ PAGE 1: Home (index.html)
 1.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home Meta Title
 Best Medical Tourism Company in India | Sano Healthcare and Tourism
 Medical Tourism India: Affordable Treatment at NABH Accredited Hospitals | Sano Healthcare and Tourism
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home Meta Description
 (Generic or missing)
 Sano Healthcare and Tourism is India's trusted medical tourism facilitator in Pune. Access affordable heart surgery, cancer treatment, knee replacement, and ayurvedic retreats at NABH accredited hospitals. Free second opinion. Zero waiting period. 120+ languages.
 1.2  Hero Section
 Location: Main banner, large headline and sub-tagline
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Hero H1 Headline
 Your only trusted partner that connects you to hospitals and specialists in India while helping you explore the country's culture, nature, and wellness traditions
 India's Most Trusted Medical Tourism Facilitator: Affordable Treatment, Zero Waiting, 120+ Languages
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Hero Brand sub-tag (below logo)
 Your Medical Tourism Facilitator
 India's Medical Tourism Facilitator: Affordable Care. Zero Waiting. Full Support.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Hero Hero sub-tagline (below H1)
 (No separate sub-tagline on current site)
 Connect with NABH accredited hospitals in India for affordable heart surgery, cancer treatment, knee replacement, and ayurvedic retreats. Free report analysis within 48 hours.
 1.3  Trust Bar: Four Stat Badges
 Location: Horizontal row of four badges directly below the hero CTA buttons
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Trust Bar Badge 1
 0 Waiting Period
 Zero Waiting Period: Treatment Scheduled Within Days
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Trust Bar Badge 2
 We Speak Your Language
 120+ Languages Supported: No Language Barrier
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Trust Bar Badge 3
 Follow-up Medicine Courier
 Free Post-Treatment Medicine Courier Worldwide
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Trust Bar Badge 4
 Travel with your Companion Free*
 Bring Your Companion Free*: Visa and Accommodation Included
 1.4  Gallery Section
 Location: Section labelled 'Sano Healthcare and Tourism Gallery'
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Gallery Section label
 Sano Healthcare and Tourism Gallery
 Sano Healthcare and Tourism Gallery: Medical Tourism India in Pictures
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Gallery Section sub-heading
 Explore India's premier medical destinations and world-class healthcare facilities through our visual journey.
 Explore NABH accredited hospitals India, ayurvedic retreats, recovery destinations, and the cultural experiences that make medical tourism India a complete healing journey.
 1.5  Why Choose Sano Healthcare and Tourism Section
 Location: 'Why Choose Us' section with 6 feature cards
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why Us Section label
 Why Choose Us
 Why Choose Sano Healthcare and Tourism
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why Us Section H2
 Why Choose Sano Healthcare and Tourism?
 Why Choose Sano Healthcare and Tourism: India's Leading Medical Tourism Facilitator?
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why Us Section sub-heading
 Your trusted partner for seamless medical tourism with complete support at every step.
 Trusted by patients from 50+ countries for affordable medical tourism in India: transparent pricing, NABH accredited hospitals, and complete end-to-end care.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Multilingual Support — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Multilingual Support - title
 Multilingual Support (EWAN Powered)
 Multilingual Support in 120+ Languages (EWAN Powered)
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Multilingual Support — body
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Multilingual Support - body
 Seamless communication in 120+ languages with trained interpreters and 24/7 multilingual assistance throughout your medical journey.
 Seamless communication in 120+ languages with trained hospital interpreters, eliminating every language barrier for international patients seeking affordable treatment at NABH accredited hospitals India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Save Up to 80% — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Save Up to 80% - title
 Save Up to 80% Best Value
 Save Up to 80% on Treatment Costs: Best Value Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Save Up to 80% — body
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Save Up to 80% - body
 World-class treatment at NABH-accredited hospitals with transparent pricing and no hidden costs, delivering exceptional value.
 Save up to 80% on cardiac surgery cost India, knee replacement India cost, and cancer treatment India at NABH accredited hospitals. Fully transparent pricing with zero hidden fees.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Post-Treatment Care — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Post-Treatment Care - title
 Post-Treatment Care Continuous
 Continuous Post-Treatment Care: Recovery Support Beyond Your Stay
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Post-Treatment Care — body
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Post-Treatment Care - body
 Comprehensive follow-up care with remote consultations, medicine delivery, and continuous recovery monitoring after you return home.
 Continuous post-treatment care includes remote consultations, medicine courier to your home country, and recovery monitoring so your affordable health in India programme continues long after you leave.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Companion Support — body
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Companion Support - body
 Bring your loved one along with comprehensive travel arrangements, visa assistance, and shared accommodation options.
 Bring your loved one along with full travel arrangements, medical visa India guide assistance, and shared accommodation near NABH accredited hospitals India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: End-to-End Assistance — body
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: End-to-End Assistance - body
 Single point of contact for medical care, travel arrangements, accommodation, and cultural experiences throughout your journey.
 One dedicated contact for medical care, travel, accommodation, and cultural experiences throughout your medical tourism India journey with no coordination gaps.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Free Report Analysis — body
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Free Report Analysis - body
 Expert panel review of your medical reports within 24-48 hours with honest recommendations and transparent cost estimates.
 Free expert report analysis within 24 to 48 hours, including a second opinion specialist India review and transparent cardiac surgery cost India or knee replacement India cost estimate.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Why Us Card: Personalised Nutrition — body
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Why Us Card: Personalised Nutrition - body
 Customized meal plans by certified dieticians aligned with your treatment, cultural preferences, and dietary restrictions.
 Customised meal plans from certified clinical dieticians, aligned with your treatment at NABH accredited hospitals India and respectful of your cultural preferences and dietary requirements.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why Us CTA sub-heading
 Ready to Start Your Medical Journey?
 Ready to Start Your Medical Tourism India Journey?
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why Us CTA description
 Get expert guidance and transparent pricing for your treatment in India.
 Get expert guidance, a free second opinion specialist India review, and transparent pricing for affordable heart surgery India, cancer treatment India, or any treatment at NABH accredited hospitals.
 1.6  Cost Comparison Calculator Section
 Location: Interactive cost calculator widget
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Calculator Section label
 Medical Travel Advantage
 Medical Travel Advantage: Compare Costs Globally
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Calculator Section H2
 Compare Treatment Costs
 Compare Treatment Costs: How Much You Save With Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Calculator Section sub-heading
 See how much you can save by choosing India for your medical treatment
 See how much you save on cardiac surgery cost India, knee replacement India cost, and cancer treatment India versus treatment in your home country.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Calculator Disclaimer note
 Note: Cost and data are derived from Google and are approximate, subject to variation.
 Note: Costs are indicative and sourced from publicly available data. Actual cardiac surgery cost India, knee replacement India cost, and cancer treatment India costs vary by hospital, procedure complexity, and patient condition. Contact Sano Healthcare and Tourism for a personalised quote from NABH accredited hospitals India.
 1.7  Why Choose India Section
 Location: Grid of 8 benefit tiles
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Section label
 Medical Travel Advantage
 Why India Leads in Medical Tourism
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Section H2
 Why Choose India?
 Why Choose India for Medical Treatment? Eight Reasons International Patients Trust Indian Hospitals
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Section intro
 India has emerged as the world's most trusted destination for advanced, affordable, and patient-centric healthcare, backed by government support and world-class infrastructure.
 India is the world's leading destination for medical tourism, combining affordable heart surgery India, NABH accredited hospitals India, and the government-backed Heal in India programme. Here is why patients from 50+ countries choose India for cardiac surgery, cancer treatment, knee replacement, and ayurvedic retreats.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Tile 1: Heal in India Programme
 Official support with simplified e-Medical visas, fast-track approvals, and dedicated helplines for international patients seeking medical treatment in India.
 The Indian government's Heal in India programme provides simplified e-Medical visas, fast-track approvals, and 24/7 helplines, making the medical visa India guide process the simplest in Asia for international patients.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Tile 2: Zero Waiting Period
 Immediate care and faster recovery with no waiting lists for treatments and procedures. Get the medical attention you need without delays.
 Zero waiting period is one of the greatest advantages of medical tourism India. Treatments at NABH accredited hospitals India are typically scheduled within days of arrival, unlike the months-long waits common in Western countries.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Tile 3: World-Class Healthcare
 NABH/JCI accredited hospitals with internationally trained doctors and cutting-edge technology. Experience healthcare standards that match global best practices.
 International patients receive treatment at NABH accredited hospitals India and JCI-certified centres staffed by internationally trained doctors using robotic surgery and advanced diagnostics that match or exceed Western standards.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Tile 4: 80% Cost Savings
 High-quality treatments at affordable costs without compromising on safety or outcomes. Save significantly while receiving world-class medical care.
 Cardiac surgery cost India is up to 80% lower than in the US or UK with no compromise on safety or outcomes. Knee replacement India cost, cancer treatment India, and organ transplants all follow the same affordable model.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Tile 5: Clear Communication
 English-speaking medical teams and professional interpreters for seamless communication. Never worry about language barriers during your treatment.
 English-speaking medical teams at NABH accredited hospitals India, combined with our 120+ language interpreter network, ensure that India hospital international patients never face a communication barrier.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Tile 6: 24/7 Support Available
 24/7 personalized care, one-stop MVT portal, and comprehensive concierge services. Complete assistance from arrival to departure and beyond.
 24/7 personalised support from your dedicated medical tourism facilitator India: one contact for medical coordination, travel, visa, accommodation, and post-treatment follow-up.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Tile 7: Holistic Healing Experience
 Combine modern medicine with Ayurveda, Yoga, and wellness traditions in scenic recovery destinations. Heal your body, mind, and spirit in India's serene environments.
 Combine modern treatment with a panchakarma retreat India, Yoga, and Ayurvedic therapies, turning your recovery period into a transformative ayurvedic retreat India experience in scenic wellness destinations.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Why India Tile 8: Safe and Well-Connected
 Safe cities with fast-track airport assistance, interpreter support, and excellent connectivity. Travel with confidence in secure, well-connected medical destinations.
 Safe, well-connected cities with fast-track airport assistance, dedicated India hospital international patients support, and excellent global flight connectivity. Travel to India for treatment with full confidence.
 1.8  Our Services Section
 Location: Ten-card services grid
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Section label
 What We Offer
 What Sano Healthcare and Tourism Offers
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Section H2
 Our Services
 Our Services: Complete End-to-End Support for Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Section sub-heading
 Comprehensive support for your entire medical journey from start to finish.
 From your first inquiry to post-treatment follow-up, Sano Healthcare and Tourism, your medical tourism facilitator India, handles every detail so you can focus entirely on healing.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Second Opinion
 Expert second opinions from renowned medical specialists.
 Free second opinion specialist India review from renowned doctors across oncology, cardiology, orthopaedics, and more before you commit to any treatment plan.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Language Support
 Multilingual team ensuring clear communication throughout your journey.
 120+ language support ensuring India hospital international patients always communicate clearly with doctors and care teams at NABH accredited hospitals India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Post-Recovery Care
 Continuous care and follow-up consultations after your treatment.
 Continuous post-treatment care: remote consultations, recovery monitoring, and medicine courier so your affordable health in India programme supports you long after you return home.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Medical Coordination
 We manage your entire healthcare journey with top hospitals and expert doctors.
 We manage your entire journey as your medical tourism facilitator India, connecting you with the best hospitals India for foreigners and coordinating every clinical and logistical step.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Tourism Planning
 Explore India's culture and beauty with customized tourism plans.
 Explore India's culture and beauty with curated tourism plans that blend recovery with heritage, wellness, and the iconic experiences of medical tourism India destinations.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Visa and Travel
 Hassle-free visa processing and travel arrangements for your medical trip.
 Complete medical visa India guide service: e-Medical visa applications, documentation, Heal in India programme support, and full travel logistics arranged for you.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Companion Planning
 Travel and stay arrangements for your loved ones to be with you.
 Free* travel and accommodation arrangements for your companion, including medical visa India guide support for e-Medical Attendant visas.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Medicine Courier
 Safe medicine delivery to your home for uninterrupted treatment.
 Safe international medicine courier ensuring continuity of treatment prescribed at NABH accredited hospitals India, delivered to your home country with full documentation.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Clinical Nutrition
 Personalized nutrition plans from certified clinical dieticians.
 Personalised nutrition plans by certified clinical dieticians, aligned with your treatment protocol at NABH accredited hospitals India and sensitive to your cultural dietary needs.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Card: Accommodation
 Handpicked accommodations near hospitals for your comfort and convenience.
 Handpicked, comfortable accommodation near NABH accredited hospitals India, making it easy for India hospital international patients to rest and recover.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Services CTA sub-heading
 Ready to Experience Our Services?
 Ready to Begin Your Medical Tourism India Journey?
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Services Services CTA description
 Get personalized assistance for your medical journey with our comprehensive service portfolio.
 Get personalised assistance from India's trusted medical tourism facilitator. Access the best hospitals India for foreigners, a free second opinion specialist India, transparent pricing, and complete end-to-end support.
 1.9  How Sano Healthcare and Tourism Works Section: Six Steps
 Location: Six-step process section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Section label
 Simple and Transparent
 Simple, Transparent, and Fully Supported
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Section H2
 How Sano Healthcare and Tourism Works
 How Sano Healthcare and Tourism Works: Your Step-by-Step Medical Tourism India Journey
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Section sub-heading
 A carefully designed journey that supports you from first consultation to recovery and long-term follow-up care.
 A carefully designed six-step journey from your first inquiry to full recovery, supported at every stage by your dedicated medical tourism facilitator India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 1 heading
 Step 1: Share Your Medical Need
 Step 1: Share Your Medical Need with Your Medical Tourism Facilitator India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 1 body
 Fill out our online form or WhatsApp us your reports, and our care team connects with you within 24 hours.
 Share your medical reports via our online form or WhatsApp. Our care team, your medical tourism facilitator India, responds within 24 hours with personalised initial guidance.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 2 heading
 Step 2: Get Expert Opinions and Cost Estimates
 Step 2: Receive Expert Opinions and Transparent Cost Estimates
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 2 body
 We connect with trusted Indian hospitals and specialists to get you personalized treatment plans and transparent pricing.
 We connect you with the best hospitals India for foreigners and specialist doctors to deliver personalised treatment plans, including transparent cardiac surgery cost India, knee replacement India cost, and cancer treatment India estimates.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 3 heading
 Step 3: Visa, Flights and Accommodation - All Arranged
 Step 3: Visa, Flights, and Accommodation: Fully Arranged
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 3 body
 We help you apply for your medical visa, plan travel, and arrange safe accommodation with interpreter support from Ewan.
 We guide you through the complete medical visa India guide process, covering e-Medical visa applications under the Heal in India programme, flight planning, and accommodation near NABH accredited hospitals India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 4 heading
 Step 4: Warm Welcome and Hassle-Free Admission
 Step 4: Warm Welcome and Smooth Hospital Admission
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 4 body
 Our team receives you at the airport, assists with check-in, and ensures smooth coordination during your treatment.
 Our team receives you at the airport with a name placard, assists with immigration, and ensures smooth admission coordination at NABH accredited hospitals India. India hospital international patients are our priority from the moment they land.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 5 heading
 Step 5: Heal, Relax and Discover India
 Step 5: Heal, Recover, and Discover India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 5 body
 After treatment, enjoy a recovery stay, Ayurveda therapies, or local sightseeing - blending care with culture.
 After treatment, choose a panchakarma retreat India, ayurvedic retreat India therapies, or curated cultural experiences across India's iconic destinations, blending world-class medicine with India's wellness heritage.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 6 heading
 Step 6: Follow-Up and Continued Care
 Step 6: Ongoing Follow-Up and Continued Care Back Home
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / How It Works Step 6 body
 We stay in touch even after you return home, sharing medical reports, arranging follow-ups, and sending essential medicines to support your recovery.
 We stay in touch after you return home, sharing medical reports, arranging remote follow-ups with your NABH accredited hospitals India doctors, and couriering essential medicines to support your full recovery as part of your affordable health in India programme.
 1.10  Retreats and Wellness Packages Section (Homepage)
 Location: Retreat preview cards on the homepage
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Retreats Section label
 Our Programmes
 Featured Wellness Programmes
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Retreats Section H2
 Retreats and Wellness Packages
 Ayurvedic Retreats and Wellness Packages in India: Guided by Expert Doctors
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Retreats Section sub-heading
-Curated healing experiences in India — guided by expert doctors, fully facilitated, deeply personal.
+Curated healing experiences in India - guided by expert doctors, fully facilitated, deeply personal.
 From panchakarma retreat India to women-only renewal programmes, every ayurvedic retreat India package is medically guided, fully facilitated, and deeply personal.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Retreats Dharra card — label
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Retreats Dharra card - label
 Recurring Programme / Women Only
 Recurring Ayurvedic Wellness Retreat: Women Only
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Retreats Dharra card — subtitle
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Retreats Dharra card - subtitle
 Let Her Rest
 Let Her Rest: Women's Ayurvedic Rest and Renewal Retreat
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Retreats Dharra card — description
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Retreats Dharra card - description
 Women's Rest and Renewal Retreat
 A deeply healing 3-day ayurvedic retreat India for women, combining Ayurvedic therapies, Yoga, meditation, and nourishing sattvic meals in a serene natural setting near Pune.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Retreats Dharra card — detail note
-Limited to 8 women per batch — personalised care and attention
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Retreats Dharra card - detail note
+Limited to 8 women per batch - personalised care and attention
 Limited to 8 women per batch at Malhar Marchi Resort, Pune. Fully personalised ayurvedic retreat India care and expert attention guaranteed.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Retreats May 2026 card — subtitle
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Retreats May 2026 card - subtitle
 Ayurvedic Rejuvenation in India
 Ayurvedic Rejuvenation in India: 8-Day Panchakarma Retreat
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Home / Retreats May 2026 card — description
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Home / Retreats May 2026 card - description
 Personalised 8-day wellness journey
 A personalised 8-day panchakarma retreat India with expert Ayurvedic doctor guidance, French-speaking support, end-to-end facilitation, and authentic treatments at NABH accredited wellness centres.
 1.11  Social Media / Instagram Section
 Location: 'Our Social Media Updates' section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Social Section label
 Patient Stories
 Real Patient Stories
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Social Section H2
 Our Social Media Updates
 Patient Experiences: Real Stories from Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Social Section sub-heading
 Real experiences from patients who trusted Sano Healthcare and Tourism for their medical journey.
 Real experiences from patients across 50+ countries who trusted Sano Healthcare and Tourism, their medical tourism facilitator India, for affordable heart surgery, cancer treatment, ayurvedic retreats, and more.
 1.12  Contact Section
 Location: 'Let's Connect' contact block
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Contact Section label
 Contact
 Get in Touch
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Contact Section H2
 Let's Connect with Sano Healthcare and Tourism
 Connect with Sano Healthcare and Tourism: Your Medical Tourism Facilitator India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Home / Contact Section sub-heading
 Our medical care coordinators are available to guide you through treatment options, documentation, and next steps with clarity and care.
 Our medical care coordinators are available 24/7 to guide you through treatment options, transparent pricing for cardiac surgery cost India and knee replacement India cost, medical visa India guide support, and every next step with clarity and care.
@@ -562,134 +562,134 @@ PAGE 2: Treatments (treatments.html)
 2.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments Meta Title
 Medical Tourism Treatments in India | Affordable Healthcare
 Affordable Medical Treatments in India: Cardiac Surgery, Cancer, Knee Replacement and More | Sano Healthcare and Tourism
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments Meta Description
 (Generic or missing)
 Explore transparent costs for affordable heart surgery India, cardiac surgery cost India, knee replacement India cost, and cancer treatment India at NABH accredited hospitals. Free second opinion specialist India available.
 2.2  Hero Section
 Location: Page hero banner
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments Section label
 Medical Excellence
 Advanced Medical Care at NABH Accredited Hospitals India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments Page H1
 World-Class Treatments
 Medical Treatments in India: Transparent Costs at NABH Accredited Hospitals
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments H1 sub-heading
 Discover advanced medical procedures and treatments across India's top NABH-accredited hospitals. Experience world-class healthcare with transparent pricing and expert care.
 Discover affordable heart surgery India, cancer treatment India, knee replacement India cost procedures, and 12 other specialties at NABH accredited hospitals India. Transparent pricing. Free second opinion specialist India. Zero waiting period.
 2.3  Cost Calculator Section
 Location: Interactive cost calculator
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments / Calculator Section H2
 Cost Calculator
 Treatment Cost Calculator: Compare Cardiac Surgery Cost India, Knee Replacement India Cost and More
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments / Calculator Section sub-heading
 Compare treatment costs between countries and India
 Compare your home country costs versus cardiac surgery cost India, knee replacement India cost, cancer treatment India, and all specialties. See exactly how much you save with medical tourism India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments / Calculator Disclaimer
 Note: Cost and data are derived from Google and are approximate, subject to variation.
 Note: Costs are indicative and sourced from publicly available data. Actual costs at NABH accredited hospitals India vary by hospital, procedure complexity, and patient condition. Contact Sano Healthcare and Tourism for a personalised quote.
 2.4  Treatment Specialties Section
 Location: Grid of 12 specialty cards
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments Section label
 Medical Treatments
 Specialties Available at NABH Accredited Hospitals India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments Section H2
 Advanced Medical Treatment Specialties
 12 Medical Specialties: Affordable Treatments at NABH Accredited Hospitals India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments Section sub-heading
 World-class treatments delivered by trusted specialists across leading hospitals.
 World-class treatments delivered by trusted specialists at NABH accredited hospitals India, all accessible through Sano Healthcare and Tourism, your medical tourism facilitator India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Cardiology Card: Cardiology and Cardiac Surgery — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Cardiology Card: Cardiology and Cardiac Surgery - title
 Cardiology and Cardiac Surgery
 Cardiology and Cardiac Surgery: Affordable Heart Surgery India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Cardiology Card: Cardiology — success rate
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Cardiology Card: Cardiology - success rate
 Over 90% Success Rate
 Over 90% Success Rate at NABH Accredited Hospitals India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Cardiology Card: Cardiology — CTA / description context
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Cardiology Card: Cardiology - CTA / description context
 View Details and Get Quote
 View cardiac surgery cost India details and get a free transparent quote from NABH accredited hospitals.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Orthopedics Card: Orthopedics and Joint Replacement — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Orthopedics Card: Orthopedics and Joint Replacement - title
 Orthopedics and Joint Replacement
 Orthopedics and Joint Replacement: Knee Replacement India Cost Specialists
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Orthopedics Card: Orthopedics — success rate
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Orthopedics Card: Orthopedics - success rate
 85 to 95% Success Rate
 85 to 95% Success Rate: Total and Partial Knee Replacement India Cost from $4,500
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Oncology Card: Oncology Cancer Treatment — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Oncology Card: Oncology Cancer Treatment - title
 Oncology (Cancer Treatment)
 Oncology and Cancer Treatment India: Chemotherapy, Radiation, and Surgical Oncology
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Oncology Card: Oncology — survival rate
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Oncology Card: Oncology - survival rate
 70 to 80% Survival Rate
 70 to 80% Survival Rate: Cancer Treatment India Costs up to 75% Less Than Western Countries
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Ayurveda Card: Ayurveda and Wellness — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Ayurveda Card: Ayurveda and Wellness - title
 Ayurveda and Wellness
 Ayurveda and Wellness: Ayurvedic Retreat India and Panchakarma Retreat India Programmes
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Treatments / Ayurveda Card: Ayurveda — improvement rate
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Treatments / Ayurveda Card: Ayurveda - improvement rate
 Over 80% Improvement Rate
 Over 80% Improvement Rate: Medically Guided Ayurvedic Retreat India and Panchakarma Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Treatments All other specialty card CTAs
 View Details and Get Quote
 View Details and Get a Free Second Opinion Specialist India Quote
@@ -697,52 +697,52 @@ PAGE 3: Doctor (doctor.html)
 3.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Doctor Meta Title
 Sano Healthcare and Tourism - Doctors
 Verified Specialist Doctors in India for International Patients | Sano Healthcare and Tourism Medical Tourism Facilitator
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Doctor Meta Description
 (Generic or missing)
 Find 100+ verified specialist doctors at NABH accredited hospitals India. Get a free second opinion specialist India from cardiologists, oncologists, orthopaedic surgeons, and 25+ specialties. Sano Healthcare and Tourism medical tourism facilitator India.
 3.2  Hero Section
 Location: Doctor page main banner
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Doctor / Hero Section label
 Verified Medical Experts
 100+ Verified Specialists at NABH Accredited Hospitals India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Doctor / Hero Page H1
 Find the Right Doctor With Confidence
 Find Your Specialist Doctor in India: Trusted, Verified, and Ready to Help
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Doctor / Hero H1 sub-heading
 Explore experienced specialists across multiple medical fields. Every doctor listed is carefully verified to ensure trusted care, transparent guidance, and professional excellence.
 Browse 100+ verified specialist doctors across 25+ medical fields at NABH accredited hospitals India. Every doctor is carefully verified to ensure trusted care for India hospital international patients. Free second opinion specialist India available.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Doctor / Hero Stat: 100+ Verified Doctors
 100+ Verified Doctors
 100+ Verified Doctors at NABH Accredited Hospitals India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Doctor / Hero Stat: 25+ Specialities
 25+ Specialities
 25+ Medical Specialities Including Cardiac Surgery, Oncology, and Orthopaedics
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Doctor / Hero Stat: 24/7 Care Support
 24/7 Care Support
 24/7 Care Support from Your Medical Tourism Facilitator India
@@ -750,86 +750,86 @@ PAGE 4: Destinations (destinations.html)
 4.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations Meta Title
 Medical Tourism Destinations in India | Top Healthcare Cities
 Top Medical Tourism Destinations in India: Delhi, Mumbai, Chennai, Pune | Sano Healthcare and Tourism
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations Meta Description
 (Generic or missing)
 Explore India's best cities for medical tourism, home to NABH accredited hospitals India offering affordable heart surgery, cancer treatment, knee replacement, and ayurvedic retreats. Your medical tourism facilitator Pune guides you.
 4.2  One-Day Tour Destinations Section
 Location: Section labelled 'Top Cities for 1-Day Tour'
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations Section label
 Quick Getaways
 Post-Treatment Cultural Getaways
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations Section H2
 Top Cities for 1-Day Tour
 Top Cities for a One-Day Cultural Tour: Perfect for Medical Tourism India Recovery
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations Section sub-heading
 Perfect destinations for a memorable day trip, combining culture, history, and local experiences.
 Perfect post-treatment day trips for India hospital international patients, combining India's rich culture, history, and natural beauty with a gentle recovery experience.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations / Pune Pune city description
 Dive into Pune's rich history with visits to Shaniwar Wada and Aga Khan Palace. Enjoy spiritual peace at Osho Ashram.
 Pune is home to our medical tourism facilitator Pune operations. Explore Shaniwar Wada, the Aga Khan Palace, and the spiritual calm of Osho Ashram as part of your medical tourism India recovery experience.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Destinations / Kerala Kerala — mentioned in 2-3 day section
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Destinations / Kerala Kerala - mentioned in 2-3 day section
 Cruise the idyllic backwaters of Alleppey, visit Munnar's tea plantations, and enjoy Ayurvedic wellness retreats.
 Cruise the idyllic backwaters of Alleppey, visit Munnar's tea plantations, and experience a certified ayurvedic retreat India or panchakarma retreat India in Kerala's renowned Ayurvedic wellness centres.
 4.3  Two to Three Day Tour States Section
 Location: Section labelled 'Top States for 2-3 Days Tour'
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations Section label
 Extended Exploration
 Extended Recovery and Cultural Exploration
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations Section H2
 Top States for 2-3 Days Tour
 Top Indian States for a 2 to 3 Day Post-Treatment Cultural Tour
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations Section sub-heading
 Immerse yourself in diverse cultures, landscapes, and experiences across India's most captivating states.
 Immerse yourself in India's most captivating cultures, landscapes, and wellness traditions. Ideal for India hospital international patients looking to combine treatment recovery with enriching cultural experiences.
 4.4  Gallery Section on Destinations Page
 Location: 'Sano Healthcare and Tourism Gallery' section on destinations page
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations / Gallery Section label
 Visual Journey
 Medical Tourism India in Pictures
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations / Gallery Section H2
 Sano Healthcare and Tourism Gallery
 Sano Healthcare and Tourism Gallery: Medical Tourism India Experiences
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Destinations / Gallery Section sub-heading
 Explore India's premier medical destinations and world-class healthcare facilities through our visual journey.
 Explore NABH accredited hospitals India, recovery destinations, ayurvedic retreats, and the cultural experiences that define medical tourism India through our patient journey gallery.
@@ -837,126 +837,126 @@ PAGE 5: Retreats (retreats.html)
 5.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats Meta Title
 Wellness Retreats and Ayurvedic Healing in India | Sano Healthcare and Tourism
 Ayurvedic Retreats India and Panchakarma Programmes: Medically Guided | Sano Healthcare and Tourism Medical Tourism Facilitator Pune
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats Meta Description
 (Generic or missing)
 Book an ayurvedic retreat India or panchakarma retreat India with Sano Healthcare and Tourism: medically guided, fully facilitated wellness experiences from Pune with 120+ language support and expert Ayurvedic doctor guidance.
 5.2  Hero Section
 Location: Page main banner
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats / Hero Section label
 Wellness and Healing
 Ayurvedic Retreat India and Panchakarma Retreat India Programmes
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats / Hero Page H1
 Retreats and Wellness Packages
 Ayurvedic Retreats and Panchakarma Programmes in India: Medically Guided Healing
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats / Hero H1 sub-heading
 Curated healing experiences in India, guided by expert practitioners with personalised care and full facilitation support.
 Authentic ayurvedic retreat India and panchakarma retreat India programmes, guided by certified Ayurvedic doctors and facilitated end to end by Sano Healthcare and Tourism, your medical tourism facilitator Pune. Deeply personalised. Fully supported.
 5.3  Retreat Listings Section
 Location: Section labelled 'Choose Your Healing Journey'
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats Section label
 Upcoming Programmes
 Upcoming Ayurvedic Retreat India and Panchakarma Programmes
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats Section H2
 Choose Your Healing Journey
 Choose Your Ayurvedic Retreat India: Find the Programme That Speaks to You
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats Section sub-heading
-Each retreat is carefully designed for a specific wellness goal — find the one that speaks to you.
+Each retreat is carefully designed for a specific wellness goal - find the one that speaks to you.
 Each ayurvedic retreat India and panchakarma retreat India programme is carefully designed for a specific wellness goal, with personalised care, expert doctor guidance, and complete facilitation from Sano Healthcare and Tourism.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / Dharra Dharra card — label
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / Dharra Dharra card - label
 Recurring Programme / Women Only
 Recurring Ayurvedic Wellness Retreat: Women Only
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / Dharra Dharra card — category
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / Dharra Dharra card - category
 Women's Wellness
 Women's Ayurvedic Wellness: Rest, Renewal, and Rejuvenation
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / Dharra Dharra card — H3
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / Dharra Dharra card - H3
 Dharra: Let Her Rest
 Dharra: Let Her Rest. A Women's Ayurvedic Rest and Renewal Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / Dharra Dharra card — subtitle
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / Dharra Dharra card - subtitle
 Women's Rest and Renewal Retreat
 A 3-day ayurvedic retreat India for women: Ayurvedic therapies, Yoga, meditation, and sattvic meals in a serene natural setting near Pune.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / Dharra Dharra card — details
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / Dharra Dharra card - details
 Next Batch: TBA. Malhar Marchi Resort, Pune. Max 8 participants. Commute from Pune included.
 Next Batch: TBA. Malhar Marchi Resort, Pune. Limited to 8 women per batch for fully personalised ayurvedic retreat India care. Commute from Pune included.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / Dharra Dharra card — description
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / Dharra Dharra card - description
 A deeply healing 3-day retreat combining Ayurvedic therapies, yoga, meditation, and nourishing wholesome meals in a serene natural setting.
 A deeply healing 3-day ayurvedic retreat India combining Ayurvedic therapies, Yoga, meditation, and nourishing sattvic meals in serene natural surroundings, guided by Dr. Sheetal Chopde, expert Ayurvedic physician.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / May2026 May 2026 card — category
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / May2026 May 2026 card - category
 Ayurvedic Rejuvenation
 Panchakarma Retreat India: 8-Day Ayurvedic Rejuvenation
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / May2026 May 2026 card — H3
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / May2026 May 2026 card - H3
 Ayurveda in India this May
 Ayurvedic Rejuvenation in India this May: A Panchakarma Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / May2026 May 2026 card — subtitle
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / May2026 May 2026 card - subtitle
 Personalised 8-day wellness programme
 A personalised 8-day panchakarma retreat India with expert Ayurvedic doctor guidance and French-speaking support, 23 to 30 May 2026.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Retreats / May2026 May 2026 card — description
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Retreats / May2026 May 2026 card - description
 A fully personalised Ayurvedic rejuvenation journey in India, with end-to-end facilitation, French-language support, and authentic Panchakarma treatments.
 A fully personalised panchakarma retreat India and ayurvedic retreat India journey with end-to-end facilitation by Sano Healthcare and Tourism, French-language support in France and India, and authentic Panchakarma treatments at NABH accredited wellness centres.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats Not sure CTA H2
 Not Sure Which Retreat Is Right for You?
 Not Sure Which Ayurvedic Retreat India Is Right for You?
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Retreats Not sure CTA body
 Our wellness coordinators will help you choose the perfect programme based on your health goals and schedule.
 Our wellness coordinators will help you choose the right ayurvedic retreat India or panchakarma retreat India programme based on your health goals, Prakriti, and travel schedule. Speak to us in 120+ languages.
@@ -964,98 +964,98 @@ PAGE 6: Dharra Retreat Detail (retreat-dharra.html)
 6.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra Meta Title
 Dharra: Women's Rest and Renewal Retreat | Sano Healthcare and Tourism
 Dharra: Women's Ayurvedic Rest and Renewal Retreat India | Sano Healthcare and Tourism Medical Tourism Facilitator Pune
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra Meta Description
 (Generic or missing)
 Dharra is a 3-day women-only ayurvedic retreat India near Pune. Ayurvedic therapies, Yoga, meditation, and sattvic meals. Limited to 8 women. Guided by Dr. Sheetal Chopde. Facilitated by Sano Healthcare and Tourism.
 6.2  Hero Section
 Location: Main banner
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Hero Section label
 Women's Wellness Retreat
 Women's Ayurvedic Wellness Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Hero Page H1
 Let Her Rest
 Let Her Rest: A Women's Ayurvedic Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Hero Subtitle H2
 DHARRA
 DHARRA: Ayurvedic Rest and Renewal Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Hero Sub-heading
 A Women's Rest and Renewal Retreat: Held with care and personal attention.
 A 3-day women's ayurvedic retreat India held with expert Ayurvedic care, personalised attention, and complete facilitation by Sano Healthcare and Tourism, your medical tourism facilitator Pune.
 6.3  Programme Details
 Location: Section labelled 'What You Will Experience'
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Programme Section H2
 What You Will Experience
 What You Will Experience at the Dharra Ayurvedic Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Programme Section sub-heading
 Every element of Dharra is designed to restore, renew, and reconnect you with yourself.
 Every element of the Dharra ayurvedic retreat India is designed to restore your body, renew your energy, and reconnect you with yourself through authentic Ayurvedic practices.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Programme Experience 1 title
 Personalised Prakriti Analysis and Consultation
 Personalised Prakriti Analysis: Your Ayurvedic Body Type Assessment
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Programme Experience 1 body
 Understand your body and receive a personalised wellness roadmap tailored just for you.
 Understand your unique Ayurvedic body type and receive a personalised wellness roadmap tailored to your Prakriti, the foundation of your entire ayurvedic retreat India experience.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Programme Experience 2 title
 Ayurvedic Potli Massage and Gut Cleansing Ritual
 Ayurvedic Potli Massage and Gut Cleansing: Core Panchakarma Retreat India Therapies
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Programme Experience 2 body
 Detox, restore, rejuvenate. Ancient techniques to purify body and mind.
 Detox, restore, and rejuvenate with ancient Ayurvedic techniques. These core panchakarma retreat India therapies purify the body and calm the mind.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / Programme Limited group note
-Dharra is intentionally kept small to ensure every woman receives personalised care, attention, and a deeply transformative experience. Each session is crafted for you — not a crowd.
+Dharra is intentionally kept small to ensure every woman receives personalised care, attention, and a deeply transformative experience. Each session is crafted for you - not a crowd.
 Dharra is intentionally limited to 8 women per batch so every participant receives fully personalised ayurvedic retreat India care and expert attention. Each session is crafted for you, not a crowd.
 6.4  Registration CTA Section
 Location: 'Be the First to Know' section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / CTA Section H2
 Be the First to Know About the Next Dharra Batch
 Register Interest: Be First to Know When the Next Dharra Ayurvedic Retreat India Opens
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Dharra / CTA Section body
 Dharra runs in small, intimate batches of 8 women. Register your interest now and we'll reach out as soon as the next date is confirmed.
 Dharra ayurvedic retreat India runs in small, intimate batches of 8 women. Register your interest now and our team at Sano Healthcare and Tourism, your medical tourism facilitator Pune, will notify you as soon as the next date is confirmed.
@@ -1063,128 +1063,128 @@ PAGE 7: Ayurvedic Rejuvenation May 2026 (retreat-ayurveda-may2026.html)
 7.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 Meta Title
 Ayurvedic Rejuvenation in India this May | Sano Healthcare and Tourism
 Panchakarma Retreat India: 8-Day Ayurvedic Rejuvenation May 2026 | Sano Healthcare and Tourism Medical Tourism Facilitator
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 Meta Description
 (Generic or missing)
 Join our 8-day panchakarma retreat India from 23 to 30 May 2026. Expert Ayurvedic doctor guidance, French-speaking support, and authentic treatments at NABH accredited wellness centres. Facilitated by Sano Healthcare and Tourism.
 7.2  Hero Section
 Location: Main banner
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Hero Section label
 Wellness Retreat: India 2026
 Panchakarma Retreat India: 8-Day Ayurvedic Rejuvenation Journey
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Hero Page H1
 Plan your Ayurvedic Rejuvenation in India this May
 Plan Your Panchakarma Retreat India: Ayurvedic Rejuvenation in May 2026
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Hero H1 sub-heading
 Personalised rejuvenation guided by an expert Ayurvedic doctor, with support from our French representative in France and French-speaking assistance in India.
 A fully personalised panchakarma retreat India and ayurvedic retreat India journey, guided throughout by Dr. Sheetal Chopde, with French-speaking support in France and India. Fully facilitated by Sano Healthcare and Tourism, your medical tourism facilitator India.
 7.3  Why Choose This Retreat Section
 Location: 'What Makes This Retreat Special' section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Section H2
 What Makes This Retreat Special
 What Makes This Panchakarma Retreat India Special
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Feature 1 title
 Expert Ayurvedic Doctor
 Expert Ayurvedic Doctor: Dr. Sheetal Chopde Guides Your Entire Panchakarma Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Feature 1 body
 Your entire programme is personally guided by Dr. Sheetal Chopde, an expert Ayurvedic physician with over 10 years of experience.
 Your entire panchakarma retreat India programme is personally guided by Dr. Sheetal Chopde, an expert Ayurvedic physician with over 20 years of clinical experience in traditional Ayurvedic medicine.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Feature 3 title
 Completely Personalised
 Completely Personalised: Your Ayurvedic Retreat India Based on Your Prakriti
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Feature 3 body
 Every treatment, diet, and programme is customised to your unique body type (Prakriti) and wellness goals.
 Every treatment, diet, and activity in your ayurvedic retreat India is customised to your unique Prakriti (Ayurvedic body type) and personal wellness goals.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Feature 4 title
 End-to-End Facilitation
 End-to-End Facilitation: Your Medical Tourism Facilitator India Handles Everything
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Feature 4 body
-From travel planning and accommodation to daily logistics in India — we handle everything so you can focus on healing.
+From travel planning and accommodation to daily logistics in India - we handle everything so you can focus on healing.
 From travel planning and accommodation to daily logistics during your panchakarma retreat India, Sano Healthcare and Tourism, your medical tourism facilitator India, handles everything so you focus only on healing.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Feature 5 title
 Authentic Ayurveda
 Authentic Ayurveda at NABH Accredited Wellness Centres
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Why Feature 5 body
-Experience genuine Indian Ayurvedic treatments at NABH-accredited wellness centres in India — not a watered-down spa version.
+Experience genuine Indian Ayurvedic treatments at NABH-accredited wellness centres in India - not a watered-down spa version.
 Experience genuine panchakarma retreat India treatments at NABH accredited wellness centres in India, not a diluted spa experience. Authentic Ayurveda, medically supervised and deeply effective.
 7.4  Programme Details Section
 Location: 'Your 7-Day Rejuvenation Programme' section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Programme Section H2
 Your 7-Day Rejuvenation Programme
 Your 8-Day Panchakarma Retreat India Programme: 23 to 30 May 2026
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Programme Section sub-heading
 23rd May to 30th May 2026: a complete week of healing in incredible India.
 23 to 30 May 2026: a complete 8 days of authentic healing in incredible India. Your panchakarma retreat India and ayurvedic retreat India journey, fully facilitated by Sano Healthcare and Tourism.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Programme Day 2 title
 Panchakarma / Detox Treatments
 Panchakarma and Detox Treatments: Core of Your Panchakarma Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Programme Day 2 body
 Daily Ayurvedic therapies including Abhyanga, Shirodhara, Basti, and more based on your needs.
 Daily Ayurvedic therapies including Abhyanga, Shirodhara, Basti, and more, customised to your Prakriti. These are the authentic core treatments of every panchakarma retreat India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Programme CTA H2
 Begin Your Wellness Journey
 Begin Your Panchakarma Retreat India and Ayurvedic Retreat India Journey
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 May2026 / Programme CTA body
 Contact us today to learn more about the programme, pricing, and availability. Our team will guide you every step of the way.
 Contact Sano Healthcare and Tourism, your medical tourism facilitator India, to learn about the panchakarma retreat India programme, pricing, and availability. Our team will guide you every step of the way in 120+ languages.
@@ -1192,438 +1192,438 @@ PAGE 8: About Us (about.html)
 8.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About Meta Title
 About Sano Healthcare and Tourism
 About Sano Healthcare and Tourism: Medical Tourism Facilitator India and Pune | Trusted by Patients from 50+ Countries
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About Meta Description
 (Generic or missing)
 Sano Healthcare and Tourism is India's dedicated medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, ayurvedic retreats, and more.
 8.2  Hero Section
 Location: Page H1 and opening paragraphs
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Hero Page H1
 About Sano Healthcare and Tourism
 About Sano Healthcare and Tourism: India's Trusted Medical Tourism Facilitator
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Hero Section label
 About Us
 About Sano Healthcare and Tourism: Medical Tourism Facilitator India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Intro Opening line
 At Sano Healthcare and Tourism, we manage your entire medical trip to India from start to finish.
 At Sano Healthcare and Tourism, we manage every aspect of your medical tourism India journey, from the first inquiry to post-treatment follow-up. As a dedicated medical tourism facilitator India based in Pune, we connect international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, and ayurvedic retreats.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Intro Second paragraph
 We bridge the gap between patients and India's top hospitals, experienced doctors, and affordable treatment options. Our goal is to ensure that every patient receives quality care while also experiencing India's warmth, culture, and hospitality.
 We bridge the gap between patients and the best hospitals India for foreigners, providing transparent cardiac surgery cost India estimates, second opinion specialist India access, and seamless medical visa India guide assistance. Our goal is world-class care at genuinely affordable costs, delivered with India's legendary warmth and hospitality.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Intro Third paragraph
 With a strong focus on transparency, comfort, and personalized guidance, Sano Healthcare and Tourism manages the entire journey from your first inquiry to your return home after treatment.
 With an uncompromising focus on transparency and personalised guidance, Sano Healthcare and Tourism, your medical tourism facilitator Pune, manages everything: hospital selection among NABH accredited hospitals India, medical visa India guide support, travel, accommodation, nutrition, and global medicine courier. From your first inquiry to a safe return home.
 8.3  Team Section
 Location: 'We've got your back' team section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Team Section label
 Our People
 The Team Behind Your Medical Tourism India Journey
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Team Section H2
 We've got your back.
 We Have Got Your Back: The Experts Behind Sano Healthcare and Tourism
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Team Apoorva Vaidya role label
 Project Coordinator and COO
 Project Coordinator and COO: Your Primary Point of Contact for Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-About / Team Apoorva Vaidya — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+About / Team Apoorva Vaidya - title
 Your Dedicated Guide to Wellness
 Your Dedicated Guide to Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-About / Team Apoorva Vaidya — bio
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+About / Team Apoorva Vaidya - bio
 Our Project Coordinator and COO is the heartbeat of your experience with us. She ensures that every moving part of your medical journey functions seamlessly. More than just an administrator, she is your primary point of contact, dedicated to navigating the complexities of healthcare logistics so you can focus entirely on your recovery. From your initial inquiry to your final discharge, she is the go-to person ensuring your journey is smooth, transparent, and stress-free.
 Our Project Coordinator and COO is the heartbeat of your medical tourism India experience. She ensures every moving part of your journey functions seamlessly across NABH accredited hospitals India, visa processing, travel, and accommodation. More than an administrator, she is your primary point of contact, navigating the complexities of healthcare logistics so you focus entirely on recovery. From your first inquiry to final discharge, she is your go-to person.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-About / Team Soham Kakade — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+About / Team Soham Kakade - title
 Bridging Cultures and Breaking Barriers
 Bridging Cultures and Breaking Language Barriers for Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-About / Team Soham Kakade — bio
-With over 15 years of international expertise, our Director is the visionary behind our promise of 'No Language Barriers.' A true polyglot, he is fluent in Chinese, Cantonese, Japanese, and Taiwanese, allowing us to offer unparalleled support to our global clientele. His deep understanding of diverse cultures and business landscapes ensures that communication is never an obstacle to quality care. When we say we speak your language, it's not just a claim — it is a standard backed by a decade-and-a-half of boots-on-the-ground experience.
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+About / Team Soham Kakade - bio
+With over 15 years of international expertise, our Director is the visionary behind our promise of 'No Language Barriers.' A true polyglot, he is fluent in Chinese, Cantonese, Japanese, and Taiwanese, allowing us to offer unparalleled support to our global clientele. His deep understanding of diverse cultures and business landscapes ensures that communication is never an obstacle to quality care. When we say we speak your language, it's not just a claim - it is a standard backed by a decade-and-a-half of boots-on-the-ground experience.
 With over 15 years of international expertise, our Director is the visionary behind our promise of zero language barriers across 120+ languages. Fluent in Chinese, Cantonese, Japanese, and Taiwanese, he enables unparalleled multilingual support for India hospital international patients. His deep cross-cultural understanding ensures communication is never an obstacle to quality care at NABH accredited hospitals India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-About / Team Dr. Sheetal Chopde — title
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+About / Team Dr. Sheetal Chopde - title
 Expert Ayurvedic Physician and Clinical Consultant
 Expert Ayurvedic Physician: Guiding Your Ayurvedic Retreat India and Panchakarma Retreat India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-About / Team Dr. Sheetal Chopde — bio
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+About / Team Dr. Sheetal Chopde - bio
 With a distinguished career spanning over 20 years, our Head of Medical Department leads with a blend of traditional wisdom and clinical precision. As an expert Ayurvedic doctor on our panel, she doesn't just provide a consultation; she provides a partnership. She will be by your side from start to finish, guiding your treatment plan and ensuring that your path to health is holistic, personalized, and medically sound. Her vast experience offers our patients the peace of mind that they are in the hands of a seasoned healer.
 With a distinguished career spanning over 20 years, Dr. Sheetal Chopde leads our medical department with a blend of traditional Ayurvedic wisdom and clinical precision. She personally guides every ayurvedic retreat India and panchakarma retreat India programme, and reviews medical reports for international patients seeking second opinion specialist India consultations. She is a partner in your healing, not just a consultant.
 8.4  Mission and Vision Section
 Location: Mission and Vision cards
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Mission Section label
 Our Purpose
 Our Purpose as Your Medical Tourism Facilitator India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Mission Mission heading
 Mission: Our Core Purpose
 Mission: Connecting Patients to Affordable Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Mission Mission statement
 To provide exceptional healthcare coordination, transparent guidance, and a comfortable healing journey in India at a fraction of the cost abroad.
 To be India's most trusted medical tourism facilitator, delivering exceptional healthcare coordination, transparent pricing for cardiac surgery cost India and all treatments, and a comfortable, culturally enriching healing journey at a fraction of the cost in Western countries.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Vision Vision heading
 Vision: Our Future Goal
 Vision: Accessible Affordable Health in India for Every Patient Worldwide
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Vision Vision statement
 Our vision is to provide patients worldwide with access to quality treatment in India at an affordable cost, delivered with complete transparency and supported by our strong network of trusted doctors and hospitals.
 To ensure every patient worldwide can access affordable heart surgery India, cancer treatment India, ayurvedic retreats, and all forms of affordable health in India, delivered with complete transparency, supported by NABH accredited hospitals India, and guided every step of the way by our expert team.
 8.5  What We Do Services Section
 Location: Service cards grid on the About page
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Services Section label
 Our Services
 Our End-to-End Medical Tourism India Services
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Services Section H2
 What We Do
 What We Do: Complete Medical Tourism India Coordination
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 About / Services Closing tagline
-In short, we make medical travel simple, safe, and affordable — so you can focus on healing, while we handle everything else.
+In short, we make medical travel simple, safe, and affordable - so you can focus on healing, while we handle everything else.
 In short, we make medical tourism India simple, safe, and genuinely affordable. From NABH accredited hospital selection and medical visa India guide support to panchakarma retreat India bookings and post-treatment medicine courier, you focus on healing while we handle everything else.
 PAGE 9: Testimonials (testimonial.html)
 9.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Testimonials Meta Title
 Success Stories and Patient Reviews | Sano Healthcare and Tourism
 Patient Reviews: Medical Tourism India Success Stories | Sano Healthcare and Tourism Medical Tourism Facilitator
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Testimonials Meta Description
 (Generic or missing)
 Read real patient reviews from 50+ countries who chose Sano Healthcare and Tourism for affordable heart surgery India, cancer treatment India, panchakarma retreats, and dental care at NABH accredited hospitals India.
 9.2  Hero Section
 Location: Page main banner
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Testimonials / Hero Section label
 Patient Experiences
 Real Patient Experiences: Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Testimonials / Hero Section H2
 Trusted Care, Proven Medical Outcomes
 Trusted Care, Proven Outcomes: Real Stories from Medical Tourism India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Testimonials / Hero Section sub-heading
 Patients across continents rely on us for ethical medical guidance, globally accredited hospitals, and seamless coordination designed around clarity and confidence.
 Patients from 50+ countries rely on Sano Healthcare and Tourism, their medical tourism facilitator India, for ethical guidance, NABH accredited hospitals India, and seamless coordination from inquiry to recovery. Here are their stories.
 9.3  Patient Review Cards
 Location: Individual patient testimonial cards
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Testimonials / Isabelle Isabelle Moreau — treatment label
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Testimonials / Isabelle Isabelle Moreau - treatment label
 Dental Care
 Dental Care at NABH Accredited Hospitals India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Testimonials / Marie Marie Dubois — treatment label
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Testimonials / Marie Marie Dubois - treatment label
 Ayurveda and Wellness
 Ayurvedic Retreat India and Panchakarma Wellness
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Testimonials / Marie Marie Dubois — review excerpt context
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Testimonials / Marie Marie Dubois - review excerpt context
 My Ayurvedic detox experience was transformative...
 Marie's panchakarma retreat India experience was transformative. Medically guided, emotionally supported, and deeply rejuvenating.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Testimonials / Elise Elise Rousseau — treatment label
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Testimonials / Elise Elise Rousseau - treatment label
 Dental Care
 Dental Care Coordinated by Medical Tourism Facilitator India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Testimonials / Sophie Sophie Laurent — treatment label
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Testimonials / Sophie Sophie Laurent - treatment label
 Ayurveda and Wellness
 Yoga and Ayurvedic Retreat India: Holistic Healing
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Testimonials / Antoine Antoine Martin — treatment label
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Testimonials / Antoine Antoine Martin - treatment label
 Dental Care
 Smile Design at NABH Accredited Hospitals India
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
-Testimonials / Camille Camille Bernard — treatment label
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
+Testimonials / Camille Camille Bernard - treatment label
 Ayurveda and Wellness
 Stress Relief and Ayurvedic Retreat India: Weight Management Programme
 PAGE 10: FAQ (faq.html)
 10.1  Meta Title and Description
 Location: <head> tag
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ Meta Title
 Top Medical Tourism Questions Answered | Sano Healthcare and Tourism FAQ
 Medical Tourism India FAQs: Cardiac Surgery Cost, Knee Replacement, Visa, Hospitals | Sano Healthcare and Tourism
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ Meta Description
 (Generic or missing)
 Answers to the most common questions about medical tourism India, cardiac surgery cost India, knee replacement India cost, NABH accredited hospitals, medical visa India guide, ayurvedic retreats, and second opinion specialist India.
 10.2  Page Hero
 Location: Page H1 and sub-heading
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Hero Section label
 Help and Support
 Medical Tourism India: Help and Support
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Hero Page H1
 Frequently Asked Questions
 Medical Tourism India: Frequently Asked Questions
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Hero H1 sub-heading
 Find answers about medical tourism, treatment options, visa, costs, language support, and more.
 Answers about affordable heart surgery India, cardiac surgery cost India, knee replacement India cost, cancer treatment India, NABH accredited hospitals India, medical visa India guide, and second opinion specialist India.
 10.3  General Questions
 Location: 'General Questions' accordion section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / General Q1: What is Sano Healthcare and Tourism?
 Sano Healthcare and Tourism is a comprehensive medical tourism facilitation service that connects international patients with world-class hospitals and specialist doctors in India.
 Sano Healthcare and Tourism is India's dedicated medical tourism facilitator, based in Pune, that connects international patients with NABH accredited hospitals India and specialist doctors for affordable treatments including heart surgery, cancer care, knee replacement, and panchakarma retreats. We are your end-to-end medical tourism facilitator India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / General Q2: Who is behind Sano Healthcare and Tourism?
 Sano Healthcare and Tourism is A Medical Tourism Facilitator, a company specializing in multilingual support and global healthcare coordination.
 Sano Healthcare and Tourism is powered by Ewan Business Solutions, a Pune-based company specialising in multilingual support across 120+ languages and end-to-end global healthcare coordination for medical tourism India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / General Q3: Which countries do you serve?
 We serve patients from all countries worldwide. Our multilingual support covers 120+ languages...
 Sano Healthcare and Tourism serves patients from all countries worldwide. Our 120+ language support ensures every India hospital international patient communicates clearly with their care team at NABH accredited hospitals India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / General Q4: Is Sano Healthcare and Tourism affiliated with hospitals?
 We work with a network of NABH and JCI-accredited hospitals across India.
 We maintain an independent network of NABH accredited hospitals India and JCI-certified centres, giving unbiased recommendations for the best hospitals India for foreigners based solely on your diagnosis, not on referral incentives.
 10.4  Treatment and Medical Care Questions
 Location: 'Treatment and Medical Care' accordion section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Treatment Q1: What treatments are available?
 India offers a comprehensive range of treatments including cardiac surgery, orthopedic procedures, cancer treatment, organ transplants, fertility treatments, cosmetic surgery, dental procedures, eye care, neurosurgery, and more.
 India offers a full spectrum of treatments for international patients: affordable heart surgery India, cancer treatment India, knee replacement India cost procedures, organ transplants, fertility treatments, dental care, ayurvedic retreats, panchakarma retreat India programmes, and more, all accessible at NABH accredited hospitals India through Sano Healthcare and Tourism.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Treatment Q2: How do I know if I am eligible for treatment in India?
 After you share your medical reports with us, our expert panel reviews them within 24-48 hours and provides an honest assessment of your eligibility for treatment in India.
 After you share your medical reports, our expert panel, including second opinion specialist India doctors, reviews them within 24 to 48 hours and provides an honest assessment of your eligibility, with recommendations and transparent cost estimates.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Treatment Q3: Are hospitals in India internationally accredited?
 Yes, all hospitals in our network are either NABH (National Accreditation Board for Hospitals) or JCI accredited.
 Yes. Every hospital in our network holds NABH accredited hospitals India certification or JCI (Joint Commission International) accreditation, the same gold standards applied to the best hospitals India for foreigners worldwide.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Treatment Q4: Can I get a second medical opinion?
 Absolutely! We offer free expert second opinions from renowned medical specialists.
 Yes. We provide free second opinion specialist India consultations. Share your reports and our specialist panel reviews them within 48 hours, giving you an independent and honest assessment before you commit to any cardiac surgery, cancer treatment, or orthopaedic procedure.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Treatment Q5: How long will I need to stay in India?
 The duration varies depending on your specific treatment. Simple procedures may require 5-7 days, while complex surgeries might need 2-4 weeks.
 The duration depends on your treatment. Simple procedures typically require 5 to 7 days while complex surgeries such as affordable heart surgery India may need 2 to 4 weeks. During consultation, we provide a detailed timeline including pre-treatment evaluation, surgery, hospital stay, and recommended recovery period.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Treatment Q6: What if I need emergency care during my stay?
 We provide 24/7 support throughout your stay in India. In case of any emergency, our care coordinators will immediately coordinate with the hospital...
 We provide 24/7 support throughout your stay as your medical tourism facilitator India. In any emergency, our care coordinators immediately coordinate with NABH accredited hospitals India to ensure you receive urgent attention. All partner hospitals have fully equipped emergency departments available around the clock.
 10.5  Cost and Pricing Questions
 Location: 'Cost and Pricing' accordion section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Cost Q1: How much can I save?
 You can save up to 80% compared to treatment costs in the United States, United Kingdom, Canada, and many European countries. For example, a cardiac bypass surgery that costs $100,000+ in the US may cost around $7,000-$10,000 in India, including hospital stay and basic accommodation.
 Patients save up to 80% on medical tourism India. Cardiac surgery cost India is typically $7,000 to $10,000, compared to $100,000 or more in the US. Knee replacement India cost averages $4,000 to $7,000, compared to $35,000 or more in the West. Cancer treatment India costs are similarly 70 to 80% lower, with zero compromise on quality at NABH accredited hospitals India.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Cost Q2: Are there hidden costs?
 No. We believe in complete transparency. Our cost estimates include treatment fees, hospital charges, doctor fees, diagnostic tests, and medications during your hospital stay.
 No hidden costs, ever. As a trusted medical tourism facilitator India, we provide itemised, transparent estimates covering all hospital, surgeon, anaesthesia, diagnostic, and medication fees at NABH accredited hospitals India. Travel and accommodation are quoted separately and clearly stated upfront.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Cost Q3: What is included in the cost estimate?
 Our cost estimate typically includes: pre-treatment consultations and diagnostic tests, the medical procedure itself, surgeon and anesthetist fees, hospital room charges, nursing care, medications during hospital stay, follow-up consultations during your India stay, and basic medical supplies.
 Our cost estimates from NABH accredited hospitals India typically include: pre-treatment consultations and diagnostics, the procedure itself, surgeon and anaesthesia fees, hospital room and nursing care, medications during admission, and follow-up consultations during your India stay. Travel and accommodation costs are quoted separately.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Cost Q4: What payment methods do you accept?
 We accept international wire transfers, credit/debit cards, and online payment platforms.
 We accept international wire transfers, credit and debit cards, and online payment platforms. Medical fees are paid directly to the NABH accredited hospitals India. Sano Healthcare and Tourism facilitation fees can be paid through multiple convenient methods explained during booking.
 10.6  Medical Visa and Travel Questions
 Location: 'Medical Visa and Travel' accordion section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Visa Q1: What is an e-Medical visa?
 An e-Medical visa is a special visa category introduced by the Indian government under the 'Heal in India' program for international patients seeking medical treatment.
 An e-Medical visa is the Indian government's fast-track visa for international patients under the Heal in India programme. Our complete medical visa India guide service handles every step: medical reports, hospital invitation letter, passport documentation, and online application. Visas are typically approved within 3 to 5 business days.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Visa Q2: How long does visa approval take?
 E-Medical visas are typically processed within 3-5 business days. However, we recommend applying at least 2-3 weeks before your planned travel.
 e-Medical visas are typically processed within 3 to 5 business days. We recommend applying at least 2 to 3 weeks before travel. Our medical visa India guide team tracks your application and handles any queries from authorities on your behalf.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Visa Q3: Can my companion travel with me?
 Yes! Under the e-Medical visa program, up to two companions can accompany you on e-Medical Attendant visas.
 Yes. Under the medical visa India guide rules, up to two companions may travel on e-Medical Attendant visas. Sano Healthcare and Tourism provides free travel arrangement assistance for one companion, including visa support, shared accommodation near NABH accredited hospitals India, and airport pickup.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Visa Q4: What happens at the Indian airport?
 Our representative will be waiting for you at the airport arrival area with a name placard. We provide fast-track airport assistance, help with immigration if needed, and escort you to your pre-arranged transportation.
 Our representative meets you at the airport with a name placard. We provide fast-track airport assistance, immigration support if needed, and escort you to pre-arranged transportation. India hospital international patients are our priority from the moment they arrive.
 10.7  Process and Timeline Questions
 Location: 'Process and Timeline' accordion section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Process Q1: How do I get started?
 Fill out our online inquiry form or WhatsApp us at +91 85300 54299 with your medical reports and brief description of your medical need.
 Getting started with your medical tourism India journey is simple. Fill out our online inquiry form or WhatsApp us at +91 85300 54299 with your medical reports. Our care team, your medical tourism facilitator India, responds within 24 hours.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Process Q2: How quickly will I receive a response?
 Our care team responds to initial inquiries within 24 hours. After you submit your medical reports, our expert panel reviews them within 24-48 hours.
 Our care team responds to all inquiries within 24 hours. After you submit your medical reports, our expert panel, including second opinion specialist India doctors, reviews them within 24 to 48 hours and provides treatment recommendations, hospital options, and transparent cost estimates.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Process Q3: Is there a waiting period?
 No, one of the major advantages of choosing India is zero waiting period.
 Zero waiting period is one of the defining advantages of medical tourism India. Unlike Western countries where patients wait months for surgery, treatment at NABH accredited hospitals India can typically be scheduled within days of arrival.
 10.8  Post-Treatment Care Questions
 Location: 'Post-Treatment Care' accordion section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / PostCare Q1: What happens after I return home?
 Our care doesn't end when you leave India. We maintain continuous follow-up through remote consultations, monitor your recovery progress, coordinate with your local doctors if needed, arrange medicine delivery, and remain available for any questions.
 Your affordable health in India programme continues after you leave. Sano Healthcare and Tourism maintains remote follow-up consultations, monitors your recovery, coordinates with your local doctors, and couriers prescribed medications internationally so the full benefit of your treatment at NABH accredited hospitals India carries forward.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / PostCare Q2: Can you courier medicines?
 Yes, we provide international medicine courier service. If you need to continue certain medications prescribed during your treatment in India, we can arrange safe and legal delivery to your home country.
 Yes. We arrange safe, fully documented international medicine courier, ensuring continuity of the treatment prescribed at NABH accredited hospitals India and compliance with destination country customs regulations. This is part of our ongoing affordable health in India programme support.
 10.9  Cancellation and Changes Questions
 Location: 'Cancellation and Changes' accordion section
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Cancel Q1: What is your cancellation policy?
 Cancellation policies vary depending on services booked. Our service fees are partially refundable if cancelled 15+ days before travel, with deductions for work completed.
 Cancellation policies vary by service. Our facilitation fees are partially refundable if cancelled 15 or more days before travel, with deductions for work completed. Hospital policies at NABH accredited hospitals India vary by institution. Full cancellation terms are provided during booking.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Cancel Q2: Can I reschedule?
 Yes, you can reschedule subject to doctor and hospital availability.
 Yes. Rescheduling is possible subject to doctor and hospital availability at NABH accredited hospitals India. Contact your medical tourism facilitator India as soon as possible and we will coordinate all changes to your visa, travel, and accommodation.
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 FAQ / Cancel Still have questions CTA
 Our care team is here to answer all your questions and guide you every step of the way.
 Our care team, your medical tourism facilitator India, is here to answer every question about cardiac surgery cost India, knee replacement India cost, medical visa India guide requirements, NABH accredited hospitals India, and every other aspect of your journey. We are here every step of the way.
@@ -1632,16 +1632,16 @@ NOTE: The footer appears on every page of the site. Apply these changes globally
 11.1  Footer Brand Description
 Location: Footer, below logo, on all pages
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Footer (All Pages) Brand description text
 Sano Healthcare and Tourism is a global medical tourism platform connecting patients with world-class hospitals, trusted doctors, and seamless healthcare journeys across borders.
 Sano Healthcare and Tourism is India's trusted medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, panchakarma retreats, and more. Zero waiting. 120+ languages. Complete end-to-end support.
 11.2  Footer Copyright Line
 Location: Bottom of every page
 Page / Section
-CURRENT CONTENT — Replace This
-NEW SEO/AEO CONTENT — Use This
+CURRENT CONTENT - Replace This
+NEW SEO/AEO CONTENT - Use This
 Footer (All Pages) Copyright text
 2026 Sano Healthcare and Tourism. A Medical Tourism Facilitator. All rights reserved.
 2026 Sano Healthcare and Tourism. Medical Tourism Facilitator India and Pune. All rights reserved.
@@ -1652,4 +1652,4 @@ Add the following JSON-LD schema blocks to the pages indicated. This enables AI 
 12.2  FAQ Schema: Add to FAQ Page
 <script type="application/ld+json"> {   "@context": "https://schema.org",   "@type": "FAQPage",   "mainEntity": [     {       "@type": "Question",       "name": "What is the cost of heart surgery in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Cardiac surgery cost India ranges from $6,000 to $10,000 for bypass surgery, up to 80% less than the US ($100,000+). Sano Healthcare and Tourism provides free transparent estimates from NABH accredited hospitals India." }     },     {       "@type": "Question",       "name": "What is the cost of knee replacement in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Knee replacement India cost averages $4,500 to $7,000 including hospital stay, which is 70 to 80% lower than in the US or UK, with comparable outcomes at NABH accredited hospitals India." }     },     {       "@type": "Question",       "name": "How do I get a medical visa for India?",       "acceptedAnswer": { "@type": "Answer", "text": "India's e-Medical visa under the Heal in India programme is typically processed within 3 to 5 business days. Sano Healthcare and Tourism provides a complete medical visa India guide service handling all documentation and hospital invitation letters." }     },     {       "@type": "Question",       "name": "What is an ayurvedic retreat in India?",       "acceptedAnswer": { "@type": "Answer", "text": "An ayurvedic retreat India is a medically guided wellness programme combining Panchakarma detox, Yoga, Ayurvedic diet, and personalised doctor consultations. Programmes run 7 to 21 days, facilitated end to end by Sano Healthcare and Tourism." }     },     {       "@type": "Question",       "name": "Which are the best hospitals in India for foreign patients?",       "acceptedAnswer": { "@type": "Answer", "text": "The best hospitals India for foreigners hold NABH accredited hospitals India or JCI certification in cities including Delhi, Mumbai, Chennai, Hyderabad, and Pune. Sano Healthcare and Tourism recommends hospitals based on your diagnosis, not referral agreements." }     },     {       "@type": "Question",       "name": "What is a panchakarma retreat in India?",       "acceptedAnswer": { "@type": "Answer", "text": "A panchakarma retreat India is a traditional Ayurvedic detox and rejuvenation programme using five cleansing therapies including Abhyanga, Shirodhara, and Basti. Programmes are medically supervised and run 7 to 21 days at NABH accredited wellness centres." }     },     {       "@type": "Question",       "name": "Can I get a second medical opinion from a specialist in India?",       "acceptedAnswer": { "@type": "Answer", "text": "Yes. Sano Healthcare and Tourism offers a free second opinion specialist India service. Submit your medical reports and our specialist panel reviews them within 48 hours, giving you an independent honest assessment before committing to any treatment." }     }   ] } </script>
 END OF DOCUMENT
-Sano Healthcare and Tourism: SEO and AEO Website Content Replacement Guide — Full Site Coverage | April 2026
+Sano Healthcare and Tourism: SEO and AEO Website Content Replacement Guide - Full Site Coverage | April 2026
