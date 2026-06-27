@@ -11,176 +11,410 @@
   <meta property="og:description" content="Real procedure cost comparisons across cardiac, orthopaedic, cancer, and fertility care — with no padding.">
   <meta property="og:image" content="https://www.arogyayatri.com/src/images/blog-indian-hospital-featured.png">
   <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/basic-nav.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { logo: ['Anton', 'sans-serif'], body: ['Lexend', 'sans-serif'] },
+          colors: { primaryDark: '#0F172A' }
+        }
+      }
+    }
+  </script>
   <style>
-    body { font-family: Lexend, sans-serif; }
-    article h2, article .text-2xl { font-size: 1.75rem; line-height: 1.25; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #0f172a; }
-    article h3, article .text-xl { font-size: 1.1rem; line-height: 1.4; font-weight: 700; margin-top: 1.5rem; margin-bottom: .5rem; color: #0f172a; }
-    article p, article .text-slate-700 { margin-bottom: 1rem; color: #334155; line-height: 1.85; }
-    article ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.85; }
-    article table { margin: 1.25rem 0; }
-    article section { margin-bottom: 1.5rem; }
+    html, body { scrollbar-width: none; -ms-overflow-style: none; }
+    html::-webkit-scrollbar, *::-webkit-scrollbar { display: none; }
+    html { scroll-behavior: smooth; }
+    #siteHeader { height: 72px; background: white; box-shadow: 0 8px 30px rgba(0,0,0,.06); }
+    .nav-link { position: relative; color: black; padding: 4px 0; }
+    .nav-link::after { content: ''; position: absolute; left: 50%; bottom: -6px; width: 0; height: 2px; background: black; transform: translateX(-50%); transition: width .25s ease; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-cta { border-color: black; }
+    .page-wrapper { padding-top: 72px; }
+    #mobileMenu nav a { display: block; width: 100%; line-height: 1.4; padding: 6px 0; white-space: normal; }
+    .prose h2 { font-size: 1.55rem; line-height: 1.3; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #0f172a; scroll-margin-top: 90px; }
+    .prose h3 { font-size: 1.05rem; line-height: 1.4; font-weight: 600; margin-top: 1.75rem; margin-bottom: .6rem; color: #0f172a; }
+    .prose p { margin-bottom: 1rem; color: #334155; line-height: 1.85; }
+    .prose ul, .prose ol { padding-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.85; }
+    .prose ul { list-style: disc; }
+    .prose ol { list-style: decimal; }
+    .prose table { width: 100%; margin: 1.5rem 0; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; }
+    .prose th { background: #f1f5f9; text-align: left; padding: 10px 12px; font-weight: 600; font-size: .875rem; border-bottom: 1px solid #e2e8f0; color: #0f172a; }
+    .prose td { padding: 9px 12px; font-size: .875rem; color: #334155; border-bottom: 1px solid #f1f5f9; }
+    .prose a { color: #0d9488; font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+    .prose strong { color: #0f172a; }
+    .prose section { margin-bottom: 0; }
+    .toc-link { display: block; padding: 5px 0 5px 12px; border-left: 2px solid #e2e8f0; font-size: .82rem; color: #64748b; transition: color .15s, border-color .15s; text-decoration: none; line-height: 1.4; }
+    .toc-link:hover, .toc-link.active { color: #0d9488; border-color: #0d9488; font-weight: 500; }
+    .rel-card { display: flex; gap: 10px; align-items: flex-start; padding: 8px; border-radius: 10px; text-decoration: none; transition: background .15s; }
+    .rel-card:hover { background: #f8fafc; }
+    .rel-card img { width: 58px; height: 46px; object-fit: cover; border-radius: 7px; flex-shrink: 0; }
+    #readProgress { position: fixed; top: 72px; left: 0; height: 3px; background: linear-gradient(90deg, #14b8a6, #0d9488); width: 0%; z-index: 100; }
+    .more-card { background: white; border-radius: 18px; border: 1px solid #e2e8f0; overflow: hidden; transition: box-shadow .2s, transform .2s; text-decoration: none; display: block; }
+    .more-card:hover { box-shadow: 0 10px 28px rgba(0,0,0,.08); transform: translateY(-3px); }
+    .cat-pill { display: inline-block; padding: 4px 12px; border-radius: 9999px; font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: #f0fdfa; color: #0f766e; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
-  <main class="max-w-4xl mx-auto px-6 py-12">
-    <a href="news.html" class="inline-flex items-center text-sm text-teal-700 font-medium mb-8">&larr; Back to News & Blogs</a>
-    <p class="text-xs uppercase tracking-widest text-teal-600 font-semibold mb-4">Cost & Savings Guide</p>
-    <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-6">How Much Can I Save on Surgery by Going to India?</h1>
-    <p class="text-slate-600 text-lg mb-8">It's the first question almost every patient asks — and the one that's hardest to get a straight answer on. Here are real procedure costs side by side, with no padding.</p>
-    <img src="../../src/images/blog-indian-hospital-featured.png" alt="Cost comparison for surgery savings in India versus Western countries" class="w-full rounded-2xl shadow mb-10">
-    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-10">
-<article class="space-y-10 leading-relaxed">
-      <section><h2 class="text-2xl font-semibold mb-4">The Numbers</h2>
-</section>
-<h3 class="text-xl font-semibold mb-3 mt-6">Cardiac Surgery</h3>
-<div class="overflow-x-auto mb-4"><table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden"><thead class="bg-slate-100"><tr><th class="text-left p-3 border-b"><strong>Procedure</strong></th><th class="text-left p-3 border-b"><strong>USA</strong></th><th class="text-left p-3 border-b"><strong>UK (Private)</strong></th><th class="text-left p-3 border-b"><strong>Australia</strong></th><th class="text-left p-3 border-b"><strong>India</strong></th><th class="text-left p-3 border-b"><strong>You Save (vs USA)</strong></th></tr></thead><tbody class="text-slate-700"><tr><td class="p-3 border-b">Heart bypass (CABG)</td><td class="p-3 border-b">$70,000–$200,000</td><td class="p-3 border-b">£20,000–£50,000</td><td class="p-3 border-b">$25,000–$60,000</td><td class="p-3 border-b">$4,000–$8,000</td><td class="p-3 border-b">Up to $192,000</td></tr><tr><td class="p-3 border-b">Valve replacement</td><td class="p-3 border-b">$80,000–$150,000</td><td class="p-3 border-b">£18,000–£40,000</td><td class="p-3 border-b">$28,000–$55,000</td><td class="p-3 border-b">$5,000–$10,000</td><td class="p-3 border-b">Up to $140,000</td></tr><tr><td class="p-3 border-b">Angioplasty + stent</td><td class="p-3 border-b">$30,000–$60,000</td><td class="p-3 border-b">£8,000–£20,000</td><td class="p-3 border-b">$12,000–$30,000</td><td class="p-3 border-b">$2,500–$5,000</td><td class="p-3 border-b">Up to $55,000</td></tr></tbody></table></div>
-<h3 class="text-xl font-semibold mb-3 mt-6">Orthopaedic Surgery</h3>
-<div class="overflow-x-auto mb-4"><table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden"><thead class="bg-slate-100"><tr><th class="text-left p-3 border-b"><strong>Procedure</strong></th><th class="text-left p-3 border-b"><strong>USA</strong></th><th class="text-left p-3 border-b"><strong>UK (Private)</strong></th><th class="text-left p-3 border-b"><strong>Australia</strong></th><th class="text-left p-3 border-b"><strong>India</strong></th><th class="text-left p-3 border-b"><strong>You Save (vs USA)</strong></th></tr></thead><tbody class="text-slate-700"><tr><td class="p-3 border-b">Knee replacement (single)</td><td class="p-3 border-b">$30,000–$70,000</td><td class="p-3 border-b">£15,000–£25,000</td><td class="p-3 border-b">$20,000–$35,000</td><td class="p-3 border-b">$4,000–$8,000</td><td class="p-3 border-b">Up to $62,000</td></tr><tr><td class="p-3 border-b">Knee replacement (both)</td><td class="p-3 border-b">$50,000–$120,000</td><td class="p-3 border-b">£25,000–£45,000</td><td class="p-3 border-b">$35,000–$65,000</td><td class="p-3 border-b">$7,000–$14,000</td><td class="p-3 border-b">Up to $106,000</td></tr><tr><td class="p-3 border-b">Hip replacement</td><td class="p-3 border-b">$35,000–$65,000</td><td class="p-3 border-b">£12,000–£22,000</td><td class="p-3 border-b">$18,000–$30,000</td><td class="p-3 border-b">$4,500–$8,000</td><td class="p-3 border-b">Up to $57,000</td></tr><tr><td class="p-3 border-b">Spinal fusion</td><td class="p-3 border-b">$60,000–$110,000</td><td class="p-3 border-b">£15,000–£30,000</td><td class="p-3 border-b">$22,000–$45,000</td><td class="p-3 border-b">$5,000–$9,000</td><td class="p-3 border-b">Up to $101,000</td></tr></tbody></table></div>
-<h3 class="text-xl font-semibold mb-3 mt-6">Cancer Treatment</h3>
-<div class="overflow-x-auto mb-4"><table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden"><thead class="bg-slate-100"><tr><th class="text-left p-3 border-b"><strong>Procedure</strong></th><th class="text-left p-3 border-b"><strong>USA</strong></th><th class="text-left p-3 border-b"><strong>UK (Private)</strong></th><th class="text-left p-3 border-b"><strong>Australia</strong></th><th class="text-left p-3 border-b"><strong>India</strong></th><th class="text-left p-3 border-b"><strong>You Save (vs USA)</strong></th></tr></thead><tbody class="text-slate-700"><tr><td class="p-3 border-b">Chemotherapy (full course)</td><td class="p-3 border-b">$30,000–$100,000</td><td class="p-3 border-b">£15,000–£50,000</td><td class="p-3 border-b">$20,000–$60,000</td><td class="p-3 border-b">$3,000–$15,000</td><td class="p-3 border-b">Up to $85,000</td></tr><tr><td class="p-3 border-b">Radiation therapy (full course)</td><td class="p-3 border-b">$25,000–$75,000</td><td class="p-3 border-b">£10,000–£30,000</td><td class="p-3 border-b">$15,000–$40,000</td><td class="p-3 border-b">$2,500–$7,000</td><td class="p-3 border-b">Up to $68,000</td></tr><tr><td class="p-3 border-b">Cancer surgery (major)</td><td class="p-3 border-b">$40,000–$100,000</td><td class="p-3 border-b">£15,000–£40,000</td><td class="p-3 border-b">$18,000–$50,000</td><td class="p-3 border-b">$4,000–$12,000</td><td class="p-3 border-b">Up to $88,000</td></tr><tr><td class="p-3 border-b">Bone marrow transplant</td><td class="p-3 border-b">$100,000–$300,000</td><td class="p-3 border-b">£50,000–£100,000</td><td class="p-3 border-b">$60,000–$120,000</td><td class="p-3 border-b">$15,000–$35,000</td><td class="p-3 border-b">Up to $265,000</td></tr></tbody></table></div>
-<h3 class="text-xl font-semibold mb-3 mt-6">Fertility Treatment</h3>
-<div class="overflow-x-auto mb-4"><table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden"><thead class="bg-slate-100"><tr><th class="text-left p-3 border-b"><strong>Procedure</strong></th><th class="text-left p-3 border-b"><strong>USA</strong></th><th class="text-left p-3 border-b"><strong>UK (Private)</strong></th><th class="text-left p-3 border-b"><strong>Australia</strong></th><th class="text-left p-3 border-b"><strong>India</strong></th><th class="text-left p-3 border-b"><strong>You Save (vs USA)</strong></th></tr></thead><tbody class="text-slate-700"><tr><td class="p-3 border-b">IVF (one cycle, own eggs)</td><td class="p-3 border-b">$15,000–$25,000</td><td class="p-3 border-b">£5,000–£8,000</td><td class="p-3 border-b">$8,000–$15,000</td><td class="p-3 border-b">$2,000–$4,000</td><td class="p-3 border-b">Up to $21,000</td></tr><tr><td class="p-3 border-b">Donor egg IVF</td><td class="p-3 border-b">$25,000–$45,000</td><td class="p-3 border-b">£8,000–£15,000</td><td class="p-3 border-b">$12,000–$25,000</td><td class="p-3 border-b">$3,500–$6,000</td><td class="p-3 border-b">Up to $39,000</td></tr></tbody></table></div>
-<h3 class="text-xl font-semibold mb-3 mt-6">Other Common Procedures</h3>
-<div class="overflow-x-auto mb-4"><table class="w-full text-sm border border-slate-200 rounded-lg overflow-hidden"><thead class="bg-slate-100"><tr><th class="text-left p-3 border-b"><strong>Procedure</strong></th><th class="text-left p-3 border-b"><strong>USA</strong></th><th class="text-left p-3 border-b"><strong>UK (Private)</strong></th><th class="text-left p-3 border-b"><strong>Australia</strong></th><th class="text-left p-3 border-b"><strong>India</strong></th><th class="text-left p-3 border-b"><strong>You Save (vs USA)</strong></th></tr></thead><tbody class="text-slate-700"><tr><td class="p-3 border-b">Cataract surgery (both eyes)</td><td class="p-3 border-b">$6,000–$12,000</td><td class="p-3 border-b">£3,000–£6,000</td><td class="p-3 border-b">$4,000–$8,000</td><td class="p-3 border-b">$800–$1,500</td><td class="p-3 border-b">Up to $10,500</td></tr><tr><td class="p-3 border-b">Dental implant (per tooth)</td><td class="p-3 border-b">$3,000–$6,000</td><td class="p-3 border-b">£2,000–£4,000</td><td class="p-3 border-b">$3,000–$5,000</td><td class="p-3 border-b">$400–$800</td><td class="p-3 border-b">Up to $5,200</td></tr><tr><td class="p-3 border-b">Full mouth reconstruction</td><td class="p-3 border-b">$30,000–$60,000</td><td class="p-3 border-b">£15,000–£30,000</td><td class="p-3 border-b">$20,000–$45,000</td><td class="p-3 border-b">$3,000–$8,000</td><td class="p-3 border-b">Up to $52,000</td></tr><tr><td class="p-3 border-b">Rhinoplasty</td><td class="p-3 border-b">$8,000–$15,000</td><td class="p-3 border-b">£5,000–£10,000</td><td class="p-3 border-b">$7,000–$12,000</td><td class="p-3 border-b">$2,000–$4,000</td><td class="p-3 border-b">Up to $11,000</td></tr></tbody></table></div>
-<section><h2 class="text-2xl font-semibold mb-4">Why Is It So Much Cheaper?</h2>
-<p class="mb-4 text-slate-700">This is the question that follows every table like this — and it deserves a direct answer, because "cheaper" without explanation sounds like a warning sign.</p>
-</section>
-<p class="mb-4 text-slate-700">The cost difference is structural, not a quality compromise. Three things drive it:</p>
-<p class="mb-3 text-slate-700"><strong>Cost of living and operations.</strong> Running a hospital in Mumbai costs a fraction of running one in London or Houston. Surgeon salaries, nursing staff, facility costs, administrative overhead — all lower. That difference passes directly to the patient.</p>
-<p class="mb-3 text-slate-700"><strong>The same implants, different procurement costs.</strong> A Zimmer Biomet knee implant used in Chicago is the same implant used in Chennai. But India's pharmaceutical and medical device market — and the negotiating power of high-volume hospitals — means procurement costs are significantly lower.</p>
-<p class="mb-3 text-slate-700"><strong>No insurance markup.</strong> In the US particularly, hospital list prices are inflated partly because of how insurance negotiations work. Cash-pay international patients are billed at real cost, not at a price designed to be negotiated down by an insurer.</p>
-<p class="mb-4 text-slate-700">None of this means corners are cut. NABH and JCI-accredited hospitals in India meet the same international safety and quality standards as hospitals in Europe and North America. The technology is the same. In many specialties, the surgeon's training and case volume exceeds what a patient would find at a comparable private hospital at home.</p>
-<section><h2 class="text-2xl font-semibold mb-4">What the Numbers Don't Include — and What to Budget For</h2>
-<p class="mb-4 text-slate-700">The surgery cost is the main number — but a complete picture includes:</p>
-</section>
-<p class="mb-3 text-slate-700"><strong>Travel</strong> — Return flights from Europe to India typically cost $600–$1,500 per person. From the US, $900–$2,000. Even adding business class for comfort, the savings dwarf the travel cost.</p>
-<p class="mb-3 text-slate-700"><strong>Accommodation</strong> — Recovery accommodation near major Indian hospitals runs $40–$120 per night for a well-located, medically suitable option. A two-week stay adds $560–$1,680 to the budget.</p>
-<p class="mb-3 text-slate-700"><strong>Companion costs</strong> — If a family member travels with you, budget their flights and accommodation. India's e-Medical Attendant Visa makes this straightforward. <a class="text-teal-700 font-medium underline openConsultantModal" href="https://forms.gle/Snkvg8H7byeD8cXj7">Sano Healthcare and Tourism</a> arranges both simultaneously.</p>
-<p class="mb-3 text-slate-700"><strong>Facilitator fees</strong> — Working with a facilitator like <a class="text-teal-700 font-medium underline openConsultantModal" href="https://forms.gle/Snkvg8H7byeD8cXj7">Sano</a> is included in the overall cost estimate — there's no separate fee that erodes your savings.</p>
-<p class="mb-3 text-slate-700"><strong>Even after all of this</strong>, the total cost of surgery, travel, and a two-week recovery stay in India is typically 60–75% lower than the surgical cost alone at home.</p>
-<section><h2 class="text-2xl font-semibold mb-4">A Real Example</h2>
-<p class="mb-4 text-slate-700">A patient from the UK needing bilateral knee replacement:</p>
-</section>
-<ul class="list-disc pl-6 space-y-2 text-slate-700 mb-4"><li><strong>UK private hospital:</strong> £25,000–£45,000 for surgery alone</li><li><strong>India (via Sano):</strong> $7,000–$14,000 surgery + ~$1,200 return flights + ~$1,000 accommodation = <strong>under $16,500 total</strong></li></ul>
-<p class="mb-4 text-slate-700">At current exchange rates, that's a saving of £15,000–£30,000 — enough to pay off a mortgage instalment, fund a child's education, or simply not devastate a retirement.</p>
-<section class="bg-white border border-slate-200 rounded-2xl p-6"><h2 class="text-2xl font-semibold mb-6">Frequently Asked Questions</h2><div class="space-y-5">
-<div><h3 class="text-lg font-semibold text-slate-900 mb-2">Does cheaper mean lower quality?</h3><p class="text-slate-700">No. Cost differences in India are structural — lower operational costs, not lower standards. NABH and JCI-accredited hospitals meet international quality benchmarks independently verified by third-party auditors.</p></div>
-<div><h3 class="text-lg font-semibold text-slate-900 mb-2">Are the implants the same brands as at home?</h3><p class="text-slate-700">Yes. Most major Indian orthopaedic and cardiac hospitals use Zimmer Biomet, Stryker, DePuy Synthes, and other internationally recognised brands. The implant is identical. The cost of the procedure around it is not.</p></div>
-<div><h3 class="text-lg font-semibold text-slate-900 mb-2">Will my home insurance cover treatment in India?</h3><p class="text-slate-700">Some international health insurance policies cover planned treatment abroad. Check your policy specifically — look for "overseas elective treatment" clauses. Some UK and European insurers are increasingly recognising Indian hospitals, particularly JCI-accredited ones.</p></div>
-<div><h3 class="text-lg font-semibold text-slate-900 mb-2">How do I know the estimate I receive is accurate?</h3><p class="text-slate-700"><a class="text-teal-700 font-medium underline openConsultantModal" href="https://forms.gle/Snkvg8H7byeD8cXj7">Sano's cost estimates</a> are itemised — surgical fee, anaesthesia, hospital stay, investigations, implants. The only scenario where costs change is if unexpected surgical complexity arises during the procedure — the same situation that would change costs at any hospital in the world.</p></div>
-</div></section>
-<section class="bg-white border border-slate-200 rounded-2xl p-6"><h2 class="text-2xl font-semibold mb-4">Get Your Personal Estimate</h2>
-<p class="text-slate-700 mb-4">The numbers above are ranges. Your actual saving depends on your procedure, your home country, and the hospital matched to your case.</p>
-<a href="https://forms.gle/Snkvg8H7byeD8cXj7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-teal-600 text-white px-6 py-3 font-medium hover:bg-teal-700 transition mb-4 openConsultantModal">Share your reports with Sano's team — get a personalised estimate within 48 hours</a>
-<a href="https://forms.gle/Snkvg8H7byeD8cXj7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-teal-600 text-white px-6 py-3 font-medium hover:bg-teal-700 transition mb-4 openConsultantModal">Get my free cost estimate →</a>
-<p class="text-slate-700 mb-4">WhatsApp: <strong>+91 85300 54299</strong> — 24/7, in your language.</p>
-<p class="text-slate-600 text-sm">All cost figures are indicative ranges based on publicly available data and Sano's hospital network pricing. Actual costs vary by procedure complexity, hospital, and patient condition. <a class="text-teal-700 font-medium underline" href="about.html">About Sano →</a> | <a class="text-teal-700 font-medium underline" href="treatments.html">View treatments →</a></p>
-</section>
-    </article>
-      <section class="bg-teal-50 border border-teal-100 rounded-2xl p-6 mt-10">
-        <h2 class="!mt-0 text-2xl font-semibold text-slate-900 mb-3">Start With Sano</h2>
-        <p class="text-slate-700 mb-4">Share your reports or questions with Sano Healthcare and Tourism for a free consultation and personalised treatment guidance.</p>
-        <a href="https://forms.gle/Snkvg8H7byeD8cXj7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-teal-600 text-white px-6 py-3 font-medium hover:bg-teal-700 transition">Book a Free Consultation</a>
-      </section>
+<body class="font-body bg-slate-50 text-black">
+
+  <div id="readProgress"></div>
+
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+    <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
+      <a href="../../index.html" class="flex items-center">
+        <img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 md:h-14 w-auto object-contain">
+      </a>
+      <ul class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-10 text-base font-medium items-center">
+        <li><a href="treatments.html" class="nav-link inline-flex items-center leading-none">Treatment</a></li>
+        <li><a href="doctor.html" class="nav-link inline-flex items-center leading-none">Doctor</a></li>
+        <li><a href="destinations.html" class="nav-link inline-flex items-center leading-none">Destinations</a></li>
+        <li class="relative group flex items-center">
+          <button class="nav-link inline-flex items-center gap-1 leading-none">Explore <i class='bx bx-chevron-down text-sm relative top-[1px]'></i></button>
+          <div class="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-52 rounded-xl bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-5 py-3 text-sm text-slate-800 rounded-t-xl hover:bg-slate-50">About SANO</a>
+            <a href="faq.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">FAQ</a>
+            <a href="testimonial.html" class="block px-5 py-3 text-sm text-slate-800 hover:bg-slate-50">Testimonials</a>
+            <a href="news.html" class="block px-5 py-3 text-sm text-slate-800 rounded-b-xl hover:bg-slate-50">News/Blogs</a>
+          </div>
+        </li>
+      </ul>
+      <div class="ml-auto hidden md:flex items-center">
+        <a class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none cursor-pointer">
+          <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center"><i class='bx bx-right-arrow-alt'></i></span>
+          <span class="text-sm font-medium">Book Consultation</span>
+        </a>
+      </div>
+      <button id="menuBtn" class="ml-auto md:hidden text-2xl flex items-center"><i class='bx bx-menu'></i></button>
+    </nav>
+  </header>
+
+  <div id="mobileMenu" class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+    <div class="p-6 border-b border-gray-200 flex justify-between items-start">
+      <a href="../../index.html"><img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-11 w-auto object-contain"></a>
+      <button id="closeBtn" class="text-2xl text-black"><i class='bx bx-x'></i></button>
+    </div>
+    <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
+      <a href="treatments.html" class="block">Treatment</a>
+      <a href="doctor.html" class="block">Doctor</a>
+      <a href="destinations.html" class="block">Destinations</a>
+      <div>
+        <button id="mobileExploreBtn" class="w-full flex items-center justify-between"><span>Explore</span><i id="mobileExploreIcon" class='bx bx-chevron-down text-xl'></i></button>
+        <div id="mobileExploreMenu" class="mt-4 ml-4 space-y-4 hidden text-base">
+          <a href="about.html" class="block">About SANO</a>
+          <a href="faq.html" class="block">FAQ</a>
+          <a href="testimonial.html" class="block">Testimonials</a>
+          <a href="news.html" class="block">News/Blogs</a>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-gray-200"></div>
+      <a class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition cursor-pointer">
+        <span>Book Consultation</span>
+        <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white"><i class='bx bx-right-arrow-alt text-xl'></i></span>
+      </a>
+    </nav>
+  </div>
+
+  <main class="page-wrapper">
+
+    <div class="bg-white border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 pt-10 pb-8">
+        <nav class="flex items-center gap-2 text-xs text-slate-400 mb-5 flex-wrap">
+          <a href="../../index.html" class="hover:text-teal-600 transition">Home</a>
+          <i class='bx bx-chevron-right text-xs'></i>
+          <a href="news.html" class="hover:text-teal-600 transition">Blogs</a>
+          <i class='bx bx-chevron-right text-xs'></i>
+          <span class="text-slate-600">Cost Guide</span>
+        </nav>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="cat-pill">Cost Guide</span>
+          <span class="text-xs text-slate-400">6 min read</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-slate-900 leading-tight mb-5 max-w-4xl">How Much Can I Save on Surgery by Going to India?</h1>
+        <p class="text-slate-500 text-base max-w-3xl leading-relaxed mb-6">Real procedure cost comparisons across cardiac, orthopaedic, cancer, and fertility care — with no padding.</p>
+        <div class="flex items-center gap-3 text-sm text-slate-400">
+          <span class="flex items-center gap-1.5">
+            <span class="w-7 h-7 rounded-full bg-teal-100 flex items-center justify-center"><i class='bx bx-user text-teal-600 text-sm'></i></span>
+            Sano Healthcare &amp; Tourism
+          </span>
+          <span>·</span>
+          <span>March 2026</span>
+        </div>
+      </div>
     </div>
 
-    <section class="mt-12">
-      <h2 class="text-2xl font-semibold text-slate-900 mb-6">More articles</h2>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <a href="blog-best-hospitals-india-international-patients.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/hospital.webp" alt="Modern accredited hospital in India for international patients" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+    <div class="max-w-7xl mx-auto px-6 py-6">
+      <img src="../../src/images/blog-indian-hospital-featured.png" alt="Cost comparison for surgery savings in India versus Western countries" class="w-full h-64 md:h-[420px] object-cover rounded-2xl shadow-sm" width="1200" height="420">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pb-16">
+      <div class="grid lg:grid-cols-[1fr_300px] gap-10 items-start">
+
+        <div>
+          <div class="bg-white rounded-2xl border border-slate-200 p-7 md:p-10">
+            <article id="articleContent" class="prose">
+<section><h2>The Numbers</h2>
+</section>
+<h3>Cardiac Surgery</h3>
+<div class="overflow-x-auto mb-4"><table><thead><tr><th><strong>Procedure</strong></th><th><strong>USA</strong></th><th><strong>UK (Private)</strong></th><th><strong>Australia</strong></th><th><strong>India</strong></th><th><strong>You Save (vs USA)</strong></th></tr></thead><tbody><tr><td>Heart bypass (CABG)</td><td>$70,000–$200,000</td><td>£20,000–£50,000</td><td>$25,000–$60,000</td><td>$4,000–$8,000</td><td>Up to $192,000</td></tr><tr><td>Valve replacement</td><td>$80,000–$150,000</td><td>£18,000–£40,000</td><td>$28,000–$55,000</td><td>$5,000–$10,000</td><td>Up to $140,000</td></tr><tr><td>Angioplasty + stent</td><td>$30,000–$60,000</td><td>£8,000–£20,000</td><td>$12,000–$30,000</td><td>$2,500–$5,000</td><td>Up to $55,000</td></tr></tbody></table></div>
+<h3>Orthopaedic Surgery</h3>
+<div class="overflow-x-auto mb-4"><table><thead><tr><th><strong>Procedure</strong></th><th><strong>USA</strong></th><th><strong>UK (Private)</strong></th><th><strong>Australia</strong></th><th><strong>India</strong></th><th><strong>You Save (vs USA)</strong></th></tr></thead><tbody><tr><td>Knee replacement (single)</td><td>$30,000–$70,000</td><td>£15,000–£25,000</td><td>$20,000–$35,000</td><td>$4,000–$8,000</td><td>Up to $62,000</td></tr><tr><td>Knee replacement (both)</td><td>$50,000–$120,000</td><td>£25,000–£45,000</td><td>$35,000–$65,000</td><td>$7,000–$14,000</td><td>Up to $106,000</td></tr><tr><td>Hip replacement</td><td>$35,000–$65,000</td><td>£12,000–£22,000</td><td>$18,000–$30,000</td><td>$4,500–$8,000</td><td>Up to $57,000</td></tr><tr><td>Spinal fusion</td><td>$60,000–$110,000</td><td>£15,000–£30,000</td><td>$22,000–$45,000</td><td>$5,000–$9,000</td><td>Up to $101,000</td></tr></tbody></table></div>
+<h3>Cancer Treatment</h3>
+<div class="overflow-x-auto mb-4"><table><thead><tr><th><strong>Procedure</strong></th><th><strong>USA</strong></th><th><strong>UK (Private)</strong></th><th><strong>Australia</strong></th><th><strong>India</strong></th><th><strong>You Save (vs USA)</strong></th></tr></thead><tbody><tr><td>Chemotherapy (full course)</td><td>$30,000–$100,000</td><td>£15,000–£50,000</td><td>$20,000–$60,000</td><td>$3,000–$15,000</td><td>Up to $85,000</td></tr><tr><td>Radiation therapy (full course)</td><td>$25,000–$75,000</td><td>£10,000–£30,000</td><td>$15,000–$40,000</td><td>$2,500–$7,000</td><td>Up to $68,000</td></tr><tr><td>Cancer surgery (major)</td><td>$40,000–$100,000</td><td>£15,000–£40,000</td><td>$18,000–$50,000</td><td>$4,000–$12,000</td><td>Up to $88,000</td></tr><tr><td>Bone marrow transplant</td><td>$100,000–$300,000</td><td>£50,000–£100,000</td><td>$60,000–$120,000</td><td>$15,000–$35,000</td><td>Up to $265,000</td></tr></tbody></table></div>
+<h3>Fertility Treatment</h3>
+<div class="overflow-x-auto mb-4"><table><thead><tr><th><strong>Procedure</strong></th><th><strong>USA</strong></th><th><strong>UK (Private)</strong></th><th><strong>Australia</strong></th><th><strong>India</strong></th><th><strong>You Save (vs USA)</strong></th></tr></thead><tbody><tr><td>IVF (one cycle, own eggs)</td><td>$15,000–$25,000</td><td>£5,000–£8,000</td><td>$8,000–$15,000</td><td>$2,000–$4,000</td><td>Up to $21,000</td></tr><tr><td>Donor egg IVF</td><td>$25,000–$45,000</td><td>£8,000–£15,000</td><td>$12,000–$25,000</td><td>$3,500–$6,000</td><td>Up to $39,000</td></tr></tbody></table></div>
+<h3>Other Common Procedures</h3>
+<div class="overflow-x-auto mb-4"><table><thead><tr><th><strong>Procedure</strong></th><th><strong>USA</strong></th><th><strong>UK (Private)</strong></th><th><strong>Australia</strong></th><th><strong>India</strong></th><th><strong>You Save (vs USA)</strong></th></tr></thead><tbody><tr><td>Cataract surgery (both eyes)</td><td>$6,000–$12,000</td><td>£3,000–£6,000</td><td>$4,000–$8,000</td><td>$800–$1,500</td><td>Up to $10,500</td></tr><tr><td>Dental implant (per tooth)</td><td>$3,000–$6,000</td><td>£2,000–£4,000</td><td>$3,000–$5,000</td><td>$400–$800</td><td>Up to $5,200</td></tr><tr><td>Full mouth reconstruction</td><td>$30,000–$60,000</td><td>£15,000–£30,000</td><td>$20,000–$45,000</td><td>$3,000–$8,000</td><td>Up to $52,000</td></tr><tr><td>Rhinoplasty</td><td>$8,000–$15,000</td><td>£5,000–£10,000</td><td>$7,000–$12,000</td><td>$2,000–$4,000</td><td>Up to $11,000</td></tr></tbody></table></div>
+<section><h2>Why Is It So Much Cheaper?</h2>
+<p>This is the question that follows every table like this — and it deserves a direct answer, because "cheaper" without explanation sounds like a warning sign.</p>
+</section>
+<p>The cost difference is structural, not a quality compromise. Three things drive it:</p>
+<p><strong>Cost of living and operations.</strong> Running a hospital in Mumbai costs a fraction of running one in London or Houston. Surgeon salaries, nursing staff, facility costs, administrative overhead — all lower. That difference passes directly to the patient.</p>
+<p><strong>The same implants, different procurement costs.</strong> A Zimmer Biomet knee implant used in Chicago is the same implant used in Chennai. But India's pharmaceutical and medical device market — and the negotiating power of high-volume hospitals — means procurement costs are significantly lower.</p>
+<p><strong>No insurance markup.</strong> In the US particularly, hospital list prices are inflated partly because of how insurance negotiations work. Cash-pay international patients are billed at real cost, not at a price designed to be negotiated down by an insurer.</p>
+<p>None of this means corners are cut. NABH and JCI-accredited hospitals in India meet the same international safety and quality standards as hospitals in Europe and North America. The technology is the same. In many specialties, the surgeon's training and case volume exceeds what a patient would find at a comparable private hospital at home.</p>
+<section><h2>What the Numbers Don't Include — and What to Budget For</h2>
+<p>The surgery cost is the main number — but a complete picture includes:</p>
+</section>
+<p><strong>Travel</strong> — Return flights from Europe to India typically cost $600–$1,500 per person. From the US, $900–$2,000. Even adding business class for comfort, the savings dwarf the travel cost.</p>
+<p><strong>Accommodation</strong> — Recovery accommodation near major Indian hospitals runs $40–$120 per night for a well-located, medically suitable option. A two-week stay adds $560–$1,680 to the budget.</p>
+<p><strong>Companion costs</strong> — If a family member travels with you, budget their flights and accommodation. India's e-Medical Attendant Visa makes this straightforward. <a class="text-teal-700 font-medium underline openConsultantModal" href="https://forms.gle/Snkvg8H7byeD8cXj7">Sano Healthcare and Tourism</a> arranges both simultaneously.</p>
+<p><strong>Facilitator fees</strong> — Working with a facilitator like <a class="text-teal-700 font-medium underline openConsultantModal" href="https://forms.gle/Snkvg8H7byeD8cXj7">Sano</a> is included in the overall cost estimate — there's no separate fee that erodes your savings.</p>
+<p><strong>Even after all of this</strong>, the total cost of surgery, travel, and a two-week recovery stay in India is typically 60–75% lower than the surgical cost alone at home.</p>
+<section><h2>A Real Example</h2>
+<p>A patient from the UK needing bilateral knee replacement:</p>
+</section>
+<ul class="list-disc pl-6 space-y-2 mb-4"><li><strong>UK private hospital:</strong> £25,000–£45,000 for surgery alone</li><li><strong>India (via Sano):</strong> $7,000–$14,000 surgery + ~$1,200 return flights + ~$1,000 accommodation = <strong>under $16,500 total</strong></li></ul>
+<p>At current exchange rates, that's a saving of £15,000–£30,000 — enough to pay off a mortgage instalment, fund a child's education, or simply not devastate a retirement.</p>
+<section><h2>Frequently Asked Questions</h2><div class="space-y-5 mt-4">
+<div><h3>Does cheaper mean lower quality?</h3><p>No. Cost differences in India are structural — lower operational costs, not lower standards. NABH and JCI-accredited hospitals meet international quality benchmarks independently verified by third-party auditors.</p></div>
+<div><h3>Are the implants the same brands as at home?</h3><p>Yes. Most major Indian orthopaedic and cardiac hospitals use Zimmer Biomet, Stryker, DePuy Synthes, and other internationally recognised brands. The implant is identical. The cost of the procedure around it is not.</p></div>
+<div><h3>Will my home insurance cover treatment in India?</h3><p>Some international health insurance policies cover planned treatment abroad. Check your policy specifically — look for "overseas elective treatment" clauses. Some UK and European insurers are increasingly recognising Indian hospitals, particularly JCI-accredited ones.</p></div>
+<div><h3>How do I know the estimate I receive is accurate?</h3><p><a class="text-teal-700 font-medium underline openConsultantModal" href="https://forms.gle/Snkvg8H7byeD8cXj7">Sano's cost estimates</a> are itemised — surgical fee, anaesthesia, hospital stay, investigations, implants. The only scenario where costs change is if unexpected surgical complexity arises during the procedure — the same situation that would change costs at any hospital in the world.</p></div>
+</div></section>
+<section><h2>Get Your Personal Estimate</h2>
+<p>The numbers above are ranges. Your actual saving depends on your procedure, your home country, and the hospital matched to your case.</p>
+<a href="https://forms.gle/Snkvg8H7byeD8cXj7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-teal-600 text-white px-6 py-3 font-medium hover:bg-teal-700 transition mb-4 openConsultantModal">Share your reports with Sano's team — get a personalised estimate within 48 hours</a>
+<p>WhatsApp: <strong>+91 85300 54299</strong> — 24/7, in your language.</p>
+<p class="text-slate-600 text-sm">All cost figures are indicative ranges based on publicly available data and Sano's hospital network pricing. Actual costs vary by procedure complexity, hospital, and patient condition. <a class="text-teal-700 font-medium underline" href="about.html">About Sano →</a> | <a class="text-teal-700 font-medium underline" href="treatments.html">View treatments →</a></p>
+</section>
+            </article>
           </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Hospital Guide</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">Best Hospitals in India for International Patients</h3>
+
+          <div class="mt-8 bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl p-8 text-white">
+            <h2 class="text-2xl font-bold mb-3">Ready to Plan Your Treatment?</h2>
+            <p class="text-teal-100 mb-6 leading-relaxed">Share your reports with Sano Healthcare and Tourism — free consultation, personalised guidance within 48 hours.</p>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://forms.gle/Snkvg8H7byeD8cXj7" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-teal-700 font-semibold rounded-full hover:bg-teal-50 transition text-sm">
+                <i class='bx bx-calendar-check'></i> Book Free Consultation
+              </a>
+              <a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-teal-500/30 text-white border border-white/30 font-medium rounded-full hover:bg-teal-500/50 transition text-sm">
+                <i class='bx bxl-whatsapp'></i> WhatsApp Us
+              </a>
+            </div>
           </div>
+        </div>
+
+        <aside>
+          <div class="sticky top-24 space-y-5">
+            <div class="bg-white rounded-2xl border border-slate-200 p-5">
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4">In This Article</h3>
+              <nav id="toc" class="space-y-1"></nav>
+            </div>
+            <div class="bg-teal-600 rounded-2xl p-5 text-white">
+              <p class="text-sm font-semibold mb-1">Free Second Opinion</p>
+              <p class="text-xs opacity-80 mb-4 leading-relaxed">Get a free specialist review of your case — 24/7, 120+ languages.</p>
+              <a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white text-teal-700 text-xs font-semibold hover:bg-teal-50 transition">
+                <i class="bx bxl-whatsapp text-base text-green-600"></i> WhatsApp Us
+              </a>
+            </div>
+            <div class="bg-white rounded-2xl border border-slate-200 p-5">
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4">Related Articles</h3>
+              <div class="space-y-1">
+                <a href="blog-best-hospitals-india-international-patients.html" class="rel-card">
+                  <img src="../../src/images/hospital.webp" alt="Hospital Guide" loading="lazy" decoding="async">
+                  <div><span class="cat-pill text-[0.65rem]">Hospital Guide</span><p class="text-xs font-semibold text-slate-800 mt-1 leading-snug">Best Hospitals for International Patients</p></div>
+                </a>
+                <a href="blog-india-medical-visa-guide.html" class="rel-card">
+                  <img src="../../src/images/blog-medical-visa-featured.png" alt="Travel & Visa Guide" loading="lazy" decoding="async">
+                  <div><span class="cat-pill text-[0.65rem]">Visa Guide</span><p class="text-xs font-semibold text-slate-800 mt-1 leading-snug">How to Get an Indian Medical Visa</p></div>
+                </a>
+                <a href="blog-recovery-time-surgery-india.html" class="rel-card">
+                  <img src="../../src/images/doctor-work.webp" alt="Recovery" loading="lazy" decoding="async">
+                  <div><span class="cat-pill text-[0.65rem]">Recovery</span><p class="text-xs font-semibold text-slate-800 mt-1 leading-snug">Recovery Time After Surgery in India</p></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+    <section class="max-w-7xl mx-auto px-6 pb-20">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-semibold text-slate-900">More Articles</h2>
+        <a href="news.html" class="text-sm text-teal-600 hover:text-teal-700 font-medium flex items-center gap-1">View all <i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <a href="blog-best-hospitals-india-international-patients.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/hospital.webp" alt="Best hospitals in India" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Hospital Guide</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">Best Hospitals in India for International Patients</h3></div>
         </a>
-        <a href="blog-which-indian-city-medical-procedure.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/india.webp" alt="Indian city for medical treatment" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Destination</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">Which Indian City Should I Choose?</h3>
-          </div>
+        <a href="blog-which-indian-city-medical-procedure.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/india.webp" alt="Which Indian city" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Destination</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">Which Indian City Should I Choose?</h3></div>
         </a>
-        <a href="blog-travel-insurance-medical-tourism-india.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/plane-bg.jpg" alt="Travel insurance for medical tourism in India" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Insurance</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">Travel Insurance for Medical Tourism in India</h3>
-          </div>
+        <a href="blog-travel-insurance-medical-tourism-india.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/plane-bg.jpg" alt="Travel insurance" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Insurance</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">Travel Insurance for Medical Tourism in India</h3></div>
         </a>
-        <a href="blog-recovery-time-surgery-india.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/doctor-work.webp" alt="Patient recovery after surgery in India" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Recovery</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">Recovery Time After Surgery in India</h3>
-          </div>
+        <a href="blog-recovery-time-surgery-india.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/doctor-work.webp" alt="Recovery time" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Recovery</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">Recovery Time After Surgery in India</h3></div>
         </a>
-        <a href="blog-combine-treatment-vacation-india.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/auruyveda.webp" alt="Combining medical treatment with travel in India" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Travel</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">Combining Treatment with a Vacation in India</h3>
-          </div>
+        <a href="blog-combine-treatment-vacation-india.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/auruyveda.webp" alt="Combine treatment vacation" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Travel</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">Combining Treatment with a Vacation in India</h3></div>
         </a>
-        <a href="blog-quality-of-doctors-india-vs-home-country.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/doctor-page-hero.png" alt="Specialist doctor consulting an international patient in India" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Trust & Safety</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">Quality of Doctors in India vs. Your Home Country</h3>
-          </div>
+        <a href="blog-quality-of-doctors-india-vs-home-country.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/doctor-page-hero.png" alt="Quality of doctors" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Trust &amp; Safety</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">Quality of Doctors in India vs. Your Home Country</h3></div>
         </a>
-        <a href="blog-india-medical-visa-guide.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/blog-medical-visa-featured.png" alt="Indian medical visa documents with passport and healthcare travel paperwork" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Travel & Visa Guide</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">How to Get an Indian Medical Visa: A Step-by-Step Guide for Patients and Families</h3>
-          </div>
+        <a href="blog-india-medical-visa-guide.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/blog-medical-visa-featured.png" alt="India medical visa" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Travel &amp; Visa Guide</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">How to Get an Indian Medical Visa</h3></div>
         </a>
-        <a href="blog-cancer-treatment-india.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/blog-cancer-treatment-featured.png" alt="Oncology doctor consulting an international patient for cancer treatment in India" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Oncology</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">Cancer Treatment in India: What International Patients Need to Know</h3>
-          </div>
+        <a href="blog-cancer-treatment-india.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/blog-cancer-treatment-featured.png" alt="Cancer treatment India" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Oncology</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">Cancer Treatment in India</h3></div>
         </a>
-        <a href="blog-ivf-fertility-india.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/blog-ivf-fertility-featured.png" alt="Fertility specialist discussing IVF treatment options with a couple in India" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Fertility & IVF</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">IVF in India: An Honest Guide for Couples Considering Treatment Abroad</h3>
-          </div>
+        <a href="blog-ivf-fertility-india.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/blog-ivf-fertility-featured.png" alt="IVF in India" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Fertility &amp; IVF</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">IVF in India: An Honest Guide</h3></div>
         </a>
-        <a href="blog-heal-in-india-program-guide.html" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition hover:shadow-lg hover:-translate-y-0.5">
-          <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
-            <img src="../../src/images/blog-indian-hospital-featured.png" alt="Professional Indian hospital facility for international medical tourism patients" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5">
-            <p class="text-xs uppercase tracking-wide text-teal-600 font-medium mb-2">Medical Tourism</p>
-            <h3 class="text-base font-semibold text-slate-900 leading-snug">Heal in India Program: Affordable Medical Tourism Guide</h3>
-          </div>
+        <a href="blog-heal-in-india-program-guide.html" class="more-card">
+          <div class="aspect-[16/10] bg-slate-100 overflow-hidden"><img src="../../src/images/blog-indian-hospital-featured.png" alt="Heal in India program" class="w-full h-full object-cover" loading="lazy" decoding="async"></div>
+          <div class="p-4"><span class="cat-pill">Medical Tourism</span><h3 class="text-sm font-semibold text-slate-900 leading-snug mt-2">Heal in India Program Guide</h3></div>
         </a>
       </div>
     </section>
+
   </main>
+
+  <div id="consultantModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+    <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
+      <button onclick="closeConsultantModal()" class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div class="px-4 py-4">
+        <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
+          <iframe src="https://forms.gle/Snkvg8H7byeD8cXj7" class="w-full h-full" frameborder="0">Loading…</iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp"
+    class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
+    <i class='bx bxl-whatsapp text-white text-3xl'></i>
+  </a>
+
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
+        <div class="lg:col-span-2">
+          <a href="../../index.html">
+            <span class="inline-block bg-white rounded-lg p-3 mb-3"><img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 w-auto object-contain" loading="lazy"></span>
+            <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">Sano Healthcare and Tourism is India's trusted medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, panchakarma retreats, and more. Zero waiting. 120+ languages. Complete end-to-end support.</p>
+          </a>
+          <div class="flex items-center gap-4">
+            <a href="https://www.facebook.com/sano.healthcareandtourism" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-facebook text-lg"></i></a>
+            <a href="https://www.linkedin.com/company/sanohealthcareandtourism/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-linkedin text-lg"></i></a>
+            <a href="https://www.instagram.com/sano.healthcareandtourism?igsh=amthbzZrMXkwb2kw" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-instagram text-lg"></i></a>
+            <a href="https://x.com/sano_healthcare" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition"><i class="bx bxl-twitter text-lg"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../../index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="treatments.html" class="hover:text-white transition">Treatment</a></li>
+            <li><a href="doctor.html" class="hover:text-white transition">Doctor</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About SANO</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News/Blogs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-5">Get in Touch</h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start gap-3"><i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i><a href="tel:8530054299" class="hover:text-white transition">+91 85300 54299</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">apoorva@ewan.co.in</a></li>
+            <li class="pt-2"><a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition"><i class="bx bxl-whatsapp text-lg"></i> WhatsApp Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mb-8"></div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>&copy; 2026 Sano Healthcare and Tourism. India's Medical Tourism Facilitator. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2"><i class="bx bx-shield-quarter text-teal-400"></i>Secure &amp; Confidential</span>
+          <span class="flex items-center gap-2"><i class="bx bx-world text-teal-400"></i>Global Healthcare Network</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.openConsultantModal').forEach(btn => {
+      btn.addEventListener('click', e => { e.preventDefault(); const m=document.getElementById('consultantModal'); m.classList.remove('hidden'); m.classList.add('flex'); });
+    });
+    document.getElementById('consultantModal').addEventListener('click', e => { if(e.target===e.currentTarget) closeConsultantModal(); });
+    function closeConsultantModal() { const m=document.getElementById('consultantModal'); m.classList.add('hidden'); m.classList.remove('flex'); }
+  </script>
+  <script>
+    document.getElementById('menuBtn').onclick = () => document.getElementById('mobileMenu').classList.remove('-translate-x-full');
+    document.getElementById('closeBtn').onclick = () => document.getElementById('mobileMenu').classList.add('-translate-x-full');
+    const meb=document.getElementById('mobileExploreBtn'), mem=document.getElementById('mobileExploreMenu'), mei=document.getElementById('mobileExploreIcon');
+    if(meb) meb.onclick = () => { mem.classList.toggle('hidden'); mei.classList.toggle('bx-chevron-up'); mei.classList.toggle('bx-chevron-down'); };
+  </script>
+  <script>
+    const prog = document.getElementById('readProgress');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const total = document.body.scrollHeight - window.innerHeight;
+      prog.style.width = (total > 0 ? (scrolled / total * 100) : 0) + '%';
+    }, { passive: true });
+  </script>
+  <script>
+    (function() {
+      const article = document.getElementById('articleContent');
+      const toc = document.getElementById('toc');
+      if (!article || !toc) return;
+      const headings = article.querySelectorAll('h2');
+      if (headings.length === 0) { toc.closest('.bg-white').style.display = 'none'; return; }
+      headings.forEach((h, i) => {
+        if (!h.id) h.id = 'section-' + i;
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.className = 'toc-link';
+        a.textContent = h.textContent;
+        toc.appendChild(a);
+      });
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const id = entry.target.id;
+          const link = toc.querySelector('[href="#' + id + '"]');
+          if (link) link.classList.toggle('active', entry.isIntersecting);
+        });
+      }, { rootMargin: '-72px 0px -70% 0px' });
+      headings.forEach(h => observer.observe(h));
+    })();
+  </script>
+
 </body>
 </html>

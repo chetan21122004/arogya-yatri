@@ -138,7 +138,6 @@
 
   <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href='https://cdn.boxicons.com/3.0.7/fonts/basic/boxicons.min.css' rel='stylesheet'>
 
   <!-- CSS styles -->
   <link rel="stylesheet" href="app/style/index-page.css">
@@ -456,7 +455,6 @@
       z-index: 1;
       transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
         box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-      will-change: transform;
       transform-origin: center top;
     }
 
@@ -505,7 +503,6 @@
       z-index: 1;
       transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
         box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-      will-change: transform;
       transform-origin: center top;
     }
 
@@ -685,24 +682,20 @@
     <!-- Background Video Carousel -->
     <div id="videoCarousel" class="absolute inset-0 w-full h-full">
       <video id="heroVideo1" class="absolute inset-0 w-full h-full object-cover video-slide active" autoplay muted loop
-        playsinline style="will-change: transform; transform: translateZ(0);">
+        playsinline preload="auto">
         <source src="./src/video/clip1.mp4" type="video/mp4">
       </video>
-      <video id="heroVideo3" class="absolute inset-0 w-full h-full object-cover video-slide active" autoplay muted loop
-        playsinline style="will-change: transform; transform: translateZ(0);">
+      <video id="heroVideo3" class="absolute inset-0 w-full h-full object-cover video-slide" muted loop playsinline preload="none">
         <source src="./src/video/clip3.mp4" type="video/mp4">
       </video>
-      <video id="heroVideo2" class="absolute inset-0 w-full h-full object-cover video-slide" muted loop playsinline
-        style="will-change: transform; transform: translateZ(0);">
+      <video id="heroVideo2" class="absolute inset-0 w-full h-full object-cover video-slide" muted loop playsinline preload="none">
         <source src="https://whvciyqeygesuwqnibzh.supabase.co/storage/v1/object/public/hosting_video/jjj.mp4"
           type="video/mp4">
       </video>
-
     </div>
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/60"
-      style="will-change: transform; transform: translateZ(0); z-index: 5; pointer-events: none;"></div>
+    <div class="absolute inset-0 bg-black/60" style="z-index: 5; pointer-events: none;"></div>
 
 
     <!-- Content -->
@@ -710,9 +703,8 @@
 
       <!-- Brand Strip -->
       <div class="mb-12 bg-black/0 w-fit ml-auto p-4 rounded-full mx-auto">
-        <img src="./src/logo.png" alt="Sano Healthcare and Tourism" class="h-16 sm:h-20 md:h-24 w-auto object-contain mx-auto rounded-xl bg-white p-3">
-        <div class="text-md uppercase tracking-widest text-white/80 mt-2">
-          By Ewan Business Solutions
+        <div class="text-4xl sm:text-5xl font-bold tracking-tight text-teal-400">
+          Sano Healthcare and Tourism
         </div>
         <div class="mt-4 text-2xl sm:text-5xl md:text-4xl font-semibold tracking-wide text-teal-300 uppercase">
           India's Medical Tourism Facilitator:
@@ -780,59 +772,59 @@
       <div class="mt-4 relative overflow-hidden">
         <div class="slider-track">
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_one.webp" alt="International patient at NABH-accredited hospital India – Sano Healthcare and Tourism medical tourism">
+            <img src="./src/images/instagram/insta_one.webp" alt="International patient at NABH-accredited hospital India – Sano Healthcare and Tourism medical tourism" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_two.webp" alt="World-class healthcare facility in India for foreign patients – Sano Healthcare and Tourism">
+            <img src="./src/images/instagram/insta_two.webp" alt="World-class healthcare facility in India for foreign patients – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_three.webp" alt="Affordable medical treatment experience in India – Sano Healthcare and Tourism facilitator">
+            <img src="./src/images/instagram/insta_three.webp" alt="Affordable medical treatment experience in India – Sano Healthcare and Tourism facilitator" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_four.webp" alt="Specialist doctor consulting international patient in India – Sano Healthcare and Tourism">
+            <img src="./src/images/instagram/insta_four.webp" alt="Specialist doctor consulting international patient in India – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_five.webp" alt="Post treatment patient recovery care in India – Sano Healthcare and Tourism medical tourism">
+            <img src="./src/images/instagram/insta_five.webp" alt="Post treatment patient recovery care in India – Sano Healthcare and Tourism medical tourism" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_six.webp" alt="Ayurveda wellness retreat in India for international patients – Sano Healthcare and Tourism">
+            <img src="./src/images/instagram/insta_six.webp" alt="Ayurveda wellness retreat in India for international patients – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
 
           <!-- duplicate -->
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_seven.webp" alt="Scenic medical tourism recovery destination in India – Sano Healthcare and Tourism">
+            <img src="./src/images/instagram/insta_seven.webp" alt="Scenic medical tourism recovery destination in India – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_eight.webp" alt="Specialist hospital visit arranged by Sano Healthcare and Tourism medical tourism India">
+            <img src="./src/images/instagram/insta_eight.webp" alt="Specialist hospital visit arranged by Sano Healthcare and Tourism medical tourism India" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_nine.webp" alt="Hospital coordination and patient care in India – Sano Healthcare and Tourism">
+            <img src="./src/images/instagram/insta_nine.webp" alt="Hospital coordination and patient care in India – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_ten.webp" alt="International patient cultural tour in India after treatment – Sano Healthcare and Tourism">
+            <img src="./src/images/instagram/insta_ten.webp" alt="International patient cultural tour in India after treatment – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_eleven.webp" alt="Medical visa and travel assistance for patients coming to India – Sano Healthcare and Tourism">
-          </div>
-
-          <div class="slider-item">
-            <img src="./src/images/instagram/insta_twelve.webp" alt="Affordable end-to-end medical treatment support in India – Sano Healthcare and Tourism">
+            <img src="./src/images/instagram/insta_eleven.webp" alt="Medical visa and travel assistance for patients coming to India – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_french_discovers.webp" alt="French patient Ayurvedic healthcare discovery in India – Sano Healthcare and Tourism multilingual">
+            <img src="./src/images/instagram/insta_twelve.webp" alt="Affordable end-to-end medical treatment support in India – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
 
           <div class="slider-item">
-            <img src="./src/images/instagram/insta_french_discovers_two.webp" alt="French-speaking medical tourism Ayurveda wellness journey in India – Sano Healthcare and Tourism">
+            <img src="./src/images/instagram/insta_french_discovers.webp" alt="French patient Ayurvedic healthcare discovery in India – Sano Healthcare and Tourism multilingual" loading="lazy" decoding="async">
+          </div>
+
+          <div class="slider-item">
+            <img src="./src/images/instagram/insta_french_discovers_two.webp" alt="French-speaking medical tourism Ayurveda wellness journey in India – Sano Healthcare and Tourism" loading="lazy" decoding="async">
           </div>
 
         </div>
@@ -1454,6 +1446,7 @@
                 <option value="">Select a country first...</option>
                 <option value="argentina">Argentina</option>
                 <option value="australia">Australia</option>
+                <option value="bangladesh">Bangladesh</option>
                 <option value="brazil">Brazil</option>
                 <option value="canada">Canada</option>
                 <option value="china">China</option>
@@ -1464,18 +1457,23 @@
                 <option value="germany">Germany</option>
                 <option value="israel">Israel</option>
                 <option value="italy">Italy</option>
+                <option value="kenya">Kenya</option>
                 <option value="malaysia">Malaysia</option>
                 <option value="mexico">Mexico</option>
                 <option value="morocco">Morocco</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="oman">Oman</option>
                 <option value="singapore">Singapore</option>
                 <option value="south-africa">South Africa</option>
                 <option value="south-korea">South Korea</option>
                 <option value="spain">Spain</option>
                 <option value="taiwan">Taiwan</option>
+                <option value="tanzania">Tanzania</option>
                 <option value="thailand">Thailand</option>
                 <option value="turkey">Turkey</option>
                 <option value="uae">UAE</option>
                 <option value="uk">United Kingdom</option>
+                <option value="uzbekistan">Uzbekistan</option>
                 <option value="usa">United States</option>
               </select>
             </div>
@@ -2557,7 +2555,7 @@
                 Accommodation - All Arranged</h3>
               <p class="step-desc text-xs sm:text-sm text-slate-600 leading-relaxed">
                 We help you apply for your medical visa, plan travel, and arrange safe accommodation with interpreter
-                support from Ewan.
+                support from Sano's multilingual care team.
               </p>
             </div>
           </div>
@@ -3635,25 +3633,43 @@
       if (videos.length === 0) return;
 
       let currentIndex = 0;
-      const videoDuration = 15000; // 15 seconds per video
+      let switchTimer = null;
+      const videoDuration = 15000;
 
       function switchVideo() {
-        videos[currentIndex].classList.remove('active');
-        videos[currentIndex].pause();
-
+        const prev = videos[currentIndex];
         currentIndex = (currentIndex + 1) % videos.length;
+        const next = videos[currentIndex];
 
-        videos[currentIndex].classList.add('active');
-        videos[currentIndex].play();
+        // Lazy-load next video only when needed
+        if (next.preload === 'none') {
+          next.preload = 'auto';
+          next.load();
+        }
+
+        next.play().then(() => {
+          next.classList.add('active');
+          prev.classList.remove('active');
+          // Pause previous to free GPU/CPU
+          setTimeout(() => prev.pause(), 1000);
+          schedulNext();
+        }).catch(() => {
+          // If play fails, just advance
+          next.classList.add('active');
+          prev.classList.remove('active');
+          setTimeout(() => prev.pause(), 1000);
+          schedulNext();
+        });
       }
 
-      // Auto-switch videos every 15 seconds
-      setInterval(switchVideo, videoDuration);
-
-      // Ensure first video plays
-      if (videos[0]) {
-        videos[0].play();
+      function schedulNext() {
+        clearTimeout(switchTimer);
+        switchTimer = setTimeout(switchVideo, videoDuration);
       }
+
+      // Ensure first video plays, then schedule
+      videos[0].play().catch(() => {});
+      schedulNext();
     });
   </script>
 
@@ -3680,10 +3696,11 @@
           australia: 13250, canada: 17250
         },
         'bypass': {
-          india: 6250, usa: 100000, uk: 27500, germany: 24507, singapore: 21500, spain: 20000, uae: 11000,
+          india: 5500, usa: 100000, uk: 27500, germany: 24507, singapore: 21500, spain: 20000, uae: 11000,
           thailand: 20000, turkey: 12500, malaysia: 12000, mexico: 6000, 'south-korea': 22500, france: 20000,
           israel: 25000, czech: 16300, 'south-africa': 15000, taiwan: 23350, italy: 20000, brazil: 10000, 'costa-rica': 25500, china: 25000,
-          australia: 39750, canada: 54250
+          australia: 39750, canada: 54250,
+          kenya: 10000, nigeria: 10000, bangladesh: 6000, uzbekistan: 18000, tanzania: 10000
         },
         'heart-valve': {
           india: 4950, usa: 140000, uk: 35250, germany: 41720, singapore: 20000, spain: 24000, uae: 11000,
@@ -3700,10 +3717,11 @@
 
         // Orthopedics & Joint Replacement
         'knee-replacement': {
-          india: 6000, usa: 52500, uk: 23750, germany: 20090, singapore: 16000, spain: 23500, uae: 21500,
+          india: 3450, usa: 52500, uk: 23750, germany: 20090, singapore: 16000, spain: 23500, uae: 21500,
           thailand: 12500, turkey: 6000, malaysia: 7250, mexico: 6450, 'south-korea': 20000, france: 23500,
           israel: 24000, czech: 15650, 'south-africa': 12500, taiwan: 11350, italy: 23500, brazil: 12000, 'costa-rica': 12500, china: 6000,
-          australia: 20500, canada: 27750
+          australia: 20500, canada: 27750,
+          kenya: 5000, uzbekistan: 7000, tanzania: 5500
         },
         'hip-replacement': {
           india: 3750, usa: 45000, uk: 17500, germany: 29760, singapore: 13000, spain: 11500, uae: 12400,
@@ -3740,24 +3758,27 @@
 
         // Oncology and Cancer Treatment India: Chemotherapy, Radiation, and Surgical Oncology
         'chemotherapy': {
-          india: 1325, usa: 30000, uk: 12812, germany: 14250, singapore: 35000, spain: 5400, uae: 612,
+          india: 2250, usa: 30000, uk: 12812, germany: 14250, singapore: 35000, spain: 5400, uae: 612,
           thailand: 15000, turkey: 2000, malaysia: 7000, mexico: 9000, 'south-korea': 6000, france: 5400,
           israel: 7500, czech: 3350, 'south-africa': 31865, taiwan: 11650, italy: 5400, brazil: 6750, 'costa-rica': 4200, china: 30000,
-          australia: 10900, canada: 15750
+          australia: 10900, canada: 15750,
+          kenya: 4500, nigeria: 3000, oman: 4000, bangladesh: 2500, uzbekistan: 3250, tanzania: 4500
         },
         'bone-marrow-transplant': {
-          india: 32500, usa: 175000, uk: 67500, germany: 37500, singapore: 130000, spain: 37500, uae: 37500,
+          india: 19500, usa: 175000, uk: 67500, germany: 37500, singapore: 130000, spain: 37500, uae: 37500,
           thailand: 37500, turkey: 37500, malaysia: 37500, mexico: 22000, 'south-korea': 37500, france: 37500,
           israel: 37500, czech: 39100, 'south-africa': 37500, taiwan: 30000, italy: 37500, brazil: 45000, 'costa-rica': 45000, china: 75000,
-          australia: 86500, canada: 117000
+          australia: 86500, canada: 117000,
+          oman: 12000
         },
 
         // Gastroenterology & Hepatology
         'liver-transplant': {
-          india: 31500, usa: 250000, uk: 90000, germany: 32680, singapore: 107500, spain: 35000, uae: 32500,
+          india: 26000, usa: 250000, uk: 90000, germany: 32680, singapore: 107500, spain: 35000, uae: 32500,
           thailand: 31500, turkey: 27500, malaysia: 60000, 'south-korea': 40000, france: 35000, israel: 31500,
           czech: 32600, 'south-africa': 85000, taiwan: 41650, italy: 35000, brazil: 60000, 'costa-rica': 60000, china: 75000,
-          australia: 106500, canada: 144000
+          australia: 106500, canada: 144000,
+          oman: 40000
         },
         'bariatric-surgery': {
           india: 6000, usa: 32500, uk: 10625, germany: 10000, singapore: 15000, spain: 7500, uae: 6000,
@@ -3768,10 +3789,11 @@
 
         // Urology & Nephrology
         'kidney-transplant': {
-          india: 30000, usa: 110000, uk: 54375, germany: 36370, singapore: 50000, spain: 22500, uae: 22000,
+          india: 11500, usa: 110000, uk: 54375, germany: 36370, singapore: 50000, spain: 22500, uae: 22000,
           thailand: 5975, turkey: 9000, malaysia: 9500, 'south-korea': 40000, france: 22500, israel: 21500,
           czech: 21750, 'south-africa': 21000, taiwan: 31000, italy: 22500, brazil: 25000, 'costa-rica': 12500, china: 35000,
-          australia: 93250, canada: 126000
+          australia: 93250, canada: 126000,
+          kenya: 17500, nigeria: 18500
         },
         'prostate-surgery': {
           india: 3600, usa: 17500, uk: 8500, germany: 12575, singapore: 6500, spain: 6500, uae: 14000,
@@ -3953,6 +3975,21 @@
         },
         'weight-management': {
           india: 1400, australia: 4300, canada: 5850, france: 1944
+        },
+        'ophthalmology-eye-disorders': {
+          india: 1200, oman: 2500
+        },
+        'hematology': {
+          india: 1500, oman: 3000, bangladesh: 1150
+        },
+        'pediatric-neurology': {
+          india: 1100, oman: 2250
+        },
+        'neurology': {
+          india: 1300, bangladesh: 1800
+        },
+        'thalassemia-treatment': {
+          india: 1400, bangladesh: 2000
         }
       };
 
@@ -3963,7 +4000,9 @@
         mexico: 'Mexico', 'south-korea': 'South Korea', france: 'France', israel: 'Israel',
         czech: 'Czech Republic', 'south-africa': 'South Africa', taiwan: 'Taiwan', italy: 'Italy',
         'dominican': 'Dominican Republic', argentina: 'Argentina', morocco: 'Morocco', china: 'China',
-        brazil: 'Brazil', 'costa-rica': 'Costa Rica', australia: 'Australia', canada: 'Canada'
+        brazil: 'Brazil', 'costa-rica': 'Costa Rica', australia: 'Australia', canada: 'Canada',
+        kenya: 'Kenya', nigeria: 'Nigeria', oman: 'Oman', bangladesh: 'Bangladesh',
+        uzbekistan: 'Uzbekistan', tanzania: 'Tanzania'
       };
 
       // Treatment names mapping
@@ -4024,7 +4063,12 @@
         'smile-design': 'Smile Design (full)',
         'orthodontics': 'Orthodontics (Braces / Aligners)',
         'stress-relief': 'Stress Relief / Mental Wellness',
-        'weight-management': 'Weight Management'
+        'weight-management': 'Weight Management',
+        'ophthalmology-eye-disorders': 'Ophthalmology (Eye Disorders)',
+        'hematology': 'Hematology',
+        'pediatric-neurology': 'Pediatric Neurology',
+        'neurology': 'Neurology',
+        'thalassemia-treatment': 'Thalassemia Treatment'
       };
 
       // Function to update treatment options based on selected country
@@ -4237,52 +4281,45 @@
             topOffsets.push(baseTop + i * 20);
           });
 
+          var rafPending = false;
           function onScroll() {
-            cards.forEach(function (card, index) {
-              if (index >= cards.length - 1) {
-                // Last card never gets "stacked"
-                card.classList.remove('is-stacked');
-                card.style.setProperty('--stack-scale', '1');
-                card.style.setProperty('--stack-brightness', '1');
-                return;
-              }
+            if (rafPending) return;
+            rafPending = true;
+            requestAnimationFrame(function () {
+              rafPending = false;
+              cards.forEach(function (card, index) {
+                if (index >= cards.length - 1) {
+                  card.classList.remove('is-stacked');
+                  card.style.setProperty('--stack-scale', '1');
+                  card.style.setProperty('--stack-brightness', '1');
+                  return;
+                }
 
-              var rect = card.getBoundingClientRect();
-              var stickyTop = topOffsets[index];
+                var rect = card.getBoundingClientRect();
+                var stickyTop = topOffsets[index];
+                var distFromStuck = rect.top - stickyTop;
 
-              // How close the card is to being stuck at its top position
-              // When rect.top equals stickyTop, the card is fully stuck
-              var distFromStuck = rect.top - stickyTop;
-
-              if (distFromStuck <= 0) {
-                // Card is stuck – calculate how far the NEXT card has scrolled over it
-                var nextCard = cards[index + 1];
-                var nextRect = nextCard.getBoundingClientRect();
-                var nextStickyTop = topOffsets[index + 1];
-
-                // How far the next card has progressed toward its stick point
-                // Range: when nextRect.top is far below → 0 progress, when nextRect.top reaches nextStickyTop → 1.0
-                var overlapDistance = 200; // px of travel for full transition
-                var progress = Math.max(0, Math.min(1, 1 - (nextRect.top - nextStickyTop) / overlapDistance));
-
-                // Scale: 1.0 → 0.92 as next card overlaps
-                var scaleVal = 1 - progress * 0.08;
-                // Brightness: 1.0 → 0.85
-                var brightnessVal = 1 - progress * 0.15;
-
-                card.classList.add('is-stacked');
-                card.style.setProperty('--stack-scale', scaleVal.toFixed(4));
-                card.style.setProperty('--stack-brightness', brightnessVal.toFixed(4));
-              } else {
-                card.classList.remove('is-stacked');
-                card.style.setProperty('--stack-scale', '1');
-                card.style.setProperty('--stack-brightness', '1');
-              }
+                if (distFromStuck <= 0) {
+                  var nextCard = cards[index + 1];
+                  var nextRect = nextCard.getBoundingClientRect();
+                  var nextStickyTop = topOffsets[index + 1];
+                  var overlapDistance = 200;
+                  var progress = Math.max(0, Math.min(1, 1 - (nextRect.top - nextStickyTop) / overlapDistance));
+                  var scaleVal = 1 - progress * 0.08;
+                  var brightnessVal = 1 - progress * 0.15;
+                  card.classList.add('is-stacked');
+                  card.style.setProperty('--stack-scale', scaleVal.toFixed(4));
+                  card.style.setProperty('--stack-brightness', brightnessVal.toFixed(4));
+                } else {
+                  card.classList.remove('is-stacked');
+                  card.style.setProperty('--stack-scale', '1');
+                  card.style.setProperty('--stack-brightness', '1');
+                }
+              });
             });
           }
 
           window.addEventListener('scroll', onScroll, { passive: true });
-          onScroll(); // Initial check
         }
 
         animateStack(featureCards, 80);

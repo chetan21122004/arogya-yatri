@@ -1,211 +1,151 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Medical Tourism News & Healthcare Blogs | Sano Healthcare and Tourism</title>
-  <meta name="description"
-    content="Stay updated with the latest trends in medical tourism, healthcare innovations in India, and wellness tips for international patients.">
-
-  
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalOrganization",
-  "name": "Sano Healthcare and Tourism",
-  "description": "Medical tourism facilitator India based in Pune connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement India cost procedures, ayurvedic retreats, and panchakarma retreat India programmes.",
-  "url": "https://www.arogyayatri.com",
-  "telephone": "+918530054299",
-  "email": "apoorva@ewan.co.in",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Pune",
-    "addressRegion": "Maharashtra",
-    "addressCountry": "IN"
-  },
-  "areaServed": "Worldwide",
-  "knowsLanguage": "120+ languages",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Medical Tourism India Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "MedicalProcedure",
-          "name": "Affordable Heart Surgery India"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "MedicalProcedure",
-          "name": "Cancer Treatment India"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "MedicalProcedure",
-          "name": "Knee Replacement India Cost"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "WellnessProgram",
-          "name": "Ayurvedic Retreat India"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "WellnessProgram",
-          "name": "Panchakarma Retreat India"
-        }
-      }
-    ]
-  }
-}
-  </script>
-<!-- Google Fonts -->
+  <meta name="description" content="Stay updated with the latest trends in medical tourism, healthcare innovations in India, and wellness tips for international patients.">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "How to Get an Indian Medical Visa: A Step-by-Step Guide for Patients and Families",
-    "author": { "@type": "Organization", "name": "Sano Healthcare and Tourism" },
-    "publisher": { "@id": "https://www.arogyayatri.com/#organization" },
-    "datePublished": "2026-04-01",
-    "image": "https://www.arogyayatri.com/src/images/blog-medical-visa-featured.png",
-    "mainEntityOfPage": "https://www.arogyayatri.com/app/pages/news.html"
+    "@type": "MedicalOrganization",
+    "name": "Sano Healthcare and Tourism",
+    "url": "https://www.arogyayatri.com",
+    "telephone": "+918530054299",
+    "email": "apoorva@ewan.co.in",
+    "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" }
   }
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.arogyayatri.com/"
-    }, {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "News & Blogs",
-      "item": "https://www.arogyayatri.com/app/pages/news.html"
-    }]
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.arogyayatri.com/" },
+      { "@type": "ListItem", "position": 2, "name": "News & Blogs", "item": "https://www.arogyayatri.com/app/pages/news.html" }
+    ]
   }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
 
-  <!-- Boxicons -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-  <!-- CSS styles -->
   <link rel="stylesheet" href="../style/basic-nav.css">
-  <link rel="stylesheet" href="../style/animations.css">
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            logo: ['Anton', 'sans-serif'],
-            body: ['Lexend', 'sans-serif']
-          },
-          colors: {
-            primaryDark: '#0F172A'
-          }
+          fontFamily: { logo: ['Anton', 'sans-serif'], body: ['Lexend', 'sans-serif'] },
+          colors: { primaryDark: '#0F172A' }
         }
       }
     }
   </script>
 
   <style>
-    /* Hide scrollbar globally */
-    html,
-    body {
-      scrollbar-width: none;
-      /* Firefox */
-      -ms-overflow-style: none;
-      /* IE & Edge */
+    html, body { scrollbar-width: none; -ms-overflow-style: none; }
+    html::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar { display: none; }
+    html { scroll-behavior: smooth; }
+
+    #siteHeader { height: 72px; background: white; box-shadow: 0 8px 30px rgba(0,0,0,.06); }
+    .nav-link { position: relative; color: black; padding: 4px 0; }
+    .nav-link::after { content: ''; position: absolute; left: 50%; bottom: -6px; width: 0; height: 2px; background: black; transform: translateX(-50%); transition: width .25s ease; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-cta { border-color: black; }
+    .page-wrapper { padding-top: 72px; }
+    #mobileMenu nav a { display: block; width: 100%; line-height: 1.4; padding: 6px 0; white-space: normal; }
+
+    /* ── Hero ── */
+    .news-hero {
+      background: linear-gradient(135deg, #f0fdfa 0%, #f8fafc 60%, #ecfeff 100%);
+      border-bottom: 1px solid #e2e8f0;
     }
 
-    html::-webkit-scrollbar,
-    body::-webkit-scrollbar {
-      display: none;
-      /* Chrome, Safari */
-    }
-
-    *::-webkit-scrollbar {
-      display: none;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* ===== NAVBAR ===== */
-    #siteHeader {
-      height: 72px;
+    /* ── Filter chips ── */
+    .filter-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1.5px solid #e2e8f0;
+      color: #475569;
+      cursor: pointer;
+      transition: background .15s, border-color .15s, color .15s;
+      white-space: nowrap;
       background: white;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+      user-select: none;
+    }
+    .filter-chip:hover { border-color: #14b8a6; color: #0f766e; }
+    .filter-chip.active { background: #0d9488; border-color: #0d9488; color: white; }
+    .filter-chip .dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: currentColor; opacity: .6; flex-shrink: 0;
     }
 
-    .nav-link {
-      position: relative;
-      color: black;
-      padding: 4px 0;
+    /* ── Blog card ── */
+    .blog-card {
+      background: white;
+      border-radius: 20px;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .blog-card:hover { box-shadow: 0 12px 32px rgba(0,0,0,.09); transform: translateY(-3px); }
+    .blog-card img { transition: opacity .3s; }
+    .blog-card:hover img { opacity: .92; }
+
+    /* ── Category pill on card ── */
+    .cat-pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      background: #f0fdfa;
+      color: #0f766e;
     }
 
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: -6px;
-      width: 0;
-      height: 2px;
-      background: black;
-      transform: translateX(-50%);
-      transition: width .25s ease;
+    /* ── Featured card ── */
+    .featured-card {
+      background: white;
+      border-radius: 24px;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      transition: box-shadow .2s;
     }
+    .featured-card:hover { box-shadow: 0 16px 40px rgba(0,0,0,.1); }
 
-    .nav-link:hover::after {
-      width: 100%;
-    }
+    /* ── Sidebar sticky ── */
+    .sidebar-sticky { position: sticky; top: 88px; }
 
-    .nav-cta {
-      border-color: black;
-    }
+    /* ── Hide when filtered ── */
+    .blog-item.hidden-by-filter { display: none !important; }
 
-    /* ===== PAGE OFFSET FOR FIXED NAV ===== */
-    .page-wrapper {
-      padding-top: 72px;
+    /* ── Read-more arrow ── */
+    .read-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .85rem; font-weight: 500; color: #0d9488;
+      transition: color .15s, gap .15s;
     }
+    .read-link:hover { color: #0f766e; gap: 10px; }
 
-    /* ===== Mobile Sidebar Fix ===== */
-    #mobileMenu nav a {
-      display: block;
-      width: 100%;
-      line-height: 1.4;
-      padding: 6px 0;
-      white-space: normal;
-    }
+    /* ── No-results ── */
+    #noResults { display: none; }
+    #noResults.show { display: block; }
   </style>
-
 </head>
 
-<body class="font-body bg-white text-black">
+<body class="font-body bg-slate-50 text-black">
 
   <!-- ================= NAVBAR ================= -->
-      <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50">
     <nav class="relative max-w-7xl mx-auto px-6 h-20 flex items-center">
       <a href="../../index.html" class="flex items-center">
         <img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 md:h-14 w-auto object-contain">
@@ -225,7 +165,7 @@
         </li>
       </ul>
       <div class="ml-auto hidden md:flex items-center">
-        <a class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none">
+        <a class="openConsultantModal nav-cta inline-flex items-center gap-3 px-5 py-2 rounded-full border transition leading-none cursor-pointer">
           <span class="h-8 w-8 rounded-full bg-teal-500 text-white flex items-center justify-center"><i class='bx bx-right-arrow-alt'></i></span>
           <span class="text-sm font-medium">Book Consultation</span>
         </a>
@@ -234,12 +174,9 @@
     </nav>
   </header>
 
-  <div id="mobileMenu"
-    class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
+  <div id="mobileMenu" class="fixed inset-y-0 left-0 w-80 bg-white z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-2xl">
     <div class="p-6 border-b border-gray-200 flex justify-between items-start">
-      <a href="../../index.html">
-        <img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-11 w-auto object-contain">
-      </a>
+      <a href="../../index.html"><img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-11 w-auto object-contain"></a>
       <button id="closeBtn" class="text-2xl text-black"><i class='bx bx-x'></i></button>
     </div>
     <nav class="px-6 py-8 space-y-6 text-lg font-medium text-primaryDark">
@@ -256,428 +193,396 @@
         </div>
       </div>
       <div class="pt-6 border-t border-gray-200"></div>
-      <a href="https://forms.gle/Snkvg8H7byeD8cXj7"
-        target="_blank"
-        class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition"
-        style="display: inline-flex; padding: 10px 20px; border-radius: 9999px; border: 1px solid black;">
+      <a class="openConsultantModal flex items-center justify-between px-5 py-2 rounded-full border border-primaryDark hover:bg-primaryDark hover:text-white transition cursor-pointer">
         <span>Book Consultation</span>
         <span class="h-10 w-10 flex items-center justify-center rounded-full bg-teal-500 text-white"><i class='bx bx-right-arrow-alt text-xl'></i></span>
       </a>
     </nav>
   </div>
 
-<main class="page-wrapper">
+  <main class="page-wrapper">
 
-
-    <!-- ================= NEWS HERO SECTION ================= -->
-    <section class="relative bg-white border-b border-slate-100">
-      <div class="max-w-7xl mx-auto px-6 py-16 md:py-20 animate-on-scroll">
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="news-hero">
+      <div class="max-w-7xl mx-auto px-6 py-14 md:py-18">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-          <!-- Left Content -->
+          <!-- Left: page intro -->
           <div>
-            <p class="text-xs tracking-widest uppercase text-teal-600 font-medium mb-3">
-              News & Insights
-            </p>
-
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight mb-5">
-              Trusted Updates in<br class="hidden sm:block">
-              Global Medical Tourism
+            <p class="text-xs tracking-widest uppercase text-teal-600 font-semibold mb-3">News & Insights</p>
+            <h1 class="text-3xl md:text-4xl lg:text-[2.6rem] font-semibold text-slate-900 leading-tight mb-5">
+              Trusted Updates in<br class="hidden sm:block">Global Medical Tourism
             </h1>
-
-            <p class="text-base text-slate-600 max-w-xl leading-relaxed mb-6">
-              Explore verified news, healthcare developments, hospital milestones,
-              and treatment innovations shaping cross-border patient care worldwide.
+            <p class="text-base text-slate-500 max-w-md leading-relaxed mb-7">
+              Verified news, healthcare breakthroughs, hospital milestones, and treatment insights shaping cross-border patient care.
             </p>
-
-            <a href="#news-list"
-              class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-teal-500 text-white text-sm font-medium hover:bg-teal-600 transition">
-              View Latest Articles
-              <i class="bx bx-right-arrow-alt text-lg"></i>
+            <a href="#blog-list" class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-teal-500 text-white text-sm font-medium hover:bg-teal-600 transition">
+              Browse Articles <i class="bx bx-right-arrow-alt text-lg"></i>
             </a>
           </div>
 
-          <!-- Right Featured Article -->
-          <div class="relative">
-            <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden">
-
-              <!-- Image -->
-              <div class="h-52 md:h-60 bg-slate-100">
+          <!-- Right: featured article card -->
+          <div>
+            <a href="blog-india-medical-visa-guide.html" class="featured-card block group">
+              <div class="h-52 md:h-60 bg-slate-100 overflow-hidden">
                 <img src="../../src/images/blog-medical-visa-featured.png"
-                  alt="Indian medical visa documents with passport and healthcare travel paperwork" class="w-full h-full object-cover">
+                  alt="Indian medical visa documents with passport and healthcare travel paperwork"
+                  class="w-full h-full object-cover" width="640" height="360">
               </div>
-
-              <!-- Content -->
               <div class="p-6">
-                <span class="inline-block text-xs uppercase tracking-wide text-teal-600 mb-3">
-                  Featured Article
-                </span>
-
-                <h3 class="text-xl font-semibold text-slate-900 leading-snug mb-3">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="cat-pill">Travel &amp; Visa Guide</span>
+                  <span class="text-xs text-slate-400">5 min read</span>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3 group-hover:text-teal-700 transition">
                   How to Get an Indian Medical Visa: A Step-by-Step Guide for Patients and Families
                 </h3>
-
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                <p class="text-sm text-slate-500 leading-relaxed mb-4">
                   Everything international patients and families need to know about India's e-Medical Visa, documents, timelines, and common mistakes.
                 </p>
-
-                <a href="blog-india-medical-visa-guide.html"
-                  class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700 transition">
-                  Read Full Story
-                  <i class="bx bx-right-arrow-alt text-lg"></i>
-                </a>
+                <span class="read-link">Read Full Story <i class="bx bx-right-arrow-alt text-lg"></i></span>
               </div>
-
-            </div>
+            </a>
           </div>
 
         </div>
       </div>
     </section>
 
+    <!-- ═══════════ MAIN CONTENT ═══════════ -->
+    <section id="blog-list" class="max-w-7xl mx-auto px-6 py-14">
+      <div class="flex flex-col lg:flex-row gap-10">
 
-    <!-- ================= LATEST ARTICLES SECTION ================= -->
-    <section id="news-list" class="bg-white border-t border-slate-100">
-      <div class="max-w-7xl mx-auto px-6 py-20 animate-on-scroll">
+        <!-- ── Left Sidebar ── -->
+        <aside class="lg:w-64 flex-shrink-0">
+          <div class="sidebar-sticky">
 
-        <!-- Heading -->
-        <div class="text-center mb-14">
-          <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 mb-3">
-            Latest Articles
-          </h2>
-          <p class="text-sm md:text-base text-teal-600 max-w-2xl mx-auto">
-            Curated insights, hospital updates, and global treatment breakthroughs.
-          </p>
-        </div>
-
-        <!-- Articles Grid -->
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/blog-indian-hospital-featured.png" alt="Cost comparison for surgery savings in India versus Western countries"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Cost Guide</span>
-                <span>•</span>
-                <span>6 min read</span>
+            <!-- Category filters -->
+            <div class="bg-white rounded-2xl border border-slate-200 p-5 mb-6">
+              <h2 class="text-sm font-semibold text-slate-800 uppercase tracking-wider mb-4">Quick Filters</h2>
+              <div id="filterList" class="flex flex-col gap-2">
+                <button class="filter-chip active text-left" data-cat="all">
+                  <span class="dot"></span> All Articles
+                </button>
+                <button class="filter-chip text-left" data-cat="Cost Guide">
+                  <span class="dot"></span> Cost Guide
+                </button>
+                <button class="filter-chip text-left" data-cat="Hospital Guide">
+                  <span class="dot"></span> Hospital Guide
+                </button>
+                <button class="filter-chip text-left" data-cat="Destination">
+                  <span class="dot"></span> Destination
+                </button>
+                <button class="filter-chip text-left" data-cat="Insurance">
+                  <span class="dot"></span> Insurance
+                </button>
+                <button class="filter-chip text-left" data-cat="Recovery">
+                  <span class="dot"></span> Recovery
+                </button>
+                <button class="filter-chip text-left" data-cat="Travel">
+                  <span class="dot"></span> Travel
+                </button>
+                <button class="filter-chip text-left" data-cat="Travel &amp; Visa Guide">
+                  <span class="dot"></span> Visa Guide
+                </button>
+                <button class="filter-chip text-left" data-cat="Trust &amp; Safety">
+                  <span class="dot"></span> Trust &amp; Safety
+                </button>
+                <button class="filter-chip text-left" data-cat="Oncology">
+                  <span class="dot"></span> Oncology
+                </button>
+                <button class="filter-chip text-left" data-cat="Fertility &amp; IVF">
+                  <span class="dot"></span> Fertility &amp; IVF
+                </button>
+                <button class="filter-chip text-left" data-cat="Medical Tourism">
+                  <span class="dot"></span> Medical Tourism
+                </button>
               </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                How Much Can I Save on Surgery in India?
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                Real procedure cost comparisons across cardiac, orthopaedic, cancer, and fertility care.
-              </p>
-              <a href="blog-how-much-can-i-save-surgery-india.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            </div>
+
+            <!-- Quick contact widget -->
+            <div class="bg-teal-600 rounded-2xl p-5 text-white">
+              <p class="text-sm font-semibold mb-1">Plan your treatment</p>
+              <p class="text-xs opacity-80 mb-4 leading-relaxed">Talk to our care team — free consultation, 120+ languages.</p>
+              <a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white text-teal-700 text-xs font-semibold hover:bg-teal-50 transition">
+                <i class="bx bxl-whatsapp text-base text-green-600"></i> WhatsApp Us
               </a>
             </div>
-          </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/hospital.webp" alt="Modern accredited hospital in India for international patients"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Hospital Guide</span>
-                <span>•</span>
-                <span>6 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                Best Hospitals in India for International Patients
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                What accreditation means and how to choose the right hospital for your case.
-              </p>
-              <a href="blog-best-hospitals-india-international-patients.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+          </div>
+        </aside>
+
+        <!-- ── Main Blog Grid ── -->
+        <div class="flex-1 min-w-0">
+
+          <!-- Article count -->
+          <div class="flex items-center justify-between mb-6">
+            <p class="text-sm text-slate-500"><span id="visibleCount">11</span> articles</p>
+          </div>
+
+          <!-- No results -->
+          <div id="noResults" class="text-center py-16 text-slate-400">
+            <i class="bx bx-search-alt text-5xl mb-3 block"></i>
+            <p class="font-medium">No articles in this category yet.</p>
+          </div>
+
+          <!-- Grid -->
+          <div id="blogGrid" class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+
+            <!-- 1 -->
+            <article class="blog-item blog-card" data-cat="Cost Guide">
+              <a href="blog-how-much-can-i-save-surgery-india.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/blog-indian-hospital-featured.png"
+                    alt="Cost comparison for surgery savings in India versus Western countries"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Cost Guide</span>
+                    <span class="text-xs text-slate-400">6 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">How Much Can I Save on Surgery in India?</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Real procedure cost comparisons across cardiac, orthopaedic, cancer, and fertility care.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/india.webp" alt="Indian city for medical treatment"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Destination</span>
-                <span>•</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                Which Indian City Should I Choose?
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                Chennai, Mumbai, Delhi, Hyderabad, Bengaluru, or Pune — matched to your procedure.
-              </p>
-              <a href="blog-which-indian-city-medical-procedure.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 2 -->
+            <article class="blog-item blog-card" data-cat="Hospital Guide">
+              <a href="blog-best-hospitals-india-international-patients.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/hospital.webp"
+                    alt="Modern accredited hospital in India for international patients"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Hospital Guide</span>
+                    <span class="text-xs text-slate-400">6 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">Best Hospitals in India for International Patients</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">What accreditation means and how to choose the right hospital for your case.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/plane-bg.jpg" alt="Travel insurance for medical tourism in India"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Insurance</span>
-                <span>•</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                Travel Insurance for Medical Tourism in India
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                What it covers, what it doesn't, and what to check before you buy.
-              </p>
-              <a href="blog-travel-insurance-medical-tourism-india.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 3 -->
+            <article class="blog-item blog-card" data-cat="Destination">
+              <a href="blog-which-indian-city-medical-procedure.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/india.webp"
+                    alt="Indian city for medical treatment"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Destination</span>
+                    <span class="text-xs text-slate-400">5 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">Which Indian City Should I Choose?</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Chennai, Mumbai, Delhi, Hyderabad, Bengaluru, or Pune — matched to your procedure.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/doctor-work.webp" alt="Patient recovery after surgery in India"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Recovery</span>
-                <span>•</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                Recovery Time After Surgery in India
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                Procedure-by-procedure recovery timelines and fit-to-fly guidance.
-              </p>
-              <a href="blog-recovery-time-surgery-india.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 4 -->
+            <article class="blog-item blog-card" data-cat="Insurance">
+              <a href="blog-travel-insurance-medical-tourism-india.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/plane-bg.jpg"
+                    alt="Travel insurance for medical tourism in India"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Insurance</span>
+                    <span class="text-xs text-slate-400">5 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">Travel Insurance for Medical Tourism in India</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">What it covers, what it doesn't, and what to check before you buy.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/auruyveda.webp" alt="Combining medical treatment with travel in India"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Travel</span>
-                <span>•</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                Combining Treatment with a Vacation in India
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                How to add gentle travel to your recovery without compromising your treatment.
-              </p>
-              <a href="blog-combine-treatment-vacation-india.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 5 -->
+            <article class="blog-item blog-card" data-cat="Recovery">
+              <a href="blog-recovery-time-surgery-india.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/doctor-work.webp"
+                    alt="Patient recovery after surgery in India"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Recovery</span>
+                    <span class="text-xs text-slate-400">5 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">Recovery Time After Surgery in India</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Procedure-by-procedure recovery timelines and fit-to-fly guidance.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/doctor-page-hero.png" alt="Specialist doctor consulting an international patient in India"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Trust & Safety</span>
-                <span>•</span>
-                <span>6 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                Quality of Doctors in India vs. Your Home Country
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                Training, accreditation, and how to verify surgeon credentials before you travel.
-              </p>
-              <a href="blog-quality-of-doctors-india-vs-home-country.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 6 -->
+            <article class="blog-item blog-card" data-cat="Travel">
+              <a href="blog-combine-treatment-vacation-india.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/auruyveda.webp"
+                    alt="Combining medical treatment with travel in India"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Travel</span>
+                    <span class="text-xs text-slate-400">5 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">Combining Treatment with a Vacation in India</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">How to add gentle travel to your recovery without compromising your treatment.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/blog-medical-visa-featured.png" alt="Indian medical visa documents with passport and healthcare travel paperwork"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Travel & Visa Guide</span>
-                <span>•</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                How to Get an Indian Medical Visa: A Step-by-Step Guide for Patients and Families
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                Everything international patients and families need to know about India's e-Medical Visa, documents, timelines, and common mistakes.
-              </p>
-              <a href="blog-india-medical-visa-guide.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 7 -->
+            <article class="blog-item blog-card" data-cat="Trust &amp; Safety">
+              <a href="blog-quality-of-doctors-india-vs-home-country.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/doctor-page-hero.png"
+                    alt="Specialist doctor consulting an international patient in India"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Trust &amp; Safety</span>
+                    <span class="text-xs text-slate-400">6 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">Quality of Doctors in India vs. Your Home Country</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Training, accreditation, and how to verify surgeon credentials before you travel.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/blog-cancer-treatment-featured.png" alt="Oncology doctor consulting an international patient for cancer treatment in India"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Oncology</span>
-                <span>•</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                Cancer Treatment in India: What International Patients Need to Know
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                A practical guide to cancer treatment in India, including costs, available treatments, hospital selection, and the patient journey.
-              </p>
-              <a href="blog-cancer-treatment-india.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 8 -->
+            <article class="blog-item blog-card" data-cat="Travel &amp; Visa Guide">
+              <a href="blog-india-medical-visa-guide.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/blog-medical-visa-featured.png"
+                    alt="Indian medical visa documents with passport and healthcare travel paperwork"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Travel &amp; Visa Guide</span>
+                    <span class="text-xs text-slate-400">5 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">How to Get an Indian Medical Visa</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Step-by-step guide covering e-Medical Visa, documents, timelines, and common mistakes.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/blog-ivf-fertility-featured.png" alt="Fertility specialist discussing IVF treatment options with a couple in India"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Fertility & IVF</span>
-                <span>•</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                IVF in India: An Honest Guide for Couples Considering Treatment Abroad
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                An honest guide to IVF in India, covering costs, success rates, clinic quality, legal notes, and practical travel planning.
-              </p>
-              <a href="blog-ivf-fertility-india.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 9 -->
+            <article class="blog-item blog-card" data-cat="Oncology">
+              <a href="blog-cancer-treatment-india.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/blog-cancer-treatment-featured.png"
+                    alt="Oncology doctor consulting an international patient for cancer treatment in India"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Oncology</span>
+                    <span class="text-xs text-slate-400">5 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">Cancer Treatment in India: What International Patients Need to Know</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Costs, available treatments, hospital selection, and the full patient journey.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="group bg-white rounded-3xl border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="relative aspect-[16/10] bg-slate-100 overflow-hidden">
-              <img src="../../src/images/blog-indian-hospital-featured.png" alt="Professional Indian hospital facility for international medical tourism patients"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wide text-teal-600 font-medium">Medical Tourism</span>
-                <span>•</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-lg font-semibold text-slate-900 leading-snug mb-3">
-                Heal in India Program: Affordable Medical Tourism Guide
-              </h3>
-              <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                How the Heal in India Program helps international patients access NABH accredited hospitals with major cost savings, fast visas, and end-to-end care coordination.
-              </p>
-              <a href="blog-heal-in-india-program-guide.html" class="inline-flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
-                Read article
-                <i class="bx bx-right-arrow-alt text-lg"></i>
+            <!-- 10 -->
+            <article class="blog-item blog-card" data-cat="Fertility &amp; IVF">
+              <a href="blog-ivf-fertility-india.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/blog-ivf-fertility-featured.png"
+                    alt="Fertility specialist discussing IVF treatment options with a couple in India"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Fertility &amp; IVF</span>
+                    <span class="text-xs text-slate-400">5 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">IVF in India: An Honest Guide for Couples Considering Treatment Abroad</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Costs, success rates, clinic quality, legal notes, and practical travel planning.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
               </a>
-            </div>
-          </article>
+            </article>
 
-        </div>
-      </div>
+            <!-- 11 -->
+            <article class="blog-item blog-card" data-cat="Medical Tourism">
+              <a href="blog-heal-in-india-program-guide.html" class="block">
+                <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+                  <img src="../../src/images/blog-indian-hospital-featured.png"
+                    alt="Professional Indian hospital facility for international medical tourism patients"
+                    class="w-full h-full object-cover" width="480" height="300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="cat-pill">Medical Tourism</span>
+                    <span class="text-xs text-slate-400">5 min read</span>
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 leading-snug mb-2">Heal in India Program: Affordable Medical Tourism Guide</h3>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">How the Heal in India Program helps international patients access NABH hospitals with major cost savings.</p>
+                  <span class="read-link">Read article <i class="bx bx-right-arrow-alt text-base"></i></span>
+                </div>
+              </a>
+            </article>
+
+          </div><!-- /blogGrid -->
+        </div><!-- /main -->
+      </div><!-- /flex -->
     </section>
-
 
   </main>
 
   <!-- CONSULTANT MODAL -->
-  <div id="consultantModal"
-    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
-
+  <div id="consultantModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm px-4">
     <div class="relative w-full max-w-md rounded-[28px] bg-white shadow-2xl overflow-hidden">
-
-      <!-- CLOSE BUTTON -->
-      <button onclick="closeConsultantModal()"
-        class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
-
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
+      <button onclick="closeConsultantModal()" class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-md hover:bg-slate-100 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
-
-      <!-- BODY -->
       <div class="px-4 py-4">
         <div class="w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200">
-          <iframe
-            src="https://forms.gle/Snkvg8H7byeD8cXj7"
-            class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0">
-            Loading…
-          </iframe>
+          <iframe src="https://forms.gle/Snkvg8H7byeD8cXj7" class="w-full h-full" frameborder="0">Loading…</iframe>
         </div>
       </div>
-
     </div>
   </div>
 
-  <!-- Whatsapp Icon -->
+  <!-- WhatsApp FAB -->
   <a href="https://wa.me/918530054299" target="_blank" aria-label="Chat on WhatsApp"
     class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 shadow-xl hover:scale-105 hover:bg-green-600 transition-transform duration-300">
     <i class='bx bxl-whatsapp text-white text-3xl'></i>
   </a>
 
   <!-- FOOTER -->
-    <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
+  <footer class="relative bg-slate-900 text-slate-300 pt-20 pb-10">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
         <div class="lg:col-span-2">
           <a href="../../index.html">
-            <span class="inline-block bg-white rounded-lg p-3 mb-3"><img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 w-auto object-contain"></span>
+            <span class="inline-block bg-white rounded-lg p-3 mb-3"><img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 w-auto object-contain" loading="lazy"></span>
             <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">Sano Healthcare and Tourism is India's trusted medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, panchakarma retreats, and more. Zero waiting. 120+ languages. Complete end-to-end support.</p>
           </a>
           <div class="flex items-center gap-4">
@@ -710,90 +615,76 @@
       </div>
       <div class="border-t border-white/10 mb-8"></div>
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-        <p>&copy; 2026 Sano Healthcare and Tourism. India's Medical Tourism Facilitator: Affordable Care. Zero Waiting. Full Support. in India and Pune. All rights reserved.</p>
+        <p>&copy; 2026 Sano Healthcare and Tourism. India's Medical Tourism Facilitator: Affordable Care. Zero Waiting. Full Support. All rights reserved.</p>
         <div class="flex items-center gap-6">
-          <span class="flex items-center gap-2"><i class="bx bx-shield-quarter text-teal-400"></i>Secure & Confidential</span>
+          <span class="flex items-center gap-2"><i class="bx bx-shield-quarter text-teal-400"></i>Secure &amp; Confidential</span>
           <span class="flex items-center gap-2"><i class="bx bx-world text-teal-400"></i>Global Healthcare Network</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- MODAL SCRIPT -->
+  <!-- SCRIPTS -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const openButtons = document.querySelectorAll('.openConsultantModal');
-      const modal = document.getElementById('consultantModal');
-      const closeBtn = document.getElementById('closeConsultantModal');
-      const form = document.getElementById('consultantForm');
-
-      openButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.preventDefault();
-          modal.classList.remove('hidden');
-          modal.classList.add('flex');
-        });
+    // Modal
+    document.querySelectorAll('.openConsultantModal').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const m = document.getElementById('consultantModal');
+        m.classList.remove('hidden'); m.classList.add('flex');
       });
-
-      if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-          modal.classList.add('hidden');
-          modal.classList.remove('flex');
-        });
-      }
-
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          modal.classList.add('hidden');
-          modal.classList.remove('flex');
-        }
-      });
-
-      if (form) {
-        form.addEventListener('submit', (e) => {
-          e.preventDefault();
-
-          const name = form.querySelector('input[name="name"]').value;
-          const country = form.querySelector('select[name="country"]').value;
-          const whatsapp = form.querySelector('input[name="whatsapp"]').value;
-          const treatment = form.querySelector('textarea[name="treatment"]').value;
-          const contactMethod = form.querySelector('select[name="contactMethod"]').value;
-          const contactTime = form.querySelector('select[name="contactTime"]').value;
-
-          const message =
-            `Consultation Request\n\n` +
-            `Name: ${name}\n` +
-            `Country: ${country}\n` +
-            `WhatsApp Number: ${whatsapp}\n` +
-            `Treatment/Concern: ${treatment}\n` +
-            `Preferred Way to Get in Touch: ${contactMethod}\n` +
-            `Preferred Time to Get in Touch: ${contactTime}`;
-
-          const whatsappURL =
-            `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
-
-          window.open(whatsappURL, '_blank');
-        });
-      }
     });
-  </script>
-  <script>
+    document.getElementById('consultantModal').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeConsultantModal();
+    });
     function closeConsultantModal() {
-      document.getElementById("consultantModal").classList.add("hidden")
+      const m = document.getElementById('consultantModal');
+      m.classList.add('hidden'); m.classList.remove('flex');
     }
-  </script>
 
-  <!-- MENU TOGGLE SCRIPT -->
-  <script>
+    // Mobile menu
     const menuBtn = document.getElementById('menuBtn');
     const closeBtn = document.getElementById('closeBtn');
     const mobileMenu = document.getElementById('mobileMenu');
-
     menuBtn.onclick = () => mobileMenu.classList.remove('-translate-x-full');
     closeBtn.onclick = () => mobileMenu.classList.add('-translate-x-full');
+    const mobileExploreBtn = document.getElementById('mobileExploreBtn');
+    const mobileExploreMenu = document.getElementById('mobileExploreMenu');
+    const mobileExploreIcon = document.getElementById('mobileExploreIcon');
+    if (mobileExploreBtn) {
+      mobileExploreBtn.onclick = () => {
+        mobileExploreMenu.classList.toggle('hidden');
+        mobileExploreIcon.classList.toggle('bx-chevron-up');
+        mobileExploreIcon.classList.toggle('bx-chevron-down');
+      };
+    }
+
+    // Category filter
+    (function () {
+      const chips = document.querySelectorAll('#filterList .filter-chip');
+      const items = document.querySelectorAll('.blog-item');
+      const countEl = document.getElementById('visibleCount');
+      const noResults = document.getElementById('noResults');
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+
+          const cat = chip.dataset.cat;
+          let visible = 0;
+
+          items.forEach(item => {
+            const match = cat === 'all' || item.dataset.cat === cat;
+            item.classList.toggle('hidden-by-filter', !match);
+            if (match) visible++;
+          });
+
+          countEl.textContent = visible;
+          noResults.classList.toggle('show', visible === 0);
+        });
+      });
+    })();
   </script>
-
-  <script src="../script/scroll-animations.js"></script>
 </body>
-
 </html>
