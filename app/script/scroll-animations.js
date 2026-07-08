@@ -1,6 +1,7 @@
 /**
  * Scroll-triggered entrance animations (one-time only, no continuous animation).
  * Adds .visible to .animate-on-scroll when element enters viewport.
+ * Elements already in viewport on load are revealed immediately.
  */
 (function () {
   function init() {
@@ -20,7 +21,12 @@
     );
 
     elements.forEach(function (el) {
-      observer.observe(el);
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('visible');
+      } else {
+        observer.observe(el);
+      }
     });
   }
 

@@ -25,6 +25,8 @@
     }]
   }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
@@ -32,25 +34,8 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../style/animations.css">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            logo: ['Anton', 'sans-serif'],
-            body: ['Lexend', 'sans-serif']
-          },
-          colors: {
-            primaryDark: '#0F172A'
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
+  <!-- Tailwind -->  <link rel="stylesheet" href="../style/tailwind.css">
+<style>
     /* Hide scrollbar globally */
     html,
     body {
@@ -122,7 +107,7 @@
     }
   </style>
 
-  <script type="application/ld+json"> {   "@context": "https://schema.org",   "@type": "MedicalOrganization",   "name": "Sano Healthcare and Tourism",   "description": "Medical tourism facilitator India based in Pune connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement India cost procedures, ayurvedic retreats, and panchakarma retreat India programmes.",   "url": "https://www.arogyayatri.com",   "telephone": "+918530054299",   "email": "apoorva@ewan.co.in",   "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },   "areaServed": "Worldwide",   "knowsLanguage": "120+ languages",   "hasOfferCatalog": {     "@type": "OfferCatalog",     "name": "Medical Tourism India Services",     "itemListElement": [       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Affordable Heart Surgery India" } },       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Cancer Treatment India" } },       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Knee Replacement India Cost" } },       { "@type": "Offer", "itemOffered": { "@type": "WellnessProgram", "name": "Ayurvedic Retreat India" } },       { "@type": "Offer", "itemOffered": { "@type": "WellnessProgram", "name": "Panchakarma Retreat India" } }     ]   } } </script>
+  <script type="application/ld+json"> {   "@context": "https://schema.org",   "@type": "MedicalOrganization",   "name": "Sano Healthcare and Tourism",   "description": "Medical tourism facilitator India based in Pune connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement India cost procedures, ayurvedic retreats, and panchakarma retreat India programmes.",   "url": "https://www.arogyayatri.com",   "telephone": "+918530054299",   "email": "apoorva@sanohealth.co.in",   "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },   "areaServed": "Worldwide",   "knowsLanguage": "120+ languages",   "hasOfferCatalog": {     "@type": "OfferCatalog",     "name": "Medical Tourism India Services",     "itemListElement": [       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Affordable Heart Surgery India" } },       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Cancer Treatment India" } },       { "@type": "Offer", "itemOffered": { "@type": "MedicalProcedure", "name": "Knee Replacement India Cost" } },       { "@type": "Offer", "itemOffered": { "@type": "WellnessProgram", "name": "Ayurvedic Retreat India" } },       { "@type": "Offer", "itemOffered": { "@type": "WellnessProgram", "name": "Panchakarma Retreat India" } }     ]   } } </script>
 </head>
 
 <body class="font-body bg-white text-black">
@@ -196,7 +181,7 @@
       <div class="relative max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-2xl animate-on-scroll">
 
         <!-- Background Image -->
-        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1600&auto=format&fit=crop"
+        <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1600&auto=format&fit=crop"
           alt="Global Hospital" class="absolute inset-0 w-full h-full object-cover" />
 
         <!-- Overlay -->
@@ -279,7 +264,7 @@
           <article
             class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition">
             <div class="relative">
-              <img src="../../src/images/hospital1.webp" alt="JK Plastic Surgery" class="h-48 w-full object-cover" />
+              <img loading="lazy" decoding="async" src="../../src/images/hospital1.webp" alt="JK Plastic Surgery" class="h-48 w-full object-cover" />
 
               <!-- Rating -->
               <div
@@ -318,7 +303,7 @@
           <article
             class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition">
             <div class="relative">
-              <img src="../../src/images/hospital2.webp" alt="VG Plastic Surgery" class="h-48 w-full object-cover" />
+              <img loading="lazy" decoding="async" src="../../src/images/hospital2.webp" alt="VG Plastic Surgery" class="h-48 w-full object-cover" />
               <div
                 class="absolute top-3 right-3 bg-white/95 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow">
                 <i class='bx bxs-star text-yellow-400'></i>
@@ -354,7 +339,7 @@
           <article
             class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition">
             <div class="relative">
-              <img src="../../src/images/hospital3.webp" alt="Memorial Şişli Hospital"
+              <img loading="lazy" decoding="async" src="../../src/images/hospital3.webp" alt="Memorial Şişli Hospital"
                 class="h-48 w-full object-cover" />
               <div
                 class="absolute top-3 right-3 bg-white/95 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow">
@@ -391,7 +376,7 @@
           <article
             class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition">
             <div class="relative">
-              <img src="../../src/images/hospital4.webp" alt="Medical Park Hospital" class="h-48 w-full object-cover" />
+              <img loading="lazy" decoding="async" src="../../src/images/hospital4.webp" alt="Medical Park Hospital" class="h-48 w-full object-cover" />
               <div
                 class="absolute top-3 right-3 bg-white/95 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow">
                 <i class='bx bxs-star text-yellow-400'></i>
@@ -453,7 +438,7 @@
           <article
             class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition">
             <div class="relative">
-              <img src="../../src/images/hospital1.webp" alt="ASAN Hair Transplant Center"
+              <img loading="lazy" decoding="async" src="../../src/images/hospital1.webp" alt="ASAN Hair Transplant Center"
                 class="h-48 w-full object-cover" />
 
               <div
@@ -491,7 +476,7 @@
           <article
             class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition">
             <div class="relative">
-              <img src="../../src/images/hospital2.webp" alt="EsteNove Hair Clinic" class="h-48 w-full object-cover" />
+              <img loading="lazy" decoding="async" src="../../src/images/hospital2.webp" alt="EsteNove Hair Clinic" class="h-48 w-full object-cover" />
 
               <div
                 class="absolute top-3 right-3 bg-white/95 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow">
@@ -528,7 +513,7 @@
           <article
             class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition">
             <div class="relative">
-              <img src="../../src/images/hospital3.webp" alt="Memorial Hair Transplant Unit"
+              <img loading="lazy" decoding="async" src="../../src/images/hospital3.webp" alt="Memorial Hair Transplant Unit"
                 class="h-48 w-full object-cover" />
 
               <div
@@ -566,7 +551,7 @@
           <article
             class="group bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-xl transition">
             <div class="relative">
-              <img src="../../src/images/hospital4.webp" alt="Medical Park Hair Clinic"
+              <img loading="lazy" decoding="async" src="../../src/images/hospital4.webp" alt="Medical Park Hair Clinic"
                 class="h-48 w-full object-cover" />
 
               <div
@@ -900,7 +885,7 @@
       <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
         <div class="lg:col-span-2">
           <a href="../../index.html">
-            <span class="inline-block bg-white rounded-lg p-3 mb-3"><img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 w-auto object-contain"></span>
+            <span class="inline-block bg-white rounded-lg p-3 mb-3"><img loading="lazy" decoding="async" src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 w-auto object-contain"></span>
             <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">Sano Healthcare and Tourism is India's trusted medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, panchakarma retreats, and more. Zero waiting. 120+ languages. Complete end-to-end support.</p>
           </a>
           <div class="flex items-center gap-4">
@@ -925,8 +910,8 @@
           <h4 class="text-white font-semibold mb-5">Get in Touch</h4>
           <ul class="space-y-4 text-sm">
             <li class="flex items-start gap-3"><i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i><a href="tel:8530054299" class="hover:text-white transition">+91 85300 54299</a></li>
-            <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">apoorva@ewan.co.in</a></li>
-            <li class="flex items-start gap-3"><i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i><a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">pushkaraj.thakurdas@ewan.co.in</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a href="mailto:apoorva@sanohealth.co.in" class="hover:text-white transition break-all">apoorva@sanohealth.co.in</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i><a href="mailto:soham.kakade@ewan.co.in" class="hover:text-white transition break-all">soham.kakade@ewan.co.in</a></li>
             <li class="pt-2"><a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition"><i class="bx bxl-whatsapp text-lg"></i> WhatsApp Us</a></li>
           </ul>
         </div>

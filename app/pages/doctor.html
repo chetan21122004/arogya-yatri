@@ -16,7 +16,7 @@
   "description": "Medical tourism facilitator India based in Pune connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement India cost procedures, ayurvedic retreats, and panchakarma retreat India programmes.",
   "url": "https://www.arogyayatri.com",
   "telephone": "+918530054299",
-  "email": "apoorva@ewan.co.in",
+  "email": "apoorva@sanohealth.co.in",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Pune",
@@ -87,6 +87,8 @@
     }]
   }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
@@ -94,25 +96,8 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../style/animations.css">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            logo: ['Anton', 'sans-serif'],
-            body: ['Lexend', 'sans-serif']
-          },
-          colors: {
-            primaryDark: '#0F172A'
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
+  <!-- Tailwind -->  <link rel="stylesheet" href="../style/tailwind.css">
+<style>
     /* Hide scrollbar globally */
     html,
     body {
@@ -538,7 +523,7 @@
       <div class="grid gap-14 md:grid-cols-2 lg:grid-cols-5 mb-16">
         <div class="lg:col-span-2">
           <a href="../../index.html">
-            <span class="inline-block bg-white rounded-lg p-3 mb-3"><img src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 w-auto object-contain"></span>
+            <span class="inline-block bg-white rounded-lg p-3 mb-3"><img loading="lazy" decoding="async" src="../../src/logo.png" alt="Sano Healthcare and Tourism" class="h-12 w-auto object-contain"></span>
             <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">Sano Healthcare and Tourism is India's trusted medical tourism facilitator Pune, connecting international patients with NABH accredited hospitals India for affordable heart surgery, cancer treatment, knee replacement, panchakarma retreats, and more. Zero waiting. 120+ languages. Complete end-to-end support.</p>
           </a>
           <div class="flex items-center gap-4">
@@ -563,8 +548,8 @@
           <h4 class="text-white font-semibold mb-5">Get in Touch</h4>
           <ul class="space-y-4 text-sm">
             <li class="flex items-start gap-3"><i class="bx bx-phone text-teal-400 text-lg mt-0.5"></i><a href="tel:8530054299" class="hover:text-white transition">+91 85300 54299</a></li>
-            <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a href="mailto:apoorva@ewan.co.in" class="hover:text-white transition break-all">apoorva@ewan.co.in</a></li>
-            <li class="flex items-start gap-3"><i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i><a href="mailto:pushkaraj.thakurdas@ewan.co.in" class="hover:text-white transition break-all">pushkaraj.thakurdas@ewan.co.in</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope text-teal-400 text-lg mt-0.5"></i><a href="mailto:apoorva@sanohealth.co.in" class="hover:text-white transition break-all">apoorva@sanohealth.co.in</a></li>
+            <li class="flex items-start gap-3"><i class="bx bx-envelope-open text-teal-400 text-lg mt-0.5"></i><a href="mailto:soham.kakade@ewan.co.in" class="hover:text-white transition break-all">soham.kakade@ewan.co.in</a></li>
             <li class="pt-2"><a href="https://wa.me/918530054299" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white transition"><i class="bx bxl-whatsapp text-lg"></i> WhatsApp Us</a></li>
           </ul>
         </div>
@@ -661,6 +646,7 @@
   <!-- ================== DATA + LOGIC (FIXED, NOTHING REMOVED) ================== -->
   <script>
     const doctors = [
+      { name: "Dr. Sheetal Chopde", gender: "female", spec: "Ayurvedic Medicine", edu: "BAMS (Bachelor of Ayurvedic Medicine & Surgery)", exp: ">10 years", image: "../../src/images/teamArogya/Dr. Sheetal Chopde.png" },
       { name: "Ms. Sharmishtha Deshpande", gender: "female", spec: "Nutritionist", edu: "Internationally Certified Nutritionist | Certified Diabetes Educator | Functional Nutrition Practitioner | Certified Hydroponics Farming Technician", exp: "12+ years", image: "../../src/images/doctors/Ms. Sharmishtha Deshpande.jpeg", featured: true, languages: "English, Hindi, Marathi", tags: ["Diabetes Reversal & Management", "Weight Management", "Functional & Preventive Nutrition", "Corporate Wellness", "Personalized Diet Planning"] },
       { name: "Dr. Kedar Shrikant Desai", gender: "male", spec: "General Dentist", edu: "B.D.S. · Dental Implant Certifications", exp: "Since 2009", image: "../../src/images/doctors/Dr. Kedar Shrikant Desai.jpg", featured: true, languages: "English, Marathi, Hindi", tags: ["Dental Implants", "Smile Design", "Root Canal Treatment", "Cosmetic Dentistry", "Full Mouth Rehabilitation", "International Patients"] },
       { name: "Dr. Ravindra Kulkarni", gender: "male", spec: "Obstetrics & Gynaecology", edu: "MBBS MD OB-GYN", exp: ">35 years", image: "../../src/images/doctors/ravindra.png" },
@@ -676,8 +662,7 @@
       { name: "Dr. Shirish Gandhi", gender: "male", spec: "Radiologist", edu: "MBBS, DMRD, DNB", exp: "30 years", image: "../../src/images/doctors/shirish.png" },
       { name: "Shanta Borkar", gender: "female", spec: "Lactation professional", edu: "MS ACLP", exp: "> 3 years", image: "../../src/images/doctors/shanta.png" },
       { name: "Avanti Damle", gender: "female", spec: "Sports Nutritionist", edu: "Bsc PG sports nutrition , PG in Alternative Medicine", exp: "21 years", image: "../../src/images/doctors/avanti.png" },
-      { name: "Dr. Apurva Kangude (PT)", gender: "female", spec: "Physiotherapist", edu: "Bpth APTA CAPP-OB", exp: ">7 years", image: "../../src/images/doctors/apurva.png" },
-      { name: "Dr. Sheetal Chopde", gender: "female", spec: "Ayurvedic Medicine", edu: "BAMS (Bachelor of Ayurvedic Medicine & Surgery)", exp: ">10 years", image: "../../src/images/teamArogya/Dr. Sheetal Chopde.png" }
+      { name: "Dr. Apurva Kangude (PT)", gender: "female", spec: "Physiotherapist", edu: "Bpth APTA CAPP-OB", exp: ">7 years", image: "../../src/images/doctors/apurva.png" }
     ];
 
     // Slider state
@@ -717,7 +702,7 @@
           ? '../../src/images/doctors/default-male.jpg'
           : '../../src/images/doctors/default-female.jpg')}"
               alt="${d.name}"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              class="w-full h-full object-cover group-hover:opacity-90 transition-opacity duration-300"
               loading="lazy"
             />
           </div>

@@ -1,0 +1,10 @@
+{
+  "name": "arogya-yatri",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./app/style/tailwind-input.css -o ./app/style/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
