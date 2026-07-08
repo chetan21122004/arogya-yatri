@@ -59,3 +59,20 @@ line-height: 1.4;
 padding: 6px 0;
 white-space: normal;
 }
+
+/* Footer / contact email links — wrap at @, not mid-domain */
+.footer-contact-email {
+  min-width: 0;
+  flex: 1 1 0%;
+  line-height: 1.45;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.contact-email-link {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.45;
+  word-break: normal;
+  overflow-wrap: break-word;
+}

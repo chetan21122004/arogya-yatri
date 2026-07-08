@@ -497,3 +497,20 @@ transform: translateX(-100%);
   line-height: 1.6;
   margin-top: 6px;
 }
+
+/* Footer / contact email links — wrap at @, not mid-domain */
+.footer-contact-email {
+  min-width: 0;
+  flex: 1 1 0%;
+  line-height: 1.45;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.contact-email-link {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.45;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
