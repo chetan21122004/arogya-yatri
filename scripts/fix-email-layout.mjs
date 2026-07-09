@@ -16,29 +16,16 @@ function walk(dir, files = []) {
   return files;
 }
 
-const emailDisplay = {
-  'apoorva@sanohealth.co.in': 'apoorva@<wbr>sanohealth.co.in',
-  'soham.kakade@ewan.co.in': 'soham.kakade@<wbr>ewan.co.in',
-};
-
 for (const f of walk(root)) {
   let html = fs.readFileSync(f, 'utf8');
   const before = html;
 
-  html = html.replace(
-    /class="hover:text-white transition break-all">(apoorva@sanohealth\.co\.in|soham\.kakade@ewan\.co\.in)/g,
-    (_, email) => `class="footer-contact-email hover:text-white transition">${emailDisplay[email]}`
-  );
+  html = html.replace(/apoorva@<wbr>sanohealth\.co\.in/g, 'apoorva@sanohealth.co.in');
+  html = html.replace(/soham\.kakade@<wbr>ewan\.co\.in/g, 'soham.kakade@ewan.co.in');
 
   html = html.replace(
-    /class="text-xs sm:text-sm md:text-base font-medium text-slate-900 hover:text-teal-500 transition break-all px-2">\s*(apoorva@sanohealth\.co\.in|soham\.kakade@ewan\.co\.in)/g,
-    (_, email) => `class="contact-email-link text-xs sm:text-sm md:text-base font-medium text-slate-900 hover:text-teal-500 transition px-2">${emailDisplay[email]}`
-  );
-
-  // FAQ inline email (no break-all class)
-  html = html.replace(
-    /(<i class='bx bx-envelope[^>]*><\/i>\s*)(apoorva@sanohealth\.co\.in)/g,
-    `$1${emailDisplay['apoorva@sanohealth.co.in']}`
+    /<div>\s*\n\s*<h4 class="text-white font-semibold mb-5">Get in Touch<\/h4>/g,
+    '<div class="footer-contact-col">\n          <h4 class="text-white font-semibold mb-5">Get in Touch</h4>'
   );
 
   if (html !== before) {
