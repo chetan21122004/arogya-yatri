@@ -90,6 +90,36 @@ const ARTICLES = {
     category: 'Patient Guide',
     img: 'blog-language-support-featured.jpg',
   },
+  'blog-how-far-in-advance-book-india-treatment': {
+    title: 'How Far in Advance Should I Book My Medical Treatment in India?',
+    category: 'Patient Planning',
+    img: 'blog-medical-visa-featured.png',
+  },
+  'blog-health-insurance-cover-surgery-india': {
+    title: 'Will My Health Insurance Cover Surgery Done in India?',
+    category: 'Insurance',
+    img: 'plane-bg.jpg',
+  },
+  'blog-medical-tourism-package-deals-india': {
+    title: "What's Included in Medical Tourism Package Deals from Indian Hospitals?",
+    category: 'Patient Planning',
+    img: 'hospital.webp',
+  },
+  'blog-airport-pickup-accommodation-india': {
+    title: 'How Do I Arrange Airport Pickup and Accommodation Near the Hospital in India?',
+    category: 'Logistics',
+    img: 'plane-bg.jpg',
+  },
+  'blog-bring-family-member-during-treatment-india': {
+    title: 'Can I Bring a Family Member to Stay with Me During Treatment in India?',
+    category: 'Patient &amp; Family',
+    img: 'blog-medical-visa-featured.png',
+  },
+  'blog-risks-surgery-india-foreigner': {
+    title: 'What Are the Risks of Getting Surgery in India as a Foreigner?',
+    category: 'Trust &amp; Safety',
+    img: 'blog-hospital-safety-featured.jpg',
+  },
 };
 
 // ─── Per-blog config ──────────────────────────────────────────────────────────
@@ -224,6 +254,138 @@ const BLOG_CONFIG = {
       'blog-combine-treatment-vacation-india',
       'blog-heal-in-india-program-guide',
       'blog-recovery-time-surgery-india',
+    ],
+  },
+  'blog-25-how-far-in-advance-book-india-treatment.md': {
+    slug: 'blog-how-far-in-advance-book-india-treatment',
+    img: 'blog-medical-visa-featured.png',
+    date: 'August 2026',
+    related: [
+      'blog-india-medical-visa-guide',
+      'blog-recovery-time-surgery-india',
+      'blog-health-insurance-cover-surgery-india',
+    ],
+    more: [
+      'blog-india-medical-visa-guide',
+      'blog-medical-tourism-package-deals-india',
+      'blog-airport-pickup-accommodation-india',
+      'blog-bring-family-member-during-treatment-india',
+      'blog-health-insurance-cover-surgery-india',
+      'blog-risks-surgery-india-foreigner',
+      'blog-how-much-can-i-save-surgery-india',
+      'blog-travel-insurance-medical-tourism-india',
+      'blog-follow-up-care-after-returning-home',
+      'blog-language-barriers-indian-hospitals',
+    ],
+  },
+  'blog-26-health-insurance-cover-surgery-india.md': {
+    slug: 'blog-health-insurance-cover-surgery-india',
+    img: 'plane-bg.jpg',
+    date: 'August 2026',
+    related: [
+      'blog-travel-insurance-medical-tourism-india',
+      'blog-how-much-can-i-save-surgery-india',
+      'blog-medical-tourism-package-deals-india',
+    ],
+    more: [
+      'blog-travel-insurance-medical-tourism-india',
+      'blog-how-much-can-i-save-surgery-india',
+      'blog-medical-tourism-package-deals-india',
+      'blog-how-far-in-advance-book-india-treatment',
+      'blog-hip-replacement-cost-india',
+      'blog-risks-surgery-india-foreigner',
+      'blog-find-legitimate-hospitals-india',
+      'blog-india-medical-visa-guide',
+      'blog-recovery-time-surgery-india',
+      'blog-best-hospitals-india-international-patients',
+    ],
+  },
+  'blog-27-medical-tourism-package-deals-india.md': {
+    slug: 'blog-medical-tourism-package-deals-india',
+    img: 'hospital.webp',
+    date: 'August 2026',
+    related: [
+      'blog-how-much-can-i-save-surgery-india',
+      'blog-airport-pickup-accommodation-india',
+      'blog-health-insurance-cover-surgery-india',
+    ],
+    more: [
+      'blog-how-much-can-i-save-surgery-india',
+      'blog-airport-pickup-accommodation-india',
+      'blog-bring-family-member-during-treatment-india',
+      'blog-how-far-in-advance-book-india-treatment',
+      'blog-health-insurance-cover-surgery-india',
+      'blog-best-hospitals-india-international-patients',
+      'blog-find-legitimate-hospitals-india',
+      'blog-india-medical-visa-guide',
+      'blog-travel-insurance-medical-tourism-india',
+      'blog-most-popular-medical-procedures-india',
+    ],
+  },
+  'blog-28-airport-pickup-accommodation-india.md': {
+    slug: 'blog-airport-pickup-accommodation-india',
+    img: 'plane-bg.jpg',
+    date: 'August 2026',
+    related: [
+      'blog-bring-family-member-during-treatment-india',
+      'blog-india-medical-visa-guide',
+      'blog-medical-tourism-package-deals-india',
+    ],
+    more: [
+      'blog-bring-family-member-during-treatment-india',
+      'blog-india-medical-visa-guide',
+      'blog-medical-tourism-package-deals-india',
+      'blog-how-far-in-advance-book-india-treatment',
+      'blog-which-indian-city-medical-procedure',
+      'blog-combine-treatment-vacation-india',
+      'blog-recovery-time-surgery-india',
+      'blog-travel-insurance-medical-tourism-india',
+      'blog-language-barriers-indian-hospitals',
+      'blog-follow-up-care-after-returning-home',
+    ],
+  },
+  'blog-29-bring-family-member-during-treatment-india.md': {
+    slug: 'blog-bring-family-member-during-treatment-india',
+    img: 'blog-medical-visa-featured.png',
+    date: 'August 2026',
+    related: [
+      'blog-india-medical-visa-guide',
+      'blog-airport-pickup-accommodation-india',
+      'blog-travel-insurance-medical-tourism-india',
+    ],
+    more: [
+      'blog-india-medical-visa-guide',
+      'blog-airport-pickup-accommodation-india',
+      'blog-travel-insurance-medical-tourism-india',
+      'blog-how-far-in-advance-book-india-treatment',
+      'blog-medical-tourism-package-deals-india',
+      'blog-language-barriers-indian-hospitals',
+      'blog-recovery-time-surgery-india',
+      'blog-follow-up-care-after-returning-home',
+      'blog-combine-treatment-vacation-india',
+      'blog-risks-surgery-india-foreigner',
+    ],
+  },
+  'blog-30-risks-surgery-india-foreigner.md': {
+    slug: 'blog-risks-surgery-india-foreigner',
+    img: 'blog-hospital-safety-featured.jpg',
+    date: 'August 2026',
+    related: [
+      'blog-find-legitimate-hospitals-india',
+      'blog-quality-of-doctors-india-vs-home-country',
+      'blog-follow-up-care-after-returning-home',
+    ],
+    more: [
+      'blog-find-legitimate-hospitals-india',
+      'blog-quality-of-doctors-india-vs-home-country',
+      'blog-follow-up-care-after-returning-home',
+      'blog-recovery-time-surgery-india',
+      'blog-language-barriers-indian-hospitals',
+      'blog-bring-family-member-during-treatment-india',
+      'blog-best-hospitals-india-international-patients',
+      'blog-how-much-can-i-save-surgery-india',
+      'blog-india-medical-visa-guide',
+      'blog-health-insurance-cover-surgery-india',
     ],
   },
 };
@@ -412,6 +574,10 @@ function catLabel(cat) {
     'Dental Treatment Guide': 'Dental Guide',
     'Patient Safety Guide': 'Trust & Safety',
     'Patient Guide': 'Patient Guide',
+    'Patient Planning Guide': 'Patient Planning',
+    'Insurance & Finance Guide': 'Insurance',
+    'Patient Logistics Guide': 'Logistics',
+    'Patient & Family Guide': 'Patient & Family',
   };
   return map[cat] || cat;
 }
@@ -425,6 +591,37 @@ function buildPage(meta, bodyHtml, faqSchema, config) {
   const desc = meta.meta_description;
   const canonUrl = `https://www.arogyayatri.com/app/pages/${slug}.html`;
   const ogImg = `https://www.arogyayatri.com/src/images/${img}`;
+
+  const datePublished = date.startsWith('August') ? '2026-08-01' : date.startsWith('July') ? '2026-07-01' : '2026-08-01';
+  const articleSchemaJson = `
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": ${JSON.stringify(title)},
+    "description": ${JSON.stringify(desc)},
+    "datePublished": "${datePublished}",
+    "dateModified": "${datePublished}",
+    "author": {
+      "@type": "Organization",
+      "name": "Sano Healthcare and Tourism"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sano Healthcare and Tourism",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.arogyayatri.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": ${JSON.stringify(canonUrl)}
+    },
+    "image": ${JSON.stringify(ogImg)},
+    "keywords": ${JSON.stringify(Array.isArray(meta.tags) ? meta.tags.join(', ') : (meta.tags || ''))}
+  }
+  </script>`;
 
   const faqSchemaJson = faqSchema.length ? `
   <script type="application/ld+json">
@@ -468,6 +665,7 @@ function buildPage(meta, bodyHtml, faqSchema, config) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${title} | Sano Healthcare and Tourism</title>
   <meta name="description" content="${desc}">
+  ${Array.isArray(meta.tags) ? `<meta name="keywords" content="${meta.tags.join(', ')}">` : ''}
   <link rel="canonical" href="${canonUrl}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="${title}">
@@ -481,7 +679,7 @@ function buildPage(meta, bodyHtml, faqSchema, config) {
   <link rel="stylesheet" href="../style/basic-nav.css">
   <link rel="stylesheet" href="../style/tailwind.css">
   <link rel="stylesheet" href="../style/blog.css">
-${faqSchemaJson}
+${articleSchemaJson}${faqSchemaJson}
 </head>
 <body class="font-body bg-slate-50 text-black">
 
@@ -717,4 +915,4 @@ for (const [filename, config] of Object.entries(BLOG_CONFIG)) {
   console.log(`Generated: ${config.slug}.html (${faqs.length} FAQs)`);
 }
 
-console.log('\nAll 6 blog pages generated.');
+console.log(`\n${Object.keys(BLOG_CONFIG).length} blog pages generated.`);

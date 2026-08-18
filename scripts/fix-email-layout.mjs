@@ -1,4 +1,4 @@
-import fs from 'fs';
+﻿import fs from 'fs';
 import path from 'path';
 
 const root = new URL('..', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1');
@@ -21,7 +21,7 @@ for (const f of walk(root)) {
   const before = html;
 
   html = html.replace(/apoorva@<wbr>sanohealth\.co\.in/g, 'apoorva@sanohealth.co.in');
-  html = html.replace(/soham\.kakade@<wbr>ewan\.co\.in/g, 'soham.kakade@ewan.co.in');
+  html = html.replace(/soham\.kakade@<wbr>ewan\.co\.in/g, 'soham@uvan.co.in');
 
   html = html.replace(
     /<div>\s*\n\s*<h4 class="text-white font-semibold mb-5">Get in Touch<\/h4>/g,
